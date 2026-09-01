@@ -21,6 +21,7 @@ Portafolio profesional y plataforma de captación de clientes para el sector sal
 - **Dependencias:** Prohibidas librerías pesadas/innecesarias (sin jQuery, sin frameworks pesados en el frontend base).
 - **Estética controlada (Anti-caos):** Los efectos glitch/terminal deben ser acentos discretos; nunca comprometer la legibilidad ni la usabilidad de la web.
 - **Salvaguarda Mobile (`minmax(0, 1fr)`):** En CSS Grid/Flexbox, declarar siempre `minmax(0, 1fr)` en lugar de `1fr` plano y asignar `min-width: 0` / `word-break: break-word` en elementos hijos para evitar que textos monospace o código fuercen `min-content` y desborden la pantalla en móviles.
+- **Iconografía técnica (Cero emojis de sistema):** Prohibido el uso de emojis Unicode estándar en la interfaz (por su aspecto infantil y renderizado heterogéneo entre plataformas). Emplear exclusivamente iconos vectoriales SVG limpios con `stroke="currentColor"` y efectos neón/glow (Cyan/Azul/Verde) para preservar la sobriedad técnica y la coherencia visual.
 - **SDD estricto:** Ante cualquier cambio de funcionalidad, actualizar primero la spec correspondiente.
 
 ## Al terminar cualquier tarea
