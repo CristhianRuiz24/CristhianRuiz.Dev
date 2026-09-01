@@ -39,7 +39,7 @@
 ```javascript
 export const CONFIG = {
   whatsappNumber: "5215500000000", // Modificable con el número real
-  whatsappBaseMessage: "Hola Cristhian, soy [Nombre] de [Clínica/Consultorio] y me gustaría recibir asesoría técnica para mi consultorio.",
+  whatsappBaseMessage: "Hola Cristhian! Vi tu página y me gustaría pedirte información y asesoría para mi consultorio.",
   formEndpointUrl: null, // null activa el modo simulación local (800ms)
   simulationDelayMs: 800
 };
