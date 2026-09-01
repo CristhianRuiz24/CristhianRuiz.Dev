@@ -395,28 +395,30 @@
 }
 
 /* --------------------------------------------------------------------------
-   Clinical Record & Automation Dashboard Card (Visual & Interactive)
+   Clinical Suite / Dashboard UI Mockup (High-Fidelity Clinical Panel)
    -------------------------------------------------------------------------- */
 .clinical-record-card {
-  background-color: #080B10;
-  border: 1px solid rgba(0, 240, 255, 0.22);
+  background-color: #080C12;
+  border: 1px solid rgba(0, 240, 255, 0.25);
   border-radius: var(--radius-md);
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 240, 255, 0.06);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7), 0 0 25px rgba(0, 240, 255, 0.06);
   transition: border-color var(--transition-normal), box-shadow var(--transition-normal);
+  display: flex;
+  flex-direction: column;
 }
 
 .clinical-record-card:hover {
   border-color: rgba(0, 240, 255, 0.45);
-  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.7), 0 0 25px rgba(0, 240, 255, 0.12);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 240, 255, 0.12);
 }
 
 .clinical-card-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #0E131A;
-  padding: 0.85rem 1.15rem;
+  background-color: #0E141D;
+  padding: 0.8rem 1.15rem;
   border-bottom: 1px solid var(--border-muted);
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -427,7 +429,7 @@
   align-items: center;
   gap: 0.5rem;
   font-family: var(--font-mono);
-  font-size: 0.76rem;
+  font-size: 0.74rem;
   font-weight: 700;
   color: var(--accent-cyan);
   letter-spacing: 0.04em;
@@ -437,159 +439,305 @@
   flex-shrink: 0;
 }
 
-.clinical-card-badges {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  flex-wrap: wrap;
-}
-
 .clinical-status-indicator {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  font-size: 0.72rem;
-  font-weight: 600;
-}
-
-.clinical-id-badge {
   font-size: 0.7rem;
   font-weight: 700;
-  padding: 0.2rem 0.5rem;
-  background: rgba(59, 130, 246, 0.12);
+}
+
+.clinical-dashboard-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+  background: radial-gradient(circle at top right, rgba(0, 240, 255, 0.03) 0%, transparent 60%);
+}
+
+/* Patient Profile Header Card */
+.patient-profile-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.15rem;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+}
+
+.patient-avatar-box {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.15);
+}
+
+.avatar-icon {
+  flex-shrink: 0;
+}
+
+.patient-info-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+  width: 100%;
+}
+
+.patient-name-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.patient-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.patient-id-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.18rem 0.5rem;
+  background: rgba(59, 130, 246, 0.15);
   border: 1px solid rgba(59, 130, 246, 0.35);
   border-radius: var(--radius-xs);
   color: var(--accent-blue);
   letter-spacing: 0.03em;
 }
 
-.clinical-section-box,
-.clinical-privacy-box,
-.clinical-automations-box {
-  padding: 1.1rem 1.25rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+.patient-type {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.3;
 }
 
-.clinical-automations-box {
-  border-bottom: none;
+.patient-badges-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.2rem;
 }
 
-.clinical-box-label {
+.badge-mini {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-xs);
+}
+
+.badge-active {
+  background: rgba(0, 255, 102, 0.1);
+  border: 1px solid rgba(0, 255, 102, 0.35);
+  color: #00FF66;
+}
+
+.badge-secure {
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.28);
+  color: var(--accent-cyan);
+}
+
+.dot-mini {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.dot-green {
+  background-color: #00FF66;
+  box-shadow: 0 0 6px #00FF66;
+}
+
+.dot-cyan {
+  background-color: var(--accent-cyan);
+  box-shadow: 0 0 6px var(--accent-cyan);
+}
+
+/* 2-Column Widgets Grid */
+.clinical-widgets-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.85rem;
+  width: 100%;
+}
+
+.clinical-widget {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+  box-sizing: border-box;
+}
+
+.clinical-widget:hover {
+  background: rgba(0, 240, 255, 0.035);
+  border-color: rgba(0, 240, 255, 0.25);
+}
+
+.widget-header {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.widget-icon {
+  flex-shrink: 0;
+}
+
+.widget-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.widget-main-value {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.widget-status-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  margin-top: 0.1rem;
+}
+
+.widget-status-tag svg {
+  flex-shrink: 0;
+}
+
+/* Clinical Notes Preview Card */
+.clinical-notes-card {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: var(--radius-sm);
+  padding: 0.95rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: border-color var(--transition-fast);
+  box-sizing: border-box;
+}
+
+.clinical-notes-card:hover {
+  border-color: rgba(0, 240, 255, 0.25);
+}
+
+.notes-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.notes-title-wrap {
   display: flex;
   align-items: center;
   gap: 0.45rem;
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 700;
-  color: var(--text-muted);
-  letter-spacing: 0.05em;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
+  color: var(--accent-cyan);
+  letter-spacing: 0.04em;
 }
 
-.box-icon {
+.notes-icon {
   flex-shrink: 0;
 }
 
-.clinical-service-name {
-  font-size: 1.05rem;
+.notes-badge {
+  font-size: 0.65rem;
   font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 0.2rem;
-}
-
-.clinical-service-desc {
-  font-size: 0.82rem;
+  padding: 0.12rem 0.45rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-xs);
   color: var(--text-secondary);
+}
+
+.notes-snippet {
+  font-size: 0.82rem;
+  color: #CADAE8;
   line-height: 1.45;
+  margin: 0;
+  font-style: italic;
 }
 
-.privacy-tags-wrapper {
+.notes-footer {
   display: flex;
-  gap: 0.55rem;
-  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 0.1rem;
 }
 
-.privacy-tag {
+.notes-privacy {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.35rem 0.75rem;
-  background: rgba(0, 240, 255, 0.06);
-  border: 1px solid rgba(0, 240, 255, 0.25);
-  border-radius: var(--radius-sm);
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--accent-cyan);
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  color: var(--text-muted);
 }
 
-.privacy-tag svg {
+.notes-privacy svg {
   flex-shrink: 0;
   color: var(--accent-cyan);
 }
 
-.automation-checklist {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-
-.automation-row {
+/* System Telemetry Footer Bar */
+.clinical-system-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.75rem;
-  padding: 0.55rem 0.8rem;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  gap: 0.5rem;
+  padding: 0.65rem 0.95rem;
+  background: rgba(0, 240, 255, 0.035);
+  border: 1px dashed rgba(0, 240, 255, 0.2);
   border-radius: var(--radius-xs);
-  transition: background var(--transition-fast), border-color var(--transition-fast);
+  flex-wrap: wrap;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
 }
 
-.automation-row:hover {
-  background: rgba(0, 240, 255, 0.04);
-  border-color: rgba(0, 240, 255, 0.2);
-}
-
-.automation-info {
-  display: flex;
+.system-sync-pill,
+.system-device-pill {
+  display: inline-flex;
   align-items: center;
-  gap: 0.55rem;
-  font-size: 0.82rem;
-  min-width: 0;
-  word-break: break-word;
-}
-
-.automation-info span {
-  color: var(--text-primary);
+  gap: 0.35rem;
   font-weight: 500;
-  font-size: 0.82rem;
 }
 
-.check-icon {
+.system-device-pill svg {
   flex-shrink: 0;
-}
-
-.status-badge {
-  font-size: 0.68rem;
-  font-weight: 700;
-  padding: 0.2rem 0.5rem;
-  border-radius: var(--radius-xs);
-  flex-shrink: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
-
-.status-active {
-  background: rgba(0, 255, 102, 0.12);
-  color: #00FF66;
-  border: 1px solid rgba(0, 255, 102, 0.35);
-}
-
-.status-protected {
-  background: rgba(0, 240, 255, 0.12);
-  color: var(--accent-cyan);
-  border: 1px solid rgba(0, 240, 255, 0.35);
+  color: var(--accent-blue);
 }
 
 .database-insights {
@@ -716,38 +864,41 @@
     padding: 0.75rem 0.85rem;
   }
   .clinical-card-title {
-    font-size: 0.72rem;
+    font-size: 0.7rem;
   }
-  .clinical-section-box,
-  .clinical-privacy-box,
-  .clinical-automations-box {
-    padding: 0.9rem 0.85rem;
+  .clinical-dashboard-body {
+    padding: 0.85rem;
+    gap: 0.75rem;
   }
-  .clinical-service-name {
+  .patient-profile-card {
+    padding: 0.85rem;
+    gap: 0.75rem;
+  }
+  .patient-avatar-box {
+    width: 38px;
+    height: 38px;
+  }
+  .patient-name {
     font-size: 0.95rem;
   }
-  .clinical-service-desc {
-    font-size: 0.8rem;
+  .clinical-widgets-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.65rem;
   }
-  .privacy-tags-wrapper {
-    gap: 0.4rem;
+  .clinical-widget {
+    padding: 0.75rem 0.85rem;
   }
-  .privacy-tag {
-    font-size: 0.74rem;
-    padding: 0.3rem 0.6rem;
+  .clinical-notes-card {
+    padding: 0.85rem;
   }
-  .automation-row {
+  .notes-snippet {
+    font-size: 0.78rem;
+  }
+  .clinical-system-footer {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.35rem;
-    padding: 0.5rem 0.65rem;
-  }
-  .automation-info {
-    font-size: 0.8rem;
-  }
-  .status-badge {
-    align-self: flex-start;
-    font-size: 0.65rem;
+    gap: 0.45rem;
+    padding: 0.6rem 0.75rem;
   }
 }
 
