@@ -6,7 +6,7 @@ aplicarlo solo, lo anota aquí para que tú decidas si lo promueves.
 
 ## Propuestas pendientes
 
-*(Ninguna pendiente por el momento)*
+- [ ] **Iconos Vectoriales vs Emojis de Sistema:** En interfaces Cyber-Terminal / DedSec, evitar emojis Unicode estándar del sistema operativo (por su estilo de dibujo heterogéneo/infantil) y emplear exclusivamente iconos vectoriales SVG con `stroke="currentColor"` y efectos neon glow (Cyan/Azul) para mantener coherencia técnica y sobriedad.
 
 ## Reglas promovidas a AGENTS.md
 

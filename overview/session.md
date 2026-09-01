@@ -17,14 +17,14 @@
 7. **Sobre Mí / Quién Desarrolla tu Solución (`#operator`):** Perfil centrado en trato directo, personalización al flujo de la consulta y tranquilidad para el profesional.
 8. **Formulario y WhatsApp Reconfigurados:** Botón `[ Enviar Mensaje y Cotizar Proyecto ]`, placeholders específicos y mensaje predeterminado de WhatsApp adaptado en `js/config.js` y `js/form-handler.js`.
 9. **Validación Visual & Responsive Completa:** Verificación en escritorio y móvil (375px) con 0 errores de consola y cero desbordamiento horizontal.
+10. **Iconos Vectoriales Cyber-Terminal (Cero Emojis Genéricos):** Sustitución de emojis de sistema en la barra de métricas por SVGs personalizados con efecto neón Cyan/Azul, elevando la estética técnica y la sobriedad del sitio.
 
 ## En qué quedó el proyecto
 
-- Sitio web en vivo y operativo al 100% en: **[https://cristhianruiz.dev](https://cristhianruiz.dev)**
-- Repositorio sincronizado y desplegado en GitHub con commit `4950f9f`: **[https://github.com/CristhianRuiz24/CristhianRuiz.Dev](https://github.com/CristhianRuiz24/CristhianRuiz.Dev)**
+- Sitio web en vivo, 100% operativo y actualizado en: **[https://cristhianruiz.dev](https://cristhianruiz.dev)**
+- Repositorio sincronizado en GitHub con commit `f2ebf6c`: **[https://github.com/CristhianRuiz24/CristhianRuiz.Dev](https://github.com/CristhianRuiz24/CristhianRuiz.Dev)**
 
 ## Próximo paso (Futuras Iteraciones)
 
 - Dar de alta el `sitemap.xml` en Google Search Console para indexación acelerada.
 - Añadir nuevos casos de estudio conforme se desarrollen nuevos sistemas clínicos.
-
