@@ -6,7 +6,7 @@
 export const CONFIG = {
   // WhatsApp Configuration (Número oficial de Cristhian Ruiz)
   whatsappNumber: "528130938884",
-  whatsappBaseMessage: "Hola Cristhian, soy [Nombre] de [Clínica/Consultorio/Negocio] y me gustaría recibir un diagnóstico técnico para mi sistema.",
+  whatsappBaseMessage: "Hola Cristhian, soy [Nombre] de [Consultorio / Clínica] y me gustaría consultar sobre una página web o sistema para mi consulta.",
 
   // Form API Configuration (Cloudflare Pages Function / Resend API)
   formEndpointUrl: "/api/contact",

@@ -65,7 +65,7 @@ class ContactFormHandler {
     // Validate Name
     const nameVal = this.inputName ? this.inputName.value.trim() : '';
     if (!nameVal || nameVal.length < 2) {
-      this.setFieldError(this.groupName, this.errorName, "> [ERROR_01]: EL PARÁMETRO 'NOMBRE' ES REQUERIDO.");
+      this.setFieldError(this.groupName, this.errorName, "> [ERROR_01]: POR FAVOR INGRESA TU NOMBRE.");
       isValid = false;
     } else {
       this.clearFieldError(this.groupName, this.errorName);
@@ -83,7 +83,7 @@ class ContactFormHandler {
     // Validate Clinic
     const clinicVal = this.inputClinic ? this.inputClinic.value.trim() : '';
     if (!clinicVal || clinicVal.length < 2) {
-      this.setFieldError(this.groupClinic, this.errorClinic, "> [ERROR_03]: EL PARÁMETRO 'CLÍNICA O CONSULTORIO' ES REQUERIDO.");
+      this.setFieldError(this.groupClinic, this.errorClinic, "> [ERROR_03]: INGRESA EL NOMBRE DE TU CONSULTORIO O CLÍNICA.");
       isValid = false;
     } else {
       this.clearFieldError(this.groupClinic, this.errorClinic);
@@ -92,7 +92,7 @@ class ContactFormHandler {
     // Validate Need
     const needVal = this.inputNeed ? this.inputNeed.value.trim() : '';
     if (!needVal || needVal.length < 5) {
-      this.setFieldError(this.groupNeed, this.errorNeed, "> [ERROR_04]: ESPECIFICA EL REQUERIMIENTO O MEJORA DESEADA.");
+      this.setFieldError(this.groupNeed, this.errorNeed, "> [ERROR_04]: CUÉNTANOS QUÉ DESEAS MEJORAR O IMPLEMENTAR.");
       isValid = false;
     } else {
       this.clearFieldError(this.groupNeed, this.errorNeed);
@@ -102,9 +102,9 @@ class ContactFormHandler {
   }
 
   triggerButtonError() {
-    const originalText = "[EJECUTAR TRANSMISIÓN]";
+    const originalText = "[ Enviar Mensaje y Cotizar Proyecto ]";
     this.btnSubmit.classList.add('btn-error-state');
-    this.btnSubmitText.textContent = "[FALLO DE SINTAXIS: REVISA LOS DATOS]";
+    this.btnSubmitText.textContent = "[POR FAVOR REVISA LOS DATOS INGRESADOS]";
 
     setTimeout(() => {
       this.btnSubmit.classList.remove('btn-error-state');
@@ -124,7 +124,7 @@ class ContactFormHandler {
 
     this.isSubmitting = true;
     this.btnSubmit.disabled = true;
-    this.btnSubmitText.textContent = "[TRANSMITIENDO DATOS AL SERVIDOR...]";
+    this.btnSubmitText.textContent = "[Enviando mensaje y cotización...]";
 
     const payload = {
       name: this.inputName.value.trim(),
@@ -176,7 +176,7 @@ class ContactFormHandler {
       this.setFieldError(
         this.groupNeed,
         this.errorNeed,
-        "> [ERROR_NET]: ERROR DE TRANSMISIÓN. POR FAVOR UTILIZA LA CONEXIÓN DIRECTA POR WHATSAPP."
+        "> [ERROR_NET]: NO SE PUDO ENVIAR EL MENSAJE. POR FAVOR ESCRÍBEME DIRECTO A WHATSAPP."
       );
       this.triggerButtonError();
       this.btnSubmit.disabled = false;

@@ -1,20 +1,22 @@
 # Sesión activa — CrisDev (`cristhianruiz.dev`)
 
-**Última actualización:** 2026-08-31  
-**Fase SDD actual:** Despliegue en Producción & Validación / Finalizada
+**Última actualización:** 2026-09-01  
+**Fase SDD actual:** Optimización de Copywriting & Refactor Comercial / Finalizada
 
 ## Lo que se logró en esta sesión
 
-1. **Migración Visual a Azul Eléctrico / Cobalto / Cyan:** Paleta de color actualizada en todos los componentes CSS y markup HTML.
-2. **Copy Comercial Orientado a Salud (Opción A):** Titular *"Ingeniería de software para profesionalizar tu consulta y automatizar tu agenda"*, eliminando jerga de agencia de marketing y enfocándose en pacientes, expedientes cifrados y control de agenda.
-3. **Credencial de Operador Actualizada:** Integrada `foto-cris-2-profile.jpg` con scanline interactivo.
-4. **Arquitectura Serverless Edge en Cloudflare Pages:** Creado `functions/api/contact.js` con integración a **Resend API**, plantilla HTML Cyber-Terminal, sanitización anti-XSS y `reply_to` automático.
-5. **Dominio Propio & Verificación de Correo:** Configurado `https://cristhianruiz.dev` con remitente verificado `notificaciones@cristhianruiz.dev` y entrega en `cristhian.ruiz.c@hotmail.com`.
-6. **SEO Técnico 10/10:** Canonical URL, Schema.org JSON-LD (`ProfessionalService`), Open Graph / Twitter Cards con imagen de previsualización, `robots.txt` y `sitemap.xml`.
-7. **Seguridad Perimetral Grado Bancario:** Archivo `_headers` con HSTS a 1 año, protección anti-clickjacking `X-Frame-Options: DENY`, `nosniff`, `Referrer-Policy` y aislamiento COOP/CORP.
-8. **Git & CI/CD Continuo:** Repositorio en GitHub (`CristhianRuiz24/CristhianRuiz.Dev`), `.gitignore` profesional y sincronización automática en Cloudflare Pages.
-9. **Auditoría Exhaustiva:** Revisión de los 22 archivos del proyecto con 0 errores de consola y cumplimiento al 100% de los requisitos RF-1 al RF-15 de la especificación SDD.
-10. **Optimización Responsive Mobile (Cero Desbordamiento):** Corrección de desbordamiento horizontal en viewports móviles (360px–430px) mediante `minmax(0, 1fr)`, wrap seguro de badges y truncado de rutas de terminal. Desplegado en producción con commit `320c691`.
+1. **Actualización de Spec SDD (`specs/001-landing-page-crisdev/spec.md`):** Actualizados los requisitos funcionales RF-1 al RF-15 e historias de usuario para priorizar a psicólogos, terapeutas y especialistas en salud mental, manteniendo apertura a profesionales por agenda.
+2. **Transformación de Jerga Técnica a Beneficio de Negocio:** Reemplazo de tecnicismos crípticos (3FN, Cloudflare Edge, Pipelines) por beneficios directos (más pacientes, menos tiempo perdido en WhatsApp, expedientes 100% privados y cero comisiones mensuales).
+3. **Hero Section de Alto Impacto Comercial:**
+   - Tag: `● SOLUCIONES WEB PARA PSICÓLOGOS Y PROFESIONALES DE LA SALUD`
+   - Titular: *"Una presencia digital que atrae más pacientes y un sistema que organiza tus consultas en automático."*
+   - Subtítulo empático y 3 badges de autoridad: `⚡ Web Rápida y Disponible 24/7`, `💰 Cero Comisiones por Consulta`, `🔒 Expedientes 100% Privados y Seguros`.
+4. **Caso de Estudio PsicoLau (`#web-ui`):** Enfoque claro en Problema → Solución → Resultados (`+180% Más Citas Solicitadas`, `Cero Comisiones a Terceros` y `Suite Clínica Privada`).
+5. **Sistemas a Medida & Gestión de Consultas (`#infrastructure`):** Plataformas para gestionar la consulta sin caos (expedientes digitales, notas de sesión, recordatorios automáticos y control de ingresos).
+6. **Confidencialidad y Secreto Profesional (`#security`):** 3 pilares de confianza (secreto profesional y privacidad, dueño único de la plataforma, soporte directo 1 a 1).
+7. **Sobre Mí / Quién Desarrolla tu Solución (`#operator`):** Perfil centrado en trato directo, personalización al flujo de la consulta y tranquilidad para el profesional.
+8. **Formulario y WhatsApp Reconfigurados:** Botón `[ Enviar Mensaje y Cotizar Proyecto ]`, placeholders específicos y mensaje predeterminado de WhatsApp adaptado en `js/config.js` y `js/form-handler.js`.
+9. **Validación Visual & Responsive Completa:** Verificación en escritorio y móvil (375px) con 0 errores de consola y cero desbordamiento horizontal.
 
 ## En qué quedó el proyecto
 
@@ -23,5 +25,6 @@
 
 ## Próximo paso (Futuras Iteraciones)
 
+- Realizar commit y push a GitHub para desplegar automáticamente los nuevos textos en Cloudflare Pages (`https://cristhianruiz.dev`).
 - Dar de alta el `sitemap.xml` en Google Search Console para indexación acelerada.
-- Añadir nuevos casos de estudio conforme se desarrollen nuevos sistemas clínicos.
+

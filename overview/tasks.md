@@ -13,9 +13,11 @@ Referencia: `specs/001-landing-page-crisdev/tasks.md`
 | **T7** | Módulo de configuración JS y enlaces WhatsApp | ✅ hecho | `js/config.js`, `js/terminal-effects.js` |
 | **T8** | Formulario Cyber-Terminal con validación EARS, shake y respuesta API | ✅ hecho | `css/components/form.css`, `js/form-handler.js` |
 | **T9** | Footer, responsive polish y validación de aceptación (RF-1 al RF-15) | ✅ hecho | `css/components/footer.css` |
+| **T10** | Copywriting comercial orientado a psicólogos y salud (Spec 001 actualizada) | ✅ hecho | `spec.md`, `index.html`, `config.js`, `form-handler.js` |
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 
 ## Bloqueos / pendientes fuera de esta feature
 
 - Ninguno por el momento.
+

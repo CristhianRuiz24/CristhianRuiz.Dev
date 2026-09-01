@@ -6,4 +6,8 @@ aplicarlo solo, lo anota aquí para que tú decidas si lo promueves.
 
 ## Propuestas pendientes
 
-- [ ] **CSS Grid & Flexbox Mobile Safeguard (`minmax(0, 1fr)`):** En layouts responsivos, declarar siempre `minmax(0, 1fr)` en lugar de `1fr` plano y asignar `min-width: 0` / `word-break: break-word` a elementos hijos para evitar que strings largos de monospace o bloques de código fuercen el ancho `min-content` y desborden la pantalla en smartphones — *Surgió al corregir desbordamiento en Terminal 01 en pantallas móviles, 2026-08-31*.
+*(Ninguna pendiente por el momento)*
+
+## Reglas promovidas a AGENTS.md
+
+- [x] **CSS Grid & Flexbox Mobile Safeguard (`minmax(0, 1fr)`):** En layouts responsivos, declarar siempre `minmax(0, 1fr)` en lugar de `1fr` plano y asignar `min-width: 0` / `word-break: break-word` a elementos hijos para evitar que strings largos de monospace o bloques de código fuercen el ancho `min-content` y desborden la pantalla en smartphones — *Promovida a `AGENTS.md` el 2026-09-01*.

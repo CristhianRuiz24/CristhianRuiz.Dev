@@ -1,66 +1,89 @@
 # Spec 001 — Landing Page & Portafolio Cyber-Terminal CrisDev
 
 ## Contexto y objetivo
-Plataforma web de captación comercial y portafolio profesional para **CrisDev (Cristhian Ruiz - Software & Web Engineering)**. Resuelve la necesidad de convertir profesionales de la salud y servicios independientes (psicólogos, dentistas, nutriólogos) en clientes, combinando una presencia digital de alta conversión con estética *DedSec / Cyber-Terminal* y demostrando solvencia en arquitectura operativa (bases de datos clínicas, seguridad y automatización). Despliegue 100% estático, modular y ultra-rápido para Cloudflare Pages.
+Plataforma web de captación comercial y portafolio profesional para **CrisDev (Cristhian Ruiz - Software & Web Engineering)**. Resuelve la necesidad de convertir profesionales de la salud —con foco principal en **psicólogos, terapeutas y especialistas en salud mental**, y alcance para médicos, dentistas, nutriólogos y profesionales con consulta por agenda— en clientes. Combina una presencia digital de alta conversión con estética *DedSec / Cyber-Terminal*, traduciendo la arquitectura operativa (expedientes confidenciales, notas de sesión, automatización y seguridad) en beneficios directos de negocio (más pacientes, menos tiempo perdido en WhatsApp, control total y cero comisiones). Despliegue 100% estático, modular y ultra-rápido para Cloudflare Pages.
 
 ---
 
 ## Usuarios / actores
-- **Visitante / Prospecto Clínico:** Psicólogo, dentista, médico, nutriólogo o administrador de clínica que busca digitalizar su consulta, mejorar su captación o proteger historiales médicos.
-- **Operador / Ingeniero (Cristhian Ruiz):** Dueño del sitio que recibe las solicitudes de contacto y presenta sus soluciones técnicas.
+- **Visitante / Prospecto Primario:** Psicólogo, neuropsicólogo, terapeuta o especialista de la salud que busca profesionalizar su presencia online, proteger notas de sesión y automatizar el agendamiento de pacientes.
+- **Visitante / Prospecto Secundario:** Dentista, médico, nutriólogo o administrador de clínica con modelo de consulta basada en citas y expedientes privados.
+- **Operador / Ingeniero (Cristhian Ruiz):** Dueño del sitio que recibe las solicitudes de contacto y presenta sus soluciones técnicas y comerciales.
 
 ---
 
 ## Historias de usuario
-- **H1 (Comprensión de Valor):** Como profesional de la salud, quiero entender en menos de 5 segundos cómo la ingeniería de software puede escalar y ordenar mi consultorio, para decidir si explorar los servicios.
-- **H2 (Evidencia de Frontend):** Como profesional de la salud, quiero ver un caso de éxito real (ej. *psicolau.com*) con su rendimiento y enfoque mobile-first, para comprobar la calidad del diseño y la conversión web.
-- **H3 (Evidencia de Datos e Infraestructura):** Como director de consultorio, quiero ver cómo se estructuran y protegen los expedientes médicos digitales, para confiar en la seguridad y orden de mi información clínica.
-- **H4 (Validación de Confianza y Seguridad):** Como profesional que maneja datos sensibles de pacientes, quiero conocer los protocolos de seguridad y ver la credencial profesional del ingeniero, para tener certeza y tranquilidad antes de contactarlo.
-- **H5 (Conversión Inmediata):** Como prospecto interesado, quiero contactar directamente por WhatsApp o enviar una solicitud estructurada por formulario, para recibir un diagnóstico/presupuesto sin fricciones.
+- **H1 (Comprensión de Valor y Empatía):** Como psicólogo o profesional de la salud, quiero entender en menos de 5 segundos cómo una presencia digital profesional y un sistema a medida pueden llenar mi agenda y organizar mis consultas, para decidir si consultar los servicios.
+- **H2 (Evidencia de Frontend y Captación):** Como especialista, quiero ver un caso de éxito real del sector salud mental (ej. *psicolau.com*) con su enfoque cálido y conversión directa a WhatsApp, para comprobar la efectividad del diseño.
+- **H3 (Gestión de Consultas y Expedientes):** Como terapeuta o médico con consulta privada, quiero ver cómo se organizan las notas de sesión y los expedientes sin requerir hojas de Excel desordenadas, para tener certeza de que ahorraré tiempo administrativo.
+- **H4 (Secreto Profesional y Confianza):** Como profesional que maneja datos clínicos y terapéuticos sensibles, quiero conocer los estándares de confidencialidad y ver la credencial del ingeniero responsable, para tener total tranquilidad y confianza de trato 1 a 1.
+- **H5 (Conversión Sin Fricción):** Como prospecto interesado, quiero contactar directamente por WhatsApp o enviar una solicitud estructurada por formulario, para recibir una propuesta o diagnóstico sin intermediarios.
 
 ---
 
 ## Requisitos funcionales (Criterios de aceptación en EARS)
 
 ### 1. Navegación y Encabezado
-- **RF-1 (Ubicuo):** EL SISTEMA mantendrá visible en el encabezado la identidad de marca `CrisDev // Cristhian Ruiz`, el indicador parpadeante `[SYSTEM: ONLINE]` y un botón CTA de acceso directo a WhatsApp.
-- **RF-2 (Evento):** CUANDO el usuario hace clic en el botón de WhatsApp del Navbar, EL SISTEMA abrirá en una nueva pestaña la conversación de WhatsApp con un mensaje predeterminado de contacto profesional.
+- **RF-1 (Ubicuo):** EL SISTEMA mantendrá visible en el encabezado la identidad de marca `CrisDev // Cristhian Ruiz`, el indicador de disponibilidad `● DISPONIBLE PARA PROYECTOS` (con pulso visual), los enlaces de navegación (`Presencia Digital`, `Sistemas a Medida`, `Privacidad`, `Sobre Mí`) y un botón CTA `Consultar por WhatsApp`.
+- **RF-2 (Evento):** CUANDO el usuario hace clic en el botón de WhatsApp del Navbar, EL SISTEMA abrirá en una nueva pestaña la conversación de WhatsApp con un mensaje predeterminado de consulta profesional.
 
 ### 2. Hero Section (Atracción y Propuesta de Valor)
-- **RF-3 (Ubicuo):** EL SISTEMA presentará el titular principal de alto impacto: *"Ingeniería de software para profesionalizar tu consulta y automatizar tu agenda"*, acompañado de una llamada a la acción principal para iniciar diagnóstico técnico y métricas de autoridad en vivo.
+- **RF-3 (Ubicuo):** EL SISTEMA presentará:
+  1. Tag superior: `● SOLUCIONES WEB PARA PSICÓLOGOS Y PROFESIONALES DE LA SALUD`.
+  2. Titular principal de alto impacto: *"Una presencia digital que atrae más pacientes y un sistema que organiza tus consultas en automático."* con acentos de color en Cyan y Azul eléctrico.
+  3. Subtítulo enfocado en dolor/beneficio: *"Desarrollo sitios web de alta conversión y plataformas a medida para psicólogos, terapeutas y especialistas de la salud. Menos tiempo perdido en WhatsApp, expedientes confidenciales y cero comisiones mensuales."*
+  4. Tres badges de métricas de autoridad: `⚡ Web Rápida y Disponible 24/7`, `💰 Cero Comisiones por Consulta`, `🔒 Expedientes 100% Privados y Seguros`.
+  5. Botones de acción: `[ Solicitar Diagnóstico Gratis → ]` (hacia `#contact`) y `[ Ver Casos y Soluciones ]` (hacia `#web-ui`).
 - **RF-4 (Evento):** CUANDO el usuario presione el CTA principal del Hero, EL SISTEMA realizará un desplazamiento suave (*smooth scroll*) hacia la sección de contacto / terminales.
 
 ### 3. Terminal 01: Presencia Digital & Full-Stack (Caso de Estudio Psicolau.com)
-- **RF-5 (Ubicuo):** EL SISTEMA exhibirá el caso de estudio integral de *PsicoLau.com* mediante:
-  1. Un mockup fiel a la identidad visual real de PsicoLau (logo mariposa-psi, paleta turquesa/rosa, copy clínico y botón "Agenda tu consulta").
-  2. Un botón / enlace directo `[EXPLORAR SITIO EN VIVO ↗]` apuntando a `https://psicolau.com`.
-  3. Badge de arquitectura completa `[FULL-STACK: Cloudflare Pages + Node.js/Express + PostgreSQL Supabase + Prisma + AES-256]`.
-  4. Desglose detallado del **Frontend de Alta Conversión** y de la **Suite Clínica / Panel Administrativo a Medida** (Agenda Semanal, Expedientes Cifrados AES-256-GCM, Control Financiero/KPIs y Automatización con WhatsApp).
+- **RF-5 (Ubicuo):** EL SISTEMA exhibirá el caso de estudio integral de *PsicoLau.com* enfocado en Problema → Solución → Resultados mediante:
+  1. Subtítulo: *"Caso de estudio: Cómo ayudamos a la Neuropsicóloga Ana Laura Gómez a multiplicar sus consultas y gestionar sus sesiones sin intermediarios."*
+  2. Telemetría orientada al cliente: `SITIO_EN_VIVO: https://psicolau.com`, `ESPECIALIDAD: Neuropsicología Clínica`, `SEGURIDAD: Expedientes & Notas Cifradas`.
+  3. Botón de acceso directo en vivo `[ Visitar psicolau.com en vivo ↗ ]`.
+  4. Desglose de valor:
+     - **El Reto:** *"La especialista invertía horas respondiendo dudas repetitivas por mensaje y gestionaba las notas de sus pacientes de forma dispersa."*
+     - **La Solución:** *"Diseñamos una plataforma cálida y profesional que genera confianza inmediata, guía al paciente a agendar en 2 clics a WhatsApp y le brinda un panel privado para sus notas y agenda."*
+     - **Resultados de Negocio:** `+180% Más Citas Solicitadas`, `Cero Comisiones a Terceros` y `Suite Clínica Privada (/panel)`.
+  5. Botón CTA: `[ Cotizar una Plataforma Similar para Mi Consulta → ]`.
 - **RF-6 (Evento):** CUANDO el usuario interactúe con la tarjeta del caso de estudio, EL SISTEMA mostrará efectos sutiles de hover con micro-animaciones tipo escaneo/borde neón sin alterar la legibilidad.
 
-### 4. Terminal 02: Arquitectura Operativa & Bases de Datos
-- **RF-7 (Ubicuo):** EL SISTEMA desplegará una demostración visual interactiva o estilizada de un modelo de datos (diagrama ER / JSON de registros) con las etiquetas `[ENCRYPTED_DATA]` y `[SECURE_CONNECTION]`.
-- **RF-8 (Ubicuo):** EL SISTEMA explicará el valor de negocio de la arquitectura: modelado relacional 3FN (PostgreSQL/MySQL) para historiales, esquemas NoSQL (MongoDB Atlas) para documentación flexible y automatización de agenda y recordatorios con Node.js.
+### 4. Terminal 02: Sistemas a Medida & Gestión de Consultas (Antes "Arquitectura Operativa")
+- **RF-7 (Ubicuo):** EL SISTEMA presentará la sección de administración clínica con:
+  1. Tag: `[SISTEMAS_A_MEDIDA // GESTIÓN_CLÍNICA]`.
+  2. Titular: *"Plataformas a Medida para Gestionar tu Consulta Sin Caos"*.
+  3. Subtítulo: *"Diseñado especialmente para el flujo de psicólogos y profesionales de la salud: olvídate de las libretas, notas dispersas y el estrés de agenda."*
+  4. Simulación visual interactiva de modelo JSON de `expediente_paciente` comprensible (`id_registro`, `tipo_consulta: "Terapia / Consulta Especializada"`, `notas_sesion`, `recordatorios_whatsapp: true`, `respaldos_diarios: true`).
+- **RF-8 (Ubicuo):** EL SISTEMA explicará los 3 pilares de gestión:
+  1. `01` **Expedientes y Notas de Sesión Digitales:** Historial de cada paciente, notas de evolución y archivos en un solo lugar seguro, accesible desde celular o computadora.
+  2. `02` **Recordatorios Automáticos de Sesiones:** Reduce ausencias y cancelaciones de última hora notificando a tus pacientes.
+  3. `03` **Control de Consultas e Ingresos:** Visualiza tus pacientes activos, sesiones atendidas e ingresos del mes con total claridad.
 
-### 5. Bloque de Protocolos de Seguridad & Confianza (Trust Section)
-- **RF-9 (Ubicuo):** EL SISTEMA presentará 3 pilares de seguridad mediante tarjetas con iconografía de protección: 1) Privacidad de datos sensibles, 2) Conexiones encriptadas (HTTPS/SSL), y 3) Respaldos automatizados y protección contra vulnerabilidades.
+### 5. Bloque de Confidencialidad & Secreto Profesional (Trust Section)
+- **RF-9 (Ubicuo):** EL SISTEMA presentará 3 pilares de confianza y privacidad:
+  1. **Secreto Profesional y Privacidad Rigurosa:** Historiales y notas de terapia blindados con los más altos estándares de confidencialidad (`[CONFIDENCIALIDAD: 100%]`).
+  2. **Tú Eres el Único Dueño de tu Información:** Sin depender de plataformas SaaS que cobran comisiones por cita o retienen los datos de tus pacientes (`[PROPIEDAD: 100% TUYA]`).
+  3. **Soporte Directo 1 a 1:** Comunicación directa y personalizada con el ingeniero que programó tu sistema (`[SOPORTE: DIRECTO 1 A 1]`).
 
 ### 6. Terminal de Operador (Perfil Profesional & Metodología)
-- **RF-10 (Ubicuo):** EL SISTEMA mostrará una tarjeta estilizada tipo "ID de Acceso / Credencial de Sistema" con la fotografía profesional tratada de Cristhian Ruiz, título de Ingeniero de Software y descripción concisa de metodología (precisión técnica, trato humano y enfoque en negocio).
+- **RF-10 (Ubicuo):** EL SISTEMA mostrará la tarjeta de perfil profesional con fotografía tratada de Cristhian Ruiz, titular *"Quién Desarrolla tu Solución"*, descripción enfocada en resolver problemas reales de consulta y 3 fortalezas clave:
+  1. **Trato directo 1 a 1:** Sin ejecutivos de ventas ni intermediarios. Hablas directo con quien programa tu sistema.
+  2. **Adaptado al flujo real de tu consulta:** Diseñado a la medida de cómo atiendes a tus pacientes y organizas tus sesiones.
+  3. **Enfoque en tranquilidad y rentabilidad:** Más tiempo para tus pacientes y cero fricción tecnológica.
 
 ### 7. Sección de Conversión & Formulario Cyber-Terminal
-- **RF-11 (Ubicuo):** EL SISTEMA ofrecerá dos canales de conversión independientes: un botón primario `[INICIAR CONEXIÓN DIRECTA EN WHATSAPP]` y un formulario estructurado (Nombre, Clínica/Consultorio, Requerimiento).
-- **RF-12 (Evento):** CUANDO el usuario complete los campos requeridos y presione `[EJECUTAR TRANSMISIÓN]`, EL SISTEMA enviará los datos mediante una API asíncrona (Formspree/EmailJS).
+- **RF-11 (Ubicuo):** EL SISTEMA ofrecerá dos canales de conversión independientes: un botón primario de WhatsApp `[ CONSULTAR POR WHATSAPP ]` y un formulario estructurado con placeholders claros (`Ej. Lic. Ana Morales (Psicóloga / Terapeuta / Especialista)`).
+- **RF-12 (Evento):** CUANDO el usuario presione el botón de envío del formulario (`[ Enviar Mensaje y Cotizar Proyecto ]`), EL SISTEMA validará los campos y enviará los datos mediante la API asíncrona.
 - **RF-13 (Excepción):** SI el usuario intenta enviar el formulario con campos vacíos o inválidos, ENTONCES EL SISTEMA:
   1. Cambiará el borde del campo afectado a Magenta/Rojo Glitch (`#FF0055` / `#FF3333`).
-  2. Inyectará debajo del campo un mensaje de error en monospace tipo `> [ERROR_01]: EL PARÁMETRO 'NOMBRE' ES REQUERIDO` o `> [ERROR_02]: EL PARÁMETRO 'CLÍNICA O CONSULTORIO' ES REQUERIDO`.
+  2. Inyectará debajo del campo un mensaje de error tipo `> [ERROR_01]: EL PARÁMETRO 'NOMBRE' ES REQUERIDO`.
   3. Ejecutará una microinterrupción visual tipo sacudida (*shake*) de 0.3s en el campo.
-  4. Modificará el texto del botón a `[FALLO DE SINTAXIS: REVISA LOS DATOS]` en color rojo durante 2 segundos.
-- **RF-14 (Evento):** CUANDO la API de correo retorne un código de éxito (HTTP 200), EL SISTEMA ocultará el formulario y mostrará en el mismo contenedor el mensaje de éxito en Azul Eléctrico (`#3B82F6` / `#38BDF8`):
-  `> [SYSTEM]: TRANSMISIÓN EXITOSA.`
-  `> LOS DATOS HAN SIDO ENCRIPTADOS Y ENVIADOS AL SERVIDOR DE CRIS.`
-  `> TIEMPO ESTIMADO DE RESPUESTA: < 24 HORAS.`
-  `> [END_OF_PROCESS]`
+  4. Modificará el texto del botón a `[POR FAVOR REVISA LOS DATOS INGRESADOS]` en color rojo durante 2 segundos.
+- **RF-14 (Evento):** CUANDO la API de correo retorne un código de éxito (HTTP 200), EL SISTEMA mostrará en el contenedor el mensaje de éxito:
+  `> [ESTADO]: MENSAJE ENVIADO CON ÉXITO.`
+  `> HE RECIBIDO TU INFORMACIÓN DE MANERA SEGURA.`
+  `> ME PONDRÉ EN CONTACTO CONTIGO EN MENOS DE 24 HORAS.`
+  `> [FIN_DEL_PROCESO]`
 
 ### 8. Footer
 - **RF-15 (Ubicuo):** EL SISTEMA incluirá copyright, enlaces de validación profesional (LinkedIn, GitHub) y la firma técnica `[END_OF_TRANSMISSION]`.
