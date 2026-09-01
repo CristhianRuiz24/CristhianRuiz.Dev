@@ -166,7 +166,7 @@ Este proyecto sigue estrictamente el flujo **Spec-Driven Development (SDD)**:
 
 **Cristhian Ruiz — Software & Web Engineering**
 - 🌐 Sitio Web: [cristhianruiz.dev](https://cristhianruiz.dev)
-- 💼 LinkedIn: [linkedin.com/in/cristhian-ruiz](https://www.linkedin.com/in/cristhian-ruiz-2776ba31b)
+- 💼 LinkedIn: [linkedin.com/in/cris-campos-687487429](https://www.linkedin.com/in/cris-campos-687487429/)
 - 🐙 GitHub: [@CristhianRuiz24](https://github.com/CristhianRuiz24)
 - 💬 WhatsApp: [+52 81 3093 8884](https://wa.me/528130938884)
 
