@@ -1,0 +1,176 @@
+/* ==========================================================================
+   CrisDev // Component: Header & Navbar (Cyber-Terminal Style)
+   ========================================================================== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--bg-surface-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-muted);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Brand & Logo */
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brand-terminal {
+  color: var(--accent-cyan);
+  font-weight: 800;
+}
+
+.brand-name {
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.brand-separator {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.brand-role {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* System Status Indicator (Pulsing Online - Electric Blue) */
+.system-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--accent-blue-subtle);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+}
+
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-blue-bright);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--accent-blue);
+  animation: pulse-indicator 2s infinite ease-in-out;
+}
+
+.status-text {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent-blue-bright);
+  letter-spacing: 0.05em;
+}
+
+@keyframes pulse-indicator {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.85);
+  }
+}
+
+/* Navigation Links */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.nav-link {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  position: relative;
+  transition: color var(--transition-fast);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--accent-cyan);
+  transition: width var(--transition-fast);
+}
+
+.nav-link:hover {
+  color: var(--accent-cyan);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Header WhatsApp CTA Button */
+.btn-sm {
+  font-size: 0.8rem;
+  padding: 0.55rem 1.1rem;
+}
+
+.icon-whatsapp {
+  flex-shrink: 0;
+}
+
+/* Responsive Navbar Adjustments */
+@media (max-width: 992px) {
+  .header-nav {
+    display: none; /* Mantener la barra limpia en tablet/mobile */
+  }
+  .brand-role {
+    display: none;
+  }
+  .brand-separator {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .system-status {
+    display: none;
+  }
+  .site-header {
+    height: 64px;
+  }
+  .btn-sm {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.75rem;
+  }
+  .btn-sm span {
+    display: none;
+  }
+  .btn-sm svg {
+    margin: 0;
+  }
+}

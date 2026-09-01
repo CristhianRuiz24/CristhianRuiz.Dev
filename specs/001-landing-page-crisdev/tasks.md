@@ -1,0 +1,15 @@
+# Tareas — Feature 001: Landing Page & Portafolio Cyber-Terminal CrisDev
+
+Referencia: `specs/001-landing-page-crisdev/plan.md`
+
+| ID | Tarea | Archivos afectados | Estado | Hecho cuando |
+| :--- | :--- | :--- | :--- | :--- |
+| **T1** | Fundamentos de diseño y tokens CSS (Dark Mode DedSec) | `css/main.css` | ✅ hecho | Variables CSS (`--bg-primary: #0A0C10`, `--accent-cyan: #00F0FF`, etc.), fuentes Google Fonts (JetBrains Mono e Inter), reset y estilos base están implementados. |
+| **T2** | Estructura HTML5 semántica y metadatos SEO | `index.html` | ✅ hecho | Marcado semántico estructurado con las 8 secciones definidas con IDs únicos y metadatos Open Graph / SEO completos. |
+| **T3** | Header / Navbar y Hero Section comercial | `index.html`, `css/components/navbar.css`, `css/components/hero.css` | ✅ hecho | Navbar fijo con `CrisDev // Cristhian Ruiz`, indicador parpadeante `[SYSTEM: ONLINE]`, CTA a WhatsApp y Hero con propuesta de valor clara y botón de scroll suave. |
+| **T4** | Terminal 01: Presencia Digital (Caso psicolau.com) | `index.html`, `css/components/terminal.css` | ✅ hecho | Tarjeta de terminal renderizada con mockup responsivo de *psicolau.com*, badge `[STACK: HTML5 / CSS3 / Cloudflare Pages]`, métricas y micro-animación hover. |
+| **T5** | Terminal 02: Arquitectura Operativa (Bases de Datos Clínicas) | `index.html`, `css/components/terminal.css` | ✅ hecho | Renderizado de visualización interactiva de esquema clínico JSON con badges `[ENCRYPTED_DATA]` / `[SECURE_CONNECTION]` y copy de normalización. |
+| **T6** | Protocolos de Seguridad (Trust) y Terminal de Operador (Access ID) | `index.html`, `css/components/trust-operator.css` | ✅ hecho | 3 tarjetas de protocolos de seguridad con iconografía y tarjeta de credencial "Access ID" de Cristhian Ruiz con tratamiento estilizado y metodología. |
+| **T7** | Módulo de configuración JS y enlaces WhatsApp | `js/config.js`, `js/terminal-effects.js` | ✅ hecho | Enlaces de WhatsApp parametrizados dinámicamente desde `CONFIG` y microinteracciones de terminal y scroll suave operativas. |
+| **T8** | Formulario Cyber-Terminal con validación EARS, shake y respuesta API | `index.html`, `css/components/form.css`, `js/form-handler.js` | ✅ hecho | Validación in-line con logs `> [ERROR_01]`, animación CSS shake, bloqueo de botón en fallo y reemplazo con confirmación en verde `#00FF66` tras envío. |
+| **T9** | Footer, responsive polish y validación de aceptación (RF-1 al RF-15) | `index.html`, `css/components/footer.css` | ✅ hecho | Footer con `[END_OF_TRANSMISSION]`, verificación en móvil (375px) y escritorio (1200px+) y cero errores en consola. |

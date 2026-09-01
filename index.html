@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrisDev // Cristhian Ruiz — Software & Web Engineering para el Sector Salud</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Ingeniería de software, desarrollo web de alta conversión y arquitectura de datos para consultorios médicos, psicólogos, dentistas y nutriólogos. Digitalización segura de expedientes y automatización.">
+  <meta name="author" content="Cristhian Ruiz">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A0C10">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://crisdev.pages.dev/">
+  <meta property="og:title" content="CrisDev // Cristhian Ruiz — Ingeniería Web & Arquitectura Operativa">
+  <meta property="og:description" content="Soluciones de software y presencia digital para profesionales de la salud. Agendamiento automático, expedientes clínicos protegidos y alta velocidad.">
+  <meta property="og:image" content="/assets/og-preview.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="CrisDev // Cristhian Ruiz — Software & Web Engineering">
+  <meta property="twitter:description" content="Presencia digital de alta conversión y arquitectura operativa segura para el sector salud.">
+  <meta property="twitter:image" content="/assets/og-preview.png">
+
+  <!-- Favicon / System Icons -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300F0FF'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Modular CSS Architecture -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components/navbar.css">
+  <link rel="stylesheet" href="css/components/hero.css">
+  <link rel="stylesheet" href="css/components/terminal.css">
+  <link rel="stylesheet" href="css/components/trust-operator.css">
+  <link rel="stylesheet" href="css/components/form.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. HEADER / NAVBAR
+       ========================================================================= -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="CrisDev Inicio">
+        <span class="brand-terminal">&gt;_</span>
+        <span class="brand-name">CrisDev</span>
+        <span class="brand-separator">//</span>
+        <span class="brand-role">Cristhian Ruiz</span>
+      </a>
+
+      <div class="system-status" aria-label="Estado del sistema">
+        <span class="status-indicator"></span>
+        <span class="status-text">[SYSTEM: ONLINE]</span>
+      </div>
+
+      <nav class="header-nav">
+        <a href="#web-ui" class="nav-link">Presencia Digital</a>
+        <a href="#infrastructure" class="nav-link">Arquitectura</a>
+        <a href="#security" class="nav-link">Seguridad</a>
+        <a href="#operator" class="nav-link">Operador</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="#" class="btn btn-primary btn-sm cta-whatsapp" data-action="whatsapp-direct" target="_blank" rel="noopener noreferrer">
+          <svg class="icon-whatsapp" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          <span>Conectar WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. HERO SECTION
+       ========================================================================= -->
+  <section class="hero-section section-spacing" id="hero">
+    <div class="container hero-container">
+      <div class="hero-badge">
+        <span class="badge badge-cyan">[MODO_OPERATIVO: ARQUITECTURA DE SOFTWARE]</span>
+      </div>
+
+      <h1 class="hero-title">
+        Ingeniería de software para <span class="highlight-cyan">multiplicar clientes</span> y <span class="highlight-blue">automatizar tu agenda</span>.
+      </h1>
+
+      <p class="hero-description">
+        Diseño soluciones tecnológicas integrales para profesionales independientes, consultorios y negocios que operan por agenda: desde sitios web de alta velocidad que multiplican tus consultas y clientes, hasta bases de datos seguras y automatización de citas.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">
+          <span>Solicitar Diagnóstico Técnico</span>
+          <span class="btn-arrow">&rarr;</span>
+        </a>
+        <a href="#web-ui" class="btn btn-secondary">
+          <span>Explorar Casos y Arquitectura</span>
+        </a>
+      </div>
+
+      <!-- Live Terminal Metrics Banner -->
+      <div class="hero-metrics">
+        <div class="metric-item">
+          <span class="metric-value text-cyan">100%</span>
+          <span class="metric-label">Cifrado &amp; Privacidad</span>
+        </div>
+        <div class="metric-separator">//</div>
+        <div class="metric-item">
+          <span class="metric-value text-blue">&lt; 0.8s</span>
+          <span class="metric-label">Carga Web Perimetral</span>
+        </div>
+        <div class="metric-separator">//</div>
+        <div class="metric-item">
+          <span class="metric-value text-cyan">1:1</span>
+          <span class="metric-label">Trato con Quien Programa</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. TERMINAL 01: PRESENCIA DIGITAL & FULL-STACK (CASO DE ESTUDIO PSICOLAU.COM)
+       ========================================================================= -->
+  <section class="terminal-section section-spacing" id="web-ui">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">[TERMINAL_01 // FULL_STACK_HEALTH_ECOSYSTEM]</div>
+        <h2 class="section-title">Ecosistema Digital &amp; Suite Clínica a Medida</h2>
+        <p class="section-subtitle">
+          Caso de estudio: Cómo transformamos la práctica clínica de PsicoLau combinando presencia web de alta conversión y un panel administrativo privado.
+        </p>
+      </div>
+
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <div class="terminal-path">crisdev://case-studies/psicolau.com/live-node.preview</div>
+          <div class="terminal-badge badge badge-cyan">[FULL-STACK: CLOUDFLARE + NODE/EXPRESS + SUPABASE + PRISMA + AES-256]</div>
+        </div>
+
+        <div class="terminal-body case-study-grid">
+          <!-- Minimalist Project Preview Deck -->
+          <div class="case-preview">
+            <div class="minimal-preview-card">
+              <div class="preview-card-glow"></div>
+              
+              <!-- Centered Brand Visual -->
+              <div class="preview-brand-container">
+                <div class="preview-logo-wrapper">
+                  <img src="assets/images/psicolau-logo.png" alt="PsicoLau Logo Oficial" class="preview-brand-logo">
+                </div>
+                <div class="preview-brand-status">
+                  <span class="status-pulse-blue"></span>
+                  <span class="preview-status-text">DESPLIEGUE EN PRODUCCIÓN (100% ONLINE)</span>
+                </div>
+              </div>
+
+              <!-- Telemetry Data Box -->
+              <div class="preview-telemetry-box">
+                <div class="telemetry-row">
+                  <span class="telemetry-label">URL_DESTINO:</span>
+                  <span class="telemetry-val text-cyan">https://psicolau.com</span>
+                </div>
+                <div class="telemetry-row">
+                  <span class="telemetry-label">ARQUITECTURA:</span>
+                  <span class="telemetry-val">Cloudflare + Render API</span>
+                </div>
+                <div class="telemetry-row">
+                  <span class="telemetry-label">SEGURIDAD:</span>
+                  <span class="telemetry-val text-blue">TLS 1.3 / AES-256-GCM</span>
+                </div>
+              </div>
+
+              <!-- Direct Live Access Button -->
+              <a href="https://psicolau.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block preview-action-btn">
+                <span>Visitar psicolau.com en vivo</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Technical & Commercial Metrics -->
+          <div class="case-details">
+            <div class="case-client-tag">CASO DE ÉXITO FULL-STACK</div>
+            <h3 class="case-client-name">PsicoLau — Presencia Digital &amp; Suite Clínica</h3>
+            <p class="case-client-desc">
+              Plataforma desarrollada para la <strong>Neuropsicóloga Ana Laura Gómez Díaz</strong>. Combina una interfaz pública cálida y empática con una arquitectura backend completa y un panel administrativo privado para la gestión clínica diaria.
+            </p>
+
+            <div class="case-feature-list">
+              <!-- Pillar 1: Frontend -->
+              <div class="case-feature-item">
+                <div class="feature-icon text-cyan">&gt;</div>
+                <div class="feature-content">
+                  <strong>Frontend Perimetral (Cloudflare Pages):</strong>
+                  <span>HTML5/CSS3 puro, carga en milisegundos, 100% responsivo y optimizado con SEO estructurado para captar pacientes en México e internacionalmente.</span>
+                </div>
+              </div>
+
+              <!-- Pillar 2: Backend -->
+              <div class="case-feature-item">
+                <div class="feature-icon text-blue">&gt;</div>
+                <div class="feature-content">
+                  <strong>Backend REST &amp; Base de Datos (Node.js + Supabase):</strong>
+                  <span>API sobre Render (<code>api.psicolau.com</code>), PostgreSQL con Prisma ORM, autenticación JWT, seguridad Helmet, rate limiting y correos transaccionales con Resend.</span>
+                </div>
+              </div>
+
+              <!-- Pillar 3: Clinical Suite -->
+              <div class="case-feature-item">
+                <div class="feature-icon text-cyan">&gt;</div>
+                <div class="feature-content">
+                  <strong>Suite Clínica Privada (<code>/panel</code>):</strong>
+                  <ul class="panel-pill-list">
+                    <li><strong>Agenda Semanal:</strong> Gestión de citas individuales/grupales, sesiones recurrentes y bloqueos de horario.</li>
+                    <li><strong>Expedientes Cifrados:</strong> Notas y evolución clínica protegidas con encriptación nativa <code>AES-256-GCM</code>.</li>
+                    <li><strong>Control Financiero:</strong> KPIs en vivo, auditoría de pagos y reportes listos para WhatsApp/Excel.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="case-actions">
+              <a href="#contact" class="btn btn-secondary btn-block">
+                <span>Cotizar un Ecosistema Similar para Mi Consultorio</span>
+                <span class="btn-arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. TERMINAL 02: ARQUITECTURA OPERATIVA & BASES DE DATOS CLÍNICAS
+       ========================================================================= -->
+  <section class="terminal-section section-spacing" id="infrastructure">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">[TERMINAL_02 // ARQUITECTURA_OPERATIVA]</div>
+        <h2 class="section-title">Estructuración y Gestión de Información</h2>
+        <p class="section-subtitle">
+          Digitalización de historiales, expedientes y registros de clientes mediante bases de datos normalizadas, respaldos continuos y alta seguridad.
+        </p>
+      </div>
+
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <div class="terminal-path">crisdev://database/records/schema-3nf.json</div>
+          <div class="terminal-header-badges">
+            <span class="badge badge-blue">[ENCRYPTED_DATA]</span>
+            <span class="badge badge-cyan">[SECURE_CONNECTION]</span>
+          </div>
+        </div>
+
+        <div class="terminal-body database-grid">
+          <!-- Interactive Code / Data Model Simulation -->
+          <div class="code-terminal">
+            <div class="code-terminal-bar">
+              <span class="code-lang">JSON / POSTGRESQL_3NF</span>
+              <span class="code-status text-blue">● SCHEMA_VALIDATED</span>
+            </div>
+            <pre class="code-block"><code><span class="code-key">"client_record"</span>: {
+  <span class="code-key">"record_id"</span>: <span class="code-str">"REC-2026-089"</span>,
+  <span class="code-key">"security_status"</span>: <span class="code-str">"AES_256_GCM"</span>,
+  <span class="code-key">"client_data"</span>: {
+    <span class="code-key">"uuid"</span>: <span class="code-str">"c-8f2e-4b11-9a7c"</span>,
+    <span class="code-key">"service_type"</span>: <span class="code-str">"Consultoría / Práctica Clínica"</span>,
+    <span class="code-key">"privacy_level"</span>: <span class="code-str">"MAX_CONFIDENTIAL"</span>
+  },
+  <span class="code-key">"operational_infrastructure"</span>: {
+    <span class="code-key">"engine"</span>: <span class="code-str">"PostgreSQL 3NF / MongoDB Atlas"</span>,
+    <span class="code-key">"redundancy_level"</span>: <span class="code-str">"Multi-Region Replica"</span>,
+    <span class="code-key">"automated_backups"</span>: <span class="code-bool">true</span>,
+    <span class="code-key">"sync_latency_ms"</span>: <span class="code-num">12</span>
+  }
+}</code></pre>
+          </div>
+
+          <!-- Value Proposition & Engineering Insights -->
+          <div class="database-insights">
+            <div class="insight-card">
+              <div class="insight-header">
+                <span class="insight-number text-cyan">01</span>
+                <h4>Organización y Cero Redundancia (3FN)</h4>
+              </div>
+              <p>Modelado relacional estructurado en PostgreSQL o MySQL para eliminar duplicidad de registros, asegurando acceso instantáneo al historial completo de tus clientes o pacientes.</p>
+            </div>
+
+            <div class="insight-card">
+              <div class="insight-header">
+                <span class="insight-number text-blue">02</span>
+                <h4>Flexibilidad NoSQL para Historiales y Documentación</h4>
+              </div>
+              <p>Implementación en MongoDB Atlas para notas personalizadas, archivos adjuntos, seguimiento de sesiones y evolución detallada de cada caso.</p>
+            </div>
+
+            <div class="insight-card">
+              <div class="insight-header">
+                <span class="insight-number text-cyan">03</span>
+                <h4>Automatización y Gestión de Agenda</h4>
+              </div>
+              <p>Lógica de servidor en Node.js y Express diseñada para sincronizar tu disponibilidad de agenda con recordatorios y confirmaciones automáticas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. PROTOCOLOS DE SEGURIDAD & CONFIANZA (TRUST SECTION)
+       ========================================================================= -->
+  <section class="trust-section section-spacing" id="security">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">[PROTOCOLO_DE_SEGURIDAD // INFORMACIÓN_CONFIDENCIAL]</div>
+        <h2 class="section-title">Privacidad y Blindaje de Infraestructura</h2>
+        <p class="section-subtitle">
+          La información de tus clientes y pacientes es el activo más sensible de tu negocio o consultorio. Cada solución está construida bajo rigurosos estándares de protección.
+        </p>
+      </div>
+
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-icon-box text-cyan">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3 class="trust-card-title">Confidencialidad y Privacidad</h3>
+          <p class="trust-card-desc">
+            Aislamiento estricto de expedientes y datos personales. Toda información está protegida con algoritmos de encriptación modernos tanto en reposo como en tránsito.
+          </p>
+          <div class="trust-badge badge badge-cyan">[ENCRYPTION: AES-256]</div>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon-box text-blue">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+          </div>
+          <h3 class="trust-card-title">Conexiones Seguras HTTPS / SSL</h3>
+          <p class="trust-card-desc">
+            Toda comunicación entre tus clientes, tu consultorio y el servidor viaja a través de túneles con certificados SSL perimetrales gestionados por Cloudflare.
+          </p>
+          <div class="trust-badge badge badge-blue">[PROTOCOL: TLS 1.3]</div>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon-box text-cyan">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="17 8 12 3 7 8"/>
+              <line x1="12" y1="3" x2="12" y2="15"/>
+            </svg>
+          </div>
+          <h3 class="trust-card-title">Respaldos Automáticos y Recuperación</h3>
+          <p class="trust-card-desc">
+            Estrategias de copias de seguridad automatizadas y planes de restauración para garantizar que tu negocio o consultorio nunca sufra pérdida de información histórica.
+          </p>
+          <div class="trust-badge badge badge-cyan">[BACKUP: AUTOMATED]</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. TERMINAL DE OPERADOR (PERFIL PROFESIONAL & METODOLOGÍA)
+       ========================================================================= -->
+  <section class="operator-section section-spacing" id="operator">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">[OPERADOR_DE_SISTEMAS // CREDENCIAL]</div>
+        <h2 class="section-title">Quién Construye Tu Infraestructura</h2>
+        <p class="section-subtitle">
+          Tecnología precisa con un trato cercano y orientado a resolver problemas reales de tu negocio.
+        </p>
+      </div>
+
+      <div class="operator-card">
+        <div class="operator-badge-header">
+          <span class="operator-id">[ID_ACCESO: CR-ENG-2026]</span>
+          <span class="operator-clearance text-blue">● NIVEL DE ACCESO: OPERADOR PRINCIPAL</span>
+        </div>
+
+        <div class="operator-content">
+          <div class="operator-avatar-wrapper">
+            <div class="operator-avatar">
+              <!-- Real Profile Photo of Cristhian Ruiz -->
+              <img src="assets/images/foto-cris-2-profile.jpg" alt="Cristhian Ruiz — Ingeniero de Software &amp; Web" class="operator-photo">
+              <div class="avatar-scan-line"></div>
+            </div>
+            <div class="operator-status-tag">VERIFICADO</div>
+          </div>
+
+          <div class="operator-info">
+            <div class="operator-role-tag">INGENIERÍA DE SOFTWARE &amp; DESARROLLO WEB</div>
+            <h3 class="operator-name">Cristhian Ruiz</h3>
+            <p class="operator-bio">
+              Desarrollo plataformas web y sistemas operativos a medida para profesionales y negocios basados en agenda. Especializado en crear ecosistemas completos en producción: desde interfaces de alta velocidad y captación en Cloudflare, hasta backends seguros en Node.js, bases de datos relacionales y automatización de citas.
+            </p>
+
+            <div class="operator-principles">
+              <div class="principle-item">
+                <span class="principle-check text-blue">✓</span>
+                <span><strong>Trato 1 a 1 sin intermediarios:</strong> Hablas y trabajas directamente con el ingeniero que construye y mantiene tu sistema.</span>
+              </div>
+              <div class="principle-item">
+                <span class="principle-check text-blue">✓</span>
+                <span><strong>Rigor técnico y seguridad:</strong> Arquitectura moderna con bases de datos normalizadas, cifrado de datos y cero dependencias lentas.</span>
+              </div>
+              <div class="principle-item">
+                <span class="principle-check text-blue">✓</span>
+                <span><strong>Orientado a resultados reales:</strong> Sistemas probados en producción que ahorran horas de gestión y facilitan la captación de clientes.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. SECCIÓN DE CONTACTO & CONVERSIÓN CYBER-TERMINAL
+       ========================================================================= -->
+  <section class="contact-section section-spacing" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">[TERMINAL_DE_TRANSMISIÓN // CONTACTO]</div>
+        <h2 class="section-title">Inicia la Modernización de Tu Consultorio</h2>
+        <p class="section-subtitle">
+          Elige la vía de comunicación que prefieras: conexión directa por WhatsApp para respuesta rápida o formulario estructurado para requerimientos formales.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Direct WhatsApp Action Card -->
+        <div class="contact-card direct-action-card">
+          <div class="action-card-header">
+            <span class="badge badge-blue">[VÍA_RÁPIDA: SÍNCRONA]</span>
+            <h3>Conexión Directa por WhatsApp</h3>
+          </div>
+          <p class="action-card-desc">
+            Conversemos directamente sobre los objetivos de tu clínica, cotizaciones o diagnóstico preliminar sin intermediarios.
+          </p>
+
+          <div class="whatsapp-benefits">
+            <div class="benefit-item">
+              <span class="benefit-icon text-blue">●</span>
+              <span>Respuesta inmediata en horario comercial</span>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon text-blue">●</span>
+              <span>Asesoría directa con Cristhian Ruiz</span>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon text-blue">●</span>
+              <span>Sin formularios extensos</span>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-primary btn-block cta-whatsapp" data-action="whatsapp-direct" target="_blank" rel="noopener noreferrer">
+            <svg class="icon-whatsapp" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span>[INICIAR CONEXIÓN DIRECTA EN WHATSAPP]</span>
+          </a>
+        </div>
+
+        <!-- Cyber Form Card -->
+        <div class="contact-card form-terminal-card" id="form-container">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="terminal-path">crisdev://transmission/new-ticket.sh</div>
+            <div class="badge badge-cyan">[VÍA_FORMAL: ASÍNCRONA]</div>
+          </div>
+
+          <form id="contact-form" class="cyber-form" novalidate>
+            <!-- Field: Name -->
+            <div class="form-group" id="group-name">
+              <label for="input-name" class="form-label">
+                <span class="label-prefix">&gt;</span> Nombre y Especialidad:
+              </label>
+              <input type="text" id="input-name" name="name" class="form-input" placeholder="Ej. Dra. Laura Morales (Psicóloga / Dentista)" autocomplete="name">
+              <div class="form-error-log" id="error-name" aria-live="polite"></div>
+            </div>
+
+            <!-- Field: Clinic -->
+            <div class="form-group" id="group-clinic">
+              <label for="input-clinic" class="form-label">
+                <span class="label-prefix">&gt;</span> Nombre de tu Clínica o Consultorio:
+              </label>
+              <input type="text" id="input-clinic" name="clinic" class="form-input" placeholder="Ej. Consultorio Dental Sonrisas">
+              <div class="form-error-log" id="error-clinic" aria-live="polite"></div>
+            </div>
+
+            <!-- Field: Need -->
+            <div class="form-group" id="group-need">
+              <label for="input-need" class="form-label">
+                <span class="label-prefix">&gt;</span> ¿Qué necesitas mejorar o implementar?:
+              </label>
+              <textarea id="input-need" name="need" class="form-textarea" rows="3" placeholder="Ej. Necesito digitalizar mis expedientes clínicos y crear una web para captar más pacientes."></textarea>
+              <div class="form-error-log" id="error-need" aria-live="polite"></div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="btn-submit" class="btn btn-primary btn-block">
+              <span id="btn-submit-text">[EJECUTAR TRANSMISIÓN]</span>
+            </button>
+          </form>
+
+          <!-- Success Message Container (Hidden by default, injected via JS) -->
+          <div id="form-success" class="form-success-container" style="display: none;">
+            <div class="success-header">
+              <span class="badge badge-blue">[STATUS_CODE: 200_OK]</span>
+            </div>
+            <div class="success-log">
+              <p class="text-blue">&gt; [SYSTEM]: TRANSMISIÓN EXITOSA.</p>
+              <p class="text-blue">&gt; LOS DATOS HAN SIDO ENCRIPTADOS Y ENVIADOS AL SERVIDOR DE CRIS.</p>
+              <p class="text-blue">&gt; TIEMPO ESTIMADO DE RESPUESTA: &lt; 24 HORAS.</p>
+              <p class="text-secondary">&gt; [END_OF_PROCESS]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer" id="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="brand-terminal">&gt;_</span>
+          <span class="brand-name">CrisDev</span>
+        </div>
+        <p class="footer-tagline">Ingeniería de Software &amp; Presencia Digital para el Sector Salud.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/CristhianRuiz24" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <span class="footer-separator">//</span>
+        <a href="https://www.linkedin.com/in/cris-campos-687487429/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        <span class="footer-separator">//</span>
+        <a href="#hero" class="footer-link">Inicio</a>
+      </div>
+
+      <div class="footer-meta">
+        <span class="footer-copyright">&copy; 2026 Cristhian Ruiz. Todos los derechos reservados.</span>
+        <span class="footer-transmission text-cyan">[END_OF_TRANSMISSION]</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Modules -->
+  <script type="module" src="js/config.js"></script>
+  <script type="module" src="js/terminal-effects.js"></script>
+  <script type="module" src="js/form-handler.js"></script>
+</body>
+</html>
