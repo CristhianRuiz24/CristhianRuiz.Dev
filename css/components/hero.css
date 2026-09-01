@@ -109,20 +109,35 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.35rem;
   min-width: 0;
 }
 
 .metric-value {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   font-family: var(--font-mono);
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   font-weight: 700;
   letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.metric-icon {
+  flex-shrink: 0;
+  stroke: currentColor;
+  filter: drop-shadow(0 0 6px currentColor);
 }
 
 .text-cyan {
   color: var(--accent-cyan);
   text-shadow: 0 0 10px var(--accent-cyan-glow);
+}
+
+.text-blue {
+  color: var(--accent-blue-bright);
+  text-shadow: 0 0 10px var(--accent-blue-glow);
 }
 
 .text-green {
