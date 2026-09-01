@@ -18,11 +18,12 @@
 8. **Formulario y WhatsApp Reconfigurados:** Botón `[ Enviar Mensaje y Cotizar Proyecto ]`, placeholders específicos y mensaje predeterminado de WhatsApp adaptado en `js/config.js` y `js/form-handler.js`.
 9. **Validación Visual & Responsive Completa:** Verificación en escritorio y móvil (375px) con 0 errores de consola y cero desbordamiento horizontal.
 10. **Iconos Vectoriales Cyber-Terminal (Cero Emojis Genéricos):** Sustitución de emojis de sistema en la barra de métricas por SVGs personalizados con efecto neón Cyan/Azul, elevando la estética técnica y la sobriedad del sitio.
+11. **Documentación del Repositorio (`README.md`):** Creación del README principal con badges de estado, descripción de valor, demo en vivo, mapa de módulos, stack tecnológico, estructura de carpetas, instrucciones de ejecución local y autoría.
 
 ## En qué quedó el proyecto
 
 - Sitio web en vivo, 100% operativo y actualizado en: **[https://cristhianruiz.dev](https://cristhianruiz.dev)**
-- Repositorio sincronizado en GitHub con commit `f2ebf6c`: **[https://github.com/CristhianRuiz24/CristhianRuiz.Dev](https://github.com/CristhianRuiz24/CristhianRuiz.Dev)**
+- Repositorio sincronizado en GitHub con commit `0b2eed9`: **[https://github.com/CristhianRuiz24/CristhianRuiz.Dev](https://github.com/CristhianRuiz24/CristhianRuiz.Dev)**
 
 ## Próximo paso (Futuras Iteraciones)
 
