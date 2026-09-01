@@ -27,7 +27,7 @@ Plataforma web de captación comercial y portafolio profesional para **CrisDev (
 - **RF-2 (Evento):** CUANDO el usuario hace clic en el botón de WhatsApp del Navbar, EL SISTEMA abrirá en una nueva pestaña la conversación de WhatsApp con un mensaje predeterminado de contacto profesional.
 
 ### 2. Hero Section (Atracción y Propuesta de Valor)
-- **RF-3 (Ubicuo):** EL SISTEMA presentará el titular principal de alto impacto: *"Ingeniería de software para multiplicar clientes y automatizar tu agenda"*, acompañado de una llamada a la acción principal para iniciar diagnóstico técnico y métricas de autoridad en vivo.
+- **RF-3 (Ubicuo):** EL SISTEMA presentará el titular principal de alto impacto: *"Ingeniería de software para profesionalizar tu consulta y automatizar tu agenda"*, acompañado de una llamada a la acción principal para iniciar diagnóstico técnico y métricas de autoridad en vivo.
 - **RF-4 (Evento):** CUANDO el usuario presione el CTA principal del Hero, EL SISTEMA realizará un desplazamiento suave (*smooth scroll*) hacia la sección de contacto / terminales.
 
 ### 3. Terminal 01: Presencia Digital & Full-Stack (Caso de Estudio Psicolau.com)
