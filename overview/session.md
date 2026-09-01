@@ -19,11 +19,12 @@
 9. **Validación Visual & Responsive Completa:** Verificación en escritorio y móvil (375px) con 0 errores de consola y cero desbordamiento horizontal.
 10. **Iconos Vectoriales Cyber-Terminal (Cero Emojis Genéricos):** Sustitución de emojis de sistema en la barra de métricas por SVGs personalizados con efecto neón Cyan/Azul, elevando la estética técnica y la sobriedad del sitio.
 11. **Documentación del Repositorio (`README.md`):** Creación del README principal con badges de estado, descripción de valor, demo en vivo, mapa de módulos, stack tecnológico, estructura de carpetas, instrucciones de ejecución local y autoría.
+12. **Promoción de Regla a `AGENTS.md` (Iconografía Vectorial):** Promovida la regla que prohíbe emojis Unicode del sistema y exige el uso exclusivo de SVGs vectoriales con efecto neón/glow para mantener la sobriedad técnica.
 
 ## En qué quedó el proyecto
 
 - Sitio web en vivo, 100% operativo y actualizado en: **[https://cristhianruiz.dev](https://cristhianruiz.dev)**
-- Repositorio sincronizado en GitHub con commit `8a7a0f5`: **[https://github.com/CristhianRuiz24/CristhianRuiz.Dev](https://github.com/CristhianRuiz24/CristhianRuiz.Dev)**
+- Repositorio sincronizado en GitHub con commit `f8095ed`: **[https://github.com/CristhianRuiz24/CristhianRuiz.Dev](https://github.com/CristhianRuiz24/CristhianRuiz.Dev)**
 
 ## Próximo paso (Futuras Iteraciones)
 
