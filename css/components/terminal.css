@@ -4,6 +4,7 @@
 
 .terminal-section {
   position: relative;
+  width: 100%;
 }
 
 /* Master Cyber-Terminal Container Card */
@@ -14,6 +15,9 @@
   box-shadow: var(--shadow-card);
   overflow: hidden;
   position: relative;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   transition: border-color var(--transition-normal), box-shadow var(--transition-normal);
 }
 
@@ -27,17 +31,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.75rem;
   background-color: var(--bg-surface-elevated);
   padding: 0.85rem 1.25rem;
   border-bottom: 1px solid var(--border-muted);
   flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .terminal-dots {
   display: flex;
   align-items: center;
   gap: 0.45rem;
+  flex-shrink: 0;
 }
 
 .dot {
@@ -61,22 +68,34 @@
 
 .terminal-path {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: clamp(0.72rem, 2vw, 0.8rem);
   color: var(--text-secondary);
   letter-spacing: 0.02em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .terminal-header-badges {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.terminal-badge {
+  max-width: 100%;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .terminal-body {
   padding: 2.25rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* --------------------------------------------------------------------------
@@ -84,9 +103,18 @@
    -------------------------------------------------------------------------- */
 .case-study-grid {
   display: grid;
-  grid-template-columns: 1fr 1.15fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
   gap: 2.5rem;
   align-items: center;
+  width: 100%;
+}
+
+.case-preview,
+.case-details {
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Mockup Browser Window - PsicoLau Real Simulation */
@@ -117,14 +145,16 @@
   background-color: #0B0E14;
   border: 1px solid rgba(0, 240, 255, 0.25);
   border-radius: var(--radius-md);
-  padding: 2rem 1.75rem;
+  padding: 1.75rem 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.35rem;
   position: relative;
   overflow: hidden;
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.05);
   transition: border-color var(--transition-normal), box-shadow var(--transition-normal);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .minimal-preview-card:hover {
@@ -149,6 +179,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  width: 100%;
 }
 
 .preview-logo-wrapper {
@@ -179,11 +210,13 @@
 .preview-brand-status {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   background-color: var(--accent-blue-subtle);
   border: 1px solid rgba(59, 130, 246, 0.25);
-  padding: 0.3rem 0.75rem;
+  padding: 0.35rem 0.75rem;
   border-radius: var(--radius-full);
+  max-width: 100%;
 }
 
 .status-pulse-blue,
@@ -194,14 +227,18 @@
   border-radius: 50%;
   box-shadow: 0 0 8px var(--accent-blue);
   animation: pulse-indicator 2s infinite ease-in-out;
+  flex-shrink: 0;
 }
 
 .preview-status-text {
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: clamp(0.62rem, 2vw, 0.68rem);
   font-weight: 700;
   color: var(--accent-blue-bright);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
+  white-space: normal;
+  word-break: break-word;
+  text-align: center;
 }
 
 /* Telemetry Data Box */
@@ -209,37 +246,44 @@
   background-color: #06080B;
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  padding: 1rem 1.25rem;
+  padding: 0.9rem 1.15rem;
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
   font-family: var(--font-mono);
   font-size: 0.8rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .telemetry-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.75rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .telemetry-label {
   color: var(--text-muted);
   font-weight: 600;
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   letter-spacing: 0.04em;
+  flex-shrink: 0;
 }
 
 .telemetry-val {
   color: var(--text-primary);
   font-weight: 600;
-  font-size: 0.78rem;
+  font-size: 0.76rem;
+  word-break: break-all;
 }
 
 .preview-action-btn {
   font-size: 0.88rem;
   padding: 0.85rem 1.25rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .panel-pill-list {
@@ -262,6 +306,7 @@
   padding: 0.1rem 0.35rem;
   border-radius: 3px;
   font-size: 0.8rem;
+  word-break: break-all;
 }
 
 /* Case Details Content */
@@ -275,10 +320,12 @@
 }
 
 .case-client-name {
-  font-size: 1.55rem;
+  font-size: clamp(1.3rem, 3.5vw, 1.55rem);
   font-weight: 800;
   margin-bottom: 1rem;
   color: var(--text-primary);
+  line-height: 1.3;
+  word-break: break-word;
 }
 
 .case-client-desc {
@@ -314,6 +361,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
+  min-width: 0;
 }
 
 .feature-content strong {
@@ -332,9 +380,18 @@
    -------------------------------------------------------------------------- */
 .database-grid {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
   gap: 2.5rem;
   align-items: center;
+  width: 100%;
+}
+
+.code-terminal,
+.database-insights {
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .code-terminal {
@@ -354,6 +411,8 @@
   border-bottom: 1px solid var(--border-muted);
   font-family: var(--font-mono);
   font-size: 0.72rem;
+  flex-wrap: wrap;
+  gap: 0.4rem;
 }
 
 .code-lang {
@@ -366,12 +425,14 @@
 }
 
 .code-block {
-  padding: 1.25rem;
+  padding: 1.15rem;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   font-family: var(--font-mono);
-  font-size: 0.85rem;
-  line-height: 1.6;
+  font-size: clamp(0.72rem, 2vw, 0.85rem);
+  line-height: 1.55;
   color: var(--text-primary);
+  max-width: 100%;
 }
 
 .code-key {
@@ -402,6 +463,7 @@
   border-radius: var(--radius-sm);
   padding: 1.25rem;
   transition: transform var(--transition-fast), border-color var(--transition-fast);
+  box-sizing: border-box;
 }
 
 .insight-card:hover {
@@ -420,6 +482,7 @@
   font-family: var(--font-mono);
   font-weight: 800;
   font-size: 1rem;
+  flex-shrink: 0;
 }
 
 .insight-header h4 {
@@ -440,7 +503,7 @@
 @media (max-width: 992px) {
   .case-study-grid,
   .database-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 2rem;
   }
   .terminal-body {
@@ -449,6 +512,64 @@
   .terminal-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.75rem;
+    gap: 0.65rem;
+  }
+  .terminal-header-badges {
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
+
+@media (max-width: 540px) {
+  .terminal-body {
+    padding: 1.25rem 0.85rem;
+  }
+  .terminal-header {
+    padding: 0.75rem 0.85rem;
+  }
+  .minimal-preview-card {
+    padding: 1.25rem 0.85rem;
+    gap: 1.15rem;
+  }
+  .preview-logo-wrapper {
+    padding: 1rem 1.25rem;
+    max-width: 210px;
+  }
+  .preview-brand-logo {
+    max-height: 100px;
+  }
+  .preview-telemetry-box {
+    padding: 0.75rem 0.85rem;
+  }
+  .preview-action-btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.82rem;
+  }
+  .case-client-name {
+    font-size: 1.3rem;
+  }
+  .case-client-desc {
+    font-size: 0.88rem;
+  }
+  .case-feature-list {
+    gap: 0.85rem;
+    margin-bottom: 1.5rem;
+  }
+  .case-feature-item {
+    font-size: 0.85rem;
+    gap: 0.5rem;
+  }
+  .feature-content span {
+    font-size: 0.84rem;
+  }
+  .panel-pill-list li {
+    font-size: 0.82rem;
+  }
+  .code-block {
+    padding: 0.85rem;
+  }
+  .insight-card {
+    padding: 1rem 0.85rem;
+  }
+}
+
