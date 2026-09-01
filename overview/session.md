@@ -14,6 +14,7 @@
 7. **Seguridad Perimetral Grado Bancario:** Archivo `_headers` con HSTS a 1 año, protección anti-clickjacking `X-Frame-Options: DENY`, `nosniff`, `Referrer-Policy` y aislamiento COOP/CORP.
 8. **Git & CI/CD Continuo:** Repositorio en GitHub (`CristhianRuiz24/CristhianRuiz.Dev`), `.gitignore` profesional y sincronización automática en Cloudflare Pages.
 9. **Auditoría Exhaustiva:** Revisión de los 22 archivos del proyecto con 0 errores de consola y cumplimiento al 100% de los requisitos RF-1 al RF-15 de la especificación SDD.
+10. **Optimización Responsive Mobile (Cero Desbordamiento):** Corrección de desbordamiento horizontal en viewports móviles (360px–430px) mediante `minmax(0, 1fr)`, wrap seguro de badges y truncado de rutas de terminal. Desplegado en producción con commit `320c691`.
 
 ## En qué quedó el proyecto
 
