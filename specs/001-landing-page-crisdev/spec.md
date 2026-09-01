@@ -17,7 +17,7 @@ Plataforma web de captación comercial y portafolio profesional para **CrisDev (
 - **H2 (Evidencia de Frontend y Captación):** Como especialista, quiero ver un caso de éxito real del sector salud mental (ej. *psicolau.com*) con su enfoque cálido y conversión directa a WhatsApp, para comprobar la efectividad del diseño.
 - **H3 (Gestión de Consultas y Expedientes):** Como terapeuta o médico con consulta privada, quiero ver cómo se organizan las notas de sesión y los expedientes sin requerir hojas de Excel desordenadas, para tener certeza de que ahorraré tiempo administrativo.
 - **H4 (Secreto Profesional y Confianza):** Como profesional que maneja datos clínicos y terapéuticos sensibles, quiero conocer los estándares de confidencialidad y ver la credencial del ingeniero responsable, para tener total tranquilidad y confianza de trato 1 a 1.
-- **H5 (Conversión Sin Fricción):** Como prospecto interesado, quiero contactar directamente por WhatsApp o enviar una solicitud estructurada por formulario, para recibir una propuesta o diagnóstico sin intermediarios.
+- **H5 (Conversión Sin Fricción):** Como prospecto interesado, quiero contactar directamente por WhatsApp o enviar una solicitud estructurada por formulario, para recibir una propuesta o asesoría personalizada sin intermediarios.
 
 ---
 
@@ -33,7 +33,7 @@ Plataforma web de captación comercial y portafolio profesional para **CrisDev (
   2. Titular principal de alto impacto: *"Una presencia digital que atrae más pacientes y un sistema que organiza tus consultas en automático."* con acentos de color en Cyan y Azul eléctrico.
   3. Subtítulo enfocado en dolor/beneficio: *"Desarrollo sitios web de alta conversión y plataformas a medida para psicólogos, terapeutas y especialistas de la salud. Menos tiempo perdido en WhatsApp, expedientes confidenciales y cero comisiones mensuales."*
   4. Tres badges de métricas de autoridad: `⚡ Web Rápida y Disponible 24/7`, `💰 Cero Comisiones por Consulta`, `🔒 Expedientes 100% Privados y Seguros`.
-  5. Botones de acción: `[ Solicitar Diagnóstico Gratis → ]` (hacia `#contact`) y `[ Ver Casos y Soluciones ]` (hacia `#web-ui`).
+  5. Botones de acción: `[ Solicitar Asesoría Gratuita → ]` (hacia `#contact`) y `[ Ver Casos y Soluciones ]` (hacia `#web-ui`).
 - **RF-4 (Evento):** CUANDO el usuario presione el CTA principal del Hero, EL SISTEMA realizará un desplazamiento suave (*smooth scroll*) hacia la sección de contacto / terminales.
 
 ### 3. Terminal 01: Presencia Digital & Full-Stack (Caso de Estudio Psicolau.com)
@@ -53,7 +53,7 @@ Plataforma web de captación comercial y portafolio profesional para **CrisDev (
   1. Tag: `[SISTEMAS_A_MEDIDA // GESTIÓN_CLÍNICA]`.
   2. Titular: *"Plataformas a Medida para Gestionar tu Consulta Sin Caos"*.
   3. Subtítulo: *"Diseñado especialmente para el flujo de psicólogos y profesionales de la salud: olvídate de las libretas, notas dispersas y el estrés de agenda."*
-  4. Simulación visual interactiva de modelo JSON de `expediente_paciente` comprensible (`id_registro`, `tipo_consulta: "Terapia / Consulta Especializada"`, `notas_sesion`, `recordatorios_whatsapp: true`, `respaldos_diarios: true`).
+  4. Ficha visual de Control y Expediente Clínico Digital interactiva (con identificador `EXP-2026-089`, estado de privacidad cifrado, automatizaciones activas de WhatsApp, calendario y respaldos en la nube) estructurada con iconografía exclusivamente vectorial SVG.
 - **RF-8 (Ubicuo):** EL SISTEMA explicará los 3 pilares de gestión:
   1. `01` **Expedientes y Notas de Sesión Digitales:** Historial de cada paciente, notas de evolución y archivos en un solo lugar seguro, accesible desde celular o computadora.
   2. `02` **Recordatorios Automáticos de Sesiones:** Reduce ausencias y cancelaciones de última hora notificando a tus pacientes.

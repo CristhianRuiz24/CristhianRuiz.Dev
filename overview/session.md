@@ -20,13 +20,17 @@
 10. **Iconos Vectoriales Cyber-Terminal (Cero Emojis Genéricos):** Sustitución de emojis de sistema en la barra de métricas por SVGs personalizados con efecto neón Cyan/Azul, elevando la estética técnica y la sobriedad del sitio.
 11. **Documentación del Repositorio (`README.md`):** Creación del README principal con badges de estado, descripción de valor, demo en vivo, mapa de módulos, stack tecnológico, estructura de carpetas, instrucciones de ejecución local y autoría.
 12. **Promoción de Regla a `AGENTS.md` (Iconografía Vectorial):** Promovida la regla que prohíbe emojis Unicode del sistema y exige el uso exclusivo de SVGs vectoriales con efecto neón/glow para mantener la sobriedad técnica.
+13. **Optimización de Copy CTA & Ficha Clínica Visual (T11):**
+    - Actualizado el botón primario del Hero a `Solicitar Asesoría Gratuita →` para eliminar fricciones y confusión en clientes de salud.
+    - Transformado el bloque JSON de Terminal 02 en una Ficha de Control y Expediente Clínico Digital interactiva (`.clinical-record-card`) estructurada con iconografía estrictamente vectorial SVG y diseño 100% responsivo.
 
 ## En qué quedó el proyecto
 
-- Sitio web en vivo, 100% operativo y actualizado en: **[https://cristhianruiz.dev](https://cristhianruiz.dev)**
-- Repositorio sincronizado en GitHub con commit `bfb7e57`: **[https://github.com/CristhianRuiz24/CristhianRuiz.Dev](https://github.com/CristhianRuiz24/CristhianRuiz.Dev)**
+- Sitio web en vivo y validado tanto en desktop como en mobile (375px) con cero errores en consola.
+- Spec, tareas y estilos completamente actualizados bajo flujo SDD.
 
 ## Próximo paso (Futuras Iteraciones)
 
+- Sincronizar los últimos cambios con el repositorio GitHub (`git add .`, `git commit`, `git push`).
 - Dar de alta el `sitemap.xml` en Google Search Console para indexación acelerada.
 - Añadir nuevos casos de estudio conforme se desarrollen nuevos sistemas clínicos.
