@@ -23,7 +23,7 @@
 ## En qué quedó el proyecto
 
 - Sitio web en vivo, 100% operativo y actualizado en: **[https://cristhianruiz.dev](https://cristhianruiz.dev)**
-- Repositorio sincronizado en GitHub con commit `b7deb45`: **[https://github.com/CristhianRuiz24/CristhianRuiz.Dev](https://github.com/CristhianRuiz24/CristhianRuiz.Dev)**
+- Repositorio sincronizado en GitHub con commit `8a7a0f5`: **[https://github.com/CristhianRuiz24/CristhianRuiz.Dev](https://github.com/CristhianRuiz24/CristhianRuiz.Dev)**
 
 ## Próximo paso (Futuras Iteraciones)
 
