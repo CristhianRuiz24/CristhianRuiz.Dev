@@ -7,7 +7,7 @@
 
 - Se migró exitosamente la paleta de acentos del sitio de verde a **Azul Eléctrico / Cobalto / Cyan Neón** (`--accent-blue: #3B82F6`, `--accent-blue-bright: #60A5FA`, `--accent-cyan: #00F0FF`) en todos los componentes CSS y HTML.
 - Se implementaron las mejoras estratégicas inspiradas en **Sintaxio**, **Umbrella-Bits** y **Código Digital**, consolidando el **Modelo de Negocio Híbrido (Web de Entrada en Cloudflare + Core SaaS B2B Privado)**.
-- Se refinó el titular principal del Hero: *"Ingeniería de software para multiplicar clientes y automatizar tu agenda"*.
+- Se refinó el titular principal del Hero a la **Opción A** basada en neuromarketing y psicología del sector salud: *"Ingeniería de software para profesionalizar tu consulta y automatizar tu agenda"*, con descripción de mayor contraste y enfoque en pacientes, expedientes cifrados y control de agenda.
 - Se actualizó la fotografía de la Credencial de Operador con **Foto cris 2** recortada en formato headshot 1:1 de alta definición.
 - Se implementó la arquitectura serverless nativa de Cloudflare Pages: [functions/api/contact.js](file:///c:/Users/crist/Documents/Proyectos/Pagina%20web%20CrisDev/functions/api/contact.js) con integración a **Resend API**, remitente con dominio verificado `notificaciones@cristhianruiz.dev`, destinatario oficial `cristhian.ruiz.c@hotmail.com` y plantilla HTML personalizada Cyber-Terminal.
 - Se añadió el campo `Correo Electrónico o WhatsApp de Contacto` en el formulario y se configuró en la plantilla de correo de Resend para responder a los prospectos de inmediato.

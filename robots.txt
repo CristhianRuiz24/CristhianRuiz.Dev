@@ -1,0 +1,6 @@
+# Robots.txt for CrisDev (https://cristhianruiz.dev)
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://cristhianruiz.dev/sitemap.xml
