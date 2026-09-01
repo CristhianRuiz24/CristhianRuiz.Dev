@@ -21,7 +21,7 @@ export async function onRequestPost(context) {
 
   // Configuration & Secrets (Read securely from Cloudflare Pages Environment Variables)
   const RESEND_API_KEY = env?.RESEND_API_KEY || "";
-  const RECIPIENT_EMAIL = env?.RECIPIENT_EMAIL || "crisr686868@gmail.com";
+  const RECIPIENT_EMAIL = env?.RECIPIENT_EMAIL || "cristhian.ruiz.c@hotmail.com";
   const SENDER_EMAIL = env?.SENDER_EMAIL || "CrisDev Telemetry <notificaciones@cristhianruiz.dev>";
 
   // Security Headers
