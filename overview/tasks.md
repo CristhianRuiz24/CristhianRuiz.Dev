@@ -14,7 +14,7 @@ Referencia: `specs/001-landing-page-crisdev/tasks.md`
 | **T8** | Formulario Cyber-Terminal con validación EARS, shake y respuesta API | ✅ hecho | `css/components/form.css`, `js/form-handler.js` |
 | **T9** | Footer, responsive polish y validación de aceptación (RF-1 al RF-15) | ✅ hecho | `css/components/footer.css` |
 | **T10** | Copywriting comercial orientado a psicólogos y salud (Spec 001 actualizada) | ✅ hecho | `spec.md`, `index.html`, `config.js`, `form-handler.js` |
-| **T11** | Optimización Copy CTA & Ficha Clínica Visual (SVGs) | ✅ hecho | `index.html`, `terminal.css`, `hero.css` |
+| **T11** | Optimización Copy CTA Hero, Grid de 3 Pilares y WhatsApp Natural | ✅ hecho | `index.html`, `terminal.css`, `config.js` |
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 
