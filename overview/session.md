@@ -20,14 +20,14 @@
 10. **Iconos Vectoriales Cyber-Terminal (Cero Emojis Genéricos):** Sustitución de emojis de sistema en la barra de métricas por SVGs personalizados con efecto neón Cyan/Azul, elevando la estética técnica y la sobriedad del sitio.
 11. **Documentación del Repositorio (`README.md`):** Creación del README principal con badges de estado, descripción de valor, demo en vivo, mapa de módulos, stack tecnológico, estructura de carpetas, instrucciones de ejecución local y autoría.
 12. **Promoción de Regla a `AGENTS.md` (Iconografía Vectorial):** Promovida la regla que prohíbe emojis Unicode del sistema y exige el uso exclusivo de SVGs vectoriales con efecto neón/glow para mantener la sobriedad técnica.
-13. **Optimización de Copy CTA & Mockup de Suite Clínica Dashboard (T11):**
+13. **Optimización de Copy CTA & Grid de 3 Pilares de Gestión Clínica (T11):**
     - Actualizado el botón primario del Hero a `Solicitar Asesoría Gratuita →` para eliminar fricciones y confusión en clientes de salud.
-    - Transformado el bloque de Terminal 02 en un **Mockup Visual de Suite Clínica / Panel de Consulta (`.clinical-record-card`)**:
-      * Perfil de paciente (`Sofía Morales M.`, `EXP-2026-089`, badges de estado y cifrado 256-bit).
-      * Grid de 2 columnas con widgets KPI: Próxima sesión y confirmación de recordatorio por WhatsApp.
-      * Módulo de notas clínicas de evolución (`SESIÓN #04`) con protocolo de secreto profesional.
-      * Barra de sincronización y compatibilidad multiplataforma (Móvil, Tablet y PC).
-      * Iconografía exclusivamente vectorial SVG con acentos Cyan/Azul/Verde y 100% responsivo.
+    - Simplificado y pulido Terminal 02 (`#infrastructure`) eliminando el mockup innecesario y desplegando un **Grid de 3 Tarjetas de Alto Impacto** (`.database-insights-grid`):
+      * `01 [EXPEDIENTES]`: Expedientes y Notas de Sesión Digitales (`[Privacidad 100% Blindada]`).
+      * `02 [AUTOMATIZACIÓN]`: Recordatorios Automáticos de Sesiones (`[Recordatorios por WhatsApp]`).
+      * `03 [CONTROL]`: Control de Consultas e Ingresos (`[Métricas en Tiempo Real]`).
+      * Botón de acción centrado `[ Cotizar una Plataforma para Mi Consulta → ]` hacia `#contact`.
+      * Diseño limpio, legible, con iconografía vectorial SVG y 100% responsivo en móvil y escritorio.
 
 ## En qué quedó el proyecto
 

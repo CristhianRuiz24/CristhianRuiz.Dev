@@ -53,11 +53,11 @@ Plataforma web de captación comercial y portafolio profesional para **CrisDev (
   1. Tag: `[SISTEMAS_A_MEDIDA // GESTIÓN_CLÍNICA]`.
   2. Titular: *"Plataformas a Medida para Gestionar tu Consulta Sin Caos"*.
   3. Subtítulo: *"Diseñado especialmente para el flujo de psicólogos y profesionales de la salud: olvídate de las libretas, notas dispersas y el estrés de agenda."*
-  4. Ficha visual de Control y Expediente Clínico Digital interactiva (con identificador `EXP-2026-089`, estado de privacidad cifrado, automatizaciones activas de WhatsApp, calendario y respaldos en la nube) estructurada con iconografía exclusivamente vectorial SVG.
-- **RF-8 (Ubicuo):** EL SISTEMA explicará los 3 pilares de gestión:
-  1. `01` **Expedientes y Notas de Sesión Digitales:** Historial de cada paciente, notas de evolución y archivos en un solo lugar seguro, accesible desde celular o computadora.
-  2. `02` **Recordatorios Automáticos de Sesiones:** Reduce ausencias y cancelaciones de última hora notificando a tus pacientes.
-  3. `03` **Control de Consultas e Ingresos:** Visualiza tus pacientes activos, sesiones atendidas e ingresos del mes con total claridad.
+- **RF-8 (Ubicuo):** EL SISTEMA exhibirá un grid estructurado de 3 tarjetas de alto impacto para los pilares de gestión:
+  1. `01` **Expedientes y Notas de Sesión Digitales:** Historial de cada paciente, notas de evolución y archivos en un solo lugar seguro, accesible desde celular o computadora con total privacidad (`[PRIVACIDAD: 100% BLINDADA]`).
+  2. `02` **Recordatorios Automáticos de Sesiones:** Reduce ausencias y cancelaciones de última hora notificando automáticamente a tus pacientes antes de cada consulta o sesión (`[WHATSAPP: EN AUTOMÁTICO]`).
+  3. `03` **Control de Consultas e Ingresos:** Visualiza en segundos tus pacientes activos, sesiones atendidas e ingresos del mes con total claridad sin hojas de Excel (`[MÉTRICAS: TIEMPO REAL]`).
+  4. Botón de acción: `[ Cotizar un Sistema para mi Consulta → ]` hacia `#contact`.
 
 ### 5. Bloque de Confidencialidad & Secreto Profesional (Trust Section)
 - **RF-9 (Ubicuo):** EL SISTEMA presentará 3 pilares de confianza y privacidad:
