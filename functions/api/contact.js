@@ -22,7 +22,7 @@ export async function onRequestPost(context) {
   // Configuration & Secrets (Read securely from Cloudflare Pages Environment Variables)
   const RESEND_API_KEY = env?.RESEND_API_KEY || "";
   const RECIPIENT_EMAIL = env?.RECIPIENT_EMAIL || "crisr686868@gmail.com";
-  const SENDER_EMAIL = env?.SENDER_EMAIL || "CrisDev Notifications <onboarding@resend.dev>";
+  const SENDER_EMAIL = env?.SENDER_EMAIL || "CrisDev Telemetry <notificaciones@cristhianruiz.dev>";
 
   // Security Headers
   const responseHeaders = {
@@ -200,6 +200,17 @@ export async function onRequestPost(context) {
 </html>
 `;
 
+    const emailPayload = {
+      from: SENDER_EMAIL,
+      to: [RECIPIENT_EMAIL],
+      subject: `[CrisDev Lead] ${cleanName} (${cleanContact}) — ${cleanClinic}`,
+      html: htmlBody,
+    };
+
+    if (cleanContact.includes("@")) {
+      emailPayload.reply_to = cleanContact;
+    }
+
     // Send email using Resend API
     const resendResponse = await fetch("https://api.resend.com/emails", {
       method: "POST",
@@ -207,12 +218,7 @@ export async function onRequestPost(context) {
         "Authorization": `Bearer ${RESEND_API_KEY}`,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        from: SENDER_EMAIL,
-        to: [RECIPIENT_EMAIL],
-        subject: `[CrisDev Lead] ${cleanName} (${cleanContact}) — ${cleanClinic}`,
-        html: htmlBody,
-      }),
+      body: JSON.stringify(emailPayload),
     });
 
     if (!resendResponse.ok) {
