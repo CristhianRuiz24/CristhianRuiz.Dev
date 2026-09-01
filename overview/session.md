@@ -21,10 +21,10 @@
 ## En qué quedó el proyecto
 
 - Sitio web en vivo y operativo al 100% en: **[https://cristhianruiz.dev](https://cristhianruiz.dev)**
-- Repositorio sincronizado en: **[https://github.com/CristhianRuiz24/CristhianRuiz.Dev](https://github.com/CristhianRuiz24/CristhianRuiz.Dev)**
+- Repositorio sincronizado y desplegado en GitHub con commit `4950f9f`: **[https://github.com/CristhianRuiz24/CristhianRuiz.Dev](https://github.com/CristhianRuiz24/CristhianRuiz.Dev)**
 
 ## Próximo paso (Futuras Iteraciones)
 
-- Realizar commit y push a GitHub para desplegar automáticamente los nuevos textos en Cloudflare Pages (`https://cristhianruiz.dev`).
 - Dar de alta el `sitemap.xml` en Google Search Console para indexación acelerada.
+- Añadir nuevos casos de estudio conforme se desarrollen nuevos sistemas clínicos.
 
