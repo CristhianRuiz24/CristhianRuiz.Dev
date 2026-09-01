@@ -1,0 +1,22 @@
+/*
+  # Enforce Clickjacking Protection
+  X-Frame-Options: DENY
+  
+  # Prevent MIME-type Sniffing
+  X-Content-Type-Options: nosniff
+  
+  # Protect Referrer Privacy
+  Referrer-Policy: strict-origin-when-cross-origin
+  
+  # Restrict Sensitive Browser Permissions
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  
+  # HTTP Strict Transport Security (HSTS - 1 Year)
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  
+  # Legacy XSS Filter Protection
+  X-XSS-Protection: 1; mode=block
+  
+  # Process & Origin Isolation
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
