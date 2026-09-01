@@ -26,11 +26,11 @@
 
 ## En qué quedó el proyecto
 
-- Sitio web en vivo y validado tanto en desktop como en mobile (375px) con cero errores en consola.
+- Sitio web en vivo y validado tanto en desktop como en mobile (375px) con cero errores en consola: **[https://cristhianruiz.dev](https://cristhianruiz.dev)**
+- Repositorio sincronizado en GitHub con commit `768f286`: **[https://github.com/CristhianRuiz24/CristhianRuiz.Dev](https://github.com/CristhianRuiz24/CristhianRuiz.Dev)**
 - Spec, tareas y estilos completamente actualizados bajo flujo SDD.
 
 ## Próximo paso (Futuras Iteraciones)
 
-- Sincronizar los últimos cambios con el repositorio GitHub (`git add .`, `git commit`, `git push`).
 - Dar de alta el `sitemap.xml` en Google Search Console para indexación acelerada.
 - Añadir nuevos casos de estudio conforme se desarrollen nuevos sistemas clínicos.
