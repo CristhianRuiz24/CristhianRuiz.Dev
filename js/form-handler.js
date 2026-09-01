@@ -11,14 +11,17 @@ class ContactFormHandler {
     if (!this.form) return;
 
     this.inputName = document.getElementById('input-name');
+    this.inputContact = document.getElementById('input-contact');
     this.inputClinic = document.getElementById('input-clinic');
     this.inputNeed = document.getElementById('input-need');
 
     this.groupName = document.getElementById('group-name');
+    this.groupContact = document.getElementById('group-contact');
     this.groupClinic = document.getElementById('group-clinic');
     this.groupNeed = document.getElementById('group-need');
 
     this.errorName = document.getElementById('error-name');
+    this.errorContact = document.getElementById('error-contact');
     this.errorClinic = document.getElementById('error-clinic');
     this.errorNeed = document.getElementById('error-need');
 
@@ -34,19 +37,21 @@ class ContactFormHandler {
     this.form.addEventListener('submit', (e) => this.handleSubmit(e));
 
     // Clear individual errors dynamically on input
-    this.inputName.addEventListener('input', () => this.clearFieldError(this.groupName, this.errorName));
-    this.inputClinic.addEventListener('input', () => this.clearFieldError(this.groupClinic, this.errorClinic));
-    this.inputNeed.addEventListener('input', () => this.clearFieldError(this.groupNeed, this.errorNeed));
+    this.inputName?.addEventListener('input', () => this.clearFieldError(this.groupName, this.errorName));
+    this.inputContact?.addEventListener('input', () => this.clearFieldError(this.groupContact, this.errorContact));
+    this.inputClinic?.addEventListener('input', () => this.clearFieldError(this.groupClinic, this.errorClinic));
+    this.inputNeed?.addEventListener('input', () => this.clearFieldError(this.groupNeed, this.errorNeed));
   }
 
   clearFieldError(groupElement, errorElement) {
-    if (groupElement.classList.contains('has-error')) {
+    if (groupElement && groupElement.classList.contains('has-error')) {
       groupElement.classList.remove('has-error');
-      errorElement.textContent = '';
+      if (errorElement) errorElement.textContent = '';
     }
   }
 
   setFieldError(groupElement, errorElement, message) {
+    if (!groupElement || !errorElement) return;
     groupElement.classList.remove('has-error');
     // Force reflow to re-trigger CSS shake animation if already in error state
     void groupElement.offsetWidth;
@@ -58,7 +63,7 @@ class ContactFormHandler {
     let isValid = true;
 
     // Validate Name
-    const nameVal = this.inputName.value.trim();
+    const nameVal = this.inputName ? this.inputName.value.trim() : '';
     if (!nameVal || nameVal.length < 2) {
       this.setFieldError(this.groupName, this.errorName, "> [ERROR_01]: EL PARÁMETRO 'NOMBRE' ES REQUERIDO.");
       isValid = false;
@@ -66,19 +71,28 @@ class ContactFormHandler {
       this.clearFieldError(this.groupName, this.errorName);
     }
 
+    // Validate Contact (Email or WhatsApp)
+    const contactVal = this.inputContact ? this.inputContact.value.trim() : '';
+    if (!contactVal || contactVal.length < 5) {
+      this.setFieldError(this.groupContact, this.errorContact, "> [ERROR_02]: INGRESA UN CORREO O WHATSAPP DE CONTACTO.");
+      isValid = false;
+    } else {
+      this.clearFieldError(this.groupContact, this.errorContact);
+    }
+
     // Validate Clinic
-    const clinicVal = this.inputClinic.value.trim();
+    const clinicVal = this.inputClinic ? this.inputClinic.value.trim() : '';
     if (!clinicVal || clinicVal.length < 2) {
-      this.setFieldError(this.groupClinic, this.errorClinic, "> [ERROR_02]: EL PARÁMETRO 'CLÍNICA O CONSULTORIO' ES REQUERIDO.");
+      this.setFieldError(this.groupClinic, this.errorClinic, "> [ERROR_03]: EL PARÁMETRO 'CLÍNICA O CONSULTORIO' ES REQUERIDO.");
       isValid = false;
     } else {
       this.clearFieldError(this.groupClinic, this.errorClinic);
     }
 
     // Validate Need
-    const needVal = this.inputNeed.value.trim();
+    const needVal = this.inputNeed ? this.inputNeed.value.trim() : '';
     if (!needVal || needVal.length < 5) {
-      this.setFieldError(this.groupNeed, this.errorNeed, "> [ERROR_03]: ESPECIFICA EL REQUERIMIENTO O MEJORA DESEADA.");
+      this.setFieldError(this.groupNeed, this.errorNeed, "> [ERROR_04]: ESPECIFICA EL REQUERIMIENTO O MEJORA DESEADA.");
       isValid = false;
     } else {
       this.clearFieldError(this.groupNeed, this.errorNeed);
@@ -114,9 +128,10 @@ class ContactFormHandler {
 
     const payload = {
       name: this.inputName.value.trim(),
+      contact: this.inputContact.value.trim(),
       clinic: this.inputClinic.value.trim(),
       need: this.inputNeed.value.trim(),
-      _subject: `[CrisDev Lead] ${this.inputName.value.trim()} — ${this.inputClinic.value.trim()}`,
+      _subject: `[CrisDev Lead] ${this.inputName.value.trim()} (${this.inputContact.value.trim()}) — ${this.inputClinic.value.trim()}`,
       timestamp: new Date().toISOString()
     };
 

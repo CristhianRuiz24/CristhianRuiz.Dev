@@ -32,7 +32,7 @@ export async function onRequestPost(context) {
 
   try {
     const payload = await request.json();
-    const { name, clinic, need } = payload;
+    const { name, contact, clinic, need } = payload;
 
     // Strict validation
     if (!name || name.trim().length < 2) {
@@ -42,21 +42,29 @@ export async function onRequestPost(context) {
       );
     }
 
+    if (!contact || contact.trim().length < 5) {
+      return new Response(
+        JSON.stringify({ error: "[ERROR_02]: EL PARÁMETRO 'CONTACTO (EMAIL/WHATSAPP)' ES REQUERIDO" }),
+        { status: 400, headers: responseHeaders }
+      );
+    }
+
     if (!clinic || clinic.trim().length < 2) {
       return new Response(
-        JSON.stringify({ error: "[ERROR_02]: EL PARÁMETRO 'CLÍNICA O CONSULTORIO' ES REQUERIDO" }),
+        JSON.stringify({ error: "[ERROR_03]: EL PARÁMETRO 'CLÍNICA O CONSULTORIO' ES REQUERIDO" }),
         { status: 400, headers: responseHeaders }
       );
     }
 
     if (!need || need.trim().length < 5) {
       return new Response(
-        JSON.stringify({ error: "[ERROR_03]: ESPECIFICA EL REQUERIMIENTO O MEJORA DESEADA" }),
+        JSON.stringify({ error: "[ERROR_04]: ESPECIFICA EL REQUERIMIENTO O MEJORA DESEADA" }),
         { status: 400, headers: responseHeaders }
       );
     }
 
     const cleanName = escapeHtml(name.trim());
+    const cleanContact = escapeHtml(contact.trim());
     const cleanClinic = escapeHtml(clinic.trim());
     const cleanNeed = escapeHtml(need.trim());
     const timestamp = new Date().toLocaleString("es-MX", { timeZone: "America/Monterrey" });
@@ -169,12 +177,17 @@ export async function onRequestPost(context) {
         <div class="field-value">${cleanName}</div>
       </div>
 
+      <div class="field-card" style="border-left-color: #00F0FF; background-color: #0d1520;">
+        <div class="field-label" style="color: #60A5FA;">&gt; Medio de Respuesta (Email / WhatsApp):</div>
+        <div class="field-value" style="font-weight: 700; color: #00F0FF; font-family: monospace; font-size: 16px;">${cleanContact}</div>
+      </div>
+
       <div class="field-card">
         <div class="field-label">&gt; Consultorio / Clínica / Negocio:</div>
         <div class="field-value">${cleanClinic}</div>
       </div>
 
-      <div class="field-card" style="border-left-color: #00F0FF;">
+      <div class="field-card">
         <div class="field-label">&gt; Requerimiento / Proyecto:</div>
         <div class="field-value field-need">${cleanNeed}</div>
       </div>
@@ -197,7 +210,7 @@ export async function onRequestPost(context) {
       body: JSON.stringify({
         from: SENDER_EMAIL,
         to: [RECIPIENT_EMAIL],
-        subject: `[CrisDev Lead] ${cleanName} — ${cleanClinic}`,
+        subject: `[CrisDev Lead] ${cleanName} (${cleanContact}) — ${cleanClinic}`,
         html: htmlBody,
       }),
     });
