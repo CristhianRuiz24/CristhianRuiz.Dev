@@ -33,28 +33,23 @@
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "CrisDev // Cristhian Ruiz — Software & Web Engineering",
+    "name": "CrisDev / Cristhian Ruiz",
+    "description": "Desarrollo web y plataformas a medida para psicólogos y profesionales de la salud",
+    "url": "https://cristhianruiz.dev/",
     "image": "https://cristhianruiz.dev/assets/images/foto-cris.jpg",
-    "@id": "https://cristhianruiz.dev",
-    "url": "https://cristhianruiz.dev",
     "telephone": "+528130938884",
     "priceRange": "$$",
+    "areaServed": "México",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "García",
       "addressRegion": "Nuevo León",
       "addressCountry": "MX"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 25.8167,
-      "longitude": -100.5833
-    },
     "sameAs": [
-      "https://github.com/CristhianRuiz24",
-      "https://www.linkedin.com/in/cris-campos-687487429/"
+      "https://www.linkedin.com/in/cris-campos-687487429/",
+      "https://github.com/CristhianRuiz24"
     ],
-    "description": "Desarrollo web de alta conversión, plataformas clínicas a medida y expedientes confidenciales para psicólogos, terapeutas y profesionales de la salud.",
     "founder": {
       "@type": "Person",
       "name": "Cristhian Ruiz",
@@ -78,6 +73,7 @@
   <link rel="stylesheet" href="css/components/hero.css">
   <link rel="stylesheet" href="css/components/terminal.css">
   <link rel="stylesheet" href="css/components/trust-operator.css">
+  <link rel="stylesheet" href="css/components/pricing.css">
   <link rel="stylesheet" href="css/components/form.css">
   <link rel="stylesheet" href="css/components/footer.css">
 </head>
@@ -103,12 +99,13 @@
       <nav class="header-nav">
         <a href="#web-ui" class="nav-link">Presencia Digital</a>
         <a href="#infrastructure" class="nav-link">Sistemas a Medida</a>
+        <a href="#pricing" class="nav-link">Planes y Precios</a>
         <a href="#security" class="nav-link">Privacidad</a>
         <a href="#operator" class="nav-link">Sobre Mí</a>
       </nav>
 
       <div class="header-cta">
-        <a href="#" class="btn btn-primary btn-sm cta-whatsapp" data-action="whatsapp-direct" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/528130938884?text=Hola%20Cristhian,%20vi%20tu%20sitio%20y%20me%20interesa%20una%20cotizaci%C3%B3n%20para%20mi%20consulta" class="btn btn-primary btn-sm cta-whatsapp" data-action="whatsapp-direct" target="_blank" rel="noopener noreferrer">
           <svg class="icon-whatsapp" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
           </svg>
@@ -125,6 +122,13 @@
     <div class="container hero-container">
       <div class="hero-badge">
         <span class="badge badge-cyan">● SOLUCIONES WEB PARA PSICÓLOGOS Y PROFESIONALES DE LA SALUD</span>
+        <span class="badge badge-blue font-mono">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 5px; vertical-align: -1px;">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          ENTREGA MÁXIMA: 3 SEMANAS
+        </span>
       </div>
 
       <h1 class="hero-title">
@@ -132,7 +136,7 @@
       </h1>
 
       <p class="hero-description">
-        Desarrollo sitios web de alta conversión y plataformas a medida para psicólogos, terapeutas y especialistas de la salud. Menos tiempo perdido en WhatsApp, expedientes confidenciales y cero comisiones mensuales.
+        Diseño la cara pública de tu consultorio con una <strong class="text-primary">estética cálida, accesible y humana para tus pacientes</strong>, respaldada por un sistema interno de <strong class="text-primary">blindaje técnico y expedientes privados</strong>. Menos tiempo en WhatsApp y cero comisiones por consulta.
       </p>
 
       <div class="hero-actions">
@@ -140,8 +144,8 @@
           <span>Solicitar Asesoría Gratuita</span>
           <span class="btn-arrow">&rarr;</span>
         </a>
-        <a href="#web-ui" class="btn btn-secondary">
-          <span>Ver Casos y Soluciones</span>
+        <a href="#pricing" class="btn btn-secondary">
+          <span>Ver Planes y Precios</span>
         </a>
       </div>
 
@@ -303,16 +307,66 @@
             <!-- Case Stat Highlights -->
             <div class="case-stats-grid">
               <div class="case-stat-pill">
-                <span class="stat-number text-cyan">+180%</span>
-                <span class="stat-label">Más Citas Solicitadas</span>
-              </div>
-              <div class="case-stat-pill">
                 <span class="stat-number text-blue">0%</span>
                 <span class="stat-label">Comisiones a Terceros</span>
               </div>
               <div class="case-stat-pill">
                 <span class="stat-number text-cyan">Privada</span>
                 <span class="stat-label">Suite Clínica (/panel)</span>
+              </div>
+            </div>
+
+            <!-- Verified Client Testimonial (PsicoLau) -->
+            <div class="case-testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-badge font-mono">[TESTIMONIO_VERIFICADO // CLIENTE_REAL]</div>
+                <div class="testimonial-rating text-cyan" aria-label="Calificación 5 de 5 estrellas">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+              </div>
+
+              <blockquote class="testimonial-quote">
+                &ldquo;Él no construyó solamente una página web: diseñó un sistema completo alrededor de mi práctica profesional. Desarrolló tanto la cara pública de PsicoLau como todo el sistema interno que utilizo para gestionar mi práctica (agenda, expedientes, notas clínicas y pagos). Hizo muchísimo más de lo que creía posible. Definitivamente recomiendo ampliamente su trabajo.&rdquo;
+              </blockquote>
+
+              <div class="testimonial-chips">
+                <span class="testimonial-chip text-cyan">[✓ Panel Clínico Privado]</span>
+                <span class="testimonial-chip text-blue">[✓ Seguridad Rigurosa]</span>
+                <span class="testimonial-chip text-cyan">[✓ Consultoría Proactiva]</span>
+              </div>
+
+              <!-- Collapsible Full Testimonial -->
+              <details class="testimonial-details">
+                <summary class="testimonial-toggle font-mono">
+                  <span>Ver recomendación completa de Laura</span>
+                  <span class="toggle-icon">&darr;</span>
+                </summary>
+                <div class="testimonial-full-body">
+                  <p>Trabajar con Cristhian superó por mucho lo que esperaba de un proyecto web, pues desarrolló desde cero tanto la cara pública de PsicoLau como todo el sistema interno que utilizo para gestionar mi práctica profesional, hizo muchísimo más de lo que creía posible.</p>
+                  <p>En la parte pública logró traducir mi identidad profesional en una página estética, clara, accesible y fácil de navegar, organizando información sobre mis servicios, áreas de atención, trayectoria, publicaciones, terapia individual y grupal, testimonios y formas de contacto y agenda.</p>
+                  <p>Pero su trabajo fue mucho más allá del sitio web, ya que desarrolló un panel personalizado desde el que puedo gestionar agenda, expedientes, notas clínicas, seguimiento de pacientes y pagos, además de herramientas que facilitan mi administración, como los resúmenes para contabilidad y la integración de pagos con tarjeta. También tuvo especial cuidado con la seguridad y protección de la información, algo indispensable por el tipo de trabajo que realizo.</p>
+                  <p>Lo que más valoro de su trabajo es que no se limita a programar lo que le pides. Se toma el tiempo de entender cómo trabajas, detecta necesidades que incluso tú no habías considerado y las convierte en soluciones funcionales. Muchas de las herramientas que hoy utilizo surgieron precisamente de esa capacidad para observar un problema y pensar: “esto se puede hacer más fácil”.</p>
+                  <p>El resultado no fue solamente una página web: él construyó un sistema completo alrededor de mi práctica profesional, con una cara pública que representa mi trabajo y una plataforma interna que me permite administrarlo.</p>
+                  <p>Cristhian es creativo, detallista y tiene una enorme capacidad para resolver problemas y convertir necesidades reales en herramientas útiles. Estoy muy satisfecha con el resultado y definitivamente recomiendo ampliamente su trabajo.</p>
+                </div>
+              </details>
+
+              <!-- Author Credential -->
+              <div class="testimonial-author">
+                <div class="author-avatar text-cyan">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <div class="author-meta">
+                  <div class="author-name">Mtra. Ana Laura Gómez</div>
+                  <div class="author-role">Neuropsicóloga Clínica // Fundadora de PsicoLau (<a href="https://psicolau.com" target="_blank" rel="noopener noreferrer" class="text-cyan">psicolau.com</a>)</div>
+                </div>
               </div>
             </div>
 
@@ -356,11 +410,378 @@
         </div>
 
         <div class="terminal-body">
+          <!-- Interactive Mockup: Suite de Gestión Clínica -->
+          <div class="clinical-suite-mockup" id="clinical-suite-demo">
+            <div class="suite-mockup-bar">
+              <div class="suite-brand-title">
+                <span class="suite-brand-dot"></span>
+                <span>PANEL DE CONTROL CLÍNICO</span>
+                <span class="suite-live-badge font-mono">[DEMO EN VIVO]</span>
+              </div>
+              <div class="suite-tabs-nav" role="tablist" aria-label="Módulos del Panel Clínico">
+                <button type="button" class="suite-tab-btn active" data-tab="agenda" role="tab" aria-selected="true">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  <span>Agenda Semanal</span>
+                </button>
+                <button type="button" class="suite-tab-btn" data-tab="expedientes" role="tab" aria-selected="false">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                  <span>Expedientes y Notas</span>
+                </button>
+                <button type="button" class="suite-tab-btn" data-tab="cobranza" role="tab" aria-selected="false">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span>Auditoría de Pagos</span>
+                </button>
+                <button type="button" class="suite-tab-btn" data-tab="contable" role="tab" aria-selected="false">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                  <span>Reporte Contable</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="suite-mockup-content">
+              <!-- Vista 1: Agenda Semanal -->
+              <div class="suite-view-panel active" id="view-agenda">
+                <div class="suite-panel-header">
+                  <h4 class="suite-panel-title">
+                    <span>Semana en Curso // Calendario de Consultas</span>
+                  </h4>
+                  <div class="suite-panel-stats">
+                    <span class="suite-badge-pill pill-neutral">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                      <span>14 Consultas</span>
+                    </span>
+                    <span class="suite-badge-pill pill-green">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>9 Pagadas</span>
+                    </span>
+                    <span class="suite-badge-pill pill-orange">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                      <span>5 Por Cobrar</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="suite-agenda-grid">
+                  <!-- Lunes -->
+                  <div class="agenda-day-col">
+                    <div class="day-col-header">LUN 31</div>
+                    <div class="agenda-session-card">
+                      <div class="session-top-meta">
+                        <span class="session-time font-mono">08:00 AM</span>
+                        <span class="session-modality-chip is-online">
+                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                          <span>Online</span>
+                        </span>
+                      </div>
+                      <p class="session-patient">Lic. Roberto C.</p>
+                      <span class="session-type-subtitle">Consulta de Valoración</span>
+                      <div class="session-actions">
+                        <span class="session-badge-status is-paid font-mono"><span class="badge-dot"></span>PAGADO</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Martes -->
+                  <div class="agenda-day-col">
+                    <div class="day-col-header">MAR 1</div>
+                    <div class="agenda-session-card">
+                      <div class="session-top-meta">
+                        <span class="session-time font-mono">10:30 AM</span>
+                        <span class="session-modality-chip">
+                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                          <span>Presencial</span>
+                        </span>
+                      </div>
+                      <p class="session-patient">Mtra. Elena R.</p>
+                      <span class="session-type-subtitle">Sesión de Seguimiento</span>
+                      <div class="session-actions">
+                        <span class="session-badge-status is-paid font-mono"><span class="badge-dot"></span>PAGADO</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Miércoles -->
+                  <div class="agenda-day-col">
+                    <div class="day-col-header">MIÉ 2</div>
+                    <div class="agenda-session-card">
+                      <div class="session-top-meta">
+                        <span class="session-time font-mono">09:00 AM</span>
+                        <span class="session-modality-chip">
+                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                          <span>Presencial</span>
+                        </span>
+                      </div>
+                      <p class="session-patient">Dra. Sofía M.</p>
+                      <span class="session-type-subtitle">Control Clínico</span>
+                      <div class="session-actions">
+                        <span class="session-badge-status is-paid font-mono"><span class="badge-dot"></span>PAGADO</span>
+                      </div>
+                    </div>
+                    <div class="agenda-session-card">
+                      <div class="session-top-meta">
+                        <span class="session-time font-mono">11:45 AM</span>
+                        <span class="session-modality-chip is-online">
+                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                          <span>Online</span>
+                        </span>
+                      </div>
+                      <p class="session-patient">Carlos V.</p>
+                      <span class="session-type-subtitle">Consulta General</span>
+                      <div class="session-actions">
+                        <span class="session-badge-status is-pending font-mono"><span class="badge-dot"></span>POR COBRAR</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Jueves -->
+                  <div class="agenda-day-col">
+                    <div class="day-col-header">JUE 3</div>
+                    <div class="agenda-session-card">
+                      <div class="session-top-meta">
+                        <span class="session-time font-mono">04:00 PM</span>
+                        <span class="session-modality-chip">
+                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                          <span>Presencial</span>
+                        </span>
+                      </div>
+                      <p class="session-patient">Lucía P.</p>
+                      <span class="session-type-subtitle">Sesión Especializada</span>
+                      <div class="session-actions">
+                        <span class="session-badge-status is-paid font-mono"><span class="badge-dot"></span>PAGADO</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Viernes -->
+                  <div class="agenda-day-col">
+                    <div class="day-col-header">VIE 4</div>
+                    <div class="agenda-session-card">
+                      <div class="session-top-meta">
+                        <span class="session-time font-mono">05:30 PM</span>
+                        <span class="session-modality-chip is-online">
+                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                          <span>Online</span>
+                        </span>
+                      </div>
+                      <p class="session-patient">Fernando G.</p>
+                      <span class="session-type-subtitle">Tratamiento y Avance</span>
+                      <div class="session-actions">
+                        <span class="session-badge-status is-pending font-mono"><span class="badge-dot"></span>POR COBRAR</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Vista 2: Expedientes Clínicos -->
+              <div class="suite-view-panel" id="view-expedientes">
+                <div class="suite-panel-header">
+                  <h4 class="suite-panel-title">
+                    <span>Directorio de Expedientes y Notas de Evolución</span>
+                  </h4>
+                  <div class="suite-panel-stats">
+                    <span class="suite-badge-pill pill-cyan">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                      <span>Cifrado AES-256</span>
+                    </span>
+                    <span class="suite-badge-pill pill-green">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                      <span>18 Pacientes Activos</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="suite-expedientes-list">
+                  <div class="expediente-row-card">
+                    <div class="expediente-main-info">
+                      <div class="expediente-avatar">SM</div>
+                      <div class="expediente-details-text">
+                        <span class="expediente-patient-name">
+                          <span>Dra. Sofía Mendoza</span>
+                          <span class="suite-badge-pill pill-cyan" style="font-size: 0.65rem;">+ 4 notas clínicas</span>
+                        </span>
+                        <div class="expediente-submeta">
+                          <span>Contacto: Confidencial</span>
+                          <span>•</span>
+                          <span>Última consulta: 28 ago 2026</span>
+                          <span>•</span>
+                          <span>Tratamiento Activo</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="expediente-action-btn">
+                      <span>Ver Expediente</span>
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    </div>
+                  </div>
+
+                  <div class="expediente-row-card">
+                    <div class="expediente-main-info">
+                      <div class="expediente-avatar">RC</div>
+                      <div class="expediente-details-text">
+                        <span class="expediente-patient-name">
+                          <span>Lic. Roberto Carrillo</span>
+                          <span class="suite-badge-pill pill-cyan" style="font-size: 0.65rem;">+ 6 notas clínicas</span>
+                        </span>
+                        <div class="expediente-submeta">
+                          <span>Contacto: Confidencial</span>
+                          <span>•</span>
+                          <span>Última consulta: 1 sep 2026</span>
+                          <span>•</span>
+                          <span>Seguimiento Quincenal</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="expediente-action-btn">
+                      <span>Ver Expediente</span>
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    </div>
+                  </div>
+
+                  <div class="expediente-row-card">
+                    <div class="expediente-main-info">
+                      <div class="expediente-avatar">ER</div>
+                      <div class="expediente-details-text">
+                        <span class="expediente-patient-name">
+                          <span>Mtra. Elena Ramos</span>
+                          <span class="suite-badge-pill pill-cyan" style="font-size: 0.65rem;">+ 2 notas clínicas</span>
+                        </span>
+                        <div class="expediente-submeta">
+                          <span>Contacto: Confidencial</span>
+                          <span>•</span>
+                          <span>Última consulta: 2 sep 2026</span>
+                          <span>•</span>
+                          <span>Valoración Inicial</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="expediente-action-btn">
+                      <span>Ver Expediente</span>
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Vista 3: Auditoría de Cobranza -->
+              <div class="suite-view-panel" id="view-cobranza">
+                <div class="suite-panel-header">
+                  <h4 class="suite-panel-title">
+                    <span>Auditoría de Pagos y Cobranza WhatsApp</span>
+                  </h4>
+                  <div class="suite-panel-stats">
+                    <span class="suite-badge-pill pill-orange">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                      <span>2 Cobros Pendientes</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="suite-cobranza-list">
+                  <div class="cobranza-row-card">
+                    <div class="cobranza-info">
+                      <span class="cobranza-patient">
+                        <span>Paciente Carlos V.</span>
+                        <span class="suite-badge-pill pill-orange" style="font-size: 0.65rem;">Por Liquidar</span>
+                      </span>
+                      <div class="cobranza-meta">
+                        <span>Mié 2 Sep 2026 — 11:45 a.m.</span>
+                        <span>•</span>
+                        <span>Honorarios: $700.00 MXN</span>
+                      </div>
+                    </div>
+                    <div class="cobranza-actions">
+                      <div class="btn-mock-whatsapp">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        <span>Solicitar Pago vía WhatsApp</span>
+                      </div>
+                      <div class="btn-mock-paid">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>Marcar Pagado</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="cobranza-row-card">
+                    <div class="cobranza-info">
+                      <span class="cobranza-patient">
+                        <span>Paciente Fernando G.</span>
+                        <span class="suite-badge-pill pill-orange" style="font-size: 0.65rem;">Por Liquidar</span>
+                      </span>
+                      <div class="cobranza-meta">
+                        <span>Vie 4 Sep 2026 — 05:30 p.m.</span>
+                        <span>•</span>
+                        <span>Honorarios: $750.00 MXN</span>
+                      </div>
+                    </div>
+                    <div class="cobranza-actions">
+                      <div class="btn-mock-whatsapp">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        <span>Solicitar Pago vía WhatsApp</span>
+                      </div>
+                      <div class="btn-mock-paid">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>Marcar Pagado</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Vista 4: Reporte Contable -->
+              <div class="suite-view-panel" id="view-contable">
+                <div class="suite-panel-header">
+                  <h4 class="suite-panel-title">
+                    <span>Balance y Reporte Contable Mensual</span>
+                  </h4>
+                  <div class="suite-panel-stats">
+                    <span class="suite-badge-pill pill-cyan">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                      <span>Septiembre 2026</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="suite-contable-view">
+                  <div class="contable-metrics-strip">
+                    <div class="contable-metric-card">
+                      <span class="contable-metric-label">TOTAL COBRADO</span>
+                      <span class="contable-metric-val text-cyan">$8,450.00</span>
+                    </div>
+                    <div class="contable-metric-card">
+                      <span class="contable-metric-label">CONSULTAS REALIZADAS</span>
+                      <span class="contable-metric-val text-blue">19</span>
+                    </div>
+                    <div class="contable-metric-card">
+                      <span class="contable-metric-label">POR COBRAR</span>
+                      <span class="contable-metric-val" style="color: #FBBF24;">$1,450.00</span>
+                    </div>
+                    <div class="contable-metric-card">
+                      <span class="contable-metric-label">TARIFA PROMEDIO</span>
+                      <span class="contable-metric-val text-cyan">$720.00</span>
+                    </div>
+                  </div>
+
+                  <div class="contable-actions-bar">
+                    <div class="btn-mock-copy">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                      <span>Copiar Resumen para Contadora</span>
+                    </div>
+                    <div class="contable-privacy-notice">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                      <span>Datos clínicos y diagnósticos confidenciales no expuestos · Formato contable oficial</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="database-insights-grid">
             <div class="insight-card">
               <div class="insight-header">
                 <span class="insight-number text-cyan font-mono">01</span>
-                <span class="insight-badge font-mono">[EXPEDIENTES]</span>
+                <span class="insight-badge badge-cyan font-mono">[EXPEDIENTES]</span>
               </div>
               <h3 class="insight-title">Expedientes y Notas de Sesión Digitales</h3>
               <p class="insight-desc">Historial completo de cada paciente, notas de evolución y recetas en un solo lugar seguro y ordenado, accesible desde tu celular o computadora con total privacidad.</p>
@@ -375,7 +796,7 @@
             <div class="insight-card">
               <div class="insight-header">
                 <span class="insight-number text-blue font-mono">02</span>
-                <span class="insight-badge font-mono">[AUTOMATIZACIÓN]</span>
+                <span class="insight-badge badge-blue font-mono">[AUTOMATIZACIÓN]</span>
               </div>
               <h3 class="insight-title">Recordatorios Automáticos de Sesiones</h3>
               <p class="insight-desc">Reduce ausencias y cancelaciones de última hora notificando automáticamente a tus pacientes por WhatsApp antes de cada consulta o sesión.</p>
@@ -390,7 +811,7 @@
             <div class="insight-card">
               <div class="insight-header">
                 <span class="insight-number text-cyan font-mono">03</span>
-                <span class="insight-badge font-mono">[CONTROL]</span>
+                <span class="insight-badge badge-cyan font-mono">[CONTROL]</span>
               </div>
               <h3 class="insight-title">Control de Consultas e Ingresos</h3>
               <p class="insight-desc">Visualiza en segundos tus pacientes activos, sesiones atendidas y el balance financiero mensual de tu consulta sin hojas de Excel complejas.</p>
@@ -530,7 +951,206 @@
   </section>
 
   <!-- =========================================================================
-       7. SECCIÓN DE CONTACTO & CONVERSIÓN
+       7. PLANES Y PRECIOS (INVERSIÓN TRANSPARENTE)
+       ========================================================================= -->
+  <section class="pricing-section section-spacing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">[PLANES // INVERSIÓN_TRANSPARENTE]</div>
+        <h2 class="section-title">Planes y Soluciones para Profesionales de la Salud</h2>
+        <p class="section-subtitle">
+          Inversión clara, sin sorpresas ni comisiones ocultas por paciente. Diseñados para adaptarse a la etapa en que se encuentra tu práctica médica o terapéutica.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Plan 1: Esencial -->
+        <div class="pricing-card">
+          <div class="pricing-card-header">
+            <span class="pricing-plan-badge font-mono">[PAQUETE 01 // PRESENCIA DIRECTA]</span>
+            <h3 class="pricing-plan-title">Presencia Digital Directa</h3>
+            <p class="pricing-plan-ideal">
+              Ideal para especialistas que administran su agenda de forma tradicional (papel o Excel) pero necesitan captar pacientes en internet con una imagen formal y de máxima confianza.
+            </p>
+          </div>
+
+          <div class="pricing-amount-box">
+            <div class="pricing-main-price">
+              <span class="currency">$</span>
+              <span class="amount">4,500</span>
+              <span class="period font-mono">MXN (Pago Único)</span>
+            </div>
+            <div class="pricing-scheme font-mono">
+              ESQUEMA 50/50: $2,250 MXN anticipo · $2,250 MXN al entregar
+            </div>
+            <div class="pricing-recurring-details">
+              <div class="detail-row">
+                <span>Mantenimiento o Sistema:</span>
+                <strong class="text-green font-mono">$0 MXN / mes (De por vida)</strong>
+              </div>
+              <div class="detail-row">
+                <span>Costo Anual de Dominio Propio:</span>
+                <span class="font-mono">~$200 a $800 MXN / año*</span>
+              </div>
+              <div class="detail-row detail-row-sub">
+                <span class="text-secondary">*Se compra a tu nombre en Cloudflare a precio de costo sin recargos.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pricing-features">
+            <span class="feature-category-title font-mono">[QUÉ INCLUYE TU SOLUCIÓN]</span>
+            <ul class="pricing-feature-list">
+              <li>
+                <span class="feature-check text-cyan">✓</span>
+                <span><strong>Sitio web profesional de una página (Landing Page):</strong> Estructura optimizada para transmitir autoridad y convertir visitas en consultas.</span>
+              </li>
+              <li>
+                <span class="feature-check text-cyan">✓</span>
+                <span><strong>Redacción persuasiva especializada:</strong> Textos claros enfocados en los motivos de consulta y dolor de tus pacientes ideales.</span>
+              </li>
+              <li>
+                <span class="feature-check text-cyan">✓</span>
+                <span><strong>Botones directos a WhatsApp:</strong> Configurados con mensajes precargados para que te escriban en 1 clic.</span>
+              </li>
+              <li>
+                <span class="feature-check text-cyan">✓</span>
+                <span><strong>Formulario de contacto seguro:</strong> Notificaciones directas a tu correo para pacientes que prefieren agendar formalmente.</span>
+              </li>
+              <li>
+                <span class="feature-check text-cyan">✓</span>
+                <span><strong>Optimización móvil y SEO Local:</strong> Carga ultrarrápida en smartphones y presencia lista en Google para tu ciudad.</span>
+              </li>
+              <li>
+                <span class="feature-check text-cyan">✓</span>
+                <span><strong>Aviso de Privacidad integrado:</strong> Cumplimiento con las normativas de confidencialidad y datos personales.</span>
+              </li>
+              <li>
+                <span class="feature-check text-cyan">✓</span>
+                <span><strong>Tiempo de entrega:</strong> Máximo 3 semanas desde la recepción del material.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pricing-action">
+            <a href="https://wa.me/528130938884?text=Hola%20Cristhian,%20me%20interesa%20el%20Paquete%20Esencial%20($4,500%20MXN)%20para%20mi%20consulta" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-block">
+              <span>Elegir Paquete Esencial</span>
+              <span class="btn-arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Plan 2: Consultorio Inteligente (Featured) -->
+        <div class="pricing-card featured-pricing-card">
+          <div class="pricing-featured-ribbon font-mono">
+            ★ RECOMENDADO // EL MÁS ELEGIDO
+          </div>
+
+          <div class="pricing-card-header">
+            <span class="pricing-plan-badge font-mono text-cyan">[PAQUETE 02 // CONSULTORIO INTELIGENTE]</span>
+            <h3 class="pricing-plan-title">Consultorio Inteligente</h3>
+            <p class="pricing-plan-ideal">
+              Ideal para especialistas que desean digitalizar por completo su consulta privada, eliminar el caos de notas dispersas y profesionalizar el seguimiento a sus pacientes.
+            </p>
+          </div>
+
+          <div class="pricing-amount-box">
+            <div class="pricing-main-price">
+              <span class="currency">$</span>
+              <span class="amount">5,500</span>
+              <span class="period font-mono">MXN (Pago Inicial)</span>
+            </div>
+            <div class="pricing-scheme font-mono">
+              ESQUEMA 50/50: $2,750 MXN anticipo · $2,750 MXN al entregar
+            </div>
+            <div class="pricing-recurring-details">
+              <div class="detail-row">
+                <span>Suscripción de Sistema y Servidor Seguro:</span>
+                <strong class="text-cyan font-mono">$499 MXN / mes</strong>
+              </div>
+              <div class="detail-row detail-row-sub">
+                <span class="text-secondary font-mono">O anualidad: $4,990 MXN / año (Ahorras 2 meses completos)</span>
+              </div>
+              <div class="detail-row">
+                <span>Costo Anual de Dominio Propio:</span>
+                <span class="font-mono">~$200 a $800 MXN / año*</span>
+              </div>
+              <div class="detail-row detail-row-sub">
+                <span class="text-secondary">*Se compra a tu nombre en Cloudflare a precio de costo sin recargos.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pricing-features">
+            <span class="feature-category-title font-mono text-cyan">[TODO LO DEL PAQUETE ESENCIAL, MÁS:]</span>
+            <ul class="pricing-feature-list">
+              <li>
+                <span class="feature-check text-cyan">✓</span>
+                <span><strong>Web multi-sección completa:</strong> Páginas detalladas de perfil profesional, especialidades/servicios clínicos, preguntas frecuentes y ubicación.</span>
+              </li>
+              <li>
+                <span class="feature-check text-cyan">✓</span>
+                <span><strong>Suite Clínica Privada (/panel):</strong> Plataforma interna protegida con contraseña y sesión encriptada para gestionar tu día a día.</span>
+              </li>
+              <li>
+                <span class="feature-check text-cyan">✓</span>
+                <span><strong>Agenda interactiva con enlace a Zoom:</strong> Control de sesiones semanales con acceso en 1 clic a videollamadas para terapia online.</span>
+              </li>
+              <li>
+                <span class="feature-check text-cyan">✓</span>
+                <span><strong>Expedientes y notas confidenciales:</strong> Historial ordenado por paciente con notas de evolución privadas y seguras.</span>
+              </li>
+              <li>
+                <span class="feature-check text-cyan">✓</span>
+                <span><strong>Cobranza por WhatsApp en 1 clic:</strong> Recordatorios automáticos y solicitudes de pago amigables sin fricciones ni comisiones.</span>
+              </li>
+              <li>
+                <span class="feature-check text-cyan">✓</span>
+                <span><strong>Reporte contable mensual para tu contadora:</strong> Exportación rápida de ingresos sin exponer jamás los datos clínicos de tus pacientes.</span>
+              </li>
+              <li>
+                <span class="feature-check text-cyan">✓</span>
+                <span><strong>Soporte prioritario 1 a 1:</strong> Atención técnica directa con el ingeniero creador ante cualquier duda o ajuste.</span>
+              </li>
+              <li>
+                <span class="feature-check text-cyan">✓</span>
+                <span><strong>Tiempo de entrega:</strong> Máximo 3 semanas desde la recepción del material.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pricing-action">
+            <a href="https://wa.me/528130938884?text=Hola%20Cristhian,%20me%20interesa%20el%20Paquete%20Consultorio%20Inteligente%20para%20mi%20consulta" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+              <span>Elegir Consultorio Inteligente</span>
+              <span class="btn-arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Custom Project Notice Banner -->
+      <div class="pricing-custom-note">
+        <div class="custom-note-icon text-cyan">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <div class="custom-note-text">
+          <strong>¿Tu clínica requiere múltiples especialistas, pasarela de tarjetas o funciones personalizadas?</strong>
+          <span>Diseño arquitecturas a la medida de tu práctica: integración con Stripe o Mercado Pago, agenda multi-consultorio y flujos clínicos especiales. Elaboramos una cotización exacta según tus requerimientos.</span>
+        </div>
+        <a href="#contact" class="btn btn-secondary">
+          <span>Cotizar a Medida</span>
+          <span class="btn-arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. SECCIÓN DE CONTACTO & CONVERSIÓN
        ========================================================================= -->
   <section class="contact-section section-spacing" id="contact">
     <div class="container">
@@ -568,7 +1188,7 @@
             </div>
           </div>
 
-          <a href="#" class="btn btn-primary btn-block cta-whatsapp" data-action="whatsapp-direct" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/528130938884?text=Hola%20Cristhian,%20vi%20tu%20sitio%20y%20me%20interesa%20una%20cotizaci%C3%B3n%20para%20mi%20consulta" class="btn btn-primary btn-block cta-whatsapp" data-action="whatsapp-direct" target="_blank" rel="noopener noreferrer">
             <svg class="icon-whatsapp" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
             </svg>
@@ -671,6 +1291,8 @@
         <a href="#security" class="footer-link">Privacidad</a>
         <span class="footer-separator">//</span>
         <a href="#operator" class="footer-link">Sobre Mí</a>
+        <span class="footer-separator">//</span>
+        <a href="aviso-de-privacidad.html" class="footer-link">Aviso de Privacidad</a>
         <span class="footer-separator">//</span>
         <a href="https://github.com/CristhianRuiz24" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
         <span class="footer-separator">//</span>

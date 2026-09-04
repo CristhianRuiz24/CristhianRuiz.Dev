@@ -47,6 +47,42 @@ function initSmoothScroll() {
 }
 
 /**
+ * Initializes interactive tabs for the Clinical Suite Mockup
+ */
+function initClinicalSuiteTabs() {
+  const mockup = document.getElementById('clinical-suite-demo');
+  if (!mockup) return;
+
+  const tabButtons = mockup.querySelectorAll('.suite-tab-btn');
+  const viewPanels = mockup.querySelectorAll('.suite-view-panel');
+
+  tabButtons.forEach((btn) => {
+      btn.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetTab = btn.getAttribute('data-tab');
+        if (!targetTab) return;
+
+        // Update active state on buttons
+        tabButtons.forEach((b) => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+
+        // Update active state on panels
+        viewPanels.forEach((panel) => {
+          if (panel.id === `view-${targetTab}`) {
+            panel.classList.add('active');
+          } else {
+            panel.classList.remove('active');
+          }
+        });
+      });
+    });
+  }
+
+/**
  * Prints a DedSec / Cyber-Terminal greeting in the browser developer console
  */
 function printSystemBanner() {
@@ -69,9 +105,18 @@ function printSystemBanner() {
   );
 }
 
-// Initialize on DOM Ready
-document.addEventListener('DOMContentLoaded', () => {
+function initApp() {
   initWhatsAppButtons();
   initSmoothScroll();
+  initClinicalSuiteTabs();
   printSystemBanner();
-});
+}
+
+// Initialize on DOM Ready or immediately if document is already loaded
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initApp);
+} else {
+  initApp();
+}
+
+

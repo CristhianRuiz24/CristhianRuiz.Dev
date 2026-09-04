@@ -25,7 +25,7 @@ Plataforma web de captación comercial y portafolio profesional para **CrisDev (
 
 ### 1. Navegación y Encabezado
 - **RF-1 (Ubicuo):** EL SISTEMA mantendrá visible en el encabezado la identidad de marca `CrisDev // Cristhian Ruiz`, el indicador de disponibilidad `● DISPONIBLE PARA PROYECTOS` (con pulso visual), los enlaces de navegación (`Presencia Digital`, `Sistemas a Medida`, `Privacidad`, `Sobre Mí`) y un botón CTA `Consultar por WhatsApp`.
-- **RF-2 (Evento):** CUANDO el usuario hace clic en el botón de WhatsApp del Navbar, EL SISTEMA abrirá en una nueva pestaña la conversación de WhatsApp con un mensaje predeterminado de consulta profesional.
+- **RF-2 (Evento):** CUANDO el usuario hace clic en el botón de WhatsApp (Navbar o Contacto), EL SISTEMA abrirá en una nueva pestaña la conversación de WhatsApp hacia el número oficial (+52 81 3093 8884) con el mensaje precargado específico para especialistas de la salud: *"Hola Cristhian, vi tu sitio y me interesa una cotización para mi consulta"*, disponible de forma nativa en el atributo `href` estático y validado por módulo JS.
 
 ### 2. Hero Section (Atracción y Propuesta de Valor)
 - **RF-3 (Ubicuo):** EL SISTEMA presentará:
@@ -44,8 +44,9 @@ Plataforma web de captación comercial y portafolio profesional para **CrisDev (
   4. Desglose de valor:
      - **El Reto:** *"La especialista invertía horas respondiendo dudas repetitivas por mensaje y gestionaba las notas de sus pacientes de forma dispersa."*
      - **La Solución:** *"Diseñamos una plataforma cálida y profesional que genera confianza inmediata, guía al paciente a agendar en 2 clics a WhatsApp y le brinda un panel privado para sus notas y agenda."*
-     - **Resultados de Negocio:** `+180% Más Citas Solicitadas`, `Cero Comisiones a Terceros` y `Suite Clínica Privada (/panel)`.
-  5. Botón CTA: `[ Cotizar una Plataforma Similar para Mi Consulta → ]`.
+     - **Resultados de Negocio:** `0% Comisiones a Terceros` y `Suite Clínica Privada (/panel)` en un layout optimizado de 2 columnas de alta legibilidad.
+  5. Testimonio Real Verificado: Card técnica con recomendación de la Mtra. Ana Laura Gómez (Fundadora de PsicoLau), cita de alto impacto sobre el sistema completo de práctica profesional, 3 chips de autoridad y desplegable semántico para la reseña íntegra.
+  6. Botón CTA: `[ Cotizar una Plataforma Similar para Mi Consulta → ]`.
 - **RF-6 (Evento):** CUANDO el usuario interactúe con la tarjeta del caso de estudio, EL SISTEMA mostrará efectos sutiles de hover con micro-animaciones tipo escaneo/borde neón sin alterar la legibilidad.
 
 ### 4. Terminal 02: Sistemas a Medida & Gestión de Consultas (Antes "Arquitectura Operativa")
@@ -85,8 +86,27 @@ Plataforma web de captación comercial y portafolio profesional para **CrisDev (
   `> ME PONDRÉ EN CONTACTO CONTIGO EN MENOS DE 24 HORAS.`
   `> [FIN_DEL_PROCESO]`
 
-### 8. Footer
-- **RF-15 (Ubicuo):** EL SISTEMA incluirá copyright, enlaces de validación profesional (LinkedIn, GitHub) y la firma técnica `[END_OF_TRANSMISSION]`.
+### 8. Footer y Aviso de Privacidad
+- **RF-15 (Ubicuo):** EL SISTEMA incluirá en el footer copyright, enlaces de navegación, enlace a `Aviso de Privacidad` (`aviso-de-privacidad.html`), perfiles de validación profesional (LinkedIn, GitHub) y la firma técnica `[END_OF_TRANSMISSION]`.
+- **RF-16 (Ubicuo):** EL SISTEMA proveerá una página dedicada de Aviso de Privacidad (`aviso-de-privacidad.html`) bajo el sistema estético Cyber-Terminal con:
+  1. Header con enlace de retorno `[ ← Volver al Inicio ]`.
+  2. Tratamiento de datos recopilados en `cristhianruiz.dev` (formulario de contacto) exclusivamente para dar respuesta y cotizaciones, sin cesión a terceros.
+  3. Explicación de arquitectura de seguridad y confidencialidad médica en sistemas y plataformas desarrolladas a medida.
+  4. Delimitación clara de responsabilidad: el profesional de la salud o consultorio titular de cada sistema es el único responsable del tratamiento de los datos personales de sus pacientes.
+  5. Nota de transparencia recomendando asesoría legal en caso de requerir un aviso de privacidad formal y vinculante.
+
+### 9. Planes y Precios Transparentes & Mockup de Suite Clínica
+- **RF-17 (Ubicuo):** EL SISTEMA proveerá una sección de Planes y Precios (`#pricing`) con desglose de inversión transparente para profesionales de la salud:
+  1. Paquete 01 (Presencia Digital Directa): $4,500 MXN pago único (esquema 50/50: $2,250 anticipo / $2,250 entrega), $0 mensualidades forzosas, dominio al costo en Cloudflare (~$200 a $800 MXN/año), entrega máxima en 3 semanas y enlace directo a WhatsApp con mensaje precargado.
+  2. Paquete 02 (Consultorio Inteligente - Recomendado): $5,500 MXN pago inicial (esquema 50/50: $2,750 anticipo / $2,750 entrega), suscripción de sistema de $499 MXN/mes o anualidad de $4,990 MXN/año (ahorra 2 meses), dominio al costo, entrega máxima en 3 semanas, listado de módulos clínicos y enlace directo a WhatsApp con mensaje precargado.
+- **RF-18 (Interacción):** EL SISTEMA proveerá en la sección de Arquitectura Operativa (`#infrastructure`) un Mockup Interactivo de la Suite de Gestión Clínica (`#clinical-suite-demo`) diseñado bajo la estética de un Dashboard SaaS de Salud de Alta Gama (sin referencias a clientes específicos, 100% iconografía vectorial SVG y cero emojis de sistema):
+  1. Barra de ventana con título genérico `PANEL DE CONTROL CLÍNICO` y badge `[DEMO EN VIVO]`.
+  2. Navegación por pestañas tipo *Segmented Control* (Agenda Semanal, Expedientes y Notas, Auditoría de Pagos, Reporte Contable).
+  3. Vista de Agenda Semanal con consultas para distintas áreas de la salud (Valoración, Seguimiento, Control Clínico, General, Tratamiento), chips de modalidad (`Online` con SVG de videollamada / `Presencial` con SVG de ubicación), horas en gris neutro y badges de estado translúcidos (`● PAGADO` esmeralda / `● POR COBRAR` ámbar).
+  4. Vista de Expedientes con avatares con iniciales, badges de notas de evolución clínicas acumuladas y acceso cifrado AES-256.
+  5. Vista de Auditoría de Cobranza con montos de honorarios y botón oficial de solicitud por WhatsApp con SVG nativo.
+  6. Vista de Reporte Contable con tarjetas KPI de ingresos y consultas, botón de copia de resumen con icono SVG y nota de confidencialidad médica.
+
 
 ---
 

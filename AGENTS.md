@@ -22,6 +22,10 @@ Portafolio profesional y plataforma de captación de clientes para el sector sal
 - **Estética controlada (Anti-caos):** Los efectos glitch/terminal deben ser acentos discretos; nunca comprometer la legibilidad ni la usabilidad de la web.
 - **Salvaguarda Mobile (`minmax(0, 1fr)`):** En CSS Grid/Flexbox, declarar siempre `minmax(0, 1fr)` en lugar de `1fr` plano y asignar `min-width: 0` / `word-break: break-word` en elementos hijos para evitar que textos monospace o código fuercen `min-content` y desborden la pantalla en móviles.
 - **Iconografía técnica (Cero emojis de sistema):** Prohibido el uso de emojis Unicode estándar en la interfaz (por su aspecto infantil y renderizado heterogéneo entre plataformas). Emplear exclusivamente iconos vectoriales SVG limpios con `stroke="currentColor"` y efectos neón/glow (Cyan/Azul/Verde) para preservar la sobriedad técnica y la coherencia visual.
+- **Protocolo Browser Subagent (Anti-Bucle & Ahorro de Tokens):** En toda tarea que invoque al subagente de navegador:
+  1. *Límite Fail-Fast:* Incluir en el prompt la cláusula de corte: máximo 2 intentos por interacción; si la interfaz no cambia al segundo intento, capturar pantalla del estado actual, reportar el obstáculo y TERMINAR de inmediato (prohibido reintentar indefinidamente ajustando coordenadas).
+  2. *Cache-Busting local:* En servidores locales (`localhost`), navegar siempre con un query string único (`?v=...`) para evitar evaluar vistas en caché 304.
+  3. *Verificaciones atómicas:* Priorizar capturas visuales de renderizado sobre flujos interactivos extensos.
 - **SDD estricto:** Ante cualquier cambio de funcionalidad, actualizar primero la spec correspondiente.
 
 ## Al terminar cualquier tarea

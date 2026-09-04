@@ -30,14 +30,31 @@
       * Diseño limpio, legible, con iconografía vectorial SVG y 100% responsivo en móvil y escritorio.
 14. **Mensaje de WhatsApp Natural & Empático (Sin Fricción):**
     - Reemplazado el mensaje predeterminado con corchetes en `js/config.js` por: *"Hola Cristhian! Vi tu página y me gustaría pedirte información y asesoría para mi consultorio."*
+15. **Ajuste de Métricas en PsicoLau (T12):**
+    - Eliminada la métrica no verificada (+180%) y rebalanceado el grid a 2 columnas simétricas con 0% comisiones y Suite clínica privada.
+16. **Enlaces de WhatsApp Verificados (T13):**
+    - Corregidos todos los enlaces de WhatsApp sustituyendo `#` por la URL nativa con número verificado (+52 81 3093 8884) y mensaje precargado.
+17. **Aviso de Privacidad y Enlace Legal (T14):**
+    - Creada la página `aviso-de-privacidad.html` con delimitación de responsabilidades sobre datos de pacientes de terceros, nota de transparencia y enlace en footer.
+18. **Optimización Schema.org JSON-LD (T15):**
+    - Añadidos datos estructurados de `ProfessionalService` con cobertura para México y enlaces de perfil.
+19. **Testimonio Real de Ana Laura Gómez (T16):**
+    - Integrada la reseña verídica con estrellas neón, pull-quote, 3 chips de autoridad y acordeón `<details>` para lectura completa.
+20. **Resolución del Choque Visual & Dualidad Intencional (T17):**
+    - Redacción clarificadora en Hero: estética cálida y humana para la web pública del paciente + blindaje técnico y seguridad para la gestión interna.
+    - Badge de compromiso: `ENTREGA MÁXIMA: 3 SEMANAS`.
+21. **Mockup Interactivo de Suite Clínica Privada (T18):**
+    - Módulo de demostración interactiva con 4 vistas intercambiables: Agenda Semanal, Expedientes Clínicos, Auditoría de Cobranza WhatsApp y Reporte Contable mensual.
+22. **Sección de Planes y Precios Transparentes (T19):**
+    - Creado `#pricing` y `css/components/pricing.css` con el Paquete Esencial ($4,500 MXN), Consultorio Inteligente ($5,500 MXN + $499/mes), desglose de dominio al costo en Cloudflare y banner para proyectos a medida.
 
 ## En qué quedó el proyecto
 
-- Sitio web en vivo y validado tanto en desktop como en mobile (375px) con cero errores en consola: **[https://cristhianruiz.dev](https://cristhianruiz.dev)**
-- Repositorio sincronizado en GitHub con commit `1655f1b`: **[https://github.com/CristhianRuiz24/CristhianRuiz.Dev](https://github.com/CristhianRuiz24/CristhianRuiz.Dev)**
-- Spec, tareas y estilos completamente actualizados bajo flujo SDD.
+- Servidor local activo en `http://localhost:3005/` completamente validado en escritorio y móvil (375px) con cero errores de consola.
+- Todas las especificaciones SDD (RF-1 a RF-18) y tareas (T1 a T19) completadas e implementadas.
+- Walkthrough documentado en `walkthrough.md` con capturas de pantalla de la suite clínica y sección de precios.
 
-## Próximo paso (Futuras Iteraciones)
+## Próximo paso
 
-- Dar de alta el `sitemap.xml` en Google Search Console para indexación acelerada.
-- Añadir nuevos casos de estudio conforme se desarrollen nuevos sistemas clínicos.
+- Subir los cambios a GitHub / Cloudflare Pages para desplegar la nueva versión en vivo.
+

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aviso de Privacidad // CrisDev — Cristhian Ruiz</title>
+  
+  <!-- SEO & Security Meta Tags -->
+  <meta name="description" content="Aviso de privacidad, confidencialidad técnica y términos de protección de datos de CrisDev (Cristhian Ruiz) para especialistas de la salud y consultorios.">
+  <meta name="author" content="Cristhian Ruiz">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A0C10">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://cristhianruiz.dev/aviso-de-privacidad">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300F0FF'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components/navbar.css">
+  <link rel="stylesheet" href="css/components/terminal.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+
+  <style>
+    .privacy-page-wrapper {
+      padding-top: calc(var(--header-height) + 2rem);
+      padding-bottom: 5rem;
+      min-height: 80vh;
+    }
+    .privacy-terminal {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .privacy-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      font-size: 0.96rem;
+    }
+    .privacy-title-area {
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 1.5rem;
+    }
+    .privacy-main-title {
+      font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+      line-height: 1.25;
+    }
+    .privacy-meta-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      flex-wrap: wrap;
+    }
+    .privacy-section {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .privacy-section-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .privacy-section-title .prefix {
+      color: var(--accent-cyan);
+      font-family: var(--font-mono);
+      font-size: 1rem;
+    }
+    .privacy-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .privacy-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding-left: 0.25rem;
+    }
+    .privacy-list li::before {
+      content: ">";
+      color: var(--accent-blue-bright);
+      font-family: var(--font-mono);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .privacy-highlight-box {
+      background-color: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-left: 3px solid var(--accent-cyan);
+      border-radius: var(--radius-sm);
+      padding: 1.25rem 1.5rem;
+      margin: 0.5rem 0;
+    }
+    .privacy-highlight-box p {
+      margin: 0;
+      color: var(--text-primary);
+      font-size: 0.94rem;
+    }
+    .privacy-disclaimer-box {
+      background-color: rgba(59, 130, 246, 0.06);
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: var(--radius-sm);
+      padding: 1.25rem 1.5rem;
+      margin-top: 1rem;
+    }
+    .privacy-disclaimer-box p {
+      margin: 0;
+      color: #D1D5DB;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    .privacy-back-cta {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =========================================================================
+       HEADER / NAVBAR
+       ========================================================================= -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="CrisDev Inicio">
+        <span class="brand-terminal">&gt;_</span>
+        <span class="brand-name">CrisDev</span>
+        <span class="brand-separator">//</span>
+        <span class="brand-role">Cristhian Ruiz</span>
+      </a>
+
+      <div class="system-status" aria-label="Disponibilidad para proyectos">
+        <span class="status-indicator"></span>
+        <span class="status-text">● PROTOCOLO DE PRIVACIDAD</span>
+      </div>
+
+      <div class="header-cta">
+        <a href="index.html" class="btn btn-secondary btn-sm">
+          <span>&larr; Volver al Inicio</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MAIN PRIVACY CONTENT
+       ========================================================================= -->
+  <main class="privacy-page-wrapper">
+    <div class="container">
+      <div class="terminal-card privacy-terminal">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <div class="terminal-path">crisdev://legal/aviso-de-privacidad.sh</div>
+          <div class="terminal-header-badges">
+            <span class="badge badge-cyan">[POLÍTICA_DE_PRIVACIDAD]</span>
+            <span class="badge badge-blue">[VERSIÓN: 1.0]</span>
+          </div>
+        </div>
+
+        <div class="terminal-body privacy-content">
+          <!-- Title & Meta Header -->
+          <div class="privacy-title-area">
+            <div class="section-tag">[CONFIDENCIALIDAD // TRANSPARENCIA]</div>
+            <h1 class="privacy-main-title">Aviso de Privacidad y Confidencialidad Técnica</h1>
+            <div class="privacy-meta-row">
+              <span><strong>Responsable web:</strong> Cristhian Ruiz (CrisDev)</span>
+              <span>//</span>
+              <span><strong>Última actualización:</strong> Septiembre 2026</span>
+              <span>//</span>
+              <span><strong>Jurisdicción técnica:</strong> México</span>
+            </div>
+          </div>
+
+          <!-- Section 1 -->
+          <section class="privacy-section">
+            <h2 class="privacy-section-title">
+              <span class="prefix">01.</span> Datos Recopilados en Este Sitio Web (cristhianruiz.dev)
+            </h2>
+            <p>
+              En este sitio web únicamente se recopila la información que tú proporcionas de manera voluntaria a través del formulario de contacto o al iniciar una conversación por WhatsApp:
+            </p>
+            <ul class="privacy-list">
+              <li><strong>Nombre y Especialidad:</strong> Para identificar quién se comunica y el contexto de su práctica profesional (ej. psicología, nutrición, odontología).</li>
+              <li><strong>Correo Electrónico o WhatsApp:</strong> Para responder a tu mensaje y mantener una conversación directa de asesoría.</li>
+              <li><strong>Nombre del Consultorio o Clínica:</strong> Para comprender las características y alcance de tu espacio de trabajo.</li>
+              <li><strong>Descripción del Proyecto o Necesidad:</strong> Para evaluar la viabilidad técnica y estructurar una propuesta acorde a tus requerimientos.</li>
+            </ul>
+            <div class="privacy-highlight-box">
+              <p>
+                <strong>Uso exclusivo:</strong> Estos datos se utilizan únicamente para responder consultas, agendar sesiones de asesoría y elaborar cotizaciones personalizadas. <strong>Bajo ninguna circunstancia se venden, alquilan, transfieren ni comparten con terceros para fines publicitarios.</strong>
+              </p>
+            </div>
+          </section>
+
+          <!-- Section 2 -->
+          <section class="privacy-section">
+            <h2 class="privacy-section-title">
+              <span class="prefix">02.</span> Confidencialidad en los Sistemas y Plataformas que Desarrollo
+            </h2>
+            <p>
+              Como desarrollador de software enfocado en el sector salud y servicios profesionales, entiendo que la confidencialidad médica y el secreto profesional son esenciales e innegociables. Por ello, las soluciones y plataformas a medida que diseño se rigen bajo los siguientes principios de seguridad:
+            </p>
+            <ul class="privacy-list">
+              <li><strong>Cifrado y Seguridad en Tránsito:</strong> Toda comunicación entre el navegador y la plataforma opera bajo protocolos de cifrado robusto (HTTPS / TLS).</li>
+              <li><strong>Acceso Restringido:</strong> Los paneles y suites clínicas cuentan con control de autenticación seguro, diseñado para que únicamente el profesional titular y su personal autorizado puedan consultar o registrar información de pacientes.</li>
+              <li><strong>Aislamiento de Información:</strong> Los expedientes, notas de evolución y registros clínicos residen en entornos de almacenamiento estructurados y protegidos contra accesos no autorizados.</li>
+            </ul>
+          </section>
+
+          <!-- Section 3 -->
+          <section class="privacy-section">
+            <h2 class="privacy-section-title">
+              <span class="prefix">03.</span> Delimitación de Responsabilidad y Titularidad de los Datos Clínicos
+            </h2>
+            <p>
+              Es importante establecer una distinción clara sobre la titularidad y responsabilidad legal respecto a la información sensible de los pacientes:
+            </p>
+            <ul class="privacy-list">
+              <li><strong>El Titular es el Profesional de la Salud:</strong> El responsable legal, ético y operativo del tratamiento de los datos personales y expedientes clínicos de los pacientes es exclusivamente el profesional de la salud o consultorio/clínica titular de cada plataforma contratada.</li>
+              <li><strong>Rol de Cristhian Ruiz (CrisDev):</strong> Mi labor se limita estrictamente al diseño, arquitectura, programación y mantenimiento técnico de la infraestructura informática. En ningún momento administro, vendo, dispongo ni tengo relación jurídica o clínica con los pacientes finales de tu consulta.</li>
+            </ul>
+          </section>
+
+          <!-- Section 4 -->
+          <section class="privacy-section">
+            <h2 class="privacy-section-title">
+              <span class="prefix">04.</span> Modificación o Eliminación de tus Datos de Contacto
+            </h2>
+            <p>
+              Si en algún momento deseas consultar, actualizar o solicitar la eliminación definitiva de los datos de contacto que enviaste a través del formulario de este sitio web, puedes hacerlo directamente y sin trámites complejos escribiendo a:
+            </p>
+            <ul class="privacy-list">
+              <li><strong>Correo Electrónico:</strong> <a href="mailto:cristhian.ruiz.c@hotmail.com" class="text-cyan">cristhian.ruiz.c@hotmail.com</a></li>
+              <li><strong>WhatsApp Directo:</strong> <a href="https://wa.me/528130938884" target="_blank" rel="noopener noreferrer" class="text-blue">+52 81 3093 8884</a></li>
+            </ul>
+          </section>
+
+          <!-- Section 5: Legal Transparency Disclaimer -->
+          <section class="privacy-section">
+            <h2 class="privacy-section-title">
+              <span class="prefix">05.</span> Nota de Transparencia Legal
+            </h2>
+            <div class="privacy-disclaimer-box">
+              <p>
+                <strong>Aviso importante:</strong> Este documento describe de manera clara, transparente y honesta las prácticas técnicas y operativas de CrisDev (Cristhian Ruiz). <em>No constituye asesoría legal profesional ni sustituye un dictamen jurídico formal.</em> Si como profesional de la salud o clínica requieres un Aviso de Privacidad formal, exhaustivo y jurídicamente vinculante bajo normativas específicas (como la Ley Federal de Protección de Datos Personales en Posesión de los Particulares — LFPDPPP en México), te sugerimos consultar con un abogado especialista en derecho digital y de la salud.
+              </p>
+            </div>
+          </section>
+
+          <!-- Back Action -->
+          <div class="privacy-back-cta">
+            <a href="index.html" class="btn btn-primary">
+              <span>&larr; Volver a la Página Principal</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer" id="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="brand-terminal">&gt;_</span>
+          <span class="brand-name">CrisDev</span>
+        </div>
+        <p class="footer-tagline">Desarrollo Web &amp; Plataformas a Medida para Psicólogos y Profesionales de la Salud.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html#hero" class="footer-link">Inicio</a>
+        <span class="footer-separator">//</span>
+        <a href="index.html#web-ui" class="footer-link">Presencia Digital</a>
+        <span class="footer-separator">//</span>
+        <a href="index.html#infrastructure" class="footer-link">Sistemas a Medida</a>
+        <span class="footer-separator">//</span>
+        <a href="index.html#security" class="footer-link">Privacidad</a>
+        <span class="footer-separator">//</span>
+        <a href="aviso-de-privacidad.html" class="footer-link active">Aviso de Privacidad</a>
+        <span class="footer-separator">//</span>
+        <a href="https://github.com/CristhianRuiz24" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <span class="footer-separator">//</span>
+        <a href="https://www.linkedin.com/in/cris-campos-687487429/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+      </div>
+
+      <div class="footer-meta">
+        <span class="footer-copyright">&copy; 2026 Cristhian Ruiz. Todos los derechos reservados.</span>
+        <span class="footer-transmission text-cyan">[END_OF_TRANSMISSION]</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
