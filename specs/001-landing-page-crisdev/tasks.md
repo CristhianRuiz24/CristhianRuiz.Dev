@@ -23,4 +23,5 @@ Referencia: `specs/001-landing-page-crisdev/plan.md`
 | **T17** | Mitigación de Choque Visual y Dualidad en Hero | `index.html`, `css/components/hero.css` | ✅ hecho | Explicada la dualidad intencional (sitio público cálido/humano vs blindaje técnico interno), badge de 3 semanas y CTA a precios. |
 | **T18** | Mockup Interactivo de Suite Clínica Privada (4 pestañas) | `index.html`, `css/components/terminal.css`, `js/terminal-effects.js` | ✅ hecho | Mockup con pestañas funcionales de Agenda Semanal, Expedientes, Cobranza WhatsApp y Reporte Contable mensual. |
 | **T19** | Sección de Planes y Precios Transparentes (#pricing) | `index.html`, `css/components/pricing.css` | ✅ hecho | Grid con Paquete Esencial ($4,500), Consultorio Inteligente ($5,500 + $499/mes), desglose de dominio al costo y banner a medida. |
+| **T20** | Cache-Busting global de assets y reset defensivo en Suite Clínica | `index.html`, `aviso-de-privacidad.html`, `terminal.css` | ✅ hecho | Versionamiento ?v=2.0 en CSS/JS para invalidar caché de Cloudflare Pages y reset defensivo de botones OS. |
 

@@ -7,6 +7,7 @@ aplicarlo solo, lo anota aquí para que tú decidas si lo promueves.
 ## Propuestas pendientes
 
 - [ ] **Contraste en Badges Técnicos sobre Dark Surfaces:** Prohibido usar `var(--text-muted)` sobre contenedores oscuros elevados; los badges de telemetría y etiquetas técnicas deben usar acentos temáticos (`badge-cyan`, `badge-blue`) o `var(--text-primary)` con fondo translúcido para garantizar legibilidad instantánea y alto contraste.
+- [ ] **Cache-Busting Declarativo en Assets Estáticos (`?v=...`):** En sitios estáticos servidos sobre CDNs agresivas (ej. Cloudflare Pages con `max-age=14400`), todos los `<link rel="stylesheet">` y `<script>` deben incorporar un query string de versión (`?v=...`) incrementable para prevenir que el navegador reutilice hojas de estilo o scripts obsoletos ante cambios de HTML.
 
 ## Reglas promovidas a AGENTS.md
 

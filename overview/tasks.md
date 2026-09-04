@@ -23,6 +23,7 @@ Referencia: `specs/001-landing-page-crisdev/tasks.md`
 | **T17** | Mitigación de Choque Visual y Dualidad en Hero | ✅ hecho | `index.html`, `hero.css` |
 | **T18** | Mockup Interactivo de Suite Clínica Privada (4 pestañas) | ✅ hecho | `index.html`, `terminal.css`, `terminal-effects.js` |
 | **T19** | Sección de Planes y Precios Transparentes (#pricing) | ✅ hecho | `index.html`, `pricing.css` |
+| **T20** | Cache-Busting global de assets (`?v=2.0`) y reset defensivo en Suite Clínica | ✅ hecho | `index.html`, `aviso-de-privacidad.html`, `terminal.css` |
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 

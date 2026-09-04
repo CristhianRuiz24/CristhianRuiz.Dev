@@ -50,17 +50,18 @@
     - Paleta de software médico de alta gama: horas en gris neutro pizarra (`#94A3B8`), nombres en blanco semi-bold, badges translúcidos con puntitos de luz (`● PAGADO` esmeralda / `● POR COBRAR` ámbar) y chips de modalidad (`Online` / `Presencial`).
 24. **Protocolo Browser Subagent en `AGENTS.md`:**
     - Promovida la regla de corte Fail-Fast de máximo 2 intentos por interacción, cache-busting obligatorio con query param en servidores locales (`?v=...`) y priorización de capturas atómicas sobre flujos ciegos.
-25. **Cache-Busting Global & Reset de Botones en Suite Clínica:**
-    - Implementado versionamiento explícito `?v=2.0` en todas las etiquetas `<link rel="stylesheet">` y `<script>` de `index.html` y `aviso-de-privacidad.html` para invalidar cachés agresivas en navegadores y CDN Cloudflare Pages.
+25. **Cache-Busting Global & Reset Defensivo de Botones:**
+    - Implementado versionamiento explícito `?v=2.0` en todas las etiquetas `<link rel="stylesheet">` y `<script>` de `index.html` y `aviso-de-privacidad.html` para invalidar cachés agresivas (`max-age=14400`) en Cloudflare Pages y navegadores.
     - Agregado reset estricto (`appearance: none; outline: none;`) en `.suite-tab-btn` para blindar contra estilos nativos del sistema operativo.
+    - Despliegue completado y verificado en vivo en producción en [https://cristhianruiz.dev](https://cristhianruiz.dev) (commit `2863d70`).
 
 ## En qué quedó el proyecto
 
-- Corrección de cache-busting y reset de botones aplicada y lista para sincronización.
-- Despliegue automático de Cloudflare Pages enlazado a la rama `main` en **[https://cristhianruiz.dev](https://cristhianruiz.dev)**.
-- Validación visual en vivo de producción confirmada mediante subagente sin errores.
+- Sitio 100% operativo y actualizado en producción en **[https://cristhianruiz.dev](https://cristhianruiz.dev)** con Cloudflare Pages.
+- Suite Clínica SaaS renderizando con estética completa (5 columnas, tarjetas `#161B22`, SVGs vectoriales y badges de estado).
+- Rama `main` sincronizada con GitHub y árbol de trabajo Git limpio.
 
 ## Próximo paso
 
-- Hacer commit y push a `main` para que Cloudflare Pages aplique el nuevo hash/query de assets `?v=2.0`.
-- Notificar al usuario para comprobar en producción.
+- Registrar el `sitemap.xml` en Google Search Console para indexar la landing y el nuevo `aviso-de-privacidad.html`.
+- Decidir si se promueve la regla de *Cache-Busting Declarativo* desde `overview/learning.md` a `AGENTS.md`.
