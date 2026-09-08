@@ -56,17 +56,22 @@
 12. **Actualización de Imagen Open Graph para WhatsApp y Redes Sociales (T31):**
     - Se reemplazó la foto de perfil personal en `og:image` por el imagotipo oficial corporativo con fondo blanco clínico (`assets/images/og-image.png`).
     - Resolución estándar de 1200x630 px con zona segura central de 630x630 px para que no se corte en miniaturas cuadradas de WhatsApp.
-    - Metadatos sincronizados con `og:image:width="1200"`, `og:image:height="630"`, `og:image:type="image/png"` y versión `?v=3.0-white` en `index.html` y `aviso-de-privacidad.html`.
+
+13. **Optimización de Nitidez, Contraste y Trazo en Open Graph (T32):**
+    - **Línea Superior del Icono:** Se reforzó el trazo superior del monitor de la laptop utilizando el render vectorial de alta definición (con grosor consistente de marco en lugar del trazo subpíxel de 2px), garantizando que no desaparezca al comprimirse en miniaturas de 60-80px.
+    - **Eliminación de Subtítulo Borroso:** Se retiró la frase secundaria *"Tu espacio digital."* del banner Open Graph, eliminando el manchón grisáceo y permitiendo que el nombre de marca `CrisDev` y el isotipo respiren con máxima nitidez.
+    - **Zona Segura Cuadrada:** Dimensiones calibradas para que el imagotipo quede perfectamente centrado tanto en el lienzo completo de 1200x630 px como en el recorte/letterbox cuadrado de WhatsApp (630x630 px).
+    - **Cache-Busting Actualizado:** Enlaces actualizados con query string `?v=4.0-crisp` en `index.html` y `aviso-de-privacidad.html` para forzar a los scrapers de WhatsApp y redes a purgar su caché y renderizar la nueva imagen al instante.
 
 ## En qué quedó el proyecto
 
-- Menú hamburguesa móvil y navegación desplegable completados y verificados en móvil y desktop.
-- Imagen de previsualización en WhatsApp y redes sociales actualizada al logotipo oficial sobre fondo blanco clínico.
-- Commit y push completados hacia `origin/main`.
+- Imagen Open Graph regenerada con trazos de alta definición y sin textos microscópicos que causen borrosidad.
+- Metadatos actualizados a versión `?v=4.0-crisp` en `index.html` y `aviso-de-privacidad.html`.
+- Listo para commit y push a `origin/main` para despliegue en Cloudflare Pages.
 
 ## Próximo paso
 
-- Despliegue automático de Cloudflare Pages completado. Esperar nuevas instrucciones del usuario.
+- Enviar cambios a GitHub para que el CDN de Cloudflare Pages publique el nuevo asset y verificar en WhatsApp.
 
 
 

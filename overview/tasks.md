@@ -32,6 +32,7 @@ Referencia: `specs/001-landing-page-crisdev/tasks.md`
 | **T29** | Configuración estratégica de enlaces sociales en footer (remoción de GitHub e integración de Facebook) | ✅ hecho | `index.html`, `aviso-de-privacidad.html` |
 | **T30** | Menú Hamburguesa Móvil (Triple Raya) y Drawer Desplegable exclusivo para celular | ✅ hecho | `index.html`, `navbar.css`, `terminal-effects.js` |
 | **T31** | Sustitución de foto personal en Open Graph (WhatsApp/Redes) por logo oficial con fondo azul marino | ✅ hecho | `index.html`, `aviso-de-privacidad.html`, `assets/images/og-image.png` |
+| **T32** | Optimización de nitidez y contraste en imagen Open Graph para WhatsApp (trazo visible y cero blur) | ✅ hecho | `index.html`, `aviso-de-privacidad.html`, `assets/images/og-image.png` |
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 
