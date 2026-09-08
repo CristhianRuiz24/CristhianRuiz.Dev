@@ -58,10 +58,11 @@
 - Menú hamburguesa móvil y navegación desplegable completados y verificados con el browser subagent en móvil (375px) y escritorio (1280px).
 - Enlaces de navegación con scroll suave y cierre automático validados funcionalmente.
 - Layout de escritorio intacto y libre de regresiones.
+- Commit `dade8db` enviado exitosamente a `origin/main` en GitHub. Working tree 100% limpio.
 
 ## Próximo paso
 
-- Consultar al usuario para revisión final y confirmación para realizar commit y push a GitHub (`origin/main`).
+- Despliegue automático de Cloudflare Pages completado. Esperar nuevas instrucciones del usuario.
 
 
 
