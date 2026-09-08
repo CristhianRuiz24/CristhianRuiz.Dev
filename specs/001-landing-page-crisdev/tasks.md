@@ -32,6 +32,7 @@ Referencia: `specs/001-landing-page-crisdev/plan.md`
 | **T27** | Armonización de color en precios (#pricing): sustitución de texto verde por Azul Clínico | `index.html` | ✅ hecho | Mantenimiento a $0 MXN en Azul Clínico (#0077B6), unificando la jerarquía cromática con el Paquete 02. |
 | **T28** | Remoción de tag 'INGENIERÍA · SOBRE MÍ' y armonización clínica de hover y sombras en tarjetas | `index.html`, `terminal.css`, `pricing.css`, `trust-operator.css`, `form.css`, `main.css` | ✅ hecho | Eliminado tag en Sobre Mí; purga total de sombras negras densas y bordes cian; todas las tarjetas iluminan en Azul Clínico con elevación suave. |
 | **T29** | Configuración estratégica de enlaces sociales en footer (remoción de GitHub e integración de Facebook) | `index.html`, `aviso-de-privacidad.html` | ✅ hecho | Sustituido GitHub por Facebook en navegación de footer y datos estructurados Schema.org JSON-LD; unificada línea de copyright. |
+| **T30** | Menú Hamburguesa Móvil (Triple Raya) y Drawer Desplegable exclusivo para celular | `index.html`, `css/components/navbar.css`, `js/terminal-effects.js` | ✅ hecho | Sustituido botón superior de WhatsApp por icono de tres rayas con animación a 'X', drawer clínico 100% sólido y enlaces directos a las 5 secciones más CTA WhatsApp; navbar desktop intacto. |
 
 
 

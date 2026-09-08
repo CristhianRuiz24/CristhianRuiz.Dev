@@ -46,15 +46,22 @@
     - Se incorporó el enlace directo a Facebook (`https://www.facebook.com/profile.php?id=61594210641667&locale=es_LA`) junto con LinkedIn (`Facebook · LinkedIn`), conectando con la red principal donde interactúan los especialistas de la salud independientes en México y Latinoamérica.
     - Se unificó el texto legal de copyright en el footer de `aviso-de-privacidad.html`.
 
+11. **Menú Hamburguesa Móvil (Triple Raya) y Drawer Desplegable (T30):**
+    - En pantallas móviles (`<=992px`), se ocultó el botón superior de texto `[CONSULTAR POR WHATSAPP]`, desahogando la cabecera.
+    - Se implementó el botón accesible de triple raya (`#mobileMenuToggle`), con animación suave de las tres barras hacia una `✕` azul clínica al abrirse.
+    - Se creó el panel desplegable (`#mobileNavDrawer`) con fondo blanco clínico sólido (sin transparencias que trasluzcan el hero de fondo), incluyendo los 5 enlaces de navegación táctil (Presencia Digital, Sistemas a Medida, Planes y Precios, Privacidad, Sobre Mí) con flechas SVG, además del botón CTA a WhatsApp.
+    - Se conectó cierre automático por clic en enlace (con scroll suave hacia la sección elegida), clic en el telón de fondo (`#mobileNavBackdrop`), tecla `Escape` o redimensionamiento a desktop.
+    - En escritorio (`>=993px`), la barra de navegación se mantiene exactamente igual (layout simétrico de 3 columnas con enlaces en el centro y botón de WhatsApp a la derecha; el botón hamburguesa permanece oculto).
+
 ## En qué quedó el proyecto
 
-- Tag "INGENIERÍA · SOBRE MÍ" eliminado, encabezado de perfil despejado.
-- Todas las tarjetas del sitio armonizadas con la nueva estética clínica: elevación suave, bordes en azul médico y sombras ligeras sin manchas negras ni neones cian.
-- Footer calibrado con enlaces comerciales clave (Facebook · LinkedIn) y aviso de privacidad.
-- Commit `47213f5` enviado exitosamente a `origin/main` en GitHub. Working tree 100% limpio.
+- Menú hamburguesa móvil y navegación desplegable completados y verificados con el browser subagent en móvil (375px) y escritorio (1280px).
+- Enlaces de navegación con scroll suave y cierre automático validados funcionalmente.
+- Layout de escritorio intacto y libre de regresiones.
 
 ## Próximo paso
 
-- Despliegue automático de Cloudflare Pages completado. Esperar nuevas instrucciones del usuario.
+- Consultar al usuario para revisión final y confirmación para realizar commit y push a GitHub (`origin/main`).
+
 
 

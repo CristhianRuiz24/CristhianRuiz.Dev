@@ -105,10 +105,73 @@ function printSystemBanner() {
   );
 }
 
+/**
+ * Initializes mobile hamburger toggle and drawer navigation
+ */
+function initMobileMenu() {
+  const toggleBtn = document.getElementById('mobileMenuToggle');
+  const drawer = document.getElementById('mobileNavDrawer');
+  const backdrop = document.getElementById('mobileNavBackdrop');
+  if (!toggleBtn || !drawer || !backdrop) return;
+
+  const openMenu = () => {
+    toggleBtn.classList.add('is-active');
+    toggleBtn.setAttribute('aria-expanded', 'true');
+    drawer.classList.add('is-active');
+    drawer.setAttribute('aria-hidden', 'false');
+    backdrop.classList.add('is-active');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeMenu = () => {
+    toggleBtn.classList.remove('is-active');
+    toggleBtn.setAttribute('aria-expanded', 'false');
+    drawer.classList.remove('is-active');
+    drawer.setAttribute('aria-hidden', 'true');
+    backdrop.classList.remove('is-active');
+    document.body.style.overflow = '';
+  };
+
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = toggleBtn.classList.contains('is-active');
+    if (isOpen) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  backdrop.addEventListener('click', closeMenu);
+
+  // Close when clicking any nav link inside mobile drawer
+  const mobileLinks = drawer.querySelectorAll('.mobile-nav-link');
+  mobileLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      closeMenu();
+    });
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && toggleBtn.classList.contains('is-active')) {
+      closeMenu();
+    }
+  });
+
+  // Close if window resizes to desktop breakpoint
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 992 && toggleBtn.classList.contains('is-active')) {
+      closeMenu();
+    }
+  });
+}
+
 function initApp() {
   initWhatsAppButtons();
   initSmoothScroll();
   initClinicalSuiteTabs();
+  initMobileMenu();
   printSystemBanner();
 }
 
@@ -118,5 +181,6 @@ if (document.readyState === 'loading') {
 } else {
   initApp();
 }
+
 
 

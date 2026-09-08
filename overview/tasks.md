@@ -30,6 +30,7 @@ Referencia: `specs/001-landing-page-crisdev/tasks.md`
 | **T27** | Armonización de color en precios (#pricing): sustitución de texto verde por Azul Clínico | ✅ hecho | `index.html` |
 | **T28** | Remoción de tag 'INGENIERÍA · SOBRE MÍ' y armonización clínica de hover y sombras en tarjetas | ✅ hecho | `index.html`, `terminal.css`, `pricing.css`, `trust-operator.css`, `form.css`, `main.css` |
 | **T29** | Configuración estratégica de enlaces sociales en footer (remoción de GitHub e integración de Facebook) | ✅ hecho | `index.html`, `aviso-de-privacidad.html` |
+| **T30** | Menú Hamburguesa Móvil (Triple Raya) y Drawer Desplegable exclusivo para celular | ✅ hecho | `index.html`, `navbar.css`, `terminal-effects.js` |
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 
