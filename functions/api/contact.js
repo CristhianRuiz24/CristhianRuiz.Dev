@@ -104,9 +104,9 @@ export async function onRequestPost(context) {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
       font-size: 11px;
       font-weight: 700;
-      color: #00F0FF;
-      background-color: rgba(0, 240, 255, 0.1);
-      border: 1px solid rgba(0, 240, 255, 0.3);
+      color: #0077B6;
+      background-color: rgba(0, 119, 182, 0.08);
+      border: 1px solid rgba(0, 119, 182, 0.25);
       padding: 4px 8px;
       border-radius: 4px;
       text-transform: uppercase;

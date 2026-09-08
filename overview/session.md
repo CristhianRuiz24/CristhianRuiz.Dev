@@ -1,67 +1,60 @@
 # Sesión activa — CrisDev (`cristhianruiz.dev`)
 
-**Última actualización:** 2026-09-04  
-**Fase SDD actual:** Optimización Comercial, Suite Clínica SaaS & Precios Transparentes / Sesión Cerrada ($close)
+**Última actualización:** 2026-09-07
+**Fase SDD actual:** Estética Clinical SaaS / Logo Oficial / Centralización WhatsApp (T22 Completada)
 
 ## Lo que se logró en esta sesión
 
-1. **Actualización de Spec SDD (`specs/001-landing-page-crisdev/spec.md`):** Actualizados los requisitos funcionales RF-1 al RF-18 e historias de usuario para priorizar a psicólogos, terapeutas y especialistas en salud mental, manteniendo apertura a profesionales por agenda.
-2. **Transformación de Jerga Técnica a Beneficio de Negocio:** Reemplazo de tecnicismos crípticos (3FN, Cloudflare Edge, Pipelines) por beneficios directos (más pacientes, menos tiempo perdido en WhatsApp, expedientes 100% privados y cero comisiones mensuales).
-3. **Hero Section de Alto Impacto Comercial:**
-   - Tag: `● SOLUCIONES WEB PARA PSICÓLOGOS Y PROFESIONALES DE LA SALUD`
-   - Titular: *"Una presencia digital que atrae más pacientes y un sistema que organiza tus consultas en automático."*
-   - Subtítulo empático y 3 badges de autoridad: `⚡ Web Rápida y Disponible 24/7`, `💰 Cero Comisiones por Consulta`, `🔒 Expedientes 100% Privados y Seguros`.
-4. **Caso de Estudio PsicoLau (`#web-ui`):** Enfoque claro en Problema → Solución → Resultados con el testimonio real verificado de la Mtra. Ana Laura Gómez.
-5. **Sistemas a Medida & Gestión de Consultas (`#infrastructure`):** Plataformas para gestionar la consulta sin caos (expedientes digitales, notas de sesión, recordatorios automáticos y control de ingresos).
-6. **Confidencialidad y Secreto Profesional (`#security`):** 3 pilares de confianza (secreto profesional y privacidad, dueño único de la plataforma, soporte directo 1 a 1).
-7. **Sobre Mí / Quién Desarrolla tu Solución (`#operator`):** Perfil centrado en trato directo, personalización al flujo de la consulta y tranquilidad para el profesional.
-8. **Formulario y WhatsApp Reconfigurados:** Botón `[ Enviar Mensaje y Cotizar Proyecto ]`, placeholders específicos y mensaje predeterminado de WhatsApp adaptado en `js/config.js` y `js/form-handler.js`.
-9. **Validación Visual & Responsive Completa:** Verificación en escritorio y móvil (375px) con 0 errores de consola y cero desbordamiento horizontal.
-10. **Iconos Vectoriales Cyber-Terminal (Cero Emojis Genéricos):** Sustitución de emojis de sistema en la barra de métricas por SVGs personalizados con efecto neón Cyan/Azul, elevando la estética técnica y la sobriedad del sitio.
-11. **Documentación del Repositorio (`README.md`):** Creación del README principal con badges de estado, descripción de valor, demo en vivo, mapa de módulos, stack tecnológico, estructura de carpetas, instrucciones de ejecución local y autoría.
-12. **Promoción de Regla a `AGENTS.md` (Iconografía Vectorial):** Promovida la regla que prohíbe emojis Unicode del sistema y exige el uso exclusivo de SVGs vectoriales con efecto neón/glow para mantener la sobriedad técnica.
-13. **Optimización de Copy CTA & Grid de 3 Pilares de Gestión Clínica (T11):**
-    - Actualizado el botón primario del Hero a `Solicitar Asesoría Gratuita →` para eliminar fricciones y confusión en clientes de salud.
-    - Simplificado y pulido Terminal 02 (`#infrastructure`) con el grid de 3 pilares y llamada a la acción.
-14. **Mensaje de WhatsApp Natural & Empático (Sin Fricción):**
-    - Reemplazado el mensaje predeterminado con corchetes en `js/config.js` por: *"Hola Cristhian! Vi tu página y me gustaría pedirte información y asesoría para mi consultorio."*
-15. **Ajuste de Métricas en PsicoLau (T12):**
-    - Eliminada la métrica no verificada (+180%) y rebalanceado el grid a 2 columnas simétricas con 0% comisiones y Suite clínica privada.
-16. **Enlaces de WhatsApp Verificados (T13):**
-    - Corregidos todos los enlaces de WhatsApp sustituyendo `#` por la URL nativa con número verificado (+52 81 3093 8884) y mensaje precargado.
-17. **Aviso de Privacidad y Enlace Legal (T14):**
-    - Creada la página `aviso-de-privacidad.html` con delimitación de responsabilidades sobre datos de pacientes de terceros, nota de transparencia y enlace en footer.
-18. **Optimización Schema.org JSON-LD (T15):**
-    - Añadidos datos estructurados de `ProfessionalService` con cobertura para México y enlaces de perfil.
-19. **Testimonio Real de Ana Laura Gómez (T16):**
-    - Integrada la reseña verídica con estrellas neón, pull-quote, 3 chips de autoridad y acordeón `<details>` para lectura completa.
-20. **Resolución del Choque Visual & Dualidad Intencional (T17):**
-    - Redacción clarificadora en Hero: estética cálida y humana para la web pública del paciente + blindaje técnico y seguridad para la gestión interna.
-    - Badge de compromiso: `ENTREGA MÁXIMA: 3 SEMANAS`.
-21. **Mockup Interactivo de Suite Clínica Privada (T18):**
-    - Módulo de demostración interactiva con 4 vistas intercambiables: Agenda Semanal, Expedientes Clínicos, Auditoría de Cobranza WhatsApp y Reporte Contable mensual.
-22. **Sección de Planes y Precios Transparentes (T19):**
-    - Creado `#pricing` y `css/components/pricing.css` con el Paquete Esencial ($4,500 MXN), Consultorio Inteligente ($5,500 MXN + $499/mes), desglose de dominio al costo en Cloudflare y banner para proyectos a medida.
-23. **Rediseño Premium de la Suite Clínica SaaS:**
-    - Título genérico `PANEL DE CONTROL CLÍNICO [DEMO EN VIVO]`.
-    - Erradicación de referencias a PsicoLau en la demo interactiva.
-    - Consultas genéricas para cualquier área de la salud (Valoración, Seguimiento, Control Clínico, General, Tratamiento).
-    - Cero emojis Unicode sustituidos al 100% por SVGs vectoriales limpios.
-    - Paleta de software médico de alta gama: horas en gris neutro pizarra (`#94A3B8`), nombres en blanco semi-bold, badges translúcidos con puntitos de luz (`● PAGADO` esmeralda / `● POR COBRAR` ámbar) y chips de modalidad (`Online` / `Presencial`).
-24. **Protocolo Browser Subagent en `AGENTS.md`:**
-    - Promovida la regla de corte Fail-Fast de máximo 2 intentos por interacción, cache-busting obligatorio con query param en servidores locales (`?v=...`) y priorización de capturas atómicas sobre flujos ciegos.
-25. **Cache-Busting Global & Reset Defensivo de Botones:**
-    - Implementado versionamiento explícito `?v=2.0` en todas las etiquetas `<link rel="stylesheet">` y `<script>` de `index.html` y `aviso-de-privacidad.html` para invalidar cachés agresivas (`max-age=14400`) en Cloudflare Pages y navegadores.
-    - Agregado reset estricto (`appearance: none; outline: none;`) en `.suite-tab-btn` para blindar contra estilos nativos del sistema operativo.
-    - Despliegue completado y verificado en vivo en producción en [https://cristhianruiz.dev](https://cristhianruiz.dev) (commit `2863d70`).
+1. **Reemplazo Integral por el Logo Oficial:**
+   - Incorporación del SVG oficial del cliente (`assets/images/logo-crisdev.svg`) tanto en el Navbar principal como en el Footer.
+   - Ajuste métrico del `viewBox` del SVG para un renderizado horizontal sin márgenes transparentes vacíos.
+   - Enlace oficial a `assets/images/favicon.png` y `apple-touch-icon`.
+2. **Centralización del CTA "Consultar por WhatsApp":**
+   - **Hero:** Botón primario centralizado y destacado para iniciar conversación directa en WhatsApp.
+   - **Sección de Contacto (`#contact`):** Reestructurada con tarjeta central de conversión inmediata por WhatsApp (`max-width: 760px; margin: 0 auto`), con beneficios 1 a 1 y botón de acción principal, seguida de un divisor sutil y el formulario estructurado para cotizaciones por escrito.
+   - **Botón Flotante Permanente:** Incorporado en la esquina inferior derecha con badge animado en hover y adaptación responsive mobile.
+   - **Navbar:** Prevención de saltos de línea indeseados (`white-space: nowrap`), garantizando visualización limpia en 1 línea.
+3. **Eliminación del Botón/Badge Brillante:**
+   - Se removió por completo el indicador `.system-status` ("● Disponible para proyectos") del encabezado en `index.html` y `aviso-de-privacidad.html`, junto con la animación de pulso y glow en `navbar.css`.
+   - El Navbar ahora presenta una distribución simétrica y despejada: Logo a la izquierda, navegación al centro y CTA a la derecha.
+4. **Actualización de Favicon Oficial en SVG Vectorial:**
+   - Se integró el SVG oficial proporcionado por el usuario (`assets/images/favicon.svg`), garantizando nitidez perfecta e infinita escalabilidad en todas las pestañas y resoluciones de pantalla.
+   - Se enlazó en `index.html` y `aviso-de-privacidad.html` con versión de cache-busting `?v=2.1`.
+5. **Remoción de Badges Superiores del Hero:**
+   - Se eliminó el contenedor `.hero-badge` (`Soluciones Web para Psicólogos y Salud` y `Entrega Máxima: 3 Semanas`) para que la sección Hero arranque directamente con el titular de alta conversión, ganando limpieza y minimalismo.
+6. **Equilibrado Armónico del Navbar y Actualización del Copy Hero (T25):**
+   - **Distribución Navbar:** Se implementó un layout simétrico con CSS Grid de 3 columnas (`1fr auto 1fr`) para la barra de navegación en desktop. El logo queda anclado a la izquierda, los enlaces centrados con respiración adecuada (`gap: 2rem; font-size: 0.9rem`) y el botón de WhatsApp a la derecha, eliminando el vacío asimétrico previo.
+   - **Adaptabilidad Responsive:** En pantallas móviles y tablets (`<=992px`) y en páginas secundarias (como `aviso-de-privacidad.html`), se preserva automáticamente `display: flex; justify-content: space-between;` sin desbordamientos.
+   - **Copy del Hero:** Se actualizó el párrafo `.hero-description` exactamente al texto requerido: *"Diseño la cara pública de tu consultorio con una estética cálida, accesible y humana para tus pacientes, respaldada con un panel de agenda y expedientes privados."*
+7. **Corrección de Contraste, Logo de Footer Transparente y Paleta Clínica (T26):**
+   - **Logo en Footer:** Se eliminó la caja blanca contenedora y se generó [`assets/images/logo-crisdev-white.svg`](file:///c:/Users/crist/Documents/Proyectos/Pagina%20web%20CrisDev%20-%20clientes/assets/images/logo-crisdev-white.svg) con trazos blancos y cyan eléctrico para un renderizado directo, pulcro y 100% transparente sobre el fondo azul marino del footer.
+   - **Legibilidad en Aviso de Privacidad:** Se corrigió el color de texto en la caja de descargo legal (Sec. 05), eliminando el gris claro residual (`#D1D5DB`) y estableciendo tonos de alto contraste (`#475569` y `#1A365D`) con borde indicador azul.
+   - **Badges de Caso PsicoLau:** Se sustituyeron los botones cuadrados monospace por pills modernas sans-serif (`Especialidad: Neuropsicología` con icono de pulso médico y `En Producción` con punto verde esmeralda con pulso animado). Se reemplazaron emojis de candado por iconos SVG limpios.
+   - **Hover en Recomendación de Laura:** Se corrigió el estado `:hover` para que el texto y la flecha permanezcan en azul clínico nítido (`#1A365D` / `#0077B6`), eliminando el bug donde se volvían blancos e invisibles.
+   - **Calibración de Panel Clínico:** Se sustituyeron los colores neón deslavados de la versión oscura (`#34D399` y `#FBBF24`) por tonos clínicos de alto contraste (`#065F46` para Pagado / 9 Pagadas y `#92400E` para Por Cobrar / 5 Por Cobrar), logrando una estética médica 100% armoniosa y legible.
+8. **Armonización Cromática en Planes y Precios (T27):**
+   - En el Paquete 01 (*Presencia Digital Directa*), se sustituyó el texto verde plano en `Mantenimiento o Sistema: $0 MXN / mes (De por vida)` por **Azul Clínico (`text-accent`: `#0077B6`)**.
+   - Esto genera una correspondencia visual perfecta con el Paquete 02 (*Consultorio Inteligente*), donde el costo recurrente (`$499 MXN / mes`) también usa `text-accent`, unificando la jerarquía cromática de la sección de precios.
+9. **Remoción de Tag 'INGENIERÍA · SOBRE MÍ' y Armonización Clínica de Hover y Sombras (T28):**
+   - **Remoción de Tag:** Se eliminó la etiqueta `<div class="section-tag">INGENIERÍA · SOBRE MÍ</div>` en la sección `#operator` de `index.html`, dejando un inicio limpio y directo con el título *"Quién Desarrolla Tu Solución"*.
+   - **Purga de Sombras Negras y Neón en Tarjetas:** En la tarjeta de preview interactivo de PsicoLau (`.minimal-preview-card`), se eliminó la sombra oscura densa (`0 16px 45px rgba(0, 0, 0, 0.75)`), el borde cian y el resplandor antiguo. Ahora se eleva suavemente (`translateY(-4px)`), con borde en Azul Clínico (`#0077B6`) y sombra aérea suave (`var(--shadow-hover)`).
+   - **Armonización General de Hovers:** Se unificaron las tarjetas de Precios (`.pricing-card:hover`), Tarjetas de Insights (`.insight-card:hover`), Protocolos (`.trust-card:hover`), Terminales (`.terminal-card:hover`) y Contacto (`.centered-whatsapp-card:hover`), todas con transición fluida a borde azul clínico y sombra ligera.
+   - **Calibración de .section-tag:** Se actualizaron los badges de sección en `css/main.css` a fondo y borde azul sutil con texto `#0077B6`.
+
+10. **Alineación Estratégica de Enlaces Sociales (T29):**
+    - Se removió el enlace a GitHub del pie de página y del schema JSON-LD, eliminando ruido técnico innecesario para clientes de salud.
+    - Se incorporó el enlace directo a Facebook (`https://www.facebook.com/profile.php?id=61594210641667&locale=es_LA`) junto con LinkedIn (`Facebook · LinkedIn`), conectando con la red principal donde interactúan los especialistas de la salud independientes en México y Latinoamérica.
+    - Se unificó el texto legal de copyright en el footer de `aviso-de-privacidad.html`.
 
 ## En qué quedó el proyecto
 
-- Sitio 100% operativo y actualizado en producción en **[https://cristhianruiz.dev](https://cristhianruiz.dev)** con Cloudflare Pages.
-- Suite Clínica SaaS renderizando con estética completa (5 columnas, tarjetas `#161B22`, SVGs vectoriales y badges de estado).
-- Rama `main` sincronizada con GitHub y árbol de trabajo Git limpio.
+- Tag "INGENIERÍA · SOBRE MÍ" eliminado, encabezado de perfil despejado.
+- Todas las tarjetas del sitio armonizadas con la nueva estética clínica: elevación suave, bordes en azul médico y sombras ligeras sin manchas negras ni neones cian.
+- Footer calibrado con enlaces comerciales clave (Facebook · LinkedIn) y aviso de privacidad.
+- Proyecto 100% verificado, probado en móvil y desktop, listo para commit y push.
 
 ## Próximo paso
 
-- Registrar el `sitemap.xml` en Google Search Console para indexar la landing y el nuevo `aviso-de-privacidad.html`.
-- Decidir si se promueve la regla de *Cache-Busting Declarativo* desde `overview/learning.md` a `AGENTS.md`.
+- Proceder con el `git commit` y `git push` a `origin/main`.
+
+

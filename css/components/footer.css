@@ -3,11 +3,12 @@
    ========================================================================== */
 
 .site-footer {
-  background-color: var(--bg-surface);
-  border-top: 1px solid var(--border-muted);
+  background-color: var(--color-primary);
+  border-top: none;
   padding: 3.5rem 0 2.5rem 0;
   margin-top: 3rem;
   position: relative;
+  color: #FFFFFF;
 }
 
 .site-footer::before {
@@ -16,8 +17,8 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(0, 240, 255, 0.4), transparent);
+  height: 3px;
+  background: var(--color-accent);
 }
 
 .footer-container {
@@ -32,17 +33,26 @@
 .footer-logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  font-family: var(--font-mono);
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 0.4rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.footer-logo-img {
+  height: 42px;
+  width: auto;
+  max-width: 165px;
+  display: block;
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+.footer-logo-img:hover {
+  transform: scale(1.03);
+  opacity: 0.95;
 }
 
 .footer-tagline {
   font-size: 0.9rem;
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* Footer Navigation Links */
@@ -51,22 +61,24 @@
   align-items: center;
   justify-content: center;
   gap: 1.25rem;
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 500;
+  flex-wrap: wrap;
 }
 
 .footer-link {
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.85);
+
   transition: color var(--transition-fast);
 }
 
 .footer-link:hover {
-  color: var(--accent-cyan);
-  text-shadow: 0 0 8px var(--accent-cyan-glow);
+  color: #FFFFFF;
 }
 
 .footer-separator {
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /* Footer Metadata & Terminal Signal */
@@ -76,14 +88,14 @@
   align-items: center;
   gap: 0.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid var(--border-muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   width: 100%;
   max-width: 600px;
 }
 
 .footer-copyright {
   font-size: 0.82rem;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-transmission {
@@ -91,6 +103,7 @@
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /* Responsive Footer */

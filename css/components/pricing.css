@@ -30,19 +30,20 @@
 
 .pricing-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6);
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-hover);
 }
 
 .featured-pricing-card {
-  border-color: rgba(0, 240, 255, 0.4);
-  background: linear-gradient(180deg, rgba(22, 27, 34, 0.95) 0%, rgba(10, 12, 16, 0.98) 100%);
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 240, 255, 0.08);
+  border-color: var(--color-primary);
+  background: linear-gradient(180deg, var(--bg-surface) 0%, var(--color-primary-subtle) 100%);
+  box-shadow: var(--shadow-hover);
 }
 
 .featured-pricing-card:hover {
-  border-color: var(--accent-cyan);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7), 0 0 35px rgba(0, 240, 255, 0.18);
+  transform: translateY(-4px);
+  border-color: var(--color-accent);
+  box-shadow: 0 16px 32px rgba(26, 54, 93, 0.12);
 }
 
 .pricing-featured-ribbon {
@@ -50,15 +51,15 @@
   top: -12px;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(135deg, #00F0FF 0%, #3B82F6 100%);
-  color: #0A0C10;
+  background: var(--color-primary);
+  color: #FFFFFF;
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.06em;
   padding: 0.35rem 1rem;
   border-radius: var(--radius-full);
   white-space: nowrap;
-  box-shadow: 0 4px 15px rgba(0, 240, 255, 0.4);
+  box-shadow: var(--shadow-subtle);
 }
 
 .pricing-card-header {
@@ -90,8 +91,8 @@
 }
 
 .pricing-amount-box {
-  background: rgba(10, 12, 16, 0.85);
-  border: 1px solid var(--border-muted);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
   padding: 1.25rem 1.35rem;
   display: flex;
@@ -109,7 +110,7 @@
   font-family: var(--font-mono);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--accent-cyan);
+  color: var(--color-accent);
 }
 
 .pricing-main-price .amount {
@@ -206,9 +207,9 @@
 
 /* Custom Project Notice Banner */
 .pricing-custom-note {
-  background: rgba(22, 27, 34, 0.7);
+  background: var(--bg-surface-elevated);
   border: 1px solid var(--border-subtle);
-  border-left: 3px solid var(--accent-cyan);
+  border-left: 3px solid var(--color-accent);
   border-radius: var(--radius-md);
   padding: 1.5rem 1.75rem;
   display: flex;

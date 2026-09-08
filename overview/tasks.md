@@ -23,9 +23,18 @@ Referencia: `specs/001-landing-page-crisdev/tasks.md`
 | **T17** | Mitigación de Choque Visual y Dualidad en Hero | ✅ hecho | `index.html`, `hero.css` |
 | **T18** | Mockup Interactivo de Suite Clínica Privada (4 pestañas) | ✅ hecho | `index.html`, `terminal.css`, `terminal-effects.js` |
 | **T19** | Sección de Planes y Precios Transparentes (#pricing) | ✅ hecho | `index.html`, `pricing.css` |
-| **T20** | Cache-Busting global de assets (`?v=2.0`) y reset defensivo en Suite Clínica | ✅ hecho | `index.html`, `aviso-de-privacidad.html`, `terminal.css` |
+| **T23** | Eliminación de botón brillante (.system-status) y actualización de Favicon SVG | ✅ hecho | `index.html`, `aviso-de-privacidad.html`, `navbar.css`, `assets/images/favicon.svg` |
+| **T24** | Remoción de badges superiores del Hero (.hero-badge) | ✅ hecho | `index.html` |
+| **T25** | Equilibrado de espaciado en Navbar (Grid 3 columnas + gaps) y nuevo copy Hero | ✅ hecho | `navbar.css`, `index.html` |
+| **T26** | Logo footer transparente, contraste en Aviso Privacidad, badges PsicoLau y paleta Panel Clínico | ✅ hecho | `footer.css`, `terminal.css`, `main.css`, `index.html`, `aviso-de-privacidad.html` |
+| **T27** | Armonización de color en precios (#pricing): sustitución de texto verde por Azul Clínico | ✅ hecho | `index.html` |
+| **T28** | Remoción de tag 'INGENIERÍA · SOBRE MÍ' y armonización clínica de hover y sombras en tarjetas | ✅ hecho | `index.html`, `terminal.css`, `pricing.css`, `trust-operator.css`, `form.css`, `main.css` |
+| **T29** | Configuración estratégica de enlaces sociales en footer (remoción de GitHub e integración de Facebook) | ✅ hecho | `index.html`, `aviso-de-privacidad.html` |
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
+
+
+
 
 ## Bloqueos / pendientes fuera de esta feature
 

@@ -83,25 +83,25 @@ function initClinicalSuiteTabs() {
   }
 
 /**
- * Prints a DedSec / Cyber-Terminal greeting in the browser developer console
+ * Prints a professional system greeting in the browser developer console
  */
 function printSystemBanner() {
   const banner = `
 %c=============================================================
-%c   CrisDev // Cyber-Terminal Operating Environment
+%c   CrisDev // Clinical Management Environment
 %c   Operator: Cristhian Ruiz — Software & Web Engineering
 %c   Target: Health Clinics, Psychology, Dentistry & Nutrition
-%c   System Status: [ONLINE] // TLS 1.3 // AES-256
+%c   System Status: [ONLINE] // Secure Connection
 %c=============================================================
 `;
   console.log(
     banner,
-    'color: #30363D; font-weight: bold;',
-    'color: #00F0FF; font-weight: bold; font-size: 13px;',
-    'color: #38BDF8; font-weight: bold;',
-    'color: #8B949E;',
-    'color: #00F0FF;',
-    'color: #30363D; font-weight: bold;'
+    'color: #E2E8F0; font-weight: bold;',
+    'color: #0077B6; font-weight: bold; font-size: 13px;',
+    'color: #1A365D; font-weight: bold;',
+    'color: #475569;',
+    'color: #059669;',
+    'color: #E2E8F0; font-weight: bold;'
   );
 }
 

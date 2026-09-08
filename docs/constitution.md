@@ -8,10 +8,10 @@ Este documento establece los principios fundamentales e innegociables que rigen 
 - **Objetivo central:** Captar y convertir clientes de salud y servicios profesionales (psicólogos, dentistas, nutriólogos, etc) ofreciendo soluciones de presencia digital y arquitectura operativa.
 - **Regla de comunicación:** El copy de venta y la UI deben hablar el lenguaje del cliente y sus dolores reales (agendamiento automático, expedientes clínicos seguros, control de pacientes, optimización de tiempo), **prohibiendo estrictamente la jerga técnica innecesaria** en textos comerciales.
 
-## 2. Estética "DedSec / Cyber-Terminal" con Máxima Usabilidad
-- **Paleta de color:** Fondo negro azabache (`#0A0C10`), tarjetas y contenedores en gris pizarra, acentos de alta visibilidad en Cyan Eléctrico (`#00F0FF`) y Verde Ácido (`#00FF66`) para acciones de conversión.
+## 2. Estética "Clinical SaaS / Health Tech" con Máxima Usabilidad
+- **Paleta de color:** Fondo "Blanco Hueso" (`#F8F9FA`), superficies en Blanco Puro (`#FFFFFF`), texto primario en Gris Pizarra (`#334155`) y acentos de alta confianza en Azul Marino (`#1A365D`) y Azul Cerúleo (`#0077B6`) para proyectar seguridad clínica, pulcritud y profesionalismo.
 - **Tipografía dual:** Tipografías Monospace reservadas exclusivamente para detalles técnicos, métricas, IDs y etiquetas decorativas; tipografía Sans-Serif moderna y altamente legible para todo el contenido de lectura y venta.
-- **Anti-caos visual:** Las animaciones tipo escaneo/terminal y efectos glitch son sutiles y se limitan a acentos/hover. La experiencia de usuario, formularios de contacto e información comercial deben ser 100% claros, limpios y accesibles.
+- **Anti-caos visual:** Las animaciones y efectos son sutiles, eliminando temáticas "hacker" y priorizando transiciones suaves. La experiencia de usuario, formularios de contacto e información comercial deben ser 100% claros, limpios y accesibles, transmitiendo paz y control.
 
 ## 3. Frontend Puro, Cero Dependencias Pesadas y Mobile-First
 - **Stack UI:** HTML5 semántico, CSS3 moderno (con Custom Properties para control temático) y JavaScript puro (ES6+ modular).
