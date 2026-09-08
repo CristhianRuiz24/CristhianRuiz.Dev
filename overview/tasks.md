@@ -35,6 +35,7 @@ Referencia: `specs/001-landing-page-crisdev/tasks.md`
 | **T32** | Optimización de nitidez y contraste en imagen Open Graph para WhatsApp (trazo visible y cero blur) | ✅ hecho | `index.html`, `aviso-de-privacidad.html`, `assets/images/og-image.png` |
 | **T33** | Icono hamburguesa móvil en SVG vectorial simétrico y uniforme | ✅ hecho | `index.html`, `css/components/navbar.css` |
 | **T34** | Botón de 'Inicio' en la barra de navegación y drawer móvil con scroll suave al tope | ✅ hecho | `index.html`, `css/components/navbar.css`, `js/terminal-effects.js` |
+| **T35** | Calibración de espaciado y desahogo entre 'Sobre Mí' y botón WhatsApp en Header | ✅ hecho | `index.html`, `css/components/navbar.css` |
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 

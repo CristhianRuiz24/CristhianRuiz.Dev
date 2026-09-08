@@ -74,11 +74,20 @@
     - **Drawer Móvil:** Se añadió `Inicio` encabezando la lista táctil de enlaces dentro del panel desplegable `#mobileNavDrawer`.
     - **Scroll Suave al Tope:** Se actualizó `initSmoothScroll()` en `js/terminal-effects.js` para que al hacer clic en cualquier enlace hacia `#hero` o `#header`, la página se desplace de forma suave y precisa hasta `top: 0` (el tope absoluto de la página). En móviles, el drawer se cierra automáticamente al pulsarlo.
 
+16. **Calibración de Espaciado y Desahogo entre 'Sobre Mí' y Botón WhatsApp (T35):**
+    - **Diagnóstico:** Al incluir un sexto enlace (*Inicio*), el contenedor central `.header-nav` creció en anchura. Debido a que el grid del header no tenía `column-gap` explícito entre la columna central (`auto`) y la derecha (`1fr`), el botón de WhatsApp quedaba a menos de 25px de "Sobre Mí", dando sensación de compresión.
+    - **Solución Geométrica:**
+      - Se añadió `column-gap: 2rem` a `.header-container:has(.header-nav)`.
+      - Se afinó el `gap` entre enlaces a `1.25rem` y la tipografía a `0.86rem`.
+      - Se optimizó el padding del botón CTA a `0.5rem 1rem` y tamaño a `0.82rem`.
+      - En el rango intermedio (993px–1200px), se fijó `column-gap: 1.25rem`, `gap: 0.95rem` y `font-size: 0.82rem`.
+    - **Resultado:** La separación entre "Sobre Mí" y el botón de WhatsApp aumentó a más de 110px en desktop amplio y se mantiene amplia (>50px) y sin quiebres de línea en resoluciones intermedias.
+
 ## En qué quedó el proyecto
 
-- Enlace 'Inicio' añadido a la barra de navegación de escritorio y al drawer móvil con desplazamiento suave al tope de la página.
-- Validado renderizado simétrico en desktop (`desktop_header_inicio_1788884893808.png`) sin desbordamientos.
-- Todo listo para commit y push a `origin/main`.
+- Espaciado entre "Sobre Mí" y el CTA de WhatsApp ampliado y calibrado (>110px de separación).
+- Enlace 'Inicio' y navegación simétrica de 3 columnas pulida para desktop y móvil.
+- Archivos listos para commit y despliegue a producción.
 
 ## Próximo paso
 
