@@ -1,9 +1,15 @@
 # Sesión activa — CrisDev (`cristhianruiz.dev`)
 
 **Última actualización:** 2026-09-08
-**Fase SDD actual:** Feature 002: Modo Oscuro Clínico & Armonización Cromática de Textos (T1 a T6 Completadas)
+**Fase SDD actual:** Feature 003: Armonización Tipográfica de Botones Comerciales (T1 a T3 Completadas)
 
 ## Lo que se logró en esta sesión
+
+1. **Feature 003: Armonización Tipográfica de Botones y Elementos de Lectura (Completada):**
+   - **Migración a Plus Jakarta Sans:** Se modificó la clase base `.btn` en `css/main.css` para utilizar `font-family: var(--font-sans); font-weight: 600; letter-spacing: -0.01em;`, otorgando a todos los botones del sitio la estética redondeada, moderna y médica del proyecto.
+   - **Remoción de Uppercase Forzado:** Se sustituyó `text-transform: uppercase` por `text-transform: none;`, permitiendo que botones comerciales como *"Consultar por WhatsApp"*, *"Ver Planes y Precios"*, *"Elegir Paquete"* y *"Enviar Solicitud"* se muestren con capitalización natural humana.
+   - **Tratamiento de la Métrica "Privada":** En `index.html` y `css/components/terminal.css`, se asignó la clase `.stat-word` con `Plus Jakarta Sans` a la palabra *"Privada"*, eliminando los trazos cuadrados de editor de código y conservando `JetBrains Mono` únicamente para la métrica numérica *"0%"*.
+   - **Validación Multi-Dispositivo:** Comprobación en navegador (desktop 1280px y móvil 390px) confirmando adaptación fluida, centrado perfecto de iconos SVG y cero errores JS.
 
 1. **Feature 002: Modo Oscuro Clínico (Clinical Deep Navy) Completo:**
    - **Tokens Design System:** Definición de la paleta *Clinical Deep Navy* en `css/main.css` (`--bg-primary: #0B1120`, `--bg-surface: #111C35`, `--text-primary: #F8FAFC`, `--text-secondary: #94A3B8`, `--color-accent: #38BDF8`).

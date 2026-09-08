@@ -54,6 +54,20 @@ Referencia: `specs/002-dark-mode/tasks.md`
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 
+---
+
+# Feature 003: Armonización Tipográfica de Botones y Elementos de Lectura
+
+Referencia: `specs/003-harmonizacion-tipografica-botones/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Migración de la clase base `.btn` a `Plus Jakarta Sans` y remoción de uppercase | ✅ hecho | `css/main.css` |
+| **T2** | Armonización tipográfica de la métrica "Privada" en PsicoLau | ✅ hecho | `index.html`, `css/components/terminal.css` |
+| **T3** | Calibración visual y validación en Desktop y Móvil (Ambos Temas) | ✅ hecho | Navegador, `css/main.css`, `css/components/navbar.css` |
+
+Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
+
 ## Bloqueos / pendientes fuera de esta feature
 
 - Ninguno por el momento.
