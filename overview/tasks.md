@@ -37,10 +37,21 @@ Referencia: `specs/001-landing-page-crisdev/tasks.md`
 | **T34** | Botón de 'Inicio' en la barra de navegación y drawer móvil con scroll suave al tope | ✅ hecho | `index.html`, `css/components/navbar.css`, `js/terminal-effects.js` |
 | **T35** | Calibración de espaciado y desahogo entre 'Sobre Mí' y botón WhatsApp en Header | ✅ hecho | `index.html`, `css/components/navbar.css` |
 
+---
+
+# Feature 002: Modo Oscuro Clínico (Clinical Deep Navy)
+
+Referencia: `specs/002-dark-mode/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Tokens CSS de Modo Oscuro en Design System | ✅ hecho | `css/main.css` |
+| **T2** | Script Anti-FOUC en `<head>` y Módulo JS Theme Manager | ✅ hecho | `js/theme-manager.js`, `index.html`, `aviso-de-privacidad.html` |
+| **T3** | Componente Toggle Button (Sol/Luna SVG) en Navbar | ✅ hecho | `index.html`, `aviso-de-privacidad.html`, `css/components/navbar.css` |
+| **T4** | Adaptación de Logo de Cabecera y Contraste de Componentes | ✅ hecho | `js/theme-manager.js`, `terminal.css`, `pricing.css`, `form.css`, `footer.css` |
+| **T5** | Integración en Drawer Móvil y Validación Multi-Página / Responsive | ✅ hecho | `index.html`, `css/components/navbar.css`, `js/theme-manager.js` |
+
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
-
-
-
 
 ## Bloqueos / pendientes fuera de esta feature
 

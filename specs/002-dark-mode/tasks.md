@@ -1,0 +1,13 @@
+# Tareas — Feature 002: Modo Oscuro Clínico (Clinical Deep Navy)
+
+Referencia: `specs/002-dark-mode/plan.md`
+
+| ID | Tarea | Archivos afectados | Estado | Criterio de Aceptación (Hecho cuando) |
+| :--- | :--- | :--- | :--- | :--- |
+| **T1** | Tokens CSS de Modo Oscuro en Design System | `css/main.css` | ✅ hecho | Al aplicar manualmente `data-theme="dark"` al tag `<html>` en el inspector, las variables CSS (`--bg-primary`, `--bg-surface`, `--text-primary`, `--text-secondary`, `--color-accent`, `--border-subtle`, `--shadow-card`) cambian a la paleta *Clinical Deep Navy* con transiciones de color suaves (0.25s) y sin afectar el modo claro predeterminado. |
+| **T2** | Script Anti-FOUC en `<head>` y Módulo JS Theme Manager | `js/theme-manager.js`, `index.html`, `aviso-de-privacidad.html` | ✅ hecho | Existe el módulo `theme-manager.js` con soporte para detección de `prefers-color-scheme`, lectura/escritura en `localStorage` y despacho de eventos; y en el `<head>` de `index.html` y `aviso-de-privacidad.html` se ejecuta el script síncrono anti-FOUC sin parpadeo blanco perceptible al recargar. |
+| **T3** | Componente Toggle Button (Sol/Luna SVG) en Navbar | `index.html`, `aviso-de-privacidad.html`, `css/components/navbar.css` | ✅ hecho | El botón `.theme-toggle` se encuentra visible y alineado en la cabecera (a la izquierda del CTA de WhatsApp en desktop y en la barra móvil junto al botón hamburguesa); contiene SVGs vectoriales limpios para Sol y Luna con animación fluida de rotación/fundido y soporte para accesibilidad (`aria-label`, foco por teclado). |
+| **T4** | Adaptación de Logo de Cabecera y Contraste de Componentes | `js/theme-manager.js`, `index.html`, `aviso-de-privacidad.html`, `css/components/terminal.css`, `css/components/pricing.css`, `css/components/form.css` | ✅ hecho | Al activarse el modo oscuro, el logo del header cambia dinámicamente a `logo-crisdev-white.svg` (y a `logo-crisdev.svg` en modo claro); y las tarjetas de precios, la preview de PsicoLau, la Suite Clínica, el formulario y el footer exhiben contraste óptimo (WCAG AA > 4.5:1) sin fondos blancos descontextualizados. |
+| **T5** | Integración en Drawer Móvil y Validación Multi-Página / Responsive | `index.html`, `css/components/navbar.css`, `js/theme-manager.js` | ✅ hecho | El drawer móvil `#mobileNavDrawer` incluye una opción accesible para alternar el tema; y se valida visualmente en viewport móvil (375px–430px) y desktop (1280px+) que no haya desbordamientos, que la consola JS esté limpia y que la preferencia se mantenga intacta al navegar entre `index.html` y `aviso-de-privacidad.html`. |
+
+Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado

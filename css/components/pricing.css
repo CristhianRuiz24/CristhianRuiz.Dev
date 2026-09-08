@@ -46,6 +46,11 @@
   box-shadow: 0 16px 32px rgba(26, 54, 93, 0.12);
 }
 
+[data-theme="dark"] .featured-pricing-card:hover,
+:root:not([data-theme="light"]) .featured-pricing-card:hover {
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.55);
+}
+
 .pricing-featured-ribbon {
   position: absolute;
   top: -12px;
@@ -60,6 +65,12 @@
   border-radius: var(--radius-full);
   white-space: nowrap;
   box-shadow: var(--shadow-subtle);
+}
+
+[data-theme="dark"] .pricing-featured-ribbon,
+:root:not([data-theme="light"]) .pricing-featured-ribbon {
+  background: #0284C7;
+  color: #FFFFFF;
 }
 
 .pricing-card-header {

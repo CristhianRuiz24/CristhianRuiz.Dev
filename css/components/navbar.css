@@ -96,10 +96,78 @@
   width: 100%;
 }
 
-/* Header WhatsApp CTA Button */
+/* Header WhatsApp CTA & Theme Toggle */
 .header-cta {
   flex-shrink: 0;
   justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Theme Toggle Button (Sol/Luna SVG) */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-md);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-muted);
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.theme-toggle:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  background: var(--color-accent-subtle);
+  transform: translateY(-1px);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.theme-icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+}
+
+/* Light mode (default): Show Moon, Hide Sun */
+.theme-icon.icon-sun {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.6);
+  pointer-events: none;
+}
+
+.theme-icon.icon-moon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+/* Dark mode: Show Sun, Hide Moon */
+[data-theme="dark"] .theme-icon.icon-sun,
+:root:not([data-theme="light"]) .theme-icon.icon-sun {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+[data-theme="dark"] .theme-icon.icon-moon,
+:root:not([data-theme="light"]) .theme-icon.icon-moon {
+  opacity: 0;
+  transform: rotate(-90deg) scale(0.6);
+  pointer-events: none;
 }
 
 .header-cta .btn-sm {
@@ -117,7 +185,11 @@
   flex-shrink: 0;
 }
 
-/* Mobile Menu Toggle (Triple Raya) */
+/* Mobile Actions & Menu Toggle (Triple Raya) */
+.header-mobile-actions {
+  display: none; /* Hidden on desktop */
+}
+
 .mobile-menu-toggle {
   display: none; /* Hidden on desktop */
 }
@@ -155,6 +227,14 @@
     display: none;
   }
 
+  /* Mobile Actions (Theme Toggle + Hamburger) */
+  .header-mobile-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    z-index: 1002;
+  }
+
   /* Mobile Hamburger Toggle */
   .mobile-menu-toggle {
     display: flex;
@@ -164,10 +244,10 @@
     width: 40px;
     height: 40px;
     padding: 0;
-    background: #FFFFFF;
+    background: var(--bg-surface);
     border: 1px solid var(--border-muted);
     border-radius: var(--radius-md);
-    color: var(--color-primary);
+    color: var(--text-primary);
     cursor: pointer;
     z-index: 1002;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
@@ -230,7 +310,7 @@
     display: block;
     position: fixed;
     inset: 0;
-    background-color: rgba(15, 23, 42, 0.5);
+    background-color: rgba(10, 15, 29, 0.65);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     z-index: 999;
@@ -255,12 +335,12 @@
     top: var(--header-height, 70px);
     left: 0;
     right: 0;
-    background: #FFFFFF !important;
-    background-color: #FFFFFF !important;
+    background: var(--bg-surface-elevated) !important;
+    background-color: var(--bg-surface-elevated) !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
     border-bottom: 2px solid var(--border-subtle);
-    box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
     z-index: 1001 !important;
     padding: 1.25rem 1.5rem 1.75rem;
     transform: translateY(-10px);
@@ -334,6 +414,60 @@
     padding: 0.85rem 1.25rem;
     font-size: 0.95rem;
     font-weight: 600;
+  }
+
+  /* Mobile Drawer Theme Switcher */
+  .mobile-theme-item {
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .mobile-theme-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    background: var(--bg-surface);
+    border: 1px solid var(--border-muted);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+  }
+
+  .mobile-theme-btn:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+    background: var(--color-accent-subtle);
+  }
+
+  .mobile-theme-btn-content {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .mobile-theme-icon-box {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .theme-toggle-status {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 }
 

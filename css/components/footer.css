@@ -3,12 +3,18 @@
    ========================================================================== */
 
 .site-footer {
-  background-color: var(--color-primary);
+  background-color: #1A365D;
   border-top: none;
   padding: 3.5rem 0 2.5rem 0;
   margin-top: 3rem;
   position: relative;
   color: #FFFFFF;
+}
+
+[data-theme="dark"] .site-footer,
+:root:not([data-theme="light"]) .site-footer {
+  background-color: #050914;
+  border-top: 1px solid var(--border-subtle);
 }
 
 .site-footer::before {

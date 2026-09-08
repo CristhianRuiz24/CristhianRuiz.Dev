@@ -266,6 +266,14 @@
   box-sizing: border-box;
 }
 
+[data-theme="dark"] .form-input,
+[data-theme="dark"] .form-textarea,
+:root:not([data-theme="light"]) .form-input,
+:root:not([data-theme="light"]) .form-textarea {
+  background-color: var(--bg-primary);
+  border-color: var(--border-muted);
+}
+
 .form-textarea {
   resize: vertical;
   min-height: 90px;

@@ -83,15 +83,23 @@
       - En el rango intermedio (993px–1200px), se fijó `column-gap: 1.25rem`, `gap: 0.95rem` y `font-size: 0.82rem`.
     - **Resultado:** La separación entre "Sobre Mí" y el botón de WhatsApp aumentó a más de 110px en desktop amplio y se mantiene amplia (>50px) y sin quiebres de línea en resoluciones intermedias.
 
+17. **Implementación de Feature 002: Modo Oscuro Clínico (Clinical Deep Navy):**
+    - **Tokens de Diseño (`css/main.css`):** Definición de la paleta *Clinical Deep Navy* en `[data-theme="dark"]` y detección de sistema `(prefers-color-scheme: dark)`. Fondo en azul medianoche profundo (`#0A0F1D`), superficies en azul pizarra (`#111C35` / `#17223B`), textos en blanco clínico suave (`#F8FAFC`), bordes sutiles y acentos en azul cerúleo / cyan médico (`#38BDF8`).
+    - **Prevención de FOUC:** Inyección de script bloqueante síncrono ultra-ligero en el `<head>` de `index.html` y `aviso-de-privacidad.html` para aplicar el tema antes del primer frame de pintura, eliminando destellos blancos al recargar.
+    - **Módulo JS Theme Manager (`js/theme-manager.js`):** Soporte para persistencia en `localStorage('crisdev_theme')`, escucha de cambios en tiempo real del sistema operativo (`matchMedia`), alternancia de tema y sincronización dinámica del logo de cabecera (`logo-crisdev.svg` en modo claro y `logo-crisdev-white.svg` en modo oscuro).
+    - **Controles de Tema (Sol/Luna SVG):** Integración de botones `.theme-toggle` accesibles con SVGs vectoriales nativos en el Navbar (junto al botón de WhatsApp en desktop), en el header móvil (junto a la hamburguesa) y dentro del drawer táctil con etiqueta de estado ("OSCURO" / "CLARO").
+    - **Armonización de Componentes:** Ajuste de contraste para tarjetas de precios, la preview de PsicoLau, inputs de formulario y protección del fondo oscuro en el footer (`#050914`).
+    - **Validación Visual:** Comprobada la ausencia de errores JS en consola y verificado el renderizado perfecto en viewports desktop (1280px) y móvil (390px).
+
 ## En qué quedó el proyecto
 
-- Espaciado entre "Sobre Mí" y el CTA de WhatsApp ampliado y calibrado (>110px de separación).
-- Enlace 'Inicio' y navegación simétrica de 3 columnas pulida para desktop y móvil.
-- Archivos listos para commit y despliegue a producción.
+- Feature 002 (Modo Oscuro Clínico) completamente implementada, verificada y documentada bajo el flujo SDD.
+- Modo claro y modo oscuro conviven fluidamente con alternancia manual y por sistema sin destellos.
+- Todo probado tanto en desktop como en móvil y en la página secundaria de aviso de privacidad.
 
 ## Próximo paso
 
-- Enviar cambios a GitHub para despliegue automático en Cloudflare Pages.
+- Enviar cambios a GitHub (`git commit` y `git push origin main`) para su despliegue automático en Cloudflare Pages.
 
 
 
