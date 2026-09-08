@@ -1,9 +1,29 @@
 # Sesión activa — CrisDev (`cristhianruiz.dev`)
 
-**Última actualización:** 2026-09-07
-**Fase SDD actual:** Estética Clinical SaaS / Logo Oficial / Centralización WhatsApp (T22 Completada)
+**Última actualización:** 2026-09-08
+**Fase SDD actual:** Feature 002: Modo Oscuro Clínico & Armonización Cromática de Textos (T1 a T6 Completadas)
 
 ## Lo que se logró en esta sesión
+
+1. **Feature 002: Modo Oscuro Clínico (Clinical Deep Navy) Completo:**
+   - **Tokens Design System:** Definición de la paleta *Clinical Deep Navy* en `css/main.css` (`--bg-primary: #0B1120`, `--bg-surface: #111C35`, `--text-primary: #F8FAFC`, `--text-secondary: #94A3B8`, `--color-accent: #38BDF8`).
+   - **Módulo JS & Anti-FOUC:** `js/theme-manager.js` con detección automática de `prefers-color-scheme`, persistencia en `localStorage`, despacho de eventos y script síncrono anti-parpadeo blanco en `<head>`.
+   - **Botón Toggle Sol/Luna:** Integrado en desktop y en la barra móvil junto al botón hamburguesa con iconos SVG vectoriales nítidos y animación fluida.
+   - **Logo Dinámico:** Conmutación automática a `logo-crisdev-white.svg` en modo oscuro y `logo-crisdev.svg` en modo claro.
+   - **Drawer Móvil:** Integración de control accesible de tema dentro del menú desplegable con botón cerrar (X) y botón "Inicio".
+
+2. **Armonización Cromática de Textos y Badges en Modo Claro y Oscuro (T6):**
+   - **Hero Title:** Se retiró el `highlight-primary` de *"organiza tus consultas en automático."* para que adopte el color de texto primario (`#F8FAFC` blanco clínico en modo oscuro / `#1A365D` azul marino en modo claro), dejando únicamente *"atrae más pacientes"* en azul cerúleo.
+   - **Tipografía Principal:** Se corrigió `.text-primary` en `css/main.css` y `css/components/hero.css` para utilizar `var(--text-primary)` en lugar de `var(--color-primary)`, resolviendo que negritas y subtítulos se volvieran cyan en modo oscuro.
+   - **Panel de Control Clínico (Badges y Pastillas):** Se implementaron tokens dedicados para modo oscuro en `css/components/terminal.css`:
+     - `.pill-green` y `.is-paid`: verde salvia luminoso `#34D399` sobre fondo translúcido y borde verde suave.
+     - `.pill-orange` y `.is-pending`: ámbar cálido `#FBBF24` sobre fondo translúcido y borde ámbar suave.
+     - `.pill-neutral` (`14 Consultas`): superficie elevada con texto secundario legible.
+     - `.cobranza-row-card`: borde lateral izquierdo en ámbar `#F59E0B`.
+     - `.btn-mock-whatsapp`: verde WhatsApp `#25D366` con ratio de contraste accesible >7:1.
+     - `.metric-val-pending`: balance contable en ámbar `#B45309` (claro) y `#FBBF24` (oscuro).
+   - **Limpieza de Variables:** Se eliminaron variables CSS huérfanas en `terminal.css` (`--accent-blue-bright`) y se unificaron los iconos de seguridad en Azul Cerúleo (`text-accent`) y checkmarks en Verde Confianza (`text-success`).
+   - **Validación Visual:** Comprobación rigurosa en navegador en ambos modos (claro y oscuro) con cero errores de consola.
 
 1. **Reemplazo Integral por el Logo Oficial:**
    - Incorporación del SVG oficial del cliente (`assets/images/logo-crisdev.svg`) tanto en el Navbar principal como en el Footer.

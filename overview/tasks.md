@@ -50,6 +50,7 @@ Referencia: `specs/002-dark-mode/tasks.md`
 | **T3** | Componente Toggle Button (Sol/Luna SVG) en Navbar | ✅ hecho | `index.html`, `aviso-de-privacidad.html`, `css/components/navbar.css` |
 | **T4** | Adaptación de Logo de Cabecera y Contraste de Componentes | ✅ hecho | `js/theme-manager.js`, `terminal.css`, `pricing.css`, `form.css`, `footer.css` |
 | **T5** | Integración en Drawer Móvil y Validación Multi-Página / Responsive | ✅ hecho | `index.html`, `css/components/navbar.css`, `js/theme-manager.js` |
+| **T6** | Armonización cromática de textos y badges en Hero y Panel Clínico (Claro y Oscuro) | ✅ hecho | `index.html`, `css/components/hero.css`, `css/components/terminal.css`, `css/main.css` |
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 

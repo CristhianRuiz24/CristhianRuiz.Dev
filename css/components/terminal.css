@@ -358,8 +358,8 @@
 }
 
 .panel-pill-list code {
-  color: var(--accent-blue-bright);
-  background-color: var(--accent-blue-subtle);
+  color: var(--color-accent);
+  background-color: var(--color-accent-subtle);
   padding: 0.1rem 0.35rem;
   border-radius: 3px;
   font-size: 0.8rem;
@@ -598,7 +598,7 @@
 .testimonial-toggle:hover {
   background-color: rgba(0, 119, 182, 0.14);
   border-color: var(--color-accent);
-  color: var(--color-primary);
+  color: var(--color-accent);
   transform: translateY(-1px);
 }
 
@@ -611,7 +611,7 @@
 }
 
 .testimonial-toggle:hover .toggle-icon {
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 
 .testimonial-details[open] .toggle-icon {
@@ -1404,6 +1404,76 @@
   display: flex;
   align-items: center;
   gap: 0.4rem;
+}
+
+.metric-val-pending {
+  color: #B45309;
+}
+
+/* --------------------------------------------------------------------------
+   Clinical Suite Mockup — Dark Mode Badges & Contrast Harmonization
+   -------------------------------------------------------------------------- */
+[data-theme="dark"] .suite-badge-pill.pill-neutral,
+:root:not([data-theme="light"]) .suite-badge-pill.pill-neutral {
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  border-color: var(--border-subtle);
+}
+
+[data-theme="dark"] .suite-badge-pill.pill-green,
+:root:not([data-theme="light"]) .suite-badge-pill.pill-green {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34D399;
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+[data-theme="dark"] .suite-badge-pill.pill-orange,
+:root:not([data-theme="light"]) .suite-badge-pill.pill-orange {
+  background: rgba(245, 158, 11, 0.15);
+  color: #FBBF24;
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+[data-theme="dark"] .session-badge-status.is-paid,
+:root:not([data-theme="light"]) .session-badge-status.is-paid {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34D399;
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+[data-theme="dark"] .session-badge-status.is-pending,
+:root:not([data-theme="light"]) .session-badge-status.is-pending {
+  background: rgba(245, 158, 11, 0.15);
+  color: #FBBF24;
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+[data-theme="dark"] .cobranza-row-card,
+:root:not([data-theme="light"]) .cobranza-row-card {
+  border-left-color: #F59E0B;
+}
+
+[data-theme="dark"] .cobranza-row-card:hover,
+:root:not([data-theme="light"]) .cobranza-row-card:hover {
+  border-left-color: #F59E0B;
+}
+
+[data-theme="dark"] .btn-mock-whatsapp,
+:root:not([data-theme="light"]) .btn-mock-whatsapp {
+  background: rgba(37, 211, 102, 0.16);
+  color: #25D366;
+  border-color: rgba(37, 211, 102, 0.4);
+}
+
+[data-theme="dark"] .btn-mock-whatsapp:hover,
+:root:not([data-theme="light"]) .btn-mock-whatsapp:hover {
+  background: #25D366;
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .metric-val-pending,
+:root:not([data-theme="light"]) .metric-val-pending {
+  color: #FBBF24;
 }
 
 /* --------------------------------------------------------------------------
