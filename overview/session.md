@@ -54,19 +54,19 @@
     - En escritorio (`>=993px`), la barra de navegación se mantiene exactamente igual (layout simétrico de 3 columnas con enlaces en el centro y botón de WhatsApp a la derecha; el botón hamburguesa permanece oculto).
 
 12. **Actualización de Imagen Open Graph para WhatsApp y Redes Sociales (T31):**
-    - Se reemplazó la foto de perfil personal en `og:image` por el imagotipo oficial corporativo con fondo azul marino clínico (`assets/images/og-image.png`).
+    - Se reemplazó la foto de perfil personal en `og:image` por el imagotipo oficial corporativo con fondo blanco clínico (`assets/images/og-image.png`).
     - Resolución estándar de 1200x630 px con zona segura central de 630x630 px para que no se corte en miniaturas cuadradas de WhatsApp.
-    - Metadatos sincronizados con `og:image:width="1200"`, `og:image:height="630"`, `og:image:type="image/png"` y versión `?v=2.1` en `index.html` y `aviso-de-privacidad.html`.
+    - Metadatos sincronizados con `og:image:width="1200"`, `og:image:height="630"`, `og:image:type="image/png"` y versión `?v=3.0-white` en `index.html` y `aviso-de-privacidad.html`.
 
 ## En qué quedó el proyecto
 
 - Menú hamburguesa móvil y navegación desplegable completados y verificados en móvil y desktop.
-- Imagen de previsualización en WhatsApp y redes sociales actualizada al logotipo oficial sobre fondo azul marino corporativo.
-- Listo para commit y push a producción.
+- Imagen de previsualización en WhatsApp y redes sociales actualizada al logotipo oficial sobre fondo blanco clínico.
+- Commit y push completados hacia `origin/main`.
 
 ## Próximo paso
 
-- Proceder con commit y push a GitHub (`origin/main`) para que Cloudflare Pages despliegue la nueva imagen de Open Graph.
+- Despliegue automático de Cloudflare Pages completado. Esperar nuevas instrucciones del usuario.
 
 
 
