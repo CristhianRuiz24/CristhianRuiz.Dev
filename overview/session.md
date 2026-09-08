@@ -63,15 +63,21 @@
     - **Zona Segura Cuadrada:** Dimensiones calibradas para que el imagotipo quede perfectamente centrado tanto en el lienzo completo de 1200x630 px como en el recorte/letterbox cuadrado de WhatsApp (630x630 px).
     - **Cache-Busting Actualizado:** Enlaces actualizados con query string `?v=4.0-crisp` en `index.html` y `aviso-de-privacidad.html` para forzar a los scrapers de WhatsApp y redes a purgar su caché y renderizar la nueva imagen al instante.
 
+14. **Icono de Hamburguesa Móvil SVG Vectorial Uniforme (T33):**
+    - **Uniformidad Geométrica Absoluta:** Se reemplazaron las barras hechas con etiquetas `<span>` y flexbox (que sufrían de distorsión por subpíxel y anti-aliasing asimétrico en pantallas de alta densidad) por un SVG vectorial nativo (`stroke="currentColor"`, `stroke-width="2"`, `stroke-linecap="round"`).
+    - **Líneas Idénticas:** Las 3 líneas horizontales tienen exactamente la misma longitud (17 px), el mismo grosor (2 px), la misma separación equidistante (5.5 px) y extremos redondeados idénticos.
+    - **Transición Suave al Abrir:** Al abrir el drawer, el botón alterna suavemente hacia un icono SVG de cruz (`✕`) con rotación y desvanecimiento acelerados por hardware.
+    - **Bordes Redondeados Suaves:** El contenedor del botón se actualizó a `border-radius: var(--radius-md)` (8px) para un look moderno y equilibrado, eliminando la sensación tosca anterior.
+
 ## En qué quedó el proyecto
 
-- Imagen Open Graph regenerada con trazos de alta definición y sin textos microscópicos que causen borrosidad.
-- Metadatos actualizados a versión `?v=4.0-crisp` en `index.html` y `aviso-de-privacidad.html`.
-- Listo para commit y push a `origin/main` para despliegue en Cloudflare Pages.
+- Icono de hamburguesa móvil refactorizado a SVG vectorial 100% simétrico y uniforme, validado con navegador en viewport móvil (390x844).
+- Transición a 'X' y cierre del menú funcionando fluidamente.
+- Todo listo para commit y push a `origin/main`.
 
 ## Próximo paso
 
-- Enviar cambios a GitHub para que el CDN de Cloudflare Pages publique el nuevo asset y verificar en WhatsApp.
+- Realizar commit y push de la refactorización del menú a GitHub para despliegue en Cloudflare Pages.
 
 
 

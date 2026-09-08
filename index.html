@@ -76,7 +76,7 @@
 
   <!-- Modular CSS Architecture -->
   <link rel="stylesheet" href="css/main.css?v=2.1">
-  <link rel="stylesheet" href="css/components/navbar.css?v=3.0-clean">
+  <link rel="stylesheet" href="css/components/navbar.css?v=3.1-uniform">
   <link rel="stylesheet" href="css/components/hero.css?v=2.1">
   <link rel="stylesheet" href="css/components/terminal.css?v=2.1">
   <link rel="stylesheet" href="css/components/trust-operator.css?v=2.1">
@@ -113,11 +113,17 @@
         </a>
       </div>
 
-      <!-- Mobile Hamburger Button (Triple Raya) -->
+      <!-- Mobile Hamburger Button (Triple Raya Uniforme) -->
       <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobileNavDrawer">
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
+        <svg class="menu-icon icon-hamburger" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3.5" y1="6" x2="20.5" y2="6"></line>
+          <line x1="3.5" y1="12" x2="20.5" y2="12"></line>
+          <line x1="3.5" y1="18" x2="20.5" y2="18"></line>
+        </svg>
+        <svg class="menu-icon icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
       </button>
     </div>
   </header>
