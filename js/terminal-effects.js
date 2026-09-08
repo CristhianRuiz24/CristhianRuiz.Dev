@@ -30,6 +30,15 @@ function initSmoothScroll() {
       const targetId = link.getAttribute('href');
       if (targetId === '#' || !targetId) return;
 
+      if (targetId === '#hero' || targetId === '#header') {
+        event.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+        return;
+      }
+
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         event.preventDefault();

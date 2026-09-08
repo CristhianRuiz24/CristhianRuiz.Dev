@@ -69,15 +69,20 @@
     - **Transición Suave al Abrir:** Al abrir el drawer, el botón alterna suavemente hacia un icono SVG de cruz (`✕`) con rotación y desvanecimiento acelerados por hardware.
     - **Bordes Redondeados Suaves:** El contenedor del botón se actualizó a `border-radius: var(--radius-md)` (8px) para un look moderno y equilibrado, eliminando la sensación tosca anterior.
 
+15. **Botón y Enlace 'Inicio' en Navegación y Drawer Móvil (T34):**
+    - **Navegación Desktop:** Se incorporó el enlace `Inicio` como primer elemento en `.header-nav`, con espaciado recalibrado (`gap: 1.65rem` en pantallas grandes y `1.15rem` en intermedias) para mantener la simetría perfecta de 3 columnas del grid del header.
+    - **Drawer Móvil:** Se añadió `Inicio` encabezando la lista táctil de enlaces dentro del panel desplegable `#mobileNavDrawer`.
+    - **Scroll Suave al Tope:** Se actualizó `initSmoothScroll()` en `js/terminal-effects.js` para que al hacer clic en cualquier enlace hacia `#hero` o `#header`, la página se desplace de forma suave y precisa hasta `top: 0` (el tope absoluto de la página). En móviles, el drawer se cierra automáticamente al pulsarlo.
+
 ## En qué quedó el proyecto
 
-- Icono de hamburguesa móvil refactorizado a SVG vectorial 100% simétrico y uniforme, validado con navegador en viewport móvil (390x844).
-- Transición a 'X' y cierre del menú funcionando fluidamente.
+- Enlace 'Inicio' añadido a la barra de navegación de escritorio y al drawer móvil con desplazamiento suave al tope de la página.
+- Validado renderizado simétrico en desktop (`desktop_header_inicio_1788884893808.png`) sin desbordamientos.
 - Todo listo para commit y push a `origin/main`.
 
 ## Próximo paso
 
-- Realizar commit y push de la refactorización del menú a GitHub para despliegue en Cloudflare Pages.
+- Enviar cambios a GitHub para despliegue automático en Cloudflare Pages.
 
 
 
