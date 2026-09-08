@@ -55,15 +55,18 @@
 }
 
 .dot-red {
-  background-color: #FF5F56;
+  background-color: rgba(239, 68, 68, 0.55);
+  border: 1px solid rgba(239, 68, 68, 0.75);
 }
 
 .dot-yellow {
-  background-color: #FFBD2E;
+  background-color: rgba(245, 158, 11, 0.55);
+  border: 1px solid rgba(245, 158, 11, 0.75);
 }
 
 .dot-green {
-  background-color: #27C93F;
+  background-color: rgba(16, 185, 129, 0.55);
+  border: 1px solid rgba(16, 185, 129, 0.75);
 }
 
 .terminal-path {
@@ -369,10 +372,10 @@
 /* Case Details Content */
 .case-meta-tag,
 .case-client-tag {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: normal;
   margin-bottom: 0.5rem;
 }
 
@@ -562,13 +565,13 @@
 }
 
 .testimonial-chip {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
   font-weight: 600;
   background-color: var(--border-subtle);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  padding: 0.25rem 0.55rem;
+  padding: 0.28rem 0.65rem;
   white-space: nowrap;
 }
 
@@ -818,11 +821,11 @@
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
   font-weight: 700;
   color: var(--text-primary);
-  letter-spacing: 0.04em;
+  letter-spacing: normal;
 }
 
 .suite-brand-dot {
@@ -997,14 +1000,14 @@
 }
 
 .day-col-header {
-  font-family: var(--font-mono);
-  font-size: 0.74rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
   font-weight: 700;
   color: var(--text-secondary);
   border-bottom: 1px solid var(--border-subtle);
   padding-bottom: 0.4rem;
   text-align: center;
-  letter-spacing: 0.04em;
+  letter-spacing: normal;
 }
 
 .agenda-session-card {
@@ -1202,8 +1205,8 @@
 }
 
 .expediente-action-btn {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
   font-weight: 600;
   background: var(--border-subtle);
   border: 1px solid var(--border-subtle);
@@ -1385,9 +1388,9 @@
   background: var(--color-accent-subtle);
   border: 1px solid var(--color-accent-subtle);
   color: var(--color-accent);
-  font-family: var(--font-mono);
-  font-size: 0.74rem;
-  font-weight: 700;
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  font-weight: 600;
   padding: 0.45rem 0.95rem;
   border-radius: var(--radius-sm);
   display: inline-flex;

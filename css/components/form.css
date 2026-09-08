@@ -217,6 +217,34 @@
   box-sizing: border-box;
 }
 
+.form-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  background-color: var(--bg-surface-elevated);
+  padding: 0.95rem 1.35rem;
+  border-bottom: 1px solid var(--border-muted);
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-header-title-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.form-header-icon {
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
 .cyber-form {
   padding: 2.25rem;
   display: flex;
@@ -303,12 +331,12 @@
 }
 
 .form-error-log {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  font-weight: 700;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
   color: #EF4444;
-  letter-spacing: 0.02em;
-  min-height: 1.1rem;
+  letter-spacing: normal;
+  min-height: 1.2rem;
   transition: opacity var(--transition-fast);
   word-break: break-word;
 }

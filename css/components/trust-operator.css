@@ -106,9 +106,10 @@
   background-color: var(--bg-surface-elevated);
   padding: 0.85rem 1.5rem;
   border-bottom: 1px solid var(--border-muted);
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.05em;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: normal;
   flex-wrap: wrap;
   gap: 0.5rem;
   width: 100%;
@@ -184,15 +185,15 @@
 
 
 .operator-status-tag {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
   font-weight: 700;
   color: var(--color-primary);
   background-color: var(--color-primary-subtle);
   border: 1px solid rgba(26, 54, 93, 0.2);
-  padding: 0.25rem 0.75rem;
+  padding: 0.28rem 0.85rem;
   border-radius: var(--radius-full);
-  letter-spacing: 0.08em;
+  letter-spacing: normal;
 }
 
 /* Operator Info & Principles */
@@ -201,11 +202,11 @@
 }
 
 .operator-role-tag {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
   font-weight: 700;
   color: var(--color-accent);
-  letter-spacing: 0.08em;
+  letter-spacing: normal;
   margin-bottom: 0.5rem;
 }
 
@@ -244,8 +245,8 @@
 }
 
 .principle-check {
-  font-family: var(--font-mono);
-  font-weight: 800;
+  font-family: var(--font-sans);
+  font-weight: 700;
   font-size: 0.95rem;
   color: var(--color-primary);
   flex-shrink: 0;

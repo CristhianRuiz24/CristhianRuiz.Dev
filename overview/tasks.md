@@ -68,7 +68,23 @@ Referencia: `specs/003-harmonizacion-tipografica-botones/tasks.md`
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 
+# Feature 004: Transición Integral a Estética Cálida y Humana (Clinical SaaS)
+
+Referencia: `specs/004-transicion-estetica-clinical-saas/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Uniformidad cromática del Banner de Métricas en el Hero | ✅ hecho | `index.html` |
+| **T2** | Rediseño de `.section-tag` a píldoras cálidas en `Plus Jakarta Sans` y Title Case | ✅ hecho | `css/main.css`, `index.html`, `aviso-de-privacidad.html` |
+| **T3** | Limpieza de terminal en Formulario de Contacto (header formal SVG, error sans-serif) | ✅ hecho | `index.html`, `css/components/form.css` |
+| **T4** | Humanización tipográfica y estética de la tarjeta "Sobre Mí" (sin scanlines ni jerga militar) | ✅ hecho | `index.html`, `css/components/trust-operator.css` |
+| **T5** | Armonización de ventana PsicoLau, chips sans-serif, ribbon de precios y aviso de privacidad | ✅ hecho | `index.html`, `terminal.css`, `pricing.css`, `aviso-de-privacidad.html`, `terminal-effects.js` |
+| **T6** | Validación visual en Desktop y Móvil (Ambos Temas) y despliegue | ✅ hecho | Navegador, documentación SDD, Git |
+
+Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
+
 ## Bloqueos / pendientes fuera de esta feature
 
 - Ninguno por el momento.
+
 

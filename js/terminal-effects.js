@@ -97,20 +97,20 @@ function initClinicalSuiteTabs() {
 function printSystemBanner() {
   const banner = `
 %c=============================================================
-%c   CrisDev // Clinical Management Environment
-%c   Operator: Cristhian Ruiz — Software & Web Engineering
-%c   Target: Health Clinics, Psychology, Dentistry & Nutrition
-%c   System Status: [ONLINE] // Secure Connection
+%c   CrisDev // Software & Web Engineering
+%c   Especialista: Cristhian Ruiz
+%c   Enfoque: Clínicas, Psicología, Odontología y Nutrición
+%c   Sitio Web: https://cristhianruiz.dev
 %c=============================================================
 `;
   console.log(
     banner,
-    'color: #E2E8F0; font-weight: bold;',
+    'color: #0077B6; font-weight: bold;',
     'color: #0077B6; font-weight: bold; font-size: 13px;',
     'color: #1A365D; font-weight: bold;',
     'color: #475569;',
-    'color: #059669;',
-    'color: #E2E8F0; font-weight: bold;'
+    'color: #059669; font-weight: 500;',
+    'color: #0077B6; font-weight: bold;'
   );
 }
 
