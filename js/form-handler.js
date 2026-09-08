@@ -4,6 +4,13 @@
  */
 
 import { CONFIG } from './config.js';
+import {
+  validateName,
+  validateContact,
+  validateClinic,
+  validateNeed,
+  sanitizeInput
+} from './validation-utils.js';
 
 class ContactFormHandler {
   constructor() {
@@ -63,36 +70,40 @@ class ContactFormHandler {
     let isValid = true;
 
     // Validate Name
-    const nameVal = this.inputName ? this.inputName.value.trim() : '';
-    if (!nameVal || nameVal.length < 2) {
-      this.setFieldError(this.groupName, this.errorName, "Por favor, ingresa tu nombre.");
+    const nameVal = this.inputName ? this.inputName.value : '';
+    const nameRes = validateName(nameVal);
+    if (!nameRes.isValid) {
+      this.setFieldError(this.groupName, this.errorName, nameRes.error);
       isValid = false;
     } else {
       this.clearFieldError(this.groupName, this.errorName);
     }
 
     // Validate Contact (Email or WhatsApp)
-    const contactVal = this.inputContact ? this.inputContact.value.trim() : '';
-    if (!contactVal || contactVal.length < 5) {
-      this.setFieldError(this.groupContact, this.errorContact, "Ingresa un correo o WhatsApp de contacto.");
+    const contactVal = this.inputContact ? this.inputContact.value : '';
+    const contactRes = validateContact(contactVal);
+    if (!contactRes.isValid) {
+      this.setFieldError(this.groupContact, this.errorContact, contactRes.error);
       isValid = false;
     } else {
       this.clearFieldError(this.groupContact, this.errorContact);
     }
 
     // Validate Clinic
-    const clinicVal = this.inputClinic ? this.inputClinic.value.trim() : '';
-    if (!clinicVal || clinicVal.length < 2) {
-      this.setFieldError(this.groupClinic, this.errorClinic, "Ingresa el nombre de tu consultorio o clínica.");
+    const clinicVal = this.inputClinic ? this.inputClinic.value : '';
+    const clinicRes = validateClinic(clinicVal);
+    if (!clinicRes.isValid) {
+      this.setFieldError(this.groupClinic, this.errorClinic, clinicRes.error);
       isValid = false;
     } else {
       this.clearFieldError(this.groupClinic, this.errorClinic);
     }
 
     // Validate Need
-    const needVal = this.inputNeed ? this.inputNeed.value.trim() : '';
-    if (!needVal || needVal.length < 5) {
-      this.setFieldError(this.groupNeed, this.errorNeed, "Cuéntanos qué deseas mejorar o implementar.");
+    const needVal = this.inputNeed ? this.inputNeed.value : '';
+    const needRes = validateNeed(needVal);
+    if (!needRes.isValid) {
+      this.setFieldError(this.groupNeed, this.errorNeed, needRes.error);
       isValid = false;
     } else {
       this.clearFieldError(this.groupNeed, this.errorNeed);
@@ -126,12 +137,17 @@ class ContactFormHandler {
     this.btnSubmit.disabled = true;
     this.btnSubmitText.textContent = "Enviando mensaje y cotización...";
 
+    const cleanName = sanitizeInput(this.inputName.value);
+    const cleanContact = sanitizeInput(this.inputContact.value);
+    const cleanClinic = sanitizeInput(this.inputClinic.value);
+    const cleanNeed = sanitizeInput(this.inputNeed.value);
+
     const payload = {
-      name: this.inputName.value.trim(),
-      contact: this.inputContact.value.trim(),
-      clinic: this.inputClinic.value.trim(),
-      need: this.inputNeed.value.trim(),
-      _subject: `[CrisDev Lead] ${this.inputName.value.trim()} (${this.inputContact.value.trim()}) — ${this.inputClinic.value.trim()}`,
+      name: cleanName,
+      contact: cleanContact,
+      clinic: cleanClinic,
+      need: cleanNeed,
+      _subject: `[CrisDev Lead] ${cleanName} (${cleanContact}) — ${cleanClinic}`,
       timestamp: new Date().toISOString()
     };
 

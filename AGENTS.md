@@ -26,6 +26,7 @@ Portafolio profesional y plataforma de captación de clientes para el sector sal
   1. *Límite Fail-Fast:* Incluir en el prompt la cláusula de corte: máximo 2 intentos por interacción; si la interfaz no cambia al segundo intento, capturar pantalla del estado actual, reportar el obstáculo y TERMINAR de inmediato (prohibido reintentar indefinidamente ajustando coordenadas).
   2. *Cache-Busting local:* En servidores locales (`localhost`), navegar siempre con un query string único (`?v=...`) para evitar evaluar vistas en caché 304.
   3. *Verificaciones atómicas:* Priorizar capturas visuales de renderizado sobre flujos interactivos extensos.
+- **Git Governance (Prohibición de commits automáticos):** Prohibido ejecutar `git commit` o `git push` automáticamente sin previa autorización explícita del usuario en el chat. Antes de cualquier commit, el asistente debe presentar el resumen de cambios, esperar el visto bueno del usuario y únicamente proceder cuando este lo ordene.
 - **SDD estricto:** Ante cualquier cambio de funcionalidad, actualizar primero la spec correspondiente.
 
 ## Al terminar cualquier tarea

@@ -94,6 +94,18 @@ Referencia: `specs/005-humanizacion-visual-copy-clinico/tasks.md`
 | **T5** | Purga de Jerga en Seguridad, Precios y Tarjetas de Confianza | ✅ hecho | `index.html`, `css/components/trust-operator.css`, `css/components/pricing.css` |
 | **T6** | Validación visual en Desktop y Móvil (Ambos Temas) y despliegue | ✅ hecho | Navegador, documentación SDD, Git |
 
+# Feature 006: Optimización de Arquitectura, DRY, Testing Automatizado y Git Governance
+
+Referencia: `specs/006-optimizacion-arquitectura-calidad-testing/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Extracción de Partials y Script DRY (`sync-partials.js`) | ✅ hecho | `partials/header.html`, `partials/footer.html`, `scripts/sync-partials.js`, `package.json` |
+| **T2** | Suite de Pruebas: Validación de Formulario y Sanitización | ✅ hecho | `tests/form-validation.test.js`, `js/validation-utils.js`, `js/form-handler.js` |
+| **T3** | Suite de Pruebas: Integridad de Navegación y Anclas | ✅ hecho | `tests/link-integrity.test.js` |
+| **T4** | Suite de Pruebas: Consistencia de Variables CSS | ✅ hecho | `tests/css-tokens.test.js`, `css/main.css` |
+| **T5** | Git Governance: Formalización de Reglas de Aprobación | ✅ hecho | `AGENTS.md`, `GEMINI.md`, `package.json` |
+
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 
 ## Bloqueos / pendientes fuera de esta feature

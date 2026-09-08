@@ -1,11 +1,20 @@
 # Sesión activa — CrisDev (`cristhianruiz.dev`)
 
 **Última actualización:** 2026-09-08
-**Fase SDD actual:** Feature 005: Humanización Visual y Purga Integral de Jerga Tech (Clinical Human Presence) — Completada y Validadas T1 a T6
+**Fase SDD actual:** Feature 006: Optimización de Arquitectura, DRY, Testing Automatizado y Git Governance — T1 a T5 Completadas y Validadas
 
 ## Lo que se logró en esta sesión
 
-1. **Feature 005: Humanización Visual y Purga Integral de Jerga Tech (Clinical Human Presence) (Completada):**
+1. **Feature 006: Optimización de Arquitectura, DRY, Testing Automatizado y Git Governance (Completada):**
+   - **DRY en Componentes Compartidos (Header y Footer):** Se extrajeron `partials/header.html`, `partials/header-privacy.html` y `partials/footer.html` como fuentes únicas de verdad. Se desarrolló `scripts/sync-partials.js` (Node nativo, sin dependencias) que sincroniza automáticamente `index.html` y `aviso-de-privacidad.html` mediante marcadores delimitados `<!-- BEGIN:... -->` y `<!-- END:... -->`, manteniendo 100% de rendimiento estático y SEO intacto.
+   - **Testing Automatizado Nativo con Node.js:** Se implementó una suite completa de 16 tests automatizados ejecutables con `npm test` usando exclusivamente `node:test` y `node:assert` nativos (cero dependencias externas):
+     - `tests/form-validation.test.js`: 11 tests unitarios de validación de campos (nombre, correo/teléfono, consultorio, necesidad) y sanitización anti-XSS con funciones puras en `js/validation-utils.js`.
+     - `tests/link-integrity.test.js`: 3 tests que verifican que cada enlace ancla interno (`href="#..."` o `href="index.html#..."`) y archivo local referenciado exista efectivamente en el DOM y en el repositorio.
+     - `tests/css-tokens.test.js`: 2 tests que escanean todos los archivos CSS y detectan variables huérfanas o no declaradas (detectó y corrigió exitosamente el token faltante `--radius-xs` en `css/main.css`).
+   - **Git Governance Formal:** Se incorporó en `AGENTS.md` y `GEMINI.md` la cláusula innegociable de **autorización obligatoria previa antes de cualquier commit o push a Git**, asegurando el control absoluto del usuario.
+   - **Estructuración NPM:** Se creó `package.json` con `"type": "module"` y comandos `"test"`, `"sync:partials"` y `"start"`.
+
+2. **Feature 005: Humanización Visual y Purga Integral de Jerga Tech (Clinical Human Presence) (Completada):**
    - **Banner de Métricas del Hero:** Números migrados a `Plus Jakarta Sans` extra-bold (`font-weight: 800`), eliminando micro-iconos tech redundantes (rayo `⚡`, `%` repetido y candado apelmazado), con copys 100% enfocados en el beneficio al paciente (*"Tu consulta visible siempre"*, *"Cero comisiones por paciente"*, *"Notas bajo secreto profesional"*).
    - **Erradicación de Burbujas en Sobretítulos (`.section-tag`):** Eliminado el fondo celeste y borde encapsulado que asemejaban pastillas o etiquetas de base de datos. Ahora son kickers editoriales finos en texto plano de acento con espaciado amplio (`letter-spacing: 0.05em`) tanto en `index.html` como en `aviso-de-privacidad.html`.
    - **Ficha Clínica PsicoLau (Reemplazo de Telemetría):** Erradicada la caja `.preview-telemetry-box` y el indicador `Sistema Activo`. Sustituida por `.project-clinical-card` con pares clave-valor editoriales en `Plus Jakarta Sans`, destacando *Sitio Web Oficial*, *Especialidad Clínica*, *Captación de Pacientes* y *Tranquilidad*, además de renombrar a *Suite Clínica Privada* y actualizar los chips de recomendación (*✓ Acompañamiento Cercano*, *✓ Secreto Profesional*).

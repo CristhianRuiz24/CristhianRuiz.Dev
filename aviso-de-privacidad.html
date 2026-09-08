@@ -54,10 +54,10 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/main.css?v=4.1-clinical">
-  <link rel="stylesheet" href="css/components/navbar.css?v=4.1-clinical">
-  <link rel="stylesheet" href="css/components/terminal.css?v=4.1-clinical">
-  <link rel="stylesheet" href="css/components/footer.css?v=4.1-clinical">
+  <link rel="stylesheet" href="css/main.css?v=5.1-humanized">
+  <link rel="stylesheet" href="css/components/navbar.css?v=5.1-humanized">
+  <link rel="stylesheet" href="css/components/terminal.css?v=5.1-humanized">
+  <link rel="stylesheet" href="css/components/footer.css?v=5.1-humanized">
 
 
   <style>
@@ -184,38 +184,41 @@
   <!-- =========================================================================
        HEADER / NAVBAR
        ========================================================================= -->
-  <header class="site-header" id="header">
-    <div class="container header-container">
-      <a href="index.html" class="brand-logo" aria-label="CrisDev Inicio">
-        <img src="assets/images/logo-crisdev.svg" alt="CrisDev — Cristhian Ruiz" class="brand-logo-img">
+  <!-- BEGIN:HEADER -->
+<!-- =========================================================================
+     SITE HEADER (Páginas Secundarias / Aviso de Privacidad)
+     ========================================================================= -->
+<header class="site-header" id="header">
+  <div class="container header-container">
+    <a href="index.html" class="brand-logo" aria-label="CrisDev Inicio">
+      <img src="assets/images/logo-crisdev.svg" alt="CrisDev — Cristhian Ruiz" class="brand-logo-img">
+    </a>
+
+    <div class="header-cta">
+      <button class="theme-toggle" type="button" aria-label="Cambiar a modo oscuro" title="Modo Oscuro">
+        <svg class="theme-icon icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="theme-icon icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+
+      <a href="index.html" class="btn btn-secondary btn-sm">
+        <span>&larr; Volver al Inicio</span>
       </a>
-
-      <div class="header-cta">
-        <button class="theme-toggle" type="button" aria-label="Cambiar a modo oscuro" title="Modo Oscuro">
-          <!-- Sun Icon (Active in Dark Mode) -->
-          <svg class="theme-icon icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-          <!-- Moon Icon (Active in Light Mode) -->
-          <svg class="theme-icon icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-        </button>
-
-        <a href="index.html" class="btn btn-secondary btn-sm">
-          <span>&larr; Volver al Inicio</span>
-        </a>
-      </div>
     </div>
-  </header>
+  </div>
+</header>
+  <!-- END:HEADER -->
 
   <!-- =========================================================================
        MAIN PRIVACY CONTENT
@@ -347,36 +350,43 @@
   <!-- =========================================================================
        FOOTER
        ========================================================================= -->
-  <footer class="site-footer" id="footer">
-    <div class="container footer-container">
-      <div class="footer-brand">
-        <div class="footer-logo">
-          <img src="assets/images/logo-crisdev-white.svg" alt="CrisDev — Cristhian Ruiz" class="footer-logo-img">
-        </div>
-        <p class="footer-tagline">Desarrollo Web &amp; Plataformas a Medida para Psicólogos y Profesionales de la Salud.</p>
+  <!-- BEGIN:FOOTER -->
+<!-- =========================================================================
+     SITE FOOTER (Fuente Única de Verdad)
+     ========================================================================= -->
+<footer class="site-footer" id="footer">
+  <div class="container footer-container">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <img src="assets/images/logo-crisdev-white.svg" alt="CrisDev — Cristhian Ruiz" class="footer-logo-img">
       </div>
-
-      <div class="footer-links">
-        <a href="index.html#hero" class="footer-link">Inicio</a>
-        <span class="footer-separator">·</span>
-        <a href="index.html#web-ui" class="footer-link">Presencia Digital</a>
-        <span class="footer-separator">·</span>
-        <a href="index.html#infrastructure" class="footer-link">Gestión de Consultas</a>
-        <span class="footer-separator">·</span>
-        <a href="index.html#security" class="footer-link">Privacidad</a>
-        <span class="footer-separator">·</span>
-        <a href="aviso-de-privacidad.html" class="footer-link active">Aviso de Privacidad</a>
-        <span class="footer-separator">·</span>
-        <a href="https://www.facebook.com/profile.php?id=61594210641667&amp;locale=es_LA" target="_blank" rel="noopener noreferrer" class="footer-link">Facebook</a>
-        <span class="footer-separator">·</span>
-        <a href="https://www.linkedin.com/in/cris-campos-687487429/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
-      </div>
-
-      <div class="footer-meta">
-        <span class="footer-copy text-muted">© 2026 CrisDev — Cristhian Ruiz · Soluciones Digitales Clínicas</span>
-      </div>
+      <p class="footer-tagline">Desarrollo Web &amp; Plataformas a Medida para Psicólogos y Profesionales de la Salud.</p>
     </div>
-  </footer>
+
+    <div class="footer-links">
+      <a href="index.html#hero" class="footer-link">Inicio</a>
+      <span class="footer-separator">·</span>
+      <a href="index.html#web-ui" class="footer-link">Presencia Digital</a>
+      <span class="footer-separator">·</span>
+      <a href="index.html#infrastructure" class="footer-link">Gestión de Consultas</a>
+      <span class="footer-separator">·</span>
+      <a href="index.html#security" class="footer-link">Privacidad</a>
+      <span class="footer-separator">·</span>
+      <a href="index.html#operator" class="footer-link">Sobre Mí</a>
+      <span class="footer-separator">·</span>
+      <a href="aviso-de-privacidad.html" class="footer-link active">Aviso de Privacidad</a>
+      <span class="footer-separator">·</span>
+      <a href="https://www.facebook.com/profile.php?id=61594210641667&amp;locale=es_LA" target="_blank" rel="noopener noreferrer" class="footer-link">Facebook</a>
+      <span class="footer-separator">·</span>
+      <a href="https://www.linkedin.com/in/cris-campos-687487429/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+    </div>
+
+    <div class="footer-meta">
+      <span class="footer-copy text-muted">© 2026 CrisDev — Cristhian Ruiz · Soluciones Digitales Clínicas</span>
+    </div>
+  </div>
+</footer>
+  <!-- END:FOOTER -->
 
   <!-- JavaScript Modules -->
   <script type="module" src="js/theme-manager.js?v=1.0"></script>

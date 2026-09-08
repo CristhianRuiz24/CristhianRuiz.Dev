@@ -1,0 +1,13 @@
+{
+  "name": "crisdev-landing",
+  "version": "5.1.0",
+  "description": "Portafolio profesional y plataforma de captación para psicólogos y sector salud (Cristhian Ruiz)",
+  "type": "module",
+  "scripts": {
+    "start": "serve -l 3000 .",
+    "test": "node --test tests/*.test.js",
+    "sync:partials": "node scripts/sync-partials.js"
+  },
+  "author": "Cristhian Ruiz <cristhian.ruiz.c@hotmail.com>",
+  "license": "MIT"
+}

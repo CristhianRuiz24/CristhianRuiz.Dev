@@ -34,3 +34,4 @@ El resto (contexto de proyecto, comandos, estilo) vive en AGENTS.md.
 - Nunca modifiques `docs/constitution.md` sin que yo lo pida explícitamente.
 - Ante cualquier cambio de comportamiento ya especificado: primero se
   actualiza la spec correspondiente en `specs/`, después el código.
+- **Git Governance:** Prohibido ejecutar `git commit` o `git push` sin autorización previa y explícita del usuario en el chat.
