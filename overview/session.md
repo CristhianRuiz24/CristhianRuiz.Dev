@@ -1,17 +1,17 @@
 # Sesión activa — CrisDev (`cristhianruiz.dev`)
 
 **Última actualización:** 2026-09-08
-**Fase SDD actual:** Feature 004: Transición Integral a Estética Cálida y Humana (Clinical SaaS) — T1 a T6 Completadas y Validadas
+**Fase SDD actual:** Feature 005: Humanización Visual y Purga Integral de Jerga Tech (Clinical Human Presence) — Completada y Validadas T1 a T6
 
 ## Lo que se logró en esta sesión
 
-1. **Feature 004: Transición Integral a Estética Cálida y Humana (Clinical SaaS) (Completada):**
-   - **Uniformidad Cromática del Hero:** Métrica *"0%"* alineada a `text-accent` en `index.html`, unificando las tres métricas (`24/7`, `0%`, `100%`) en Azul Cerúleo tanto en modo claro como en modo oscuro.
-   - **Píldoras de Sección Cálidas:** Rediseño de `.section-tag` a píldoras redondeadas suaves (`border-radius: var(--radius-full)`) en `Plus Jakarta Sans` con peso 700 y Title Case natural (*"Caso de Estudio · Psicología y Salud"*, *"Sistemas a Medida · Gestión Clínica"*, etc.).
-   - **Limpieza del Formulario de Contacto:** Sustitución de la cabecera con semáforos y emoji por un encabezado formal (`.form-header-bar`) con icono vectorial SVG de documento y badge *"Respuesta en menos de 24h"*. Mensajes de error (`.form-error-log`) migrados a `Plus Jakarta Sans`.
-   - **Humanización de "Sobre Mí":** Eliminación de scanline sci-fi y mayúsculas de operador militar; presentación de Cristhian Ruiz con rol *"Ingeniero de Software"*, foco en clínicas y disponibilidad *"● Disponible para nuevos proyectos"*.
-   - **Showcase, Precios y Privacidad:** Puntos de ventana discretos en PsicoLau, chips de testimonios en sans-serif, ribbon de precios *"★ Más Elegido por Especialistas"*, y remoción de remanentes de emojis.
-   - **Validación Visual:** Comprobación integral con `browser_subagent` en desktop (1536px) y móvil (375px) en ambos temas con 0 errores de consola.
+1. **Feature 005: Humanización Visual y Purga Integral de Jerga Tech (Clinical Human Presence) (Completada):**
+   - **Banner de Métricas del Hero:** Números migrados a `Plus Jakarta Sans` extra-bold (`font-weight: 800`), eliminando micro-iconos tech redundantes (rayo `⚡`, `%` repetido y candado apelmazado), con copys 100% enfocados en el beneficio al paciente (*"Tu consulta visible siempre"*, *"Cero comisiones por paciente"*, *"Notas bajo secreto profesional"*).
+   - **Erradicación de Burbujas en Sobretítulos (`.section-tag`):** Eliminado el fondo celeste y borde encapsulado que asemejaban pastillas o etiquetas de base de datos. Ahora son kickers editoriales finos en texto plano de acento con espaciado amplio (`letter-spacing: 0.05em`) tanto en `index.html` como en `aviso-de-privacidad.html`.
+   - **Ficha Clínica PsicoLau (Reemplazo de Telemetría):** Erradicada la caja `.preview-telemetry-box` y el indicador `Sistema Activo`. Sustituida por `.project-clinical-card` con pares clave-valor editoriales en `Plus Jakarta Sans`, destacando *Sitio Web Oficial*, *Especialidad Clínica*, *Captación de Pacientes* y *Tranquilidad*, además de renombrar a *Suite Clínica Privada* y actualizar los chips de recomendación (*✓ Acompañamiento Cercano*, *✓ Secreto Profesional*).
+   - **Gestión de Consultas y Purga de Términos IT:** Menú y pie de página renombrados de *"Sistemas a Medida"* a *"Gestión de Consultas"*. En la suite demo interactiva se renombró *"Auditoría de Pagos"* a *"Control de Pagos"*, *"Cifrado AES-256"* a *"Notas 100% Confidenciales"*, y los 3 pilares se actualizaron con números `01`, `02`, `03` en sans-serif y textos de alto valor (*"Protección y Secreto Profesional"*, *"Recordatorios Oportunos"*, *"Balance Mensual de tu Consulta"*).
+   - **Purga de Jerga en Seguridad y Precios:** Eliminadas las pastillas al pie de las tarjetas de confianza sustituyéndolas por líneas de texto amables con checkmark vectorial `✓` (`.trust-feature-check`). En la sección de precios se desterró la jerga técnica (*Cloudflare*, *Landing Page*, *SEO Local*, *Blindaje*, *Diseño arquitecturas*) sustituyéndola por beneficios reales y humanos.
+   - **Validación Visual Multi-Dispositivo:** Verificación integral con `browser_subagent` en desktop (1440px) y móvil (375px) en ambos temas con 0 errores y 0 advertencias de JavaScript.
 
 2. **Feature 003: Armonización Tipográfica de Botones y Elementos de Lectura (Completada):**
    - **Migración a Plus Jakarta Sans:** Se modificó la clase base `.btn` en `css/main.css` para utilizar `font-family: var(--font-sans); font-weight: 600; letter-spacing: -0.01em;`, otorgando a todos los botones del sitio la estética redondeada, moderna y médica del proyecto.

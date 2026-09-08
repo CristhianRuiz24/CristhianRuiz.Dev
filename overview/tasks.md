@@ -81,6 +81,19 @@ Referencia: `specs/004-transicion-estetica-clinical-saas/tasks.md`
 | **T5** | Armonización de ventana PsicoLau, chips sans-serif, ribbon de precios y aviso de privacidad | ✅ hecho | `index.html`, `terminal.css`, `pricing.css`, `aviso-de-privacidad.html`, `terminal-effects.js` |
 | **T6** | Validación visual en Desktop y Móvil (Ambos Temas) y despliegue | ✅ hecho | Navegador, documentación SDD, Git |
 
+# Feature 005: Humanización Visual y Purga Integral de Jerga Tech (Clinical Human Presence)
+
+Referencia: `specs/005-humanizacion-visual-copy-clinico/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Banner de Métricas del Hero Humano y Limpio (sans-serif, sin micro-iconos tech) | ✅ hecho | `index.html`, `css/components/hero.css` |
+| **T2** | Erradicación de burbujas en `.section-tag` (Sobretítulos Editoriales Planos) | ✅ hecho | `css/main.css`, `index.html`, `aviso-de-privacidad.html` |
+| **T3** | Ficha de Resultados PsicoLau (Purga de Telemetría, Conversión y `/panel`) | ✅ hecho | `index.html`, `css/components/terminal.css` |
+| **T4** | Transformación de la Demo del Consultorio y Renombramiento de Menú | ✅ hecho | `index.html`, `css/components/terminal.css`, `aviso-de-privacidad.html` |
+| **T5** | Purga de Jerga en Seguridad, Precios y Tarjetas de Confianza | ✅ hecho | `index.html`, `css/components/trust-operator.css`, `css/components/pricing.css` |
+| **T6** | Validación visual en Desktop y Móvil (Ambos Temas) y despliegue | ✅ hecho | Navegador, documentación SDD, Git |
+
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 
 ## Bloqueos / pendientes fuera de esta feature

@@ -243,21 +243,17 @@ code, pre, .mono, [data-mono] {
 }
 
 .section-tag {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
+  display: block;
   font-family: var(--font-sans);
-  font-size: clamp(0.75rem, 2vw, 0.82rem);
+  font-size: clamp(0.8rem, 2vw, 0.86rem);
   font-weight: 700;
-  letter-spacing: normal;
+  letter-spacing: 0.05em;
   color: var(--color-accent);
-  background-color: var(--color-accent-subtle);
-  border: 1px solid rgba(0, 119, 182, 0.2);
-  padding: 0.35rem 1rem;
-  border-radius: var(--radius-full);
-  margin-bottom: 1rem;
-  text-transform: none;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
   max-width: 100%;
   text-align: center;
   word-break: break-word;
