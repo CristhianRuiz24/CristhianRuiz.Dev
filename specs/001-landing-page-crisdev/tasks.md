@@ -33,6 +33,7 @@ Referencia: `specs/001-landing-page-crisdev/plan.md`
 | **T28** | Remoción de tag 'INGENIERÍA · SOBRE MÍ' y armonización clínica de hover y sombras en tarjetas | `index.html`, `terminal.css`, `pricing.css`, `trust-operator.css`, `form.css`, `main.css` | ✅ hecho | Eliminado tag en Sobre Mí; purga total de sombras negras densas y bordes cian; todas las tarjetas iluminan en Azul Clínico con elevación suave. |
 | **T29** | Configuración estratégica de enlaces sociales en footer (remoción de GitHub e integración de Facebook) | `index.html`, `aviso-de-privacidad.html` | ✅ hecho | Sustituido GitHub por Facebook en navegación de footer y datos estructurados Schema.org JSON-LD; unificada línea de copyright. |
 | **T30** | Menú Hamburguesa Móvil (Triple Raya) y Drawer Desplegable exclusivo para celular | `index.html`, `css/components/navbar.css`, `js/terminal-effects.js` | ✅ hecho | Sustituido botón superior de WhatsApp por icono de tres rayas con animación a 'X', drawer clínico 100% sólido y enlaces directos a las 5 secciones más CTA WhatsApp; navbar desktop intacto. |
+| **T31** | Sustitución de foto personal en Open Graph (WhatsApp/Redes) por logo oficial con fondo azul marino | `index.html`, `aviso-de-privacidad.html`, `assets/images/og-image.png` | ✅ hecho | Generada imagen de alta resolución (1200x630 y centrada para recorte cuadrado de WhatsApp) con logo blanco/cyan sobre fondo azul corporativo (#1A365D); actualizadas etiquetas og:image, og:image:width/height/type y twitter:image con versionamiento ?v=2.1. |
 
 
 

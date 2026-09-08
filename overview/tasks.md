@@ -31,6 +31,7 @@ Referencia: `specs/001-landing-page-crisdev/tasks.md`
 | **T28** | Remoción de tag 'INGENIERÍA · SOBRE MÍ' y armonización clínica de hover y sombras en tarjetas | ✅ hecho | `index.html`, `terminal.css`, `pricing.css`, `trust-operator.css`, `form.css`, `main.css` |
 | **T29** | Configuración estratégica de enlaces sociales en footer (remoción de GitHub e integración de Facebook) | ✅ hecho | `index.html`, `aviso-de-privacidad.html` |
 | **T30** | Menú Hamburguesa Móvil (Triple Raya) y Drawer Desplegable exclusivo para celular | ✅ hecho | `index.html`, `navbar.css`, `terminal-effects.js` |
+| **T31** | Sustitución de foto personal en Open Graph (WhatsApp/Redes) por logo oficial con fondo azul marino | ✅ hecho | `index.html`, `aviso-de-privacidad.html`, `assets/images/og-image.png` |
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 
