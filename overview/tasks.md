@@ -1,5 +1,5 @@
 # Tareas — CrisDev (`cristhianruiz.dev`)
-Estado general: Features 001 a 006 completadas y desplegadas en producción.
+Estado general: Features 001 a 012 completadas y desplegadas en producción.
 
 Referencia principal: `specs/001-landing-page-crisdev/tasks.md` a `specs/006-optimizacion-arquitectura-calidad-testing/tasks.md`
 

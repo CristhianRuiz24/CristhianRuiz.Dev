@@ -9,7 +9,7 @@ graph TD
     subgraph Pipeline de Desarrollo & Calidad Local
         Partials[partials/: header, header-privacy, footer] -->|scripts/sync-partials.js| StaticHost[Frontend Estático: index.html & aviso-de-privacidad.html]
         ValidationUtils[js/validation-utils.js] -->|Funciones puras de validación| FormHandler[js/form-handler.js]
-        ValidationUtils -->|Unit Tests| NodeTest[node:test & node:assert Suite: 16 tests]
+        ValidationUtils -->|Unit Tests| NodeTest[node:test & node:assert Suite: 20 tests]
         StaticHost -->|Link Integrity Tests| NodeTest
         CSSFiles[css/: Design Tokens] -->|Token Consistency Tests| NodeTest
     end

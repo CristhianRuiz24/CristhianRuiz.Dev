@@ -71,13 +71,16 @@
 
 ## En qué quedó el proyecto
 
-- **Features 001 a 012 Completadas:**
-  - Código listo para producción con calibración técnica de etiquetas SEO (51 chars de título y 149 de descripción).
-  - 20/20 tests pasando en verde.
-  - Pendiente visto bueno del usuario para commit y push.
+- **Features 001 a 012 Completadas y Desplegadas en Producción:**
+  - Código en `origin/main` (commit `563bcb5`): `<title>` calibrado a 51 caracteres, `<meta name="description">` calibrada a 149 caracteres, suite nativa de tests de metadatos SEO agregada y pasando.
+  - **Pruebas Automatizadas:** 20/20 tests pasando en verde con `npm test`.
+  - **Estado en Motores de Búsqueda:**
+    - Google Search Console: Sitemap enviado, indexación prioritaria solicitada.
+    - Bing Webmaster Tools: Dominio importado y verificado, sitemap enviado, URL inspeccionada e indexada exitosamente con 0 problemas técnicos.
+    - Generative Engine Optimization (GEO): `/llms.txt` activo, Schema `@graph` unificado (`FAQPage`, `ProfessionalService`, `Person`) y rastreadores de IA permitidos en `robots.txt`.
 
 ## Próximo paso
 
-- Ejecutar commit y push con autorización del usuario.
-- En Bing Webmaster Tools, solicitar re-inspección en vivo para confirmar que el reporte de "2 SEO/GEO issues found" pase a 0 advertencias.
+- Monitorear en 24-48 horas la aparición de la pestaña "Preguntas Frecuentes (FAQ)" en Google Search Console y la lectura de `/llms.txt` en ChatGPT y Perplexity.
+- Nuevas iteraciones de producto o requerimientos cuando el usuario lo solicite.
 
