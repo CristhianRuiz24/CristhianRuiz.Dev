@@ -162,6 +162,23 @@ Referencia: `specs/009-refinamiento-psicoterapia-faq-y-entornos-visuales/tasks.m
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 
+---
+
+# Feature 010: Remediación de CSP (Cloudflare Insights), Actualización SEO/Robots/Sitemap, Actualización de Consola y Cache-Busting de Assets
+
+Referencia: `specs/010-remediacion-csp-seo-robots-sitemap-cache-busting/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Remediación de Directivas CSP para Cloudflare Web Analytics en `_headers` | ✅ hecho | Añadido `static.cloudflareinsights.com` en `script-src` y `cloudflareinsights.com` en `connect-src`. |
+| **T2** | Actualización de Copy Comercial en Banner de Consola (`js/terminal-effects.js`) | ✅ hecho | Banner actualizado con enfoque exclusivo en psicoterapeutas y consulta privada. |
+| **T3** | Actualización y Extensión de `sitemap.xml` y Validación de `robots.txt` | ✅ hecho | Añadida ruta `/aviso-de-privacidad` y fecha `2026-09-24` en `sitemap.xml`. |
+| **T4** | Sintonización de Schema.org JSON-LD y Metadatos SEO en `index.html` | ✅ hecho | Metadatos y JSON-LD alineados exclusivamente a psicología y psicoterapia. |
+| **T5** | Cache-Busting Masivo Unificado (`?v=6.0`) en Assets CSS y JS | ✅ hecho | Versión `?v=6.0` aplicada a todos los CSS/JS en `index.html` y `aviso-de-privacidad.html`. |
+| **T6** | Validación Automatizada de Tests y Comprobación en Viewport de Usuario (998x614) | ✅ hecho | 16/16 tests pasando y comprobación visual a 998x614 sin solapamientos ni errores de consola. |
+
+Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
+
 ## Bloqueos / pendientes fuera de esta feature
 
 - Ninguno por el momento.

@@ -33,13 +33,27 @@
      - Se ajustó el texto del enlace en la barra de escritorio a `FAQ` (conservando `Preguntas Frecuentes` en el drawer móvil).
      - Se recalibró el breakpoint del menú móvil a `1080px` con gaps compactos, eliminando por completo cualquier colisión o encimamiento entre los enlaces y los botones de acción en pantallas medianas.
 
+2. **Feature 010: Remediación de CSP, SEO/Robots/Sitemap, Consola y Cache-Busting (Completada):**
+   - **Remediación de CSP (`_headers`):**
+     - Se añadió `https://static.cloudflareinsights.com` en `script-src` y `https://cloudflareinsights.com` en `connect-src`, eliminando la violación de CSP del beacon de Cloudflare Analytics.
+   - **Actualización de Branding en Consola (`js/terminal-effects.js`):**
+     - Se ajustó el banner de `printSystemBanner()` sustituyendo la mención a odontología/nutrición por *"Enfoque: Software & Plataformas Web para Psicoterapeutas y Consulta Privada"*.
+   - **Indexación y Sitemap (`sitemap.xml` & `robots.txt`):**
+     - Se incorporó la URL `/aviso-de-privacidad` y se actualizó `<lastmod>2026-09-24</lastmod>`.
+   - **Metadatos SEO y Schema.org (`index.html`):**
+     - Sintonizados `<title>`, `<meta name="description">`, Open Graph, Twitter y Schema.org JSON-LD para posicionamiento exclusivo en psicoterapia y salud mental.
+   - **Cache-Busting Masivo Unificado (`?v=6.0`):**
+     - Se versionaron todos los CSS y scripts JS en `index.html` y `aviso-de-privacidad.html` a `?v=6.0`, forzando la recarga limpia de `navbar.css` (con breakpoint a 1080px y Flexbox) y erradicando cualquier solapamiento residual por caché HTTP 304.
+   - **Validación Automatizada y Visual:**
+     - 16/16 tests pasando (`npm test`) y comprobación visual a 998x614 y 1280px con 0 errores en consola.
+
 ## En qué quedó el proyecto
 
-- **Feature 009 Completada:** La web `cristhianruiz.dev` cuenta con diseño visual refinado con entornos definidos, copy hiper-especializado para psicoterapia, desglose transparente de costos de dominio y sección completa de Preguntas Frecuentes.
+- **Feature 010 Completada:** CSP saneado para Cloudflare Web Analytics, SEO/sitemap/robots actualizados al 100%, consola sincronizada y cache-busting unificado a `?v=6.0`.
 - **Suite de Pruebas:** 16/16 tests pasando en verde.
 - **Git Governance:** Cambios listos en el working directory, pendientes de autorización explícita del usuario para realizar `git commit` y `git push`.
 
 ## Próximo paso
 
-- Presentar el resumen detallado de cambios al usuario y solicitar su visto bueno para proceder con el commit y push a producción.
+- Presentar el resumen de la Feature 010 al usuario y solicitar autorización para commit y push.
 

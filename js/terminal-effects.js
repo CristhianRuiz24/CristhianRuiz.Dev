@@ -99,7 +99,7 @@ function printSystemBanner() {
 %c=============================================================
 %c   CrisDev // Software & Web Engineering
 %c   Especialista: Cristhian Ruiz
-%c   Enfoque: Clínicas, Psicología, Odontología y Nutrición
+%c   Enfoque: Software & Plataformas Web para Psicoterapeutas y Consulta Privada
 %c   Sitio Web: https://cristhianruiz.dev
 %c=============================================================
 `;
