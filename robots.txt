@@ -1,6 +1,28 @@
 # Robots.txt for CrisDev (https://cristhianruiz.dev)
+# Web & Generative Engine Optimization (GEO) Policy
+
+# General Web Crawlers
 User-agent: *
 Allow: /
 
-# Sitemaps
+# AI & Generative Search Engines (Welcome)
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Canonical Sitemaps
 Sitemap: https://cristhianruiz.dev/sitemap.xml

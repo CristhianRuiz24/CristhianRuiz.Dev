@@ -35,33 +35,153 @@
   <meta property="twitter:image" content="https://cristhianruiz.dev/assets/images/og-image.png?v=4.0-crisp">
 
   <!-- Structured Data / Schema.org (JSON-LD) for Search Engines -->
+  <!-- Structured Data / Schema.org (JSON-LD) for Search Engines & AI Crawlers -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "CrisDev / Cristhian Ruiz",
-    "description": "Desarrollo web y plataformas a medida para psicólogos y terapeutas con consulta privada",
-    "url": "https://cristhianruiz.dev/",
-    "image": "https://cristhianruiz.dev/assets/images/og-image.png",
-    "telephone": "+528130938884",
-    "priceRange": "$$",
-    "areaServed": "México",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "García",
-      "addressRegion": "Nuevo León",
-      "addressCountry": "MX"
-    },
-    "sameAs": [
-      "https://www.facebook.com/profile.php?id=61594210641667&locale=es_LA",
-      "https://www.linkedin.com/in/cris-campos-687487429/"
-    ],
-    "founder": {
-      "@type": "Person",
-      "name": "Cristhian Ruiz",
-      "jobTitle": "Software & Web Engineer",
-      "email": "cristhian.ruiz.c@hotmail.com"
-    }
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://cristhianruiz.dev/#organization",
+        "name": "CrisDev — Cristhian Ruiz",
+        "alternateName": "CrisDev",
+        "url": "https://cristhianruiz.dev/",
+        "logo": "https://cristhianruiz.dev/assets/images/logo-crisdev.svg",
+        "image": "https://cristhianruiz.dev/assets/images/og-image.png",
+        "description": "Desarrollo web de alta conversión y plataformas a medida para psicólogos y terapeutas con consulta privada. Agenda automatizada, expedientes NOM-004-SSA3 y cero comisiones.",
+        "telephone": "+528130938884",
+        "priceRange": "$$",
+        "currenciesAccepted": "MXN",
+        "paymentAccepted": "Transferencia bancaria, SPEI, Efectivo",
+        "areaServed": {
+          "@type": "Country",
+          "name": "México"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "García",
+          "addressRegion": "Nuevo León",
+          "addressCountry": "MX"
+        },
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61594210641667&locale=es_LA",
+          "https://www.linkedin.com/in/cris-campos-687487429/"
+        ],
+        "founder": {
+          "@id": "https://cristhianruiz.dev/#person"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Soluciones Digitales para Psicoterapeutas",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Paquete 01 · Presencia Terapéutica Multi-Página",
+                "description": "Sitio web profesional de hasta 8 secciones para psicólogos y terapeutas. Alojamiento de por vida incluido, botones a WhatsApp y optimización móvil."
+              },
+              "price": "4800",
+              "priceCurrency": "MXN"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Paquete 02 · Consultorio Inteligente",
+                "description": "Plataforma clínica integral para psicólogos: agenda semanal visual, expedientes protegidos NOM-004-SSA3 con AES-256, control de cobranza y enlaces directos a Zoom/Meet."
+              },
+              "price": "5900",
+              "priceCurrency": "MXN"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://cristhianruiz.dev/#person",
+        "name": "Cristhian Ruiz",
+        "jobTitle": "Software & Web Engineer",
+        "email": "cristhian.ruiz.c@hotmail.com",
+        "telephone": "+528130938884",
+        "worksFor": {
+          "@id": "https://cristhianruiz.dev/#organization"
+        },
+        "knowsAbout": [
+          "Desarrollo Web",
+          "Sistemas Clínicos para Psicólogos",
+          "Expedientes NOM-004-SSA3",
+          "Cifrado de Datos Clínicos",
+          "Automatización de Consultas"
+        ],
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61594210641667&locale=es_LA",
+          "https://www.linkedin.com/in/cris-campos-687487429/"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://cristhianruiz.dev/#faq-schema",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cómo me pagan mis pacientes sus consultas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tus pacientes te pagan el 100% de sus honorarios directamente a ti a través de transferencia bancaria (SPEI), depósito o efectivo. En ninguna de las soluciones cobro comisiones porcentuales ni cargos por consulta agendada; tus ingresos son íntegros para ti."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo funciona el pago del dominio y los servidores?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En el Paquete 01 (Presencia Terapéutica Multi-Página), el alojamiento web de alta velocidad y el certificado de seguridad SSL están incluidos de por vida por $0 MXN/mes. El único costo recurrente es tu nombre de dominio propio (.com o .mx), registrado a tu nombre con inversión estándar de mercado (~$195 a $800 MXN/año). En el Paquete 02 (Consultorio Inteligente), el servidor clínico seguro, la base de datos cifrada y el soporte técnico tienen una cuota de $499 MXN/mes o anualidad de $4,990 MXN/año (incluye dominio .com gratis el 1er año)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es seguro el panel para las notas de evolución y el secreto profesional?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Totalmente. La plataforma está estructurada respetando los lineamientos de la norma mexicana NOM-004-SSA3 y la LFPDPPP. Los expedientes, datos de contacto y notas de evolución se resguardan con cifrado AES-256. Únicamente tú tienes acceso mediante tus credenciales de acceso privadas; nadie más puede visualizar la información sensible de tus pacientes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo atender sesiones por videollamada para pacientes online?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, por supuesto. La agenda semanal inteligente permite alternar consultas presenciales y sesiones online. En cada cita virtual puedes agregar con un solo clic tu enlace de Zoom o Google Meet para iniciar la sesión directamente desde tu panel y compartirlo con tu paciente."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué diferencia hay entre el Paquete 01 y el Paquete 02?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El Paquete 01 (Presencia Terapéutica Multi-Página) es un sitio web formal de hasta 8 secciones para posicionarte en Google, proyectar autoridad y captar pacientes por WhatsApp. El Paquete 02 (Consultorio Inteligente) incluye todo lo anterior más tu propio software clínico privado: agenda semanal por horas, expedientes clínicos digitales, notas de sesión, control de cobros y exportación a contabilidad."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué pasa si actualmente gestiono mis notas y agenda en papel o Excel?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El sistema está diseñado para que la transición sea inmediata y sin curvas de aprendizaje complejas. Además, como parte de la puesta en marcha, realizamos una sesión de inducción 1 a 1 donde te explico el funcionamiento de tu panel y resolvemos cualquier duda directamente conmigo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿En cuánto tiempo queda lista mi página o plataforma?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Para el Paquete 01 (Presencia Terapéutica), tu sitio web completo queda publicado y operando en un lapso de 48 a 72 horas hábiles tras recibir los datos de tu consulta. Para el Paquete 02 (Consultorio Inteligente), la plataforma integral con base de datos, panel administrativo y web pública queda lista y probada en 3 a 5 días hábiles."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 

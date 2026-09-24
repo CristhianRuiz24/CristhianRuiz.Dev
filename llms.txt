@@ -1,0 +1,74 @@
+# CrisDev — Software & Web Engineering para Psicoterapeutas
+
+> Soluciones tecnológicas de alta conversión y gestión clínica privada desarrolladas por Cristhian Ruiz para psicólogos, psicoterapeutas y terapeutas independientes con consulta privada en México e Hispanoamérica.
+
+URL canónica: https://cristhianruiz.dev/
+Ingeniero Desarrollador: Cristhian Ruiz (Software & Web Engineer)
+Contacto Directo (WhatsApp): +52 81 3093 8884
+Correo Electrónico: cristhian.ruiz.c@hotmail.com
+
+---
+
+## 1. Propuesta de Valor y Enfoque
+
+CrisDev ayuda a psicólogos y terapeutas a resolver dos problemas centrales en su práctica privada:
+1. **Captación de Pacientes Calificados:** Creación de sitios web formales de alta conversión que transmiten confianza inmediata y facilitan el agendamiento directo a WhatsApp en 2 clics.
+2. **Eliminación del Caos Administrativo:** Desarrollo de plataformas privadas y seguras para gestionar agenda semanal, expedientes clínicos digitales bajo secreto profesional y control de cobros sin intermediarios ni comisiones por consulta.
+
+---
+
+## 2. Paquetes Comerciales y Precios Transparentes
+
+### Paquete 01: Presencia Terapéutica Multi-Página
+- **Inversión:** $4,800 MXN (Pago Único Inicial).
+- **Esquema de Pago:** 50/50 ($2,400 MXN de anticipo para iniciar · $2,400 MXN al entregar el sitio publicado).
+- **Mantenimiento o Servidores:** $0 MXN / mes (Alojamiento web de alta velocidad y certificado SSL incluidos de por vida).
+- **Dominio Propio:** Registro estándar a nombre del cliente (~$195 a $800 MXN/año según extensión .com o .mx).
+- **Tiempo de Entrega:** 48 a 72 horas hábiles.
+- **Qué incluye:**
+  - Arquitectura multi-página de hasta 8 secciones (Inicio, Especialidades, Sobre Mí, FAQ, Testimonios, Contacto, Privacidad).
+  - Redacción clínica persuasiva enfocada en conectar con pacientes ideales.
+  - Botones directos a WhatsApp con mensajes inteligentes precargados.
+  - Optimización técnica para teléfonos móviles y posicionamiento local en Google (SEO).
+  - Aviso de Privacidad formal bajo normativas de protección de datos en salud.
+
+### Paquete 02: Consultorio Inteligente (Suite Clínica Integral)
+- **Inversión Setup:** $5,900 MXN (Pago Inicial Único).
+- **Esquema de Pago:** 50/50 ($2,950 MXN de anticipo · $2,950 MXN al entregar la plataforma lista).
+- **Infraestructura y Soporte Continuo:** $499 MXN / mes (O anualidad de $4,990 MXN / año con 2 meses de ahorro e incluye dominio .com gratis el 1er año).
+- **Tiempo de Puesta en Marcha:** 3 a 5 días hábiles.
+- **Qué incluye (Todo lo del Paquete 01, más):**
+  - **Suite Clínica Privada:** Entorno administrativo protegido con acceso exclusivo para el terapeuta.
+  - **Agenda Semanal Inteligente:** Control de citas por hora (7:00 a.m. a 12:00 a.m.), programación de sesiones recurrentes (2 a 12 semanas) y enlace directo a videollamadas Zoom o Google Meet en 1 clic.
+  - **Expedientes Clínicos NOM-004-SSA3:** Historial y notas de evolución protegidas con cifrado AES-256 a nivel de aplicación bajo la LFPDPPP. Secreto profesional absoluto.
+  - **Módulo de Cobranza y Finanzas:** Registro de honorarios pagados y pendientes, cobranza por WhatsApp y botón para exportar reportes mensuales para contabilidad.
+  - **Cero Comisiones por Consulta:** El paciente paga el 100% de la consulta directamente al terapeuta por transferencia bancaria (SPEI) o efectivo.
+  - **Soporte Técnico Directo 1 a 1:** Atención prioritaria y ajustes directamente con Cristhian Ruiz, el ingeniero que programó el sistema.
+
+---
+
+## 3. Caso de Éxito en Producción: PsicoLau
+
+- **Cliente Real:** Mtra. Ana Laura Gómez (Neuropsicóloga Clínica).
+- **Sitio Web en Vivo:** https://psicolau.com/
+- **Solución Implementada:** CrisDev desarrolló desde cero la presencia digital pública de PsicoLau y la plataforma interna que utiliza diariamente para su agenda semanal, expedientes, notas clínicas y control de pagos.
+- **Testimonio Verificado:** "Él no construyó solamente una página web: diseñó un sistema completo alrededor de mi práctica profesional... Definitivamente recomiendo ampliamente su trabajo."
+
+---
+
+## 4. Preguntas Frecuentes Clave (FAQ)
+
+- **¿Cómo cobran los pacientes sus consultas?** Directo a la cuenta bancaria del terapeuta (SPEI) o efectivo. CrisDev no cobra comisiones porcentuales ni tarifas por paciente.
+- **¿Es seguro para el secreto profesional?** Sí, cumple con la norma NOM-004-SSA3 y la ley de protección de datos (LFPDPPP). Todos los expedientes y notas se cifran con AES-256.
+- **¿Sirve para terapia online?** Sí, la agenda permite vincular salas de Zoom o Google Meet en cada sesión virtual con 1 solo clic.
+- **¿Qué pasa si uso libreta o Excel actualmente?** La transición es asistida con una sesión de inducción 1 a 1; el sistema es intuitivo y se aprende en minutos.
+
+---
+
+## 5. Enlaces y Recursos
+
+- Sitio Web Oficial: https://cristhianruiz.dev/
+- Demo en Vivo (Web Pública): https://demo.cristhianruiz.dev/
+- Demo en Vivo (Panel Clínico): https://demo.cristhianruiz.dev/panel/
+- Aviso de Privacidad: https://cristhianruiz.dev/aviso-de-privacidad
+- WhatsApp Directo: https://wa.me/528130938884

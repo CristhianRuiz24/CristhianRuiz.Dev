@@ -47,13 +47,25 @@
    - **Validación Automatizada y Visual:**
      - 16/16 tests pasando (`npm test`) y comprobación visual a 998x614 y 1280px con 0 errores en consola.
 
+3. **Feature 011: Alta en Google Search, Optimización para IAs (GEO / AI Search), Schema FAQPage y llms.txt (Completada):**
+   - **Schema.org `@graph` Unificado (`index.html`):**
+     - Integradas entidades interconectadas: `ProfessionalService` (paquetes $4,800 y $5,900 MXN), `Person` (Cristhian Ruiz con `knowsAbout`) y `FAQPage` con las 7 preguntas/respuestas para Rich Snippets en Google.
+   - **Estándar `llms.txt` para Inteligencias Artificiales:**
+     - Creado `/llms.txt` con la documentación estructurada de CrisDev para que ChatGPT, Claude, Perplexity y Gemini recomienden a Cristhian Ruiz al buscar soluciones para psicólogos.
+   - **Optimización de `robots.txt`:**
+     - Acceso abierto general y bienvenida explícita a bots de IA (`GPTBot`, `PerplexityBot`, `ClaudeBot`, `Google-Extended`, `Applebot-Extended`) y sitemap canónico.
+   - **Guía de Search Console & Bing (`docs/seo-alta-google-search-console.md`):**
+     - Procedimiento paso a paso para el envío del sitemap `sitemap.xml`, solicitud de indexación prioritaria y sincronización en 1 clic con Microsoft Bing.
+   - **Validación Automatizada:**
+     - 16/16 tests pasando y sintaxis JSON-LD validada al 100%.
+
 ## En qué quedó el proyecto
 
-- **Feature 010 Completada:** CSP saneado para Cloudflare Web Analytics, SEO/sitemap/robots actualizados al 100%, consola sincronizada y cache-busting unificado a `?v=6.0`.
+- **Feature 011 Completada:** Sitio optimizado para Google Search (Rich Snippets), motores de IA (GEO con `llms.txt`), bots de OpenAI/Anthropic/Perplexity en `robots.txt` y guía operativa lista para que el usuario envíe el sitemap en Search Console.
 - **Suite de Pruebas:** 16/16 tests pasando en verde.
 - **Git Governance:** Cambios listos en el working directory, pendientes de autorización explícita del usuario para realizar `git commit` y `git push`.
 
 ## Próximo paso
 
-- Presentar el resumen de la Feature 010 al usuario y solicitar autorización para commit y push.
+- Presentar el resumen de cambios al usuario, solicitar visto bueno para commit/push y guiarlo para enviar `sitemap.xml` en Google Search Console.
 

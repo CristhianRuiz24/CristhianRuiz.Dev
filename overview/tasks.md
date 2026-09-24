@@ -179,6 +179,22 @@ Referencia: `specs/010-remediacion-csp-seo-robots-sitemap-cache-busting/tasks.md
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 
+---
+
+# Feature 011: Alta en Google Search, Optimización para Motores de Inteligencia Artificial (GEO / AI Search), Schema FAQPage y llms.txt
+
+Referencia: `specs/011-alta-google-search-console-geo-ai-search/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Implementación de Schema.org Unificado `@graph` (`FAQPage`, `ProfessionalService`, `Person`) | ✅ hecho | `@graph` con 3 entidades: `ProfessionalService` con paquetes ($4,800 y $5,900 MXN), `Person` y `FAQPage` con las 7 preguntas/respuestas. |
+| **T2** | Creación del Archivo de Contexto para Inteligencias Artificiales (`llms.txt`) | ✅ hecho | Creado `/llms.txt` en la raíz con resumen ejecutivo, paquetes, caso PsicoLau y canales de contacto para LLMs (ChatGPT, Claude, Perplexity). |
+| **T3** | Optimización de `robots.txt` para Motores Tradicionales y Rastreadores de IA | ✅ hecho | Rastreo abierto general y bienvenida explícita a `GPTBot`, `PerplexityBot`, `ClaudeBot`, `Google-Extended` y sitemap canónico. |
+| **T4** | Guía Operativa de Registro e Indexación en Google Search Console y Bing | ✅ hecho | Guía redactada en `docs/seo-alta-google-search-console.md` para envío de `sitemap.xml`, inspección prioritaria y sincronización en 1 clic con Bing. |
+| **T5** | Validación Automatizada de Tests y Accesibilidad Web | ✅ hecho | 16/16 tests pasando y validación sintáctica de JSON-LD y `/llms.txt` completada. |
+
+Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
+
 ## Bloqueos / pendientes fuera de esta feature
 
 - Ninguno por el momento.
