@@ -134,17 +134,22 @@
     - **Armonización de Componentes:** Ajuste de contraste para tarjetas de precios, la preview de PsicoLau, inputs de formulario y protección del fondo oscuro en el footer (`#050914`).
     - **Validación Visual:** Comprobada la ausencia de errores JS en consola y verificado el renderizado perfecto en viewports desktop (1280px) y móvil (390px).
 
+18. **Implementación de Feature 007: Remediación de Auditoría (Seguridad y Deuda Técnica):**
+    - **Blindaje Serverless (`functions/api/contact.js`):** Restricción estricta de CORS a dominios autorizados (`cristhianruiz.dev` y `localhost:3000`), validación de datos redundante en backend (formato email/teléfono y longitudes mínimas/máximas), trampa Honeypot anti-spam que descarta silenciosamente envíos de bots con HTTP 200 sin despachar correos a Resend, y enmascaramiento de excepciones internas del servidor en respuestas 500/502.
+    - **Protección Perimetral CSP (`_headers`):** Adición de cabecera `Content-Security-Policy` restrictiva con lista blanca de orígenes para prevención de XSS y ataques de inyección.
+    - **Honeypot en Frontend (`index.html` & `js/form-handler.js`):** Campo oculto `website` invisible para humanos pero detectable para bots, enviado automáticamente en el payload de la API.
+    - **Modularización CSS de Privacidad (`css/components/privacy.css`):** Extracción de 117 líneas de CSS embebido desde `aviso-de-privacidad.html` a su propio archivo modular, enlazado vía `<link>`.
+    - **Optimización de Rendimiento y Fuentes (`css/main.css` & `index.html`):** Eliminación de `@import` bloqueante de Google Fonts en CSS (precargadas nativamente por HTML), purgado de script tag duplicado de `config.js` y homogeneización de `<meta name="theme-color">` adaptativo para temas claro y oscuro.
+    - **Salvaguarda Mobile Grid e Iconografía Vectorial (`css/components/navbar.css` & `index.html`):** Reemplazo de columnas fijas por `minmax(0, 1fr)` con `min-width: 0` en el navbar y sustitución de la estrella Unicode ("★") en la cinta de precios por un icono vectorial SVG limpio (`currentColor`).
+    - **Purgado de Assets Huérfanos:** Eliminación física de 7 archivos de imagen no referenciados en `assets/images/` (~580 KB de peso muerto purgado del repositorio).
+    - **Validación Automatizada y Visual:** 16/16 pruebas unitarias pasando (`npm test`), 0 errores de consola en escritorio y móvil (390px), y partials sincronizados (`npm run sync:partials`).
+
 ## En qué quedó el proyecto
 
-- **Feature 004 (Transición Integral a Estética Cálida y Humana - Clinical SaaS):** Completamente implementada, verificada visualmente en navegador (desktop 1536px y móvil 375px, modos claro y oscuro) y documentada bajo el flujo SDD.
-- Todos los elementos residuales de consola/terminal han sido desterrados, sustituidos por un lenguaje de diseño médico moderno, empático y de alta conversión sin emojis de sistema.
-- Cero errores en consola JavaScript y navegación fluida y responsive en ambos viewports.
+- **Features 001 a 007 Completadas:** Código limpio, blindado contra spam y ataques perimetrales, optimizado en rendimiento y validado visualmente.
+- **Suite de Testing & Salud:** 16/16 pruebas pasando exitosamente en <120ms (`npm test`).
+- **Git Governance:** Cambios listos en el working tree a la espera de la autorización explícita del usuario para realizar el commit correspondiente.
 
 ## Próximo paso
 
-- Enviar cambios a GitHub (`git commit -m "feat: complete transition to warm human clinical SaaS aesthetic (Feature 004)"` y `git push origin main`) para su despliegue en producción.
-
-
-
-
-
+- Presentar el resumen de cambios al usuario y solicitar su visto bueno para el commit y push según las reglas de Git Governance.

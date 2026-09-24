@@ -1,6 +1,7 @@
-# Tareas — feature activa: Landing Page & Portafolio Cyber-Terminal CrisDev
+# Tareas — CrisDev (`cristhianruiz.dev`)
+Estado general: Features 001 a 006 completadas y desplegadas en producción.
 
-Referencia: `specs/001-landing-page-crisdev/tasks.md`
+Referencia principal: `specs/001-landing-page-crisdev/tasks.md` a `specs/006-optimizacion-arquitectura-calidad-testing/tasks.md`
 
 | ID | Tarea | Estado | Nota |
 | :--- | :--- | :--- | :--- |
@@ -105,6 +106,24 @@ Referencia: `specs/006-optimizacion-arquitectura-calidad-testing/tasks.md`
 | **T3** | Suite de Pruebas: Integridad de Navegación y Anclas | ✅ hecho | `tests/link-integrity.test.js` |
 | **T4** | Suite de Pruebas: Consistencia de Variables CSS | ✅ hecho | `tests/css-tokens.test.js`, `css/main.css` |
 | **T5** | Git Governance: Formalización de Reglas de Aprobación | ✅ hecho | `AGENTS.md`, `GEMINI.md`, `package.json` |
+
+Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
+
+---
+
+# Feature 007: Remediación de Auditoría (Seguridad y Deuda Técnica)
+
+Referencia: `specs/007-remediacion-auditoria-seguridad/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Blindaje Serverless (CORS, Honeypot, Errores y Validación) | ✅ hecho | `functions/api/contact.js` |
+| **T2** | Modificación Frontend Formulario y Honeypot | ✅ hecho | `index.html`, `js/form-handler.js` |
+| **T3** | Implementación CSP y Seguridad Global | ✅ hecho | `_headers` |
+| **T4** | Refactorización CSS y Privacidad | ✅ hecho | `aviso-de-privacidad.html`, `css/components/privacy.css` |
+| **T5** | Optimización de Performance (Fonts y Redundancias) | ✅ hecho | `index.html`, `aviso-de-privacidad.html`, `css/main.css` |
+| **T6** | Salvaguardas Grid e Iconografía | ✅ hecho | `css/components/navbar.css`, `index.html` |
+| **T7** | Limpieza de Repositorio de Assets | ✅ hecho | `assets/` |
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 

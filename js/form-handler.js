@@ -21,6 +21,7 @@ class ContactFormHandler {
     this.inputContact = document.getElementById('input-contact');
     this.inputClinic = document.getElementById('input-clinic');
     this.inputNeed = document.getElementById('input-need');
+    this.inputWebsite = document.getElementById('input-website');
 
     this.groupName = document.getElementById('group-name');
     this.groupContact = document.getElementById('group-contact');
@@ -141,12 +142,14 @@ class ContactFormHandler {
     const cleanContact = sanitizeInput(this.inputContact.value);
     const cleanClinic = sanitizeInput(this.inputClinic.value);
     const cleanNeed = sanitizeInput(this.inputNeed.value);
+    const websiteTrap = this.inputWebsite ? this.inputWebsite.value.trim() : '';
 
     const payload = {
       name: cleanName,
       contact: cleanContact,
       clinic: cleanClinic,
       need: cleanNeed,
+      website: websiteTrap,
       _subject: `[CrisDev Lead] ${cleanName} (${cleanContact}) — ${cleanClinic}`,
       timestamp: new Date().toISOString()
     };

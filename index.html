@@ -9,7 +9,8 @@
   <meta name="description" content="Desarrollo web de alta conversión, plataformas clínicas a medida y expedientes confidenciales para psicólogos, terapeutas y profesionales de la salud. Automatización de agenda y captación de pacientes.">
   <meta name="author" content="Cristhian Ruiz">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#F8F9FA">
+  <meta name="theme-color" content="#F8F9FA" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A0C10" media="(prefers-color-scheme: dark)">
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://cristhianruiz.dev/">
@@ -1154,7 +1155,10 @@
         <!-- Plan 2: Consultorio Inteligente (Featured) -->
         <div class="pricing-card featured-pricing-card">
           <div class="pricing-featured-ribbon">
-            ★ Más Elegido por Especialistas
+            <svg class="pricing-ribbon-icon" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span>Más Elegido por Especialistas</span>
           </div>
 
           <div class="pricing-card-header">
@@ -1337,6 +1341,12 @@
           </div>
 
           <form id="contact-form" class="cyber-form" novalidate>
+            <!-- Anti-Spam Honeypot Field (Invisible to human users, traps automated bots) -->
+            <div class="hp-field" aria-hidden="true" style="position: absolute; left: -9999px; top: -9999px; width: 1px; height: 1px; opacity: 0; pointer-events: none;">
+              <label for="input-website">Website (dejar en blanco):</label>
+              <input type="text" id="input-website" name="website" tabindex="-1" autocomplete="off" value="">
+            </div>
+
             <!-- Field: Name -->
             <div class="form-group" id="group-name">
               <label for="input-name" class="form-label">
@@ -1437,7 +1447,6 @@
 
   <!-- JavaScript Modules -->
   <script type="module" src="js/theme-manager.js?v=1.0"></script>
-  <script type="module" src="js/config.js?v=2.0"></script>
   <script type="module" src="js/terminal-effects.js?v=2.5-inicio"></script>
   <script type="module" src="js/form-handler.js?v=2.0"></script>
 

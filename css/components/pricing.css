@@ -52,6 +52,9 @@
 }
 
 .pricing-featured-ribbon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   position: absolute;
   top: -12px;
   left: 50%;
