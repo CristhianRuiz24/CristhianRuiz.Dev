@@ -52,7 +52,9 @@ graph TD
 - **Zero-Dependency Testing con Node.js Nativo (`tests/`):** Suite de 16 pruebas automatizadas con `node:test` y `node:assert` para validación de formularios/XSS, integridad de hipervínculos/anclas y consistencia de variables CSS en <10ms, sin frameworks externos de 100MB *(08-Sep-2026)*.
 - **Git Governance Estricto:** Políticas formales de control de versiones que impiden commits automáticos de IA sin aprobación explícita previa del usuario *(08-Sep-2026)*.
 - **Blindaje Serverless & Anti-Spam Zero-Dependency (`functions/api/contact.js`):** Restricción estricta de CORS a orígenes propios, trampa Honeypot invisible para descarte silencioso de bots sin requerir CAPTCHAs pesados, validación backend redundante y enmascaramiento de trazas de excepción interna *(23-Sep-2026)*.
-- **Seguridad Perimetral Content-Security-Policy (`_headers`):** Restricción de orígenes de ejecución para prevención de XSS y ataques de inyección *(23-Sep-2026)*.
 - **Modularización CSS de Privacidad y Purgado de Assets:** Extracción de estilos a `css/components/privacy.css`, eliminación de `@import` bloqueante de Google Fonts y purgado de 7 imágenes huérfanas (~580 KB) *(23-Sep-2026)*.
+- **Generative Engine Optimization (GEO) & Estándar `/llms.txt`:** Implementación del estándar emergente `/llms.txt` en la raíz para proporcionar contexto estructurado, precios y capacidades a modelos de lenguaje (ChatGPT, Claude, Perplexity y Gemini) *(24-Sep-2026)*.
+- **Schema.org `@graph` Unificado (`FAQPage` + `ProfessionalService` + `Person`):** Estructura JSON-LD interconectada para habilitar Rich Snippets (acordeones de FAQ) en Google Search y facilitar citas directas en motores de búsqueda de IA *(24-Sep-2026)*.
+- **Políticas de Indexación para Agentes de IA (`robots.txt`):** Bienvenida explícita a rastreadores de IA (`GPTBot`, `PerplexityBot`, `ClaudeBot`, `Google-Extended`) sin restricciones y vinculación de sitemap canónico *(24-Sep-2026)*.
 
 

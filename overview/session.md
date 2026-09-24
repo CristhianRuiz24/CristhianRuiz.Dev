@@ -61,11 +61,14 @@
 
 ## En qué quedó el proyecto
 
-- **Feature 011 Completada:** Sitio optimizado para Google Search (Rich Snippets), motores de IA (GEO con `llms.txt`), bots de OpenAI/Anthropic/Perplexity en `robots.txt` y guía operativa lista para que el usuario envíe el sitemap en Search Console.
-- **Suite de Pruebas:** 16/16 tests pasando en verde.
-- **Git Governance:** Cambios listos en el working directory, pendientes de autorización explícita del usuario para realizar `git commit` y `git push`.
+- **Features 001 a 011 Completadas y Desplegadas en Producción:**
+  - Código en `origin/main` (commit `34926cc`): Schema.org `@graph` (`FAQPage`, `ProfessionalService`, `Person`), `/llms.txt` estándar para LLMs, políticas en `robots.txt` y cache-busting `?v=6.0`.
+  - **Alta en Google Search Console:** Propiedad `sc-domain:cristhianruiz.dev` verificada, sitemap `https://cristhianruiz.dev/sitemap.xml` enviado e indexación prioritaria solicitada.
+  - **Sincronización con Microsoft Bing Webmaster Tools:** Sitio importado y vinculado para alimentar ChatGPT Web Search y Perplexity.
+- **Suite de Pruebas:** 16/16 tests pasando en verde con `npm test`.
 
 ## Próximo paso
 
-- Presentar el resumen de cambios al usuario, solicitar visto bueno para commit/push y guiarlo para enviar `sitemap.xml` en Google Search Console.
+- Monitorear en 24-48 horas la aparición de la pestaña "Preguntas Frecuentes (FAQ)" en Google Search Console.
+- Diseñar o implementar nuevas funcionalidades comerciales o mejoras de conversión cuando el usuario lo requiera.
 
