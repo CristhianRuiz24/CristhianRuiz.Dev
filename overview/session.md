@@ -59,16 +59,25 @@
    - **Validación Automatizada:**
      - 16/16 tests pasando y sintaxis JSON-LD validada al 100%.
 
+4. **Feature 012: Calibración de Longitud de Title y Meta Description para Bing y Google (Completada):**
+   - **`<title>` Calibrado en `index.html`:**
+     - Ajustado a `CrisDev | Cristhian Ruiz — Web para Psicoterapeutas` (51 caracteres), cumpliendo holgadamente el límite de Bing y Google (máximo 65 caracteres) y evitando truncamientos con `...`.
+   - **`<meta name="description">` Calibrada en `index.html`:**
+     - Sintetizada a `Desarrollo web y plataformas clínicas para psicólogos y terapeutas. Agenda automatizada, expedientes NOM-004 y captación de pacientes sin comisiones.` (149 caracteres), entrando con precisión en el rango recomendado de Bing (120 a 160 caracteres).
+   - **Suite de Pruebas de Metadatos (`tests/seo-metadata.test.js`):**
+     - Añadida suite automatizada nativa con 4 pruebas adicionales que verifican permanentemente que ni `index.html` ni `aviso-de-privacidad.html` excedan los 65 caracteres de título ni salgan del rango 120-160 de descripción.
+   - **Resultados de Pruebas:**
+     - 20/20 tests pasando exitosamente (`npm test`).
+
 ## En qué quedó el proyecto
 
-- **Features 001 a 011 Completadas y Desplegadas en Producción:**
-  - Código en `origin/main` (commit `34926cc`): Schema.org `@graph` (`FAQPage`, `ProfessionalService`, `Person`), `/llms.txt` estándar para LLMs, políticas en `robots.txt` y cache-busting `?v=6.0`.
-  - **Alta en Google Search Console:** Propiedad `sc-domain:cristhianruiz.dev` verificada, sitemap `https://cristhianruiz.dev/sitemap.xml` enviado e indexación prioritaria solicitada.
-  - **Sincronización con Microsoft Bing Webmaster Tools:** Sitio importado y vinculado para alimentar ChatGPT Web Search y Perplexity.
-- **Suite de Pruebas:** 16/16 tests pasando en verde con `npm test`.
+- **Features 001 a 012 Completadas:**
+  - Código listo para producción con calibración técnica de etiquetas SEO (51 chars de título y 149 de descripción).
+  - 20/20 tests pasando en verde.
+  - Pendiente visto bueno del usuario para commit y push.
 
 ## Próximo paso
 
-- Monitorear en 24-48 horas la aparición de la pestaña "Preguntas Frecuentes (FAQ)" en Google Search Console.
-- Diseñar o implementar nuevas funcionalidades comerciales o mejoras de conversión cuando el usuario lo requiera.
+- Ejecutar commit y push con autorización del usuario.
+- En Bing Webmaster Tools, solicitar re-inspección en vivo para confirmar que el reporte de "2 SEO/GEO issues found" pase a 0 advertencias.
 

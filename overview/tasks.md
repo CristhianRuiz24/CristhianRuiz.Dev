@@ -195,6 +195,21 @@ Referencia: `specs/011-alta-google-search-console-geo-ai-search/tasks.md`
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 
+---
+
+# Feature 012: Calibración de Longitud de Title y Meta Description para Bing y Google
+
+Referencia: `specs/012-calibracion-longitud-seo-title-meta-bing/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Calibración de `<title>` a 51 caracteres en `index.html` | ✅ hecho | `index.html`: `CrisDev | Cristhian Ruiz — Web para Psicoterapeutas` (51 chars <= 65). |
+| **T2** | Calibración de `<meta name="description">` a 149 caracteres en `index.html` | ✅ hecho | `index.html`: `Desarrollo web y plataformas clínicas para psicólogos y terapeutas...` (149 chars, 120-160). |
+| **T3** | Suite de Pruebas Automatizadas de Metadatos SEO (`tests/seo-metadata.test.js`) | ✅ hecho | Nueva suite de tests con Node.js nativo (20/20 tests pasando). |
+| **T4** | Despliegue en Producción y Actualización de Documentación SDD | ✅ hecho | `overview/session.md`, `overview/tasks.md` |
+
+Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
+
 ## Bloqueos / pendientes fuera de esta feature
 
 - Ninguno por el momento.
