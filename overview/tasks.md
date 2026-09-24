@@ -127,6 +127,24 @@ Referencia: `specs/007-remediacion-auditoria-seguridad/tasks.md`
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 
+---
+
+# Feature 008: Simplificación Visual Integral, Purga de Sobrecarga, Conexión de Demo en Vivo y Nuevos Precios
+
+Referencia: `specs/008-simplificacion-visual-ux-anti-sobrecarga/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Desahogo Visual de Presencia Digital (Caso PsicoLau) | ✅ hecho | Eliminados dots de ventana, barra falsa URL, badges secundarios y ficha técnica de 4 filas; conservado testimonio de Laura Gómez con `<details>`. |
+| **T2** | Conexión de Demo en Vivo y Renovación de Gestión de Consultas (`#infrastructure`) | ✅ hecho | Retirado mockup interactivo hardcodeado; integrada tarjeta prémium de PSICOCLÍNICA con CTAs a demo y panel clínico, y 3 pilares sintetizados. |
+| **T3** | Humanización y Desahogo de la Sección Sobre Mí (`#operator`) | ✅ hecho | Purgadas etiquetas y clases de operador (`.operator-id`, `.operator-clearance`, etc.); perfil humanizado y editorial para Cristhian Ruiz. |
+| **T4** | Actualización Comercial de Planes y Precios (`#pricing`) | ✅ hecho | Actualizados precios ($4,800 MXN y $5,900 MXN), esquemas 50/50, tiempos de entrega (48-72h y 3-5 días), arquitectura de 8 páginas y enlaces de WhatsApp. |
+| **T5** | Retiro del Formulario por Escrito y Centralización en WhatsApp (`#contact`) | ✅ hecho | Eliminados formulario por escrito, divisor y desvinculado `form-handler.js`; centralizada tarjeta directa de WhatsApp sin fricción. |
+| **T6** | Estilos CSS, Adaptación Multi-Tema y Responsividad Mobile | ✅ hecho | Adaptado a modo claro/oscuro, salvaguarda `minmax(0, 1fr)` y breakpoints de 375px a 430px sin desbordamiento horizontal. |
+| **T7** | Validación de Suite de Tests Automatizados e Integridad General | ✅ hecho | 16/16 tests pasando (tokens CSS, sanitización, anclas de navegación); partials sincronizados y validación en navegador completada. |
+
+Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
+
 ## Bloqueos / pendientes fuera de esta feature
 
 - Ninguno por el momento.
