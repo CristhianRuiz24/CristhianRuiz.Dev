@@ -1,42 +1,41 @@
 # Sesión activa — CrisDev (`cristhianruiz.dev`)
 
 **Última actualización:** 2026-09-24
-**Fase SDD actual:** Feature 008: Simplificación Visual Integral, Purga de Sobrecarga, Conexión de Demo en Vivo y Nuevos Precios — T1 a T7 Completadas y Validadas
+**Fase SDD actual:** Feature 009: Hiper-Especialización para Psicoterapeutas, Entornos Visuales en Previews, Claridad de Dominio Anual y Sección FAQ — T1 a T6 Completadas y Validadas
 
 ## Lo que se logró en esta sesión
 
-1. **Feature 008: Simplificación Visual Integral, Purga de Sobrecarga, Conexión de Demo en Vivo y Nuevos Precios (Completada):**
-   - **Desahogo Visual de Presencia Digital (PsicoLau - `#web-ui`):**
-     - Eliminados los marcos de ventana simulados de consola (dots de colores rojo/amarillo/verde y barra URL falsa).
-     - Purgados los badges secundarios flotantes (`[ Especialidad: Neuropsicología ]` y `[ En Producción ]`).
-     - Suprimida la ficha técnica redundante de 4 filas y las píldoras duplicadas de métricas numéricas.
-     - Preservado íntegramente el testimonio real de la Mtra. Ana Laura Gómez con desplegable interactivo `<details>`.
-   - **Gestión de Consultas y Demo en Vivo (`#infrastructure`):**
-     - Erradicado el mockup interactivo hardcodeado antiguo de 4 pestañas y datos simulados, purgado su CSS obsoleto en `terminal.css`.
-     - Diseñada la tarjeta prémium de PSICOCLÍNICA conectando directamente con la plataforma real en producción: `https://demo.cristhianruiz.dev/` (Sitio Web Demo) y `https://demo.cristhianruiz.dev/panel/` (Panel Clínico en 1 Clic con credenciales precargadas).
-     - Incorporados 3 pilares sintetizados de alto valor para especialistas de la salud: *Agenda Semanal Inteligente*, *Expedientes NOM-004-SSA3* y *Control de Cobro y Contabilidad*.
-   - **Humanización de la Sección Sobre Mí (`#operator`):**
-     - Purgada la terminología residual de operador y ciberseguridad (`.operator-badge-header`, `.operator-id`, `.operator-clearance`, `.operator-status-tag`, `.operator-role-tag`).
-     - Diseñada una presentación editorial humana y cercana para Cristhian Ruiz con título profesional claro (*Ingeniero de Software & Web · Soluciones para Profesionales de la Salud*), biografía empática y los 3 principios de servicio clínico.
-   - **Actualización Comercial de Planes y Precios (`#pricing`):**
-     - **Paquete 01 (Presencia Médica Multi-Página):** Precio actualizado a **$4,800 MXN** (Esquema 50/50: $2,400 anticipo · $2,400 al entregar), entrega en 48-72h, arquitectura de 8 páginas, $0/mes y dominio ~$195 a $800/año. Viñetas sintetizadas a 1 línea. Enlace de WhatsApp actualizado.
-     - **Paquete 02 (Consultorio Inteligente):** Setup actualizado a **$5,900 MXN** (Esquema 50/50: $2,950 anticipo · $2,950 al entregar), entrega en 3-5 días, servidor clínico y base de datos $499/mes o $4,990/año (con dominio .com gratis), Suite Clínica NOM-004-SSA3 con AES-256-GCM y módulo contable. Enlace de WhatsApp actualizado.
-   - **Retiro del Formulario por Escrito y Centralización en WhatsApp (`#contact`):**
-     - Suprimido el formulario por escrito (`#contact-form`, `#form-container`), el mensaje de éxito y el separador divisorio (`.contact-divider`).
-     - Desvinculado el script `<script type="module" src="js/form-handler.js">` en `index.html`.
-     - Centralizada la tarjeta directa de WhatsApp como único canal de conversión sin barreras cognitivas ni fricciones para el especialista.
-     - Preservados los módulos de backend y utilidades en el repo para integridad de tests.
-   - **Estilos CSS, Multi-Tema y Responsividad Mobile:**
-     - Calibración de contraste y legibilidad impecable en modo claro y modo oscuro.
-     - Cumplimiento estricto de salvaguarda `minmax(0, 1fr)` en grids y flexbox con `word-break: break-word`.
-     - Breakpoints responsivos para pantallas móviles de 375px a 430px sin desbordamiento horizontal.
+1. **Feature 009: Hiper-Especialización para Psicoterapeutas, Entornos Visuales y Sección FAQ (Completada):**
+   - **Entorno Visual de Escaparate en Caso PsicoLau (`#web-ui`):**
+     - Se integró la tarjeta de escaparate `.preview-showcase-card` con barra de estado superior estructurada (`psicolau.com · Plataforma en Producción`).
+     - El logo de PsicoLau cuenta ahora con un marco contenedor `.showcase-logo-frame` con margen de respiro en 360° evitando cortes abruptos.
+     - Se añadieron etiquetas sutiles de especialidad y botón armónico para visitar el sitio en vivo.
+   - **Entorno Visual, Dock de Acciones y Pilares en Gestión de Consultas (`#infrastructure`):**
+     - Se estructuraron las pastillas de encabezado con espacio y contraste claro.
+     - Se creó el dock elevado `.demo-actions-dock` para agrupar los dos botones de acción (`Explorar Sitio Web Demo` y `Probar Panel Clínico en 1 Clic`) junto a la nota de acceso sin registro.
+     - Cada uno de los 3 pilares se convirtió en una tarjeta modular individual (`.demo-pillar-card`) con iconos vectoriales en caja redondeada con contraste accesible.
+   - **Hiper-Especialización de Copy y Claridad de Dominio Anual en Precios (`#pricing`):**
+     - Se renombró el Paquete 01 a *"Paquete 01 · Presencia Terapéutica Multi-Página"* (titular: *"Presencia Digital para Terapeutas"*).
+     - Se purgaron todas las menciones genéricas de "médicos/servicios médicos" en titulares y descripciones, enfocando el mensaje en psicólogos y terapeutas independientes.
+     - Se detalló con total transparencia la inversión anual en dominio: en Paquete 01 se especificó hosting $0/mes de por vida y renovación de dominio estándar (~$195 a $800 MXN/año); en Paquete 02 se aclaró que la anualidad ($4,990 MXN/año) incluye el dominio .com gratis el 1er año y luego se renueva normalmente.
+   - **Componente CSS Modular de Acordeones (`css/components/faq.css`):**
+     - Se creó el archivo modular `css/components/faq.css` con estilos nativos para `<details>` y `<summary>`.
+     - Animación suave de apertura y rotación de chevron (180°), compatibilidad multi-tema (claro/oscuro) y salvaguarda móvil `minmax(0, 1fr)` y `word-break: break-word`.
+   - **Implementación de la Sección de Preguntas Frecuentes (`#faq`) y Sincronización:**
+     - Se implementó la sección `#faq` antes de `#contact` con 7 preguntas estratégicas de alta conversión para psicoterapeutas.
+     - Se añadieron los enlaces de navegación a `#faq` en `partials/header.html` (navbar desktop y drawer móvil) y `partials/footer.html`.
+     - Se ejecutó `npm run sync:partials` replicando con éxito los cambios en `index.html` y `aviso-de-privacidad.html`.
    - **Validación Automatizada y Visual:**
      - Suite completa de 16 tests automatizados pasando al 100% (`npm test`).
-     - Verificación visual exhaustiva en navegador con `browser_subagent` en desktop (1280px) y móvil (390px), confirmando 0 errores de JavaScript en consola.
+     - Verificación visual exhaustiva en navegador con `browser_subagent` en desktop (1280px) y móvil (390px), confirmando despliegue de acordeones y 0 errores de JavaScript en consola.
+   - **Corrección de Solapamiento en Navbar Desktop:**
+     - Se reemplazó el grid rígido de 3 columnas por un contenedor Flexbox fluido (`justify-content: space-between`).
+     - Se ajustó el texto del enlace en la barra de escritorio a `FAQ` (conservando `Preguntas Frecuentes` en el drawer móvil).
+     - Se recalibró el breakpoint del menú móvil a `1080px` con gaps compactos, eliminando por completo cualquier colisión o encimamiento entre los enlaces y los botones de acción en pantallas medianas.
 
 ## En qué quedó el proyecto
 
-- **Feature 008 Completada:** El sitio web `cristhianruiz.dev` se encuentra completamente desahogado visualmente, libre de sobrecarga informativa y jerga técnica innecesaria, con precios actualizados al día, demo en vivo conectada y canal único de WhatsApp.
+- **Feature 009 Completada:** La web `cristhianruiz.dev` cuenta con diseño visual refinado con entornos definidos, copy hiper-especializado para psicoterapia, desglose transparente de costos de dominio y sección completa de Preguntas Frecuentes.
 - **Suite de Pruebas:** 16/16 tests pasando en verde.
 - **Git Governance:** Cambios listos en el working directory, pendientes de autorización explícita del usuario para realizar `git commit` y `git push`.
 

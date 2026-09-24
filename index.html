@@ -93,6 +93,7 @@
   <link rel="stylesheet" href="css/components/terminal.css?v=5.1-humanized">
   <link rel="stylesheet" href="css/components/trust-operator.css?v=5.1-humanized">
   <link rel="stylesheet" href="css/components/pricing.css?v=5.1-humanized">
+  <link rel="stylesheet" href="css/components/faq.css?v=1.0">
   <link rel="stylesheet" href="css/components/form.css?v=5.1-humanized">
   <link rel="stylesheet" href="css/components/footer.css?v=5.1-humanized">
 </head>
@@ -116,6 +117,7 @@
       <a href="#web-ui" class="nav-link">Presencia Digital</a>
       <a href="#infrastructure" class="nav-link">Gestión de Consultas</a>
       <a href="#pricing" class="nav-link">Planes y Precios</a>
+      <a href="#faq" class="nav-link">FAQ</a>
       <a href="#security" class="nav-link">Privacidad</a>
       <a href="#operator" class="nav-link">Sobre Mí</a>
     </nav>
@@ -201,6 +203,10 @@
     </a>
     <a href="#pricing" class="mobile-nav-link">
       <span>Planes y Precios</span>
+      <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </a>
+    <a href="#faq" class="mobile-nav-link">
+      <span>Preguntas Frecuentes</span>
       <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
     </a>
     <a href="#security" class="mobile-nav-link">
@@ -298,27 +304,37 @@
 
       <div class="case-study-card">
         <div class="case-study-grid">
-          <!-- Live Preview Deck & Visual Showcase -->
+          <!-- Live Preview Showcase Card (Entorno de Proyecto Real) -->
           <div class="case-preview">
-            <div class="minimal-preview-card">
-              <div class="preview-brand-header">
-                <div class="preview-logo-wrapper">
-                  <img src="assets/images/psicolau-logo.png" alt="PsicoLau Logo - Neuropsicología" class="preview-brand-logo">
+            <div class="preview-showcase-card">
+              <div class="showcase-top-bar">
+                <div class="showcase-url-pill">
+                  <span class="pulse-dot pulse-green"></span>
+                  <span>psicolau.com</span>
                 </div>
-                <div class="preview-live-indicator">
-                  <span class="pulse-dot"></span>
-                  <span class="text-accent">Sitio Web y Plataforma Oficial</span>
+                <span class="showcase-badge text-accent">En Producción</span>
+              </div>
+
+              <div class="showcase-screen-body">
+                <div class="showcase-logo-frame">
+                  <img src="assets/images/psicolau-logo.png" alt="PsicoLau Logo - Neuropsicología Clínica" class="showcase-logo-img">
+                </div>
+                <div class="showcase-tags-row">
+                  <span class="showcase-mini-tag">Web Multi-Página</span>
+                  <span class="showcase-mini-tag">Agenda en WhatsApp</span>
+                  <span class="showcase-mini-tag">Expedientes Privados</span>
                 </div>
               </div>
 
-              <div class="preview-summary-text">
-                <p>Plataforma web personalizada desarrollada para la consulta privada de Neuropsicología: captación directa de pacientes, agenda fluida y administración clínica en un solo lugar.</p>
+              <div class="showcase-footer-box">
+                <p class="showcase-caption">
+                  Plataforma integral activa desarrollada a la medida para la práctica privada de Neuropsicología.
+                </p>
+                <a href="https://psicolau.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-block showcase-cta-btn">
+                  <span>Visitar psicolau.com en vivo</span>
+                  <span class="btn-arrow">&nearr;</span>
+                </a>
               </div>
-
-              <a href="https://psicolau.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary preview-action-btn">
-                <span>Visitar psicolau.com en vivo</span>
-                <span class="btn-arrow">&nearr;</span>
-              </a>
             </div>
           </div>
 
@@ -453,34 +469,38 @@
               <span>DEMO EN VIVO · PSICOCLÍNICA</span>
             </span>
             <span class="demo-status-indicator">
-              <span class="pulse-dot"></span>
+              <span class="pulse-dot pulse-green"></span>
               <span>100% Operativa en Tiempo Real</span>
             </span>
           </div>
 
           <h3 class="demo-showcase-title">Experimenta la Suite Clínica Real en Funcionamiento</h3>
           <p class="demo-showcase-desc">
-            Prueba directamente el entorno desarrollado para psicólogos y especialistas: desde la cara pública que orienta y capta a tus pacientes, hasta el panel privado donde organizas tu agenda, notas de evolución y finanzas mensuales.
+            Prueba directamente el entorno desarrollado para psicólogos y psicoterapeutas: desde la cara pública que orienta y capta a tus pacientes, hasta el panel privado donde organizas tu agenda semanal, notas de evolución y finanzas mensuales.
           </p>
 
-          <div class="demo-actions-grid">
-            <a href="https://demo.cristhianruiz.dev/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-demo-action">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-              <span>Explorar Sitio Web Demo</span>
-              <span class="btn-arrow">&nearr;</span>
-            </a>
+          <!-- Interactive Action Dock (Entorno de Acciones Destacado) -->
+          <div class="demo-actions-dock">
+            <div class="demo-dock-grid">
+              <a href="https://demo.cristhianruiz.dev/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-demo-action">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                <span>Explorar Sitio Web Demo</span>
+                <span class="btn-arrow">&nearr;</span>
+              </a>
 
-            <a href="https://demo.cristhianruiz.dev/panel/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-demo-action">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-              <span>Probar Panel Clínico en 1 Clic</span>
-              <span class="btn-arrow">&nearr;</span>
-            </a>
+              <a href="https://demo.cristhianruiz.dev/panel/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-demo-action">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span>Probar Panel Clínico en 1 Clic</span>
+                <span class="btn-arrow">&nearr;</span>
+              </a>
+            </div>
+            <p class="demo-dock-note">
+              <span class="text-success">✓</span> Acceso instantáneo al panel administrativo sin registro previo (credenciales de prueba precargadas automáticamente).
+            </p>
           </div>
+        </div>
 
-          <p class="demo-note-sub">
-            ✓ Acceso rápido e instantáneo al panel administrativo sin registro previo (credenciales de prueba precargadas).
-          </p>
-        </div>        <div class="demo-pillars-grid">
+        <div class="demo-pillars-grid">
           <div class="demo-pillar-card">
             <div class="pillar-icon-box text-accent">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -515,7 +535,7 @@
                 <polyline points="12 6 12 12 16 14"></polyline>
               </svg>
             </div>
-            <h4 class="pillar-title">Control de Cobro y Contabilidad</h4>
+            <h4 class="pillar-title">Control de Cobro y Finanzas</h4>
             <p class="pillar-desc">
               Seguimiento de honorarios pagados y pendientes, cobranza respetuosa por WhatsApp y botón 'Copiar para Contadora' con sumas matemáticas exactas.
             </p>
@@ -646,20 +666,20 @@
     <div class="container">
       <div class="section-header">
         <div class="section-tag">INVERSIÓN TRANSPARENTE · SIN COMISIONES</div>
-        <h2 class="section-title">Planes y Soluciones para Profesionales de la Salud</h2>
+        <h2 class="section-title">Planes y Soluciones para Psicoterapeutas</h2>
         <p class="section-subtitle">
-          Inversión clara, sin sorpresas ni comisiones ocultas por paciente. Diseñados para adaptarse a la etapa en que se encuentra tu práctica médica o terapéutica.
+          Inversión clara, sin sorpresas ni comisiones ocultas por paciente. Diseñados para adaptarse a la etapa en que se encuentra tu práctica terapéutica.
         </p>
       </div>
 
       <div class="pricing-grid">
-        <!-- Plan 1: Presencia Médica Multi-Página -->
+        <!-- Plan 1: Presencia Terapéutica Multi-Página -->
         <div class="pricing-card">
           <div class="pricing-card-header">
-            <span class="pricing-plan-badge">Paquete 01 · Presencia Médica Multi-Página</span>
-            <h3 class="pricing-plan-title">Presencia Digital Completa</h3>
+            <span class="pricing-plan-badge">Paquete 01 · Presencia Terapéutica Multi-Página</span>
+            <h3 class="pricing-plan-title">Presencia Digital para Terapeutas</h3>
             <p class="pricing-plan-ideal">
-              Ideal para especialistas que gestionan sus citas de forma tradicional (papel, WhatsApp o Excel) pero necesitan proyectar máxima autoridad en internet, posicionar sus especialidades y captar pacientes privados con una web formal.
+              Ideal para psicólogos y terapeutas independientes que gestionan sus citas de forma tradicional (papel, WhatsApp o Excel) pero necesitan proyectar máxima autoridad en internet, posicionar sus especialidades y captar pacientes privados con una web formal.
             </p>
           </div>
 
@@ -675,14 +695,14 @@
             <div class="pricing-recurring-details">
               <div class="detail-row">
                 <span>Mantenimiento o Servidores:</span>
-                <strong class="text-accent">$0 MXN / mes (Alojamiento incluido)</strong>
+                <strong class="text-accent">$0 MXN / mes (Alojamiento de por vida incluido)</strong>
               </div>
               <div class="detail-row">
                 <span>Costo Anual de Dominio Propio:</span>
                 <span>~$195 a $800 MXN / año*</span>
               </div>
               <div class="detail-row detail-row-sub">
-                <span class="text-secondary">*Dominio .com o .mx registrado 100% a tu nombre con hosting de alta velocidad y certificado SSL incluido.</span>
+                <span class="text-secondary">*Dominio .com o .mx registrado 100% a tu nombre con hosting de alta velocidad de por vida y certificado SSL por $0/mes. La renovación anual del nombre de dominio corre por cuenta del cliente con tarifa estándar de mercado (~$195 a $800 MXN/año).</span>
               </div>
               <div class="detail-row">
                 <span>Tiempo de Entrega:</span>
@@ -722,8 +742,8 @@
           </div>
 
           <div class="pricing-action">
-            <a href="https://wa.me/528130938884?text=Hola%20Cristhian,%20me%20interesa%20el%20Paquete%2001%20Presencia%20M%C3%A9dica%20Multi-P%C3%A1gina%20($4,800%20MXN)%20para%20mi%20consulta" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-block">
-              <span>Elegir Presencia Médica Multi-Página</span>
+            <a href="https://wa.me/528130938884?text=Hola%20Cristhian,%20me%20interesa%20el%20Paquete%2001%20Presencia%20Terap%C3%A9utica%20Multi-P%C3%A1gina%20($4,800%20MXN)%20para%20mi%20consulta" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-block">
+              <span>Elegir Presencia Terapéutica Multi-Página</span>
               <span class="btn-arrow">&rarr;</span>
             </a>
           </div>
@@ -742,7 +762,7 @@
             <span class="pricing-plan-badge text-accent">Paquete 02 · Consultorio Inteligente</span>
             <h3 class="pricing-plan-title">Consultorio Inteligente</h3>
             <p class="pricing-plan-ideal">
-              Ideal para psicólogos, terapeutas o médicos independientes que quieren dejar de perder tiempo en la administración manual y buscan automatizar agenda, blindar expedientes y llevar control total de sus ingresos.
+              Ideal para psicólogos y terapeutas independientes que quieren dejar de perder tiempo en la administración manual y buscan automatizar agenda, blindar expedientes y llevar control total de sus ingresos.
             </p>
           </div>
 
@@ -761,7 +781,7 @@
                 <strong class="text-accent">$499 MXN / mes</strong>
               </div>
               <div class="detail-row detail-row-sub">
-                <span class="text-secondary">O anualidad: $4,990 MXN / año (Ahorras 2 meses e incluye dominio .com gratis)</span>
+                <span class="text-secondary">O anualidad: $4,990 MXN / año (Ahorras 2 meses e incluye tu dominio .com gratis el 1er año. A partir del 2do año la renovación del dominio corre por cuenta del cliente con tarifa estándar de mercado).</span>
               </div>
               <div class="detail-row">
                 <span>Tiempo de Puesta en Marcha:</span>
@@ -775,7 +795,7 @@
             <ul class="pricing-feature-list">
               <li>
                 <span class="feature-check text-accent">✓</span>
-                <span><strong>Suite Clínica Privada Operativa:</strong> Entorno interno protegido con acceso confidencial para tu práctica médica o terapéutica.</span>
+                <span><strong>Suite Clínica Privada Operativa:</strong> Entorno interno protegido con acceso confidencial para tu práctica terapéutica.</span>
               </li>
               <li>
                 <span class="feature-check text-accent">✓</span>
@@ -831,7 +851,136 @@
   </section>
 
   <!-- =========================================================================
-       8. SECCIÓN DE CONTACTO & CONVERSIÓN
+       8. PREGUNTAS FRECUENTES (FAQ)
+       ========================================================================= -->
+  <section class="faq-section section-spacing" id="faq">
+    <div class="container faq-container">
+      <div class="section-header">
+        <div class="section-tag">DUDAS RESUELTAS · TRANSPARENCIA TOTAL</div>
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+        <p class="section-subtitle">
+          Todo lo que necesitas saber sobre el desarrollo, inversión, funcionamiento y seguridad de tu plataforma antes de iniciar.
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <!-- FAQ 1 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-title">¿Cómo me pagan mis pacientes sus consultas?</span>
+            <span class="faq-icon-box" aria-hidden="true">
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p>Tus pacientes te pagan el <strong>100% de sus honorarios directamente a ti</strong> a través de transferencia bancaria (SPEI), depósito o efectivo.</p>
+            <p>En ninguna de las soluciones cobro comisiones porcentuales ni cargos por consulta agendada; tus ingresos son íntegros para ti.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-title">¿Cómo funciona el pago del dominio y los servidores?</span>
+            <span class="faq-icon-box" aria-hidden="true">
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p>En el <strong>Paquete 01 (Presencia Terapéutica Multi-Página)</strong>, el alojamiento web de alta velocidad y el certificado de seguridad SSL están incluidos de por vida por <strong>$0 MXN/mes</strong>. El único costo recurrente es tu nombre de dominio propio (ejemplo: <em>tunombre.com</em> o <em>tumarca.mx</em>), el cual se registra 100% a tu nombre con una inversión anual estándar de mercado de aproximadamente ~$195 a $800 MXN/año.</p>
+            <p>En el <strong>Paquete 02 (Consultorio Inteligente)</strong>, el servidor clínico seguro, la base de datos cifrada y el soporte técnico tienen una cuota de <strong>$499 MXN/mes</strong>, o bien una <strong>anualidad de $4,990 MXN/año</strong> (donde ahorras 2 meses completos y te incluye tu dominio .com gratis durante el primer año; a partir del segundo año la renovación del dominio corre por tu cuenta con la tarifa estándar de mercado).</p>
+          </div>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-title">¿Es seguro el panel para las notas de evolución y el secreto profesional?</span>
+            <span class="faq-icon-box" aria-hidden="true">
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p>Totalmente. La confidencialidad clínica es el pilar central de la arquitectura. El sistema está estructurado respetando los lineamientos de la norma mexicana <strong>NOM-004-SSA3</strong> y la Ley Federal de Protección de Datos Personales (<strong>LFPDPPP</strong>).</p>
+            <p>Los expedientes, datos de contacto y notas de evolución se resguardan con <strong>cifrado AES-256</strong>. Únicamente tú tienes acceso mediante tus credenciales de acceso privadas; nadie más, ni plataformas de terceros, pueden visualizar la información sensible de tus pacientes.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 4 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-title">¿Puedo atender sesiones por videollamada para pacientes online?</span>
+            <span class="faq-icon-box" aria-hidden="true">
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p>Sí, por supuesto. La agenda semanal inteligente está diseñada para alternar tanto consultas presenciales en tu consultorio como sesiones de terapia en línea.</p>
+            <p>En cada cita virtual puedes agregar con un solo clic tu enlace de <strong>Zoom</strong> o <strong>Google Meet</strong>, permitiéndote abrir la sala de consulta directamente desde tu panel y compartir los detalles de acceso con tu paciente de forma ágil.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 5 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-title">¿Qué diferencia hay entre el Paquete 01 y el Paquete 02?</span>
+            <span class="faq-icon-box" aria-hidden="true">
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p>El <strong>Paquete 01 (Presencia Terapéutica Multi-Página)</strong> es un sitio web formal de hasta 8 secciones diseñado para posicionarte en Google, proyectar autoridad y orientar a pacientes calificados a agendar directamente a tu WhatsApp, ideal si ya tienes tu propio método de control de notas y agenda.</p>
+            <p>El <strong>Paquete 02 (Consultorio Inteligente)</strong> incluye todo lo anterior más tu propio <strong>software clínico privado</strong>: agenda semanal con vista por horas, expedientes clínicos digitales, seguimiento de notas de sesión, control de cobros y botón para exportar tus reportes a contabilidad.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 6 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-title">¿Qué pasa si actualmente gestiono mis notas y agenda en papel o Excel?</span>
+            <span class="faq-icon-box" aria-hidden="true">
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p>No te preocupes: el sistema está diseñado pensando en la simplicidad y en el flujo real de trabajo de un terapeuta, sin curvas de aprendizaje frustrantes ni interfaces saturadas.</p>
+            <p>Durante la puesta en marcha, realizamos una <strong>sesión de inducción 1 a 1</strong> donde te explico el funcionamiento de tu panel y resolvemos cualquier duda. Si sabes utilizar WhatsApp o tu correo electrónico, podrás operar tu consultorio inteligente con total fluidez desde el primer día.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 7 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-title">¿En cuánto tiempo queda lista mi página o plataforma?</span>
+            <span class="faq-icon-box" aria-hidden="true">
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p>Para el <strong>Paquete 01 (Presencia Terapéutica)</strong>, tu sitio web completo queda publicado y operando en un lapso de <strong>48 a 72 horas hábiles</strong> tras recibir los datos de tu consulta.</p>
+            <p>Para el <strong>Paquete 02 (Consultorio Inteligente)</strong>, la plataforma integral con base de datos, panel administrativo y web pública queda lista y probada en <strong>3 a 5 días hábiles</strong>.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. SECCIÓN DE CONTACTO & CONVERSIÓN
        ========================================================================= -->
   <section class="contact-section section-spacing" id="contact">
     <div class="container">
@@ -901,6 +1050,10 @@
       <a href="#web-ui" class="footer-link">Presencia Digital</a>
       <span class="footer-separator">·</span>
       <a href="#infrastructure" class="footer-link">Gestión de Consultas</a>
+      <span class="footer-separator">·</span>
+      <a href="#pricing" class="footer-link">Planes y Precios</a>
+      <span class="footer-separator">·</span>
+      <a href="#faq" class="footer-link">Preguntas Frecuentes</a>
       <span class="footer-separator">·</span>
       <a href="#security" class="footer-link">Privacidad</a>
       <span class="footer-separator">·</span>

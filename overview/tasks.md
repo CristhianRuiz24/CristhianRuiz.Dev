@@ -145,8 +145,26 @@ Referencia: `specs/008-simplificacion-visual-ux-anti-sobrecarga/tasks.md`
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 
+---
+
+# Feature 009: Hiper-Especialización para Psicoterapeutas, Entornos Visuales en Previews, Claridad de Dominio Anual y Sección FAQ
+
+Referencia: `specs/009-refinamiento-psicoterapia-faq-y-entornos-visuales/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Entorno Visual y Escaparate Prémium en Caso PsicoLau (`#web-ui`) | ✅ hecho | Enmarcado el logo de PsicoLau en `.preview-showcase-card` con barra de estado superior, margen de respiro en 360°, tags y botón de visita armónico. |
+| **T2** | Entorno Visual, Dock de Acciones y Pilares Modulares en Gestión de Consultas (`#infrastructure`) | ✅ hecho | Pastillas de cabecera separadas, dock elevado para CTAs de demo/panel y 3 pilares modulares individuales (`.demo-pillar-card`). |
+| **T3** | Hiper-Especialización de Copy y Claridad de Dominio Anual en Precios (`#pricing`) | ✅ hecho | Renombrado a *Presencia Terapéutica*, purga de términos médicos y desglose transparente de renovación de dominio (~$195 a $800 MXN/año) y 1er año incluido en paquete 02. |
+| **T4** | Creación del Componente Modular CSS de Acordeones (`css/components/faq.css`) | ✅ hecho | Creado `faq.css` modular nativo con `<details>` y `<summary>`, rotación de chevron y tokens adaptables multi-tema. |
+| **T5** | Implementación de la Sección de Preguntas Frecuentes (`#faq`) y Sincronización de Navegación | ✅ hecho | 7 preguntas estratégicas implementadas antes de `#contact`; sincronizado enlace en Navbar, drawer móvil y Footer mediante `sync:partials`. |
+| **T6** | Validación Integral de Suite de Tests Automatizados y Renderizado en Navegador | ✅ hecho | 16/16 tests pasando (tokens, sanitización, anclas) y validación visual completada con browser subagent (desktop y mobile 390px, 0 errores consola). |
+
+Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
+
 ## Bloqueos / pendientes fuera de esta feature
 
 - Ninguno por el momento.
+
 
 

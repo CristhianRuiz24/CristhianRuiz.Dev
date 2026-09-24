@@ -169,8 +169,11 @@
 }
 
 .detail-row-sub {
-  font-size: 0.7rem;
-  padding-left: 0.5rem;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  padding-left: 0.25rem;
+  word-break: break-word;
+  color: var(--text-secondary);
 }
 
 .pricing-features {
