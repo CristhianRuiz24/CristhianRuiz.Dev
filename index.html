@@ -245,6 +245,7 @@
   <link rel="stylesheet" href="css/components/terminal.css?v=6.0">
   <link rel="stylesheet" href="css/components/trust-operator.css?v=6.0">
   <link rel="stylesheet" href="css/components/pricing.css?v=6.0">
+  <link rel="stylesheet" href="css/components/comparison.css?v=6.0">
   <link rel="stylesheet" href="css/components/faq.css?v=6.0">
   <link rel="stylesheet" href="css/components/form.css?v=6.0">
   <link rel="stylesheet" href="css/components/footer.css?v=6.0">
@@ -1083,11 +1084,228 @@
           <span class="btn-arrow">&rarr;</span>
         </a>
       </div>
+
+      <!-- Contextual Link to Comparison Section -->
+      <div class="pricing-comparison-jump-wrapper">
+        <a href="#comparison" class="pricing-comparison-jump-link">
+          <span>¿Cómo nos comparamos con plataformas tradicionales como Doctoralia? Ver tabla comparativa</span>
+          <svg class="pricing-comparison-jump-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <polyline points="19 12 12 19 5 12"></polyline>
+          </svg>
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- =========================================================================
-       5. PROTOCOLOS DE SEGURIDAD & PRIVACIDAD (TRUST SECTION)
+       5. SECCIÓN COMPARATIVA: CRISDEV VS DIRECTORIOS Y PLATAFORMAS (DOCTORALIA)
+       ========================================================================= -->
+  <section class="comparison-section section-spacing" id="comparison">
+    <div class="container">
+      <div class="comparison-header">
+        <div class="comparison-tag">TRANSPARENCIA · RETORNO DE INVERSIÓN</div>
+        <h2 class="comparison-title">Tu Consultorio Propio vs. Plataformas de Alquiler</h2>
+        <p class="comparison-subtitle">
+          Compara el impacto financiero y operativo de poseer tu propia infraestructura profesional frente al alquiler mensual de perfiles en directorios con comisiones por paciente.
+        </p>
+      </div>
+
+      <div class="comparison-card">
+        <table class="comparison-table" aria-label="Tabla comparativa entre directorios médicos tradicionales y CrisDev">
+          <thead>
+            <tr>
+              <th scope="col" class="comparison-col-factor">Criterio Operativo</th>
+              <th scope="col" class="comparison-col-competitor">Directorios Tradicionales (ej. Doctoralia)</th>
+              <th scope="col" class="comparison-col-crisdev">
+                <div class="comparison-header-crisdev">
+                  <span>Tu Consultorio con CrisDev</span>
+                  <span class="comparison-badge-recommended">Activo Propio</span>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Row 1: Modelo -->
+            <tr class="comparison-row">
+              <td class="comparison-factor-cell">
+                <div class="comparison-factor-title">Modelo de Propiedad</div>
+                <div class="comparison-factor-desc">Titularidad del software y la presencia web</div>
+              </td>
+              <td class="comparison-col-competitor">
+                <span class="comparison-mobile-label">Directorios (ej. Doctoralia)</span>
+                <div class="comparison-cell-value">
+                  <svg class="comparison-icon comparison-icon-negative" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                  <span class="comparison-value-text"><strong>Alquiler perpetuo (SaaS):</strong> Si dejas de pagar la mensualidad, tu perfil, agenda y presencia desaparecen inmediatamente.</span>
+                </div>
+              </td>
+              <td class="comparison-col-crisdev">
+                <span class="comparison-mobile-label">Tu Consultorio con CrisDev</span>
+                <div class="comparison-cell-value">
+                  <svg class="comparison-icon comparison-icon-positive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span class="comparison-value-text"><strong>Activo digital propio:</strong> Tu sitio web, tu base de datos y tu panel te pertenecen con código limpio y dominio a tu nombre.</span>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 2: Inversión Anual -->
+            <tr class="comparison-row">
+              <td class="comparison-factor-cell">
+                <div class="comparison-factor-title">Coste Anual Estimado</div>
+                <div class="comparison-factor-desc">Cálculo de tarifas para consulta individual</div>
+              </td>
+              <td class="comparison-col-competitor">
+                <span class="comparison-mobile-label">Directorios (ej. Doctoralia)</span>
+                <div class="comparison-cell-value">
+                  <svg class="comparison-icon comparison-icon-negative" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                  <span class="comparison-value-text"><strong>$16,200 a $28,440+ MXN/año:</strong> Planes desde $1,350 hasta $2,370 MXN/mes cobrados anualmente, sin incluir comisiones extras.</span>
+                </div>
+              </td>
+              <td class="comparison-col-crisdev">
+                <span class="comparison-mobile-label">Tu Consultorio con CrisDev</span>
+                <div class="comparison-cell-value">
+                  <svg class="comparison-icon comparison-icon-positive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span class="comparison-value-text"><strong>$11,888 MXN (Año 1):</strong> $5,900 de puesta en marcha + $499/mes de mantenimiento. Desde el Año 2 solo pagas $4,990/año o $499/mes.</span>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 3: Comisiones -->
+            <tr class="comparison-row">
+              <td class="comparison-factor-cell">
+                <div class="comparison-factor-title">Comisiones por Paciente</div>
+                <div class="comparison-factor-desc">Cobros porcentuales por citas y cancelaciones</div>
+              </td>
+              <td class="comparison-col-competitor">
+                <span class="comparison-mobile-label">Directorios (ej. Doctoralia)</span>
+                <div class="comparison-cell-value">
+                  <svg class="comparison-icon comparison-icon-negative" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                  <span class="comparison-value-text"><strong>15% al 20% por cita online:</strong> Retenciones significativas sobre tus consultas y hasta 5% por cancelaciones tardías.</span>
+                </div>
+              </td>
+              <td class="comparison-col-crisdev">
+                <span class="comparison-mobile-label">Tu Consultorio con CrisDev</span>
+                <div class="comparison-cell-value">
+                  <svg class="comparison-icon comparison-icon-positive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span class="comparison-value-text"><strong>0% comisiones siempre:</strong> El 100% de tus honorarios profesionales ingresa directamente a tu cuenta bancaria o en efectivo.</span>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 4: Identidad y Marca -->
+            <tr class="comparison-row">
+              <td class="comparison-factor-cell">
+                <div class="comparison-factor-title">Marca y Exclusividad</div>
+                <div class="comparison-factor-desc">Entorno donde el paciente te encuentra</div>
+              </td>
+              <td class="comparison-col-competitor">
+                <span class="comparison-mobile-label">Directorios (ej. Doctoralia)</span>
+                <div class="comparison-cell-value">
+                  <svg class="comparison-icon comparison-icon-negative" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                  <span class="comparison-value-text"><strong>Perfil genérico en directorio:</strong> El paciente ve anuncios y perfiles de colegas competidores al lado de tu ficha profesional.</span>
+                </div>
+              </td>
+              <td class="comparison-col-crisdev">
+                <span class="comparison-mobile-label">Tu Consultorio con CrisDev</span>
+                <div class="comparison-cell-value">
+                  <svg class="comparison-icon comparison-icon-positive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span class="comparison-value-text"><strong>Web multipágina exclusiva:</strong> Tu propia identidad, enfoque terapéutico, fotos, trayectoria y sin distracciones ni fuga de pacientes.</span>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 5: Custodia de Expedientes -->
+            <tr class="comparison-row">
+              <td class="comparison-factor-cell">
+                <div class="comparison-factor-title">Privacidad y Expedientes</div>
+                <div class="comparison-factor-desc">Control de la información clínica y notas</div>
+              </td>
+              <td class="comparison-col-competitor">
+                <span class="comparison-mobile-label">Directorios (ej. Doctoralia)</span>
+                <div class="comparison-cell-value">
+                  <svg class="comparison-icon comparison-icon-negative" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                  <span class="comparison-value-text"><strong>Servidores compartidos de terceros:</strong> Datos sujetos a los términos de una plataforma multinacional y exportación compleja.</span>
+                </div>
+              </td>
+              <td class="comparison-col-crisdev">
+                <span class="comparison-mobile-label">Tu Consultorio con CrisDev</span>
+                <div class="comparison-cell-value">
+                  <svg class="comparison-icon comparison-icon-positive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span class="comparison-value-text"><strong>Base de datos clínica aislada:</strong> Respaldo regular, cumplimiento NOM-004-SSA3 y secreto profesional garantizado bajo tu control.</span>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 6: Canal de Comunicación -->
+            <tr class="comparison-row">
+              <td class="comparison-factor-cell">
+                <div class="comparison-factor-title">Contacto con el Paciente</div>
+                <div class="comparison-factor-desc">Inmediatez y trato humano</div>
+              </td>
+              <td class="comparison-col-competitor">
+                <span class="comparison-mobile-label">Directorios (ej. Doctoralia)</span>
+                <div class="comparison-cell-value">
+                  <svg class="comparison-icon comparison-icon-negative" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                  <span class="comparison-value-text"><strong>Mensajería interna obligada:</strong> La plataforma controla las notificaciones y los canales de contacto de los pacientes.</span>
+                </div>
+              </td>
+              <td class="comparison-col-crisdev">
+                <span class="comparison-mobile-label">Tu Consultorio con CrisDev</span>
+                <div class="comparison-cell-value">
+                  <svg class="comparison-icon comparison-icon-positive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span class="comparison-value-text"><strong>Directo a tu WhatsApp:</strong> Enlaces limpios para citas, recordatorios y comunicación cálida sin intermediarios.</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Comparison Summary / ROI Callout -->
+        <div class="comparison-footer-callout">
+          <p class="comparison-callout-text">
+            <strong>Conclusión clave:</strong> Los directorios tradicionales son herramientas de alquiler donde tus pacientes le pertenecen a la plataforma. Con CrisDev construyes un <strong>activo digital propio</strong>, con cero comisiones y un ahorro anual de más de $15,000 MXN desde el primer año.
+          </p>
+          <a href="#contact" class="btn btn-primary comparison-callout-cta">
+            <span>Iniciar mi consultorio propio</span>
+            <span class="btn-arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. PROTOCOLOS DE SEGURIDAD & PRIVACIDAD (TRUST SECTION)
        ========================================================================= -->
   <section class="trust-section section-spacing" id="security">
     <div class="container">

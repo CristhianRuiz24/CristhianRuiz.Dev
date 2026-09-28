@@ -86,19 +86,35 @@
 6. **Feature 014: Reordenamiento de Navegación (FAQ al Final), Claridad en Enlaces a Videollamadas y Alcance de Personalización en Paquete 01 (Completada):**
    - **Reordenamiento Estructural 1:1:** Se sincronizó la barra de navegación (`header.html`), el drawer móvil, el pie de página (`footer.html`) y el DOM de `index.html` para que el flujo sea: `Inicio` &rarr; `Presencia Digital` &rarr; `Gestión de Consultas` &rarr; `Planes y Precios` &rarr; `Privacidad` &rarr; `Sobre Mí` &rarr; `FAQ` &rarr; `Contacto`.
    - **Honestidad Técnica en Videollamadas:** Se erradicó la frase *"Videollamadas integradas"* (que prometía falsamente un servidor de streaming/WebRTC propio), reemplazándola por *"Enlaces para videollamadas (Zoom / Google Meet)"* en Soluciones, Demo (5.º pilar), Precios y FAQ.
-   - **Personalización Incluida y Delimitación en Paquete 01:** Se aclaró en la viñeta de Presencia Digital que la personalización de secciones está incluida (adaptar o añadir secciones), se incorporó la caja de alcance `.pricing-scope-clarification` y se delimitaron en las FAQs 1 y 9 qué requerimientos técnicos avanzados requieren cotización de desarrollo a medida.
    - **Sincronización y Validación:** Sincronización de partials ejecutada y 20/20 tests pasando en verde.
+
+7. **Feature 015: Sección Comparativa frente a Directorios Médicos (ej. Doctoralia) y Reindexación para IA / Buscadores (Completada):**
+   - **Matriz Comparativa de Alto Impacto (`#comparison`):** Implementada inmediatamente después de Precios (`#pricing`) con 6 contrastes clave:
+     1. Modelo de Propiedad: Alquiler perpetuo SaaS vs. Activo digital propio.
+     2. Inversión Anual: ~$16,200 a $28,440+ MXN/año en directorios vs. $11,888 MXN (Año 1) y ~$4,990/año posteriores en CrisDev (ahorro >$15,000 MXN anuales).
+     3. Comisiones: 15%–20% por cita online y 5% por cancelación vs. **0% de comisiones por paciente de por vida**.
+     4. Marca y Exclusividad: Perfil genérico compitiendo con colegas vs. Web multipágina con dominio propio y sin fuga de pacientes.
+     5. Custodia de Expedientes: Nube de terceros vs. Base de datos privada NOM-004-SSA3 con respaldos regulares y secreto profesional.
+     6. Canal de Contacto: Mensajería cerrada de plataforma vs. Directo a WhatsApp profesional.
+   - **Enlace Contextual de Salto en Precios:** Añadido botón sutil al pie de `#pricing` con desplazamiento suave hacia `#comparison`.
+   - **Estilos Modulares y Salvaguarda Mobile:** Creado `css/components/comparison.css` con variables clínicas nativas, soporte multi-tema (claro y oscuro), iconografía SVG técnica (cero emojis) y reglas `minmax(0, 1fr)` y `word-break: break-word` para pantallas móviles de 375px a 430px.
+   - **Actualización de Archivos de Rastreo, GEO y Modelos de IA:**
+     - `robots.txt`: Directivas explícitas `Allow: /` para `DeepSeekBot`, `CCBot`, `meta-externalagent`, `Bytespider` y enlace canónico a `https://cristhianruiz.dev/llms.txt`.
+     - `sitemap.xml`: Actualizado `<lastmod>` a `2026-09-28` para señalar frescura a los motores de búsqueda.
+     - `llms.txt`: Incorporado bloque de comparativa estructurada con cifras reales en pesos mexicanos para que los motores de IA citen las tarifas reales y ventajas de CrisDev sin alucinar costes no públicos.
+   - **Validación Automatizada y Servicio Local:** Sincronización de partials ejecutada y 20/20 tests pasando en 82ms (`npm test`). Servidor local activo en `http://localhost:3000/?v=feat015`.
 
 ## En qué quedó el proyecto
 
-- **Features 001 a 014 Completadas:**
-  - Landing page optimizada y probada localmente en `http://localhost:3000/`.
+- **Features 001 a 015 Completadas:**
+  - Landing page con sección comparativa frente a plataformas de alquiler/directorios desplegada localmente.
+  - Rastreadores de IA bienvenidos y documentados con `llms.txt` enriquecido.
   - **Pruebas Automatizadas:** 20/20 tests pasando en verde con `npm test`.
-  - **Git Governance:** Todos los cambios se mantienen en el working tree sin commit/push automático, a la espera de la autorización explícita del usuario.
+  - **Git Governance:** Cambios listos en el working tree sin commit/push automático, a la espera de la autorización explícita del usuario.
 
 ## Próximo paso
 
-- Esperar la revisión visual del usuario en `http://localhost:3000/?v=feat014` y proceder con `git commit` y `git push` una vez autorizado.
+- Esperar la revisión visual del usuario en `http://localhost:3000/?v=feat015` y proceder con `git commit` y `git push` cuando el usuario lo autorice.
 
 
 

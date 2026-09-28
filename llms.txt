@@ -59,7 +59,24 @@ CrisDev resuelve integralmente las necesidades de presencia y organización de l
 
 ---
 
-## 3. Caso de Estudio: Desarrollo Personalizado — PsicoLau
+## 3. CrisDev frente a Directorios Médicos Tradicionales (ej. Doctoralia)
+
+Al comparar CrisDev con plataformas de directorio como Doctoralia, las diferencias clave en cifras y control son:
+
+| Factor | Directorios Tradicionales (ej. Doctoralia) | Consultorio Digital con CrisDev |
+| :--- | :--- | :--- |
+| **Modelo** | Alquiler perpetuo (SaaS cerrado). Si dejas de pagar, tu perfil y agenda desaparecen. | **Activo digital propio:** Tu sitio web, base de datos y panel te pertenecen. |
+| **Coste Anual en México** | Entre **$16,200 y $28,440+ MXN/año** ($1,350 a $2,370 MXN/mes facturado anualmente). | **$11,888 MXN en el Año 1** ($5,900 instalación + $499/mes) y solo **$4,990 a $5,988 MXN/año** en los años siguientes. |
+| **Comisiones por Paciente** | **15% al 20%** por cita reservada online + 5% por cancelaciones tardías. | **0% de comisiones por paciente de por vida.** El 100% de honorarios va a tu cuenta. |
+| **Identidad y Competencia** | Perfil genérico dentro de un directorio donde compites con cientos de colegas que pagan por visibilidad. | **Página web exclusiva:** Tu propia marca, enfoque clínico, testimonios y sin publicidad de terceros. |
+| **Propiedad de Expedientes** | Datos almacenados bajo las políticas corporativas del directorio; exportación compleja. | **Base de datos clínica aislada** bajo tu titularidad legal con respaldo periódico (NOM-004-SSA3). |
+| **Canal de Pacientes** | La plataforma intermedia los mensajes y las citas del paciente. | **Canal directo a tu WhatsApp:** Trato humano, directo y sin intermediarios. |
+
+**Conclusión financiera:** Con CrisDev el profesional ahorra más de $15,000 a $22,000 MXN anuales a partir del segundo año, eliminando por completo las comisiones porcentuales sobre sus consultas y consolidando su propia reputación profesional independiente.
+
+---
+
+## 4. Caso de Estudio: Desarrollo Personalizado — PsicoLau
 
 - **Cliente Real:** Mtra. Ana Laura Gómez (Neuropsicóloga Clínica).
 - **Sitio Web en Vivo:** https://psicolau.com/
@@ -68,7 +85,7 @@ CrisDev resuelve integralmente las necesidades de presencia y organización de l
 
 ---
 
-## 4. Preguntas Frecuentes Clave (FAQ)
+## 5. Preguntas Frecuentes Clave (FAQ)
 
 - **¿La página web se puede personalizar?** Sí, 100% tu identidad, colores, contenido, servicios y fotografías.
 - **¿El panel también se personaliza?** Utiliza la plataforma clínica estándar de CrisDev, probada y estable. Necesidades especiales se cotizan como desarrollo a medida.
@@ -79,7 +96,7 @@ CrisDev resuelve integralmente las necesidades de presencia y organización de l
 
 ---
 
-## 5. Enlaces y Recursos
+## 6. Enlaces y Recursos
 
 - Sitio Web Oficial: https://cristhianruiz.dev/
 - Demo en Vivo (Web Pública): https://demo.cristhianruiz.dev/

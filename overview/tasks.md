@@ -244,6 +244,22 @@ Referencia: `specs/014-reordenamiento-navegacion-alcance-personalizacion-videoll
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 
+---
+
+# Feature 015: Sección Comparativa frente a Directorios Médicos (ej. Doctoralia) y Reindexación para IA / Buscadores
+
+Referencia: `specs/015-seccion-comparativa-directorios-y-reindexacion-ia/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Hoja de estilos `css/components/comparison.css` y vinculación en `index.html` | ✅ hecho | `comparison.css`, `index.html`: Estilos modulares, paleta clinical, responsive safeguards `minmax(0, 1fr)`. |
+| **T2** | Estructuración de sección `#comparison` y anclaje contextual en `#pricing` | ✅ hecho | `index.html`: Matriz de 6 contrastes clave, SVG icons (cero emojis), botón contextual en precios. |
+| **T3** | Actualización de archivos de rastreo, GEO y documentación de IA | ✅ hecho | `robots.txt` (DeepSeekBot, CCBot, meta, Bytespider), `sitemap.xml` (lastmod 2026-09-28), `llms.txt` (tabla comparativa). |
+| **T4** | Sincronización de Partials y Verificación de Suite de Pruebas Automatizadas | ✅ hecho | `scripts/sync-partials.js`, `tests/`: 20/20 tests en verde en 82ms. |
+| **T5** | Verificación Visual en Navegador (Desktop y Mobile 375px) y Cierre Documental | ✅ hecho | Validado servicio local (HTTP 200), CSS servido, documentación SDD actualizada. |
+
+Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
+
 ## Bloqueos / pendientes fuera de esta feature
 
 - Ninguno por el momento.

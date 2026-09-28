@@ -1,0 +1,311 @@
+/* ==========================================================================
+   CrisDev // Comparison Component (Clinical SaaS vs Directorios Médicos)
+   Author: Cristhian Ruiz - Software & Web Engineering
+   ========================================================================== */
+
+.comparison-section {
+  padding: 6rem 0;
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--border-subtle);
+  position: relative;
+}
+
+.comparison-header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.comparison-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  background: var(--color-accent-subtle);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 1rem;
+}
+
+.comparison-title {
+  font-size: clamp(1.85rem, 3.5vw, 2.5rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.25;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.comparison-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Comparison Container & Wrapper */
+.comparison-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition: box-shadow var(--transition-normal);
+}
+
+.comparison-card:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+/* Table Layout (Desktop & Tablet) */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+  vertical-align: middle;
+}
+
+.comparison-table th {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  background: var(--bg-surface-elevated);
+}
+
+.comparison-col-factor {
+  width: 30%;
+}
+
+.comparison-col-competitor {
+  width: 35%;
+  background: rgba(100, 116, 139, 0.03);
+}
+
+.comparison-col-crisdev {
+  width: 35%;
+  background: var(--color-primary-subtle);
+  border-left: 2px solid var(--color-accent);
+}
+
+.comparison-header-crisdev {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.comparison-badge-recommended {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: var(--color-accent);
+  color: var(--text-inverse);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-xs);
+  text-transform: uppercase;
+}
+
+/* Table Row Contents */
+.comparison-row:last-child td {
+  border-bottom: none;
+}
+
+.comparison-factor-title {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+}
+
+.comparison-factor-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Cell Status & Badges */
+.comparison-cell-value {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  min-width: 0;
+  word-break: break-word;
+}
+
+.comparison-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.comparison-icon-negative {
+  color: var(--text-muted);
+}
+
+.comparison-icon-positive {
+  color: var(--color-success);
+}
+
+.comparison-value-text {
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+.comparison-value-text strong {
+  color: var(--text-primary);
+}
+
+.comparison-col-crisdev .comparison-value-text {
+  color: var(--text-primary);
+}
+
+.comparison-col-crisdev .comparison-value-text strong {
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] .comparison-col-crisdev .comparison-value-text strong {
+  color: var(--color-accent);
+}
+
+/* Bottom Callout / ROI Highlight */
+.comparison-footer-callout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.75rem 2rem;
+  background: var(--bg-surface-elevated);
+  border-top: 1px solid var(--border-subtle);
+}
+
+@media (min-width: 768px) {
+  .comparison-footer-callout {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.comparison-callout-text {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  max-width: 680px;
+}
+
+.comparison-callout-text strong {
+  color: var(--text-primary);
+}
+
+.comparison-callout-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+/* Contextual Jump Link in Pricing Section */
+.pricing-comparison-jump-wrapper {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.pricing-comparison-jump-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--radius-full);
+  background: var(--color-accent-subtle);
+  border: 1px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.pricing-comparison-jump-link:hover {
+  background: var(--bg-surface);
+  border-color: var(--color-accent);
+  transform: translateY(-1px);
+}
+
+.pricing-comparison-jump-icon {
+  width: 1rem;
+  height: 1rem;
+  stroke: currentColor;
+  transition: transform var(--transition-fast);
+}
+
+.pricing-comparison-jump-link:hover .pricing-comparison-jump-icon {
+  transform: translateY(2px);
+}
+
+/* Mobile Responsive Safeguards (minmax(0, 1fr)) */
+@media (max-width: 767px) {
+  .comparison-table,
+  .comparison-table tbody,
+  .comparison-table tr,
+  .comparison-table td,
+  .comparison-table th {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .comparison-table thead {
+    display: none;
+  }
+
+  .comparison-row {
+    border-bottom: 2px solid var(--border-subtle);
+    padding: 1rem 0;
+  }
+
+  .comparison-table td {
+    padding: 0.75rem 1.25rem;
+    border-bottom: none;
+  }
+
+  .comparison-table td.comparison-factor-cell {
+    background: var(--bg-surface-elevated);
+    border-bottom: 1px solid var(--border-subtle);
+    padding-top: 1rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .comparison-col-competitor,
+  .comparison-col-crisdev {
+    width: 100%;
+    border-left: none;
+  }
+
+  .comparison-mobile-label {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.35rem;
+  }
+
+  .comparison-col-crisdev .comparison-mobile-label {
+    color: var(--color-accent);
+  }
+
+  .comparison-col-crisdev {
+    background: var(--color-primary-subtle);
+    border-top: 1px dashed var(--border-muted);
+    margin-top: 0.5rem;
+  }
+}

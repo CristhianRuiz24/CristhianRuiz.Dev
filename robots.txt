@@ -24,5 +24,18 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-# Canonical Sitemaps
+User-agent: DeepSeekBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Canonical Sitemaps & Structured Content for AI
 Sitemap: https://cristhianruiz.dev/sitemap.xml
+# LLM / AI Discovery: https://cristhianruiz.dev/llms.txt
