@@ -117,17 +117,28 @@
    - **Estilos Modulares:** Clases `.comparison-callout-main`, `.comparison-deepdive-box` y `.comparison-deepdive-link` añadidas en `css/components/comparison.css` con micro-transición de hover y compatibilidad multi-tema.
    - **Validación Automatizada:** Sincronización de partials ejecutada y 23/23 tests pasando en verde en 59ms (`npm test`).
 
+10. **Feature 018: Remediación del Modo Oscuro y Scripts ES Module en Comparativa Doctoralia (Completada):**
+   - **Corrección de Declaración Modular (`comparativa-doctoralia.html`):**
+     - Se reemplazó la inclusión clásica de `<script src="js/theme-manager.js"></script>` por la declaración canónica ES module `<script type="module" src="js/theme-manager.js?v=6.0"></script>`.
+     - Se purgaron scripts superfluos (`js/config.js` y `js/terminal-effects.js`), eliminando la excepción de sintaxis `Uncaught SyntaxError: Unexpected token 'export'` que impedía el registro del escuchador de eventos en el botón de tema.
+   - **Prueba de Regresión Automatizada (`tests/link-integrity.test.js`):**
+     - Se añadieron tests automatizados que inspeccionan todos los archivos HTML y comprueban:
+       1. Que cualquier carga de `theme-manager.js` contenga explícitamente `type="module"`.
+       2. Que todos los scripts referenciados en `<script src="...">` existan físicamente en el repositorio.
+     - **25/25 tests pasando al 100% en verde** en 83ms.
+   - **Validación Visual y Funcional:**
+     - Comprobado en navegador local con `browser_subagent`: 0 errores o advertencias en consola, alternancia fluida de tema (`data-theme="dark"`), renderizado correcto de la paleta Clinical Deep Navy y conmutación automática al logotipo blanco (`logo-crisdev-white.svg`).
+
 ## En qué quedó el proyecto
 
-- **Features 001 a 017 Completadas:**
-  - Landing page con sección comparativa y enlace contextual a `/comparativa-doctoralia`.
-  - Página dedicada de análisis de costes y comisiones totalmente operativa.
-  - **Pruebas Automatizadas:** 23/23 tests pasando en verde con `npm test`.
+- **Features 001 a 018 Completadas:**
+  - El botón de cambio de tema (Sol/Luna) en `https://cristhianruiz.dev/comparativa-doctoralia` ahora conmuta fluidamente a Modo Oscuro sin errores de consola.
+  - **Pruebas Automatizadas:** 25/25 tests pasando en verde con `npm test`.
   - **Git Governance:** Cambios listos en el working tree sin commit/push automático, a la espera de la autorización explícita del usuario.
 
 ## Próximo paso
 
-- Esperar la revisión visual del usuario en `http://localhost:3000/#comparison` y proceder con `git commit` y `git push` cuando el usuario lo autorice.
+- Presentar el resumen de cambios al usuario y solicitar su autorización para realizar `git commit` y `git push`.
 
 
 

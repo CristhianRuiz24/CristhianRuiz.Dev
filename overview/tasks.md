@@ -290,6 +290,21 @@ Referencia: `specs/017-enlace-contextual-analisis-doctoralia-landing/tasks.md`
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 
+---
+
+# Feature 018: Remediación del Modo Oscuro y Scripts ES Module en Comparativa Doctoralia
+
+Referencia: `specs/018-remediacion-modo-oscuro-comparativa-doctoralia/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Carga modular de `theme-manager.js` con `type="module"` en `comparativa-doctoralia.html` | ✅ hecho | `comparativa-doctoralia.html`: Removidos scripts clásicos innecesarios y aplicada carga canónica ES module con cache-busting `?v=6.0`. |
+| **T2** | Prueba de regresión automatizada para scripts modulares en `tests/` | ✅ hecho | `tests/link-integrity.test.js`: Verificación de `type="module"` y existencia física de scripts en repo. 25/25 tests en verde. |
+| **T3** | Validación funcional y visual en servidor local | ✅ hecho | Verificado cambio fluido a Clinical Deep Navy (`data-theme="dark"`), cambio dinámico a logo blanco y 0 errores en consola. |
+| **T4** | Actualización de bitácora y gobernanza Git | ✅ hecho | Documentación de cierre y push a origin/main autorizado por el usuario. |
+
+Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
+
 ## Bloqueos / pendientes fuera de esta feature
 
 - Ninguno por el momento.

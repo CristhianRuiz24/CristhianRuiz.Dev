@@ -94,4 +94,54 @@ describe('Navigation & Link Integrity Suite', () => {
       }
     }
   });
+
+  test('All script tags importing theme-manager.js must declare type="module"', () => {
+    const htmlFiles = [
+      { name: 'index.html', html: indexHtml },
+      { name: 'aviso-de-privacidad.html', html: privacyHtml },
+      { name: 'comparativa-doctoralia.html', html: compHtml }
+    ];
+
+    const scriptRegex = /<script\b([^>]*)>([\s\S]*?)<\/script>/gi;
+
+    for (const { name, html } of htmlFiles) {
+      let match;
+      while ((match = scriptRegex.exec(html)) !== null) {
+        const attributes = match[1];
+        if (attributes.includes('theme-manager.js')) {
+          assert.match(
+            attributes,
+            /\btype=["']module["']/,
+            `In ${name}, theme-manager.js must be loaded with type="module" to prevent syntax errors with export statements.`
+          );
+        }
+      }
+    }
+  });
+
+  test('Local script files referenced in script tags must physically exist in repo', () => {
+    const htmlFiles = [
+      { name: 'index.html', html: indexHtml },
+      { name: 'aviso-de-privacidad.html', html: privacyHtml },
+      { name: 'comparativa-doctoralia.html', html: compHtml }
+    ];
+
+    const srcRegex = /<script\b[^>]*\bsrc=["']([^"']+)["'][^>]*>/gi;
+
+    for (const { name, html } of htmlFiles) {
+      let match;
+      while ((match = srcRegex.exec(html)) !== null) {
+        const src = match[1];
+        if (!src.startsWith('http') && !src.startsWith('//')) {
+          const cleanPath = src.split('?')[0];
+          const filePath = path.join(rootDir, cleanPath);
+          assert.ok(
+            fs.existsSync(filePath),
+            `Missing script file referenced in ${name}: "${cleanPath}" does not exist at ${filePath}`
+          );
+        }
+      }
+    }
+  });
 });
+
