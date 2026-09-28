@@ -25,6 +25,10 @@ describe('SEO & Search Engine Metadata Compliance Suite (Bing & Google)', () => 
   const privacyHtml = fs.readFileSync(privacyPath, 'utf8');
   const privacyMeta = extractMeta(privacyHtml);
 
+  const compPath = path.join(rootDir, 'comparativa-doctoralia.html');
+  const compHtml = fs.readFileSync(compPath, 'utf8');
+  const compMeta = extractMeta(compHtml);
+
   test('index.html <title> must be non-empty and under 65 characters to prevent truncation', () => {
     assert.ok(indexMeta.title.length > 0, 'Title must not be empty');
     assert.ok(
@@ -52,6 +56,21 @@ describe('SEO & Search Engine Metadata Compliance Suite (Bing & Google)', () => 
     assert.ok(
       privacyMeta.description.length >= 120 && privacyMeta.description.length <= 160,
       `aviso-de-privacidad.html meta description has ${privacyMeta.description.length} characters: "${privacyMeta.description}"`
+    );
+  });
+
+  test('comparativa-doctoralia.html <title> must be non-empty and under 65 characters', () => {
+    assert.ok(compMeta.title.length > 0, 'Title must not be empty');
+    assert.ok(
+      compMeta.title.length <= 65,
+      `comparativa-doctoralia.html title has ${compMeta.title.length} characters (must be <= 65): "${compMeta.title}"`
+    );
+  });
+
+  test('comparativa-doctoralia.html <meta name="description"> must be between 120 and 160 characters', () => {
+    assert.ok(
+      compMeta.description.length >= 120 && compMeta.description.length <= 160,
+      `comparativa-doctoralia.html meta description has ${compMeta.description.length} characters (must be 120-160): "${compMeta.description}"`
     );
   });
 });

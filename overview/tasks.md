@@ -260,6 +260,22 @@ Referencia: `specs/015-seccion-comparativa-directorios-y-reindexacion-ia/tasks.m
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 
+---
+
+# Feature 016: Suite Avanzada de GEO (Generative Engine Optimization), IndexNow Instantáneo y Página Dedicada de Comparativa (vs. Doctoralia)
+
+Referencia: `specs/016-suite-optimizacion-geo-indexnow-y-comparativa-doctoralia/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Módulo IndexNow (Clave de verificación, script de ping y comando npm) | ✅ hecho | `e4d7a8809c954e7d8b584d41fa217c9b.txt`, `scripts/ping-indexnow.js`, `package.json`: ping automatizado a Bing/Copilot/Perplexity. |
+| **T2** | Vincular `<link rel="llms-txt">` y enriquecer Schema.org JSON-LD | ✅ hecho | `index.html`, `aviso-de-privacidad.html`: Descubrimiento de `llms.txt` y 12.ª FAQ comparativa en JSON-LD. |
+| **T3** | Página de aterrizaje dedicada `comparativa-doctoralia.html` | ✅ hecho | `comparativa-doctoralia.html`: Desglose tarifas Doctoralia, comisiones 15%-20%, tabla ROI 3 años, H1 y FAQs. |
+| **T4** | Actualizar `sitemap.xml` y expandir suite de pruebas (`npm test`) | ✅ hecho | `sitemap.xml` (URL añadida con priority 0.8), `tests/seo-metadata.test.js`, `tests/link-integrity.test.js`: 23/23 tests en verde. |
+| **T5** | Sincronización final, verificación en servidor local y reporte documental | ✅ hecho | `sync-partials.js` (3 páginas sincronizadas), HTTP 200 en `/comparativa-doctoralia`, documentación SDD al día. |
+
+Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
+
 ## Bloqueos / pendientes fuera de esta feature
 
 - Ninguno por el momento.

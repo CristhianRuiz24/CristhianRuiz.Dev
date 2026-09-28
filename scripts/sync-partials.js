@@ -41,7 +41,8 @@ export function syncPartials() {
     .replace(/\{\{PREFIX\}\}/g, '');
   const indexFooter = footerPartial
     .replace(/\{\{PREFIX\}\}/g, '')
-    .replace(/\{\{PRIVACY_ACTIVE\}\}/g, '');
+    .replace(/\{\{PRIVACY_ACTIVE\}\}/g, '')
+    .replace(/\{\{COMPARISON_ACTIVE\}\}/g, '');
 
   indexContent = replaceBlock(indexContent, 'HEADER', indexHeader);
   indexContent = replaceBlock(indexContent, 'FOOTER', indexFooter);
@@ -54,12 +55,29 @@ export function syncPartials() {
 
   const privacyFooter = footerPartial
     .replace(/\{\{PREFIX\}\}/g, 'index.html')
-    .replace(/\{\{PRIVACY_ACTIVE\}\}/g, ' active');
+    .replace(/\{\{PRIVACY_ACTIVE\}\}/g, ' active')
+    .replace(/\{\{COMPARISON_ACTIVE\}\}/g, '');
 
   privacyContent = replaceBlock(privacyContent, 'HEADER', headerPrivacyPartial);
   privacyContent = replaceBlock(privacyContent, 'FOOTER', privacyFooter);
   fs.writeFileSync(privacyPath, privacyContent, 'utf8');
   console.log('✔ aviso-de-privacidad.html synchronized successfully.');
+
+  // 3. Sync comparativa-doctoralia.html
+  const compPath = path.join(rootDir, 'comparativa-doctoralia.html');
+  if (fs.existsSync(compPath)) {
+    let compContent = fs.readFileSync(compPath, 'utf8');
+
+    const compFooter = footerPartial
+      .replace(/\{\{PREFIX\}\}/g, 'index.html')
+      .replace(/\{\{PRIVACY_ACTIVE\}\}/g, '')
+      .replace(/\{\{COMPARISON_ACTIVE\}\}/g, ' active');
+
+    compContent = replaceBlock(compContent, 'HEADER', headerPrivacyPartial);
+    compContent = replaceBlock(compContent, 'FOOTER', compFooter);
+    fs.writeFileSync(compPath, compContent, 'utf8');
+    console.log('✔ comparativa-doctoralia.html synchronized successfully.');
+  }
 }
 
 // Direct execution check

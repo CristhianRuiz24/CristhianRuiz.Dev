@@ -38,6 +38,11 @@ describe('Navigation & Link Integrity Suite', () => {
   const privacyIds = extractIds(privacyHtml);
   const privacyHrefs = extractHrefs(privacyPath ? privacyHtml : '');
 
+  const compPath = path.join(rootDir, 'comparativa-doctoralia.html');
+  const compHtml = fs.existsSync(compPath) ? fs.readFileSync(compPath, 'utf8') : '';
+  const compIds = extractIds(compHtml);
+  const compHrefs = extractHrefs(compHtml);
+
   test('All internal anchor links in index.html must point to existing IDs', () => {
     const internalAnchors = indexHrefs.filter(h => h.startsWith('#') && h.length > 1);
 
@@ -62,8 +67,20 @@ describe('Navigation & Link Integrity Suite', () => {
     }
   });
 
+  test('All links to index.html anchors from comparativa-doctoralia.html must point to existing IDs in index.html', () => {
+    const crossAnchors = compHrefs.filter(h => h.startsWith('index.html#'));
+
+    for (const anchor of crossAnchors) {
+      const targetId = anchor.replace('index.html#', '');
+      assert.ok(
+        indexIds.has(targetId),
+        `Broken cross-link in comparativa-doctoralia.html: href="${anchor}" points to missing id="${targetId}" in index.html.`
+      );
+    }
+  });
+
   test('Local file targets referenced in hrefs must physically exist in repo', () => {
-    const allHrefs = [...indexHrefs, ...privacyHrefs];
+    const allHrefs = [...indexHrefs, ...privacyHrefs, ...compHrefs];
     const localFiles = allHrefs.filter(h => !h.startsWith('http') && !h.startsWith('#') && !h.startsWith('mailto:') && !h.startsWith('tel:'));
 
     for (const fileHref of localFiles) {

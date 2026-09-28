@@ -104,17 +104,24 @@
      - `llms.txt`: Incorporado bloque de comparativa estructurada con cifras reales en pesos mexicanos para que los motores de IA citen las tarifas reales y ventajas de CrisDev sin alucinar costes no públicos.
    - **Validación Automatizada y Servicio Local:** Sincronización de partials ejecutada y 20/20 tests pasando en 82ms (`npm test`). Servidor local activo en `http://localhost:3000/?v=feat015`.
 
+8. **Feature 016: Suite Avanzada de GEO (Generative Engine Optimization), IndexNow Instantáneo y Página Dedicada de Comparativa (Completada):**
+   - **Módulo IndexNow Automatizado:** Creado `e4d7a8809c954e7d8b584d41fa217c9b.txt` en la raíz pública, script Node.js nativo `scripts/ping-indexnow.js` y comando `"ping:indexnow"` en `package.json` para notificar en tiempo real a Bing, Copilot y Perplexity.
+   - **Descubrimiento Estándar para Agentes de IA:** Añadido `<link rel="llms-txt" type="text/plain" href="https://cristhianruiz.dev/llms.txt">` en el `<head>` de `index.html`, `aviso-de-privacidad.html` y `comparativa-doctoralia.html`.
+   - **Schema.org JSON-LD Enriquecido:** Incorporada la 12.ª pregunta en `FAQPage` de `index.html` sobre la comparativa de costes y modelo patrimonial frente a Doctoralia para capturar Rich Snippets en Google.
+   - **Página de Aterrizaje Multipágina Dedicada (`comparativa-doctoralia.html`):** Publicada con título calibrado a 55 caracteres, meta description a 151 caracteres, desglose de planes ($1,350 a $2,370 MXN/mes), impacto de las comisiones del 15%–20%, cálculo de ahorro a 3 años (> $40,000 MXN) y sincronización con partials.
+   - **Sitemap y Tests:** Actualizado `sitemap.xml` con `<priority>0.8</priority>` y ampliadas las suites `tests/seo-metadata.test.js` y `tests/link-integrity.test.js`, alcanzando **23/23 tests pasando en verde** al 100%.
+
 ## En qué quedó el proyecto
 
-- **Features 001 a 015 Completadas:**
-  - Landing page con sección comparativa frente a plataformas de alquiler/directorios desplegada localmente.
-  - Rastreadores de IA bienvenidos y documentados con `llms.txt` enriquecido.
-  - **Pruebas Automatizadas:** 20/20 tests pasando en verde con `npm test`.
+- **Features 001 a 016 Completadas:**
+  - Landing page y página dedicada `/comparativa-doctoralia` operativas localmente en `http://localhost:3000/`.
+  - Suite de GEO e IndexNow implementada para indexación relámpago en motores de IA y buscadores.
+  - **Pruebas Automatizadas:** 23/23 tests pasando en verde con `npm test`.
   - **Git Governance:** Cambios listos en el working tree sin commit/push automático, a la espera de la autorización explícita del usuario.
 
 ## Próximo paso
 
-- Esperar la revisión visual del usuario en `http://localhost:3000/?v=feat015` y proceder con `git commit` y `git push` cuando el usuario lo autorice.
+- Esperar la revisión visual del usuario en `http://localhost:3000/comparativa-doctoralia` y proceder con `git commit` y `git push` cuando el usuario lo autorice.
 
 
 
