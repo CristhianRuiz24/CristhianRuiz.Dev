@@ -226,140 +226,48 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Agenda Panel Mockup */
-.mockup-agenda-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-  padding-bottom: 0.85rem;
-  border-bottom: 1px solid var(--border-subtle);
-  margin-bottom: 0.85rem;
-  flex-wrap: wrap;
-}
-
-.agenda-status-indicator {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--text-primary);
-}
-
-.pulse-indicator-dot {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background: var(--color-success);
-  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
-}
-
-.agenda-stat-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  font-size: 0.72rem;
-  font-weight: 700;
-  font-family: var(--font-mono);
-  color: var(--color-success);
-  background: rgba(16, 185, 129, 0.1);
-  padding: 0.2rem 0.55rem;
-  border-radius: var(--radius-full);
-}
-
-.mockup-agenda-slots {
-  display: flex;
-  flex-direction: column;
-  gap: 0.55rem;
-  margin-bottom: 1rem;
-}
-
-.mockup-agenda-slot {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
-  background: var(--bg-surface-elevated);
-  border: 1px solid var(--border-subtle);
+/* Screenshot Showcase in Hero */
+.mockup-screenshot-wrapper {
+  position: relative;
+  overflow: hidden;
   border-radius: var(--radius-sm);
-  padding: 0.65rem 0.85rem;
-  transition: border-color var(--transition-fast);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface-elevated);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  margin-bottom: 0.85rem;
 }
 
-.mockup-agenda-slot:hover {
-  border-color: var(--border-muted);
+.mockup-screenshot-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: calc(var(--radius-sm) - 1px);
+  transition: transform var(--transition-normal);
 }
 
-.slot-time-col {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
-  min-width: 68px;
-  flex-shrink: 0;
+.mockup-screenshot-wrapper:hover .mockup-screenshot-img {
+  transform: scale(1.015);
 }
 
-.slot-day {
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  font-weight: 700;
-  color: var(--color-accent);
-}
-
-.slot-hour {
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: var(--text-primary);
-}
-
-.slot-info-col {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-  flex-grow: 1;
-  min-width: 0;
-  text-align: left;
-}
-
-.slot-patient {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.slot-service {
-  font-size: 0.75rem;
-  color: var(--text-secondary);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.slot-badge-col {
-  flex-shrink: 0;
-}
-
-.slot-status-pill {
+.mockup-screenshot-badge {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.65rem;
+  background: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #FFFFFF;
   font-size: 0.72rem;
   font-weight: 600;
-  padding: 0.2rem 0.55rem;
+  padding: 0.25rem 0.65rem;
   border-radius: var(--radius-full);
   display: inline-flex;
   align-items: center;
-  white-space: nowrap;
-}
-
-.status-confirmed {
-  background: rgba(16, 185, 129, 0.12);
-  color: var(--color-success);
-}
-
-.status-link {
-  background: var(--color-accent-subtle);
-  color: var(--color-accent);
+  gap: 0.4rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  pointer-events: none;
 }
 
 .mockup-agenda-footer {
@@ -383,70 +291,14 @@
   text-decoration: none;
   font-size: 0.82rem;
   transition: color var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 .mockup-footer-link:hover {
   text-decoration: underline;
   color: var(--color-primary);
-}
-
-/* PsicoLau Mockup Showcase */
-.mockup-web-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--border-subtle);
-  margin-bottom: 0.85rem;
-}
-
-.mockup-web-url {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--color-success);
-  background: var(--bg-surface-elevated);
-  padding: 0.2rem 0.55rem;
-  border-radius: var(--radius-xs);
-  border: 1px solid var(--border-subtle);
-}
-
-.mockup-web-live-tag {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: var(--color-accent);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-
-.mockup-web-showcase {
-  background: var(--bg-surface-elevated);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 1.15rem;
-  display: flex;
-  align-items: center;
-  gap: 1.15rem;
-  margin-bottom: 1rem;
-  text-align: left;
-}
-
-.mockup-web-logo-box {
-  width: 72px;
-  height: 72px;
-  flex-shrink: 0;
-  background: #FFFFFF;
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 0.45rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: var(--shadow-subtle);
 }
 
 .mockup-web-logo {

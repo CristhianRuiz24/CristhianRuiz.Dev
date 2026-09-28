@@ -248,16 +248,16 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Modular CSS Architecture -->
-  <link rel="stylesheet" href="css/main.css?v=6.0">
-  <link rel="stylesheet" href="css/components/navbar.css?v=6.0">
-  <link rel="stylesheet" href="css/components/hero.css?v=6.0">
-  <link rel="stylesheet" href="css/components/terminal.css?v=6.0">
-  <link rel="stylesheet" href="css/components/trust-operator.css?v=6.0">
-  <link rel="stylesheet" href="css/components/pricing.css?v=6.0">
-  <link rel="stylesheet" href="css/components/comparison.css?v=6.0">
-  <link rel="stylesheet" href="css/components/faq.css?v=6.0">
-  <link rel="stylesheet" href="css/components/form.css?v=6.0">
-  <link rel="stylesheet" href="css/components/footer.css?v=6.0">
+  <link rel="stylesheet" href="css/main.css?v=7.0">
+  <link rel="stylesheet" href="css/components/navbar.css?v=7.0">
+  <link rel="stylesheet" href="css/components/hero.css?v=7.0">
+  <link rel="stylesheet" href="css/components/terminal.css?v=7.0">
+  <link rel="stylesheet" href="css/components/trust-operator.css?v=7.0">
+  <link rel="stylesheet" href="css/components/pricing.css?v=7.0">
+  <link rel="stylesheet" href="css/components/comparison.css?v=7.0">
+  <link rel="stylesheet" href="css/components/faq.css?v=7.0">
+  <link rel="stylesheet" href="css/components/form.css?v=7.0">
+  <link rel="stylesheet" href="css/components/footer.css?v=7.0">
 </head>
 <body>
 
@@ -461,121 +461,52 @@
               <button class="hero-mockup-tab is-active" id="heroTabAgenda" role="tab" aria-selected="true" aria-controls="heroViewAgenda" type="button">
                 Agenda Clínica
               </button>
-              <button class="hero-mockup-tab" id="heroTabPsicolau" role="tab" aria-selected="false" aria-controls="heroViewPsicolau" type="button">
-                Web PsicoLau
+              <button class="hero-mockup-tab" id="heroTabWeb" role="tab" aria-selected="false" aria-controls="heroViewWeb" type="button">
+                Sitio Web
               </button>
             </div>
           </div>
 
           <div class="hero-mockup-body">
-            <!-- View 1: Clinical Agenda -->
+            <!-- View 1: Clinical Agenda Real Screenshot -->
             <div class="hero-view-panel is-active" id="heroViewAgenda" role="tabpanel" aria-labelledby="heroTabAgenda">
-              <div class="mockup-agenda-header">
-                <div class="agenda-status-indicator">
+              <div class="mockup-screenshot-wrapper">
+                <img src="assets/images/agenda-clinica-real.webp" 
+                     alt="Agenda Clínica y Panel de Consultas de PsicoClínica — Software de Gestión Médica" 
+                     class="mockup-screenshot-img" 
+                     width="1408" 
+                     height="743" 
+                     loading="eager">
+                <div class="mockup-screenshot-badge">
                   <span class="pulse-indicator-dot"></span>
-                  <span>Semana Activa · Consultorio Privado</span>
-                </div>
-                <div class="agenda-stat-pill">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span>4/5 Confirmadas WhatsApp</span>
-                </div>
-              </div>
-
-              <div class="mockup-agenda-slots">
-                <div class="mockup-agenda-slot">
-                  <div class="slot-time-col">
-                    <span class="slot-day">LUNES</span>
-                    <span class="slot-hour">10:00 AM</span>
-                  </div>
-                  <div class="slot-info-col">
-                    <div class="slot-patient">Mariana Sánchez R.</div>
-                    <div class="slot-service">Psicoterapia Individual (Adultos)</div>
-                  </div>
-                  <div class="slot-badge-col">
-                    <span class="slot-status-pill status-confirmed">✓ Confirmada</span>
-                  </div>
-                </div>
-
-                <div class="mockup-agenda-slot">
-                  <div class="slot-time-col">
-                    <span class="slot-day">LUNES</span>
-                    <span class="slot-hour">04:30 PM</span>
-                  </div>
-                  <div class="slot-info-col">
-                    <div class="slot-patient">Carlos &amp; Andrea M.</div>
-                    <div class="slot-service">Terapia de Pareja</div>
-                  </div>
-                  <div class="slot-badge-col">
-                    <span class="slot-status-pill status-confirmed">✓ Confirmada</span>
-                  </div>
-                </div>
-
-                <div class="mockup-agenda-slot">
-                  <div class="slot-time-col">
-                    <span class="slot-day">MARTES</span>
-                    <span class="slot-hour">11:30 AM</span>
-                  </div>
-                  <div class="slot-info-col">
-                    <div class="slot-patient">Sofía Ramírez V.</div>
-                    <div class="slot-service">Sesión Virtual (Online)</div>
-                  </div>
-                  <div class="slot-badge-col">
-                    <span class="slot-status-pill status-link">📹 Zoom Enviado</span>
-                  </div>
-                </div>
-
-                <div class="mockup-agenda-slot">
-                  <div class="slot-time-col">
-                    <span class="slot-day">MIÉRCOLES</span>
-                    <span class="slot-hour">05:00 PM</span>
-                  </div>
-                  <div class="slot-info-col">
-                    <div class="slot-patient">David Torres K.</div>
-                    <div class="slot-service">Evaluación de Seguimiento</div>
-                  </div>
-                  <div class="slot-badge-col">
-                    <span class="slot-status-pill status-confirmed">✓ Confirmada</span>
-                  </div>
+                  <span>Interfaz Real · Sistema Estándar</span>
                 </div>
               </div>
 
               <div class="mockup-agenda-footer">
-                <span class="mockup-footer-note">Control privado sin intermediarios</span>
-                <a href="#infrastructure" class="mockup-footer-link">Probar demo en vivo &rarr;</a>
+                <span class="mockup-footer-note">Consultorio Inteligente · Agenda semanal activa</span>
+                <a href="https://demo.cristhianruiz.dev/panel/" target="_blank" rel="noopener noreferrer" class="mockup-footer-link">Probar demo en vivo &rarr;</a>
               </div>
             </div>
 
-            <!-- View 2: Web PsicoLau -->
-            <div class="hero-view-panel" id="heroViewPsicolau" role="tabpanel" aria-labelledby="heroTabPsicolau">
-              <div class="mockup-web-header">
-                <span class="mockup-web-url">
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                  https://psicolau.com/
-                </span>
-                <span class="mockup-web-live-tag">En Producción</span>
-              </div>
-
-              <div class="mockup-web-showcase">
-                <div class="mockup-web-logo-box">
-                  <img src="assets/images/psicolau-logo.png" alt="PsicoLau — Neuropsicología Clínica" class="mockup-web-logo">
-                </div>
-                <div class="mockup-web-content">
-                  <div class="mockup-web-title">Mtra. Ana Laura Gómez</div>
-                  <div class="mockup-web-desc">Neuropsicología Clínica &amp; Terapia Cognitiva</div>
-                  <div class="mockup-web-quote">
-                    «Él diseñó un sistema completo alrededor de mi práctica profesional... 100% recomendado.»
-                  </div>
-                  <div class="mockup-web-pills">
-                    <span class="mockup-web-pill">Web Personalizada</span>
-                    <span class="mockup-web-pill">WhatsApp en 1 Clic</span>
-                    <span class="mockup-web-pill">0% Comisiones</span>
-                  </div>
+            <!-- View 2: Actual Web Demo Real Screenshot -->
+            <div class="hero-view-panel" id="heroViewWeb" role="tabpanel" aria-labelledby="heroTabWeb">
+              <div class="mockup-screenshot-wrapper">
+                <img src="assets/images/web-demo-actual.webp" 
+                     alt="Sitio Web Profesional de PsicoClínica — Demostración de Presencia Digital para Terapeutas" 
+                     class="mockup-screenshot-img" 
+                     width="1408" 
+                     height="771" 
+                     loading="lazy">
+                <div class="mockup-screenshot-badge">
+                  <span class="pulse-indicator-dot"></span>
+                  <span>Web Pública · demo.cristhianruiz.dev</span>
                 </div>
               </div>
 
               <div class="mockup-agenda-footer">
-                <span class="mockup-footer-note">Caso de estudio real</span>
-                <a href="#web-ui" class="mockup-footer-link">Ver detalles del caso &rarr;</a>
+                <span class="mockup-footer-note">Presencia digital personalizada para pacientes</span>
+                <a href="https://demo.cristhianruiz.dev/" target="_blank" rel="noopener noreferrer" class="mockup-footer-link">Visitar sitio web demo &rarr;</a>
               </div>
             </div>
           </div>
@@ -1888,8 +1819,8 @@
   <!-- END:FOOTER -->
 
   <!-- JavaScript Modules -->
-  <script type="module" src="js/theme-manager.js?v=6.0"></script>
-  <script type="module" src="js/terminal-effects.js?v=6.0"></script>
+  <script type="module" src="js/theme-manager.js?v=7.0"></script>
+  <script type="module" src="js/terminal-effects.js?v=7.0"></script>
 
   <!-- Floating WhatsApp CTA Button for Instant Access -->
   <a href="https://wa.me/528130938884?text=Hola%20Cristhian,%20vi%20tu%20sitio%20y%20me%20interesa%20una%20cotizaci%C3%B3n%20para%20mi%20consulta" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Consultar por WhatsApp">
