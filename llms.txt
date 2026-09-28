@@ -1,6 +1,6 @@
-# CrisDev — Software & Web Engineering para Psicoterapeutas
+# CrisDev — Software & Web Engineering para Profesionales de la Salud (Psicólogos y Terapeutas)
 
-> Soluciones tecnológicas de alta conversión y gestión clínica privada desarrolladas por Cristhian Ruiz para psicólogos, psicoterapeutas y terapeutas independientes con consulta privada en México e Hispanoamérica.
+> Soluciones tecnológicas de presencia digital y gestión clínica privada desarrolladas por Cristhian Ruiz para psicólogos, psicoterapeutas y profesionales de la salud independientes con consulta privada en México e Hispanoamérica.
 
 URL canónica: https://cristhianruiz.dev/
 Ingeniero Desarrollador: Cristhian Ruiz (Software & Web Engineer)
@@ -9,59 +9,73 @@ Correo Electrónico: cristhian.ruiz.c@hotmail.com
 
 ---
 
-## 1. Propuesta de Valor y Enfoque
+## 1. Propuesta de Valor y Tríada de Oferta
 
-CrisDev ayuda a psicólogos y terapeutas a resolver dos problemas centrales en su práctica privada:
-1. **Captación de Pacientes Calificados:** Creación de sitios web formales de alta conversión que transmiten confianza inmediata y facilitan el agendamiento directo a WhatsApp en 2 clics.
-2. **Eliminación del Caos Administrativo:** Desarrollo de plataformas privadas y seguras para gestionar agenda semanal, expedientes clínicos digitales bajo secreto profesional y control de cobros sin intermediarios ni comisiones por consulta.
+CrisDev resuelve integralmente las necesidades de presencia y organización de la consulta privada bajo una estructura transparente:
+
+1. **Tu Página Web (100% Personalizada):** Diseño único adaptado a tu identidad visual, contenido, servicios clínicos, fotografías y propio nombre de dominio para proyectar confianza y captar pacientes por WhatsApp. Personalización completa de secciones incluida.
+2. **Tu Plataforma de Gestión (Consultorio Inteligente):** Software estándar de CrisDev, desarrollado y probado específicamente para el flujo habitual de profesionales de la salud mental (agenda semanal, expedientes NOM-004-SSA3, notas de evolución, enlaces para videollamadas Zoom/Meet y cobranza).
+3. **Desarrollo a Medida:** Soluciones avanzadas y cotizaciones independientes para clínicas con múltiples especialistas, agendas compartidas, roles de recepción o requerimientos especiales.
+4. **Guía para Aviso de Publicidad:** Orientación práctica sobre los requisitos para servicios de salud en México (COFEPRIS/NOM). *Nota legal: CrisDev proporciona guía y orientación informativa; el trámite lo gestiona el profesional y no sustituye la asesoría legal o regulatoria.*
 
 ---
 
 ## 2. Paquetes Comerciales y Precios Transparentes
 
-### Paquete 01: Presencia Terapéutica Multi-Página
+### Paquete 01: Presencia Digital
 - **Inversión:** $4,800 MXN (Pago Único Inicial).
 - **Esquema de Pago:** 50/50 ($2,400 MXN de anticipo para iniciar · $2,400 MXN al entregar el sitio publicado).
 - **Mantenimiento o Servidores:** $0 MXN / mes (Alojamiento web de alta velocidad y certificado SSL incluidos de por vida).
 - **Dominio Propio:** Registro estándar a nombre del cliente (~$195 a $800 MXN/año según extensión .com o .mx).
 - **Tiempo de Entrega:** 48 a 72 horas hábiles.
 - **Qué incluye:**
-  - Arquitectura multi-página de hasta 8 secciones (Inicio, Especialidades, Sobre Mí, FAQ, Testimonios, Contacto, Privacidad).
-  - Redacción clínica persuasiva enfocada en conectar con pacientes ideales.
-  - Botones directos a WhatsApp con mensajes inteligentes precargados.
-  - Optimización técnica para teléfonos móviles y posicionamiento local en Google (SEO).
+  - Diseño web profesional personalizado para representar tu práctica.
+  - Personalización total incluida (adaptación y adición de secciones según tu consulta).
+  - Enfoque directo a tu especialidad y servicios clínicos.
+  - Botones directos a WhatsApp para contacto inmediato.
+  - Guía práctica para aviso de publicidad (orientación sobre requisitos de salud).
+  - Optimización técnica para teléfonos móviles y SEO local en Google.
   - Aviso de Privacidad formal bajo normativas de protección de datos en salud.
+  - *Nota de alcance:* La personalización de diseño, secciones y contenido está incluida. Requerimientos técnicos avanzados o integraciones especiales se cotizan por separado.
 
-### Paquete 02: Consultorio Inteligente (Suite Clínica Integral)
+### Paquete 02: Consultorio Inteligente (Web + Plataforma Clínica)
 - **Inversión Setup:** $5,900 MXN (Pago Inicial Único).
 - **Esquema de Pago:** 50/50 ($2,950 MXN de anticipo · $2,950 MXN al entregar la plataforma lista).
 - **Infraestructura y Soporte Continuo:** $499 MXN / mes (O anualidad de $4,990 MXN / año con 2 meses de ahorro e incluye dominio .com gratis el 1er año).
 - **Tiempo de Puesta en Marcha:** 3 a 5 días hábiles.
 - **Qué incluye (Todo lo del Paquete 01, más):**
-  - **Suite Clínica Privada:** Entorno administrativo protegido con acceso exclusivo para el terapeuta.
-  - **Agenda Semanal Inteligente:** Control de citas por hora (7:00 a.m. a 12:00 a.m.), programación de sesiones recurrentes (2 a 12 semanas) y enlace directo a videollamadas Zoom o Google Meet en 1 clic.
+  - **Plataforma Clínica Estándar:** Entorno privado protegido con acceso exclusivo para el profesional.
+  - **Agenda Semanal Inteligente:** Control de citas por hora (7:00 a.m. a 12:00 a.m.), programación de sesiones recurrentes y enlaces directos para videollamadas Zoom o Google Meet en 1 clic.
   - **Expedientes Clínicos NOM-004-SSA3:** Historial y notas de evolución protegidas con cifrado AES-256 a nivel de aplicación bajo la LFPDPPP. Secreto profesional absoluto.
-  - **Módulo de Cobranza y Finanzas:** Registro de honorarios pagados y pendientes, cobranza por WhatsApp y botón para exportar reportes mensuales para contabilidad.
+  - **Módulo de Cobranza y Finanzas:** Registro de honorarios pagados y pendientes, recordatorios de cobranza por WhatsApp y exportación a contabilidad.
   - **Cero Comisiones por Consulta:** El paciente paga el 100% de la consulta directamente al terapeuta por transferencia bancaria (SPEI) o efectivo.
-  - **Soporte Técnico Directo 1 a 1:** Atención prioritaria y ajustes directamente con Cristhian Ruiz, el ingeniero que programó el sistema.
+  - **Guía para Aviso de Publicidad:** Orientación paso a paso para el trámite de publicidad sanitaria.
+  - **Soporte Técnico Directo 1 a 1:** Sesión de inducción y atención directamente con Cristhian Ruiz, el desarrollador del sistema.
+  - *Nota de alcance:* La personalización de identidad y contenido está incluida en la página web. La plataforma utiliza el sistema estándar de CrisDev. Funcionalidades especiales para clínicas se cotizan por separado como desarrollo a medida.
+
+### Desarrollo a Medida (Para Clínicas y Equipos)
+- Diseñado para clínicas y centros de salud mental que requieren múltiples especialistas, roles administrativos/recepción, agendas compartidas o flujos clínicos particulares.
+- Cotización independiente previa evaluación técnica de requerimientos.
 
 ---
 
-## 3. Caso de Éxito en Producción: PsicoLau
+## 3. Caso de Estudio: Desarrollo Personalizado — PsicoLau
 
 - **Cliente Real:** Mtra. Ana Laura Gómez (Neuropsicóloga Clínica).
 - **Sitio Web en Vivo:** https://psicolau.com/
-- **Solución Implementada:** CrisDev desarrolló desde cero la presencia digital pública de PsicoLau y la plataforma interna que utiliza diariamente para su agenda semanal, expedientes, notas clínicas y control de pagos.
+- **Solución Implementada:** Caso de estudio de desarrollo especial y personalizado donde CrisDev construyó tanto la presencia de marca pública como una plataforma clínica a la medida de su flujo de trabajo neurológico y administrativo.
 - **Testimonio Verificado:** "Él no construyó solamente una página web: diseñó un sistema completo alrededor de mi práctica profesional... Definitivamente recomiendo ampliamente su trabajo."
 
 ---
 
 ## 4. Preguntas Frecuentes Clave (FAQ)
 
-- **¿Cómo cobran los pacientes sus consultas?** Directo a la cuenta bancaria del terapeuta (SPEI) o efectivo. CrisDev no cobra comisiones porcentuales ni tarifas por paciente.
-- **¿Es seguro para el secreto profesional?** Sí, cumple con la norma NOM-004-SSA3 y la ley de protección de datos (LFPDPPP). Todos los expedientes y notas se cifran con AES-256.
-- **¿Sirve para terapia online?** Sí, la agenda permite vincular salas de Zoom o Google Meet en cada sesión virtual con 1 solo clic.
-- **¿Qué pasa si uso libreta o Excel actualmente?** La transición es asistida con una sesión de inducción 1 a 1; el sistema es intuitivo y se aprende en minutos.
+- **¿La página web se puede personalizar?** Sí, 100% tu identidad, colores, contenido, servicios y fotografías.
+- **¿El panel también se personaliza?** Utiliza la plataforma clínica estándar de CrisDev, probada y estable. Necesidades especiales se cotizan como desarrollo a medida.
+- **¿Me ayudan con el aviso de publicidad?** Sí, se entrega una guía práctica sobre qué es, por qué aplica y cómo gestionarlo ante normativas de salud.
+- **¿Hay comisiones por paciente?** No, cero comisiones porcentuales ni cargos por consulta agendada.
+- **¿Es seguro para el secreto profesional?** Sí, cumple con NOM-004-SSA3 y LFPDPPP, con cifrado AES-256 en expedientes y notas clínicas.
+- **¿Puedo probar el sistema antes de contratar?** Sí, la demo interactiva está disponible libremente en https://demo.cristhianruiz.dev/ con acceso al panel clínico en 1 clic.
 
 ---
 
@@ -70,5 +84,5 @@ CrisDev ayuda a psicólogos y terapeutas a resolver dos problemas centrales en s
 - Sitio Web Oficial: https://cristhianruiz.dev/
 - Demo en Vivo (Web Pública): https://demo.cristhianruiz.dev/
 - Demo en Vivo (Panel Clínico): https://demo.cristhianruiz.dev/panel/
-- Aviso de Privacidad: https://cristhianruiz.dev/aviso-de-privacidad
+- Aviso de Privacidad: https://cristhianruiz.dev/aviso-de-privacidad.html
 - WhatsApp Directo: https://wa.me/528130938884

@@ -1,7 +1,7 @@
 # Sesión activa — CrisDev (`cristhianruiz.dev`)
 
-**Última actualización:** 2026-09-24
-**Fase SDD actual:** Feature 009: Hiper-Especialización para Psicoterapeutas, Entornos Visuales en Previews, Claridad de Dominio Anual y Sección FAQ — T1 a T6 Completadas y Validadas
+**Última actualización:** 2026-09-28
+**Fase SDD actual:** Feature 014: Reordenamiento de Navegación (FAQ al Final), Claridad en Enlaces a Videollamadas y Alcance de Personalización en Paquete 01 — Spec Aprobada (En ejecución T1)
 
 ## Lo que se logró en esta sesión
 
@@ -69,18 +69,36 @@
    - **Resultados de Pruebas:**
      - 20/20 tests pasando exitosamente (`npm test`).
 
+5. **Feature 013: Reestructuración Comercial de Landing Page: Tríada de Oferta y Diferenciador de Aviso de Publicidad (Completada):**
+   - **Erradicación de Falsas Expectativas ("A Medida"):** Se eliminó la ambigüedad que hacía creer que el panel clínico base se programa desde cero por $5,900 MXN, delimitando la oferta estándar frente a encargos especiales.
+   - **Tríada de Valor Transparente:**
+     1. *Tu Página Web:* 100% personalizada con identidad, servicios y fotos del cliente.
+     2. *Tu Plataforma de Gestión (Consultorio Inteligente):* Sistema estándar de CrisDev, probado y optimizado para la consulta privada.
+     3. *Desarrollo a Medida:* Módulo satélite para clínicas, múltiples especialistas o flujos complejos (cotizado por separado).
+   - **Diferenciador Normativo (Guía para Aviso de Publicidad):** Integrado en ambos paquetes y con tarjeta explicativa destacada (`.pricing-compliance-card`), orientando sobre publicidad sanitaria en México con deslinde legal transparente.
+   - **Hero & Sub-Hero Renovados:** Titular *"Tu consultorio profesional, en un solo lugar"*, subtítulo dual, CTAs a `#contact` y `#pricing`, y barra de garantías.
+   - **Bloque de Dualidad (`#solutions`):** *"Una Presencia Profesional y una Gestión Más Sencilla"* con frase de anclaje de alcance.
+   - **Elevación de la Suite Demo (`#infrastructure`):** *"Conoce tu Plataforma Antes de Contratar"*, dock de acciones en 1 clic y 5 tarjetas de pilares modulares.
+   - **Reencuadre de PsicoLau (`#web-ui`):** Etiquetado explícito como *"Caso de Estudio: Desarrollo Personalizado"*.
+   - **Sobre Mí, Contacto y 11 FAQs:** Trato directo 1 a 1 con Cristhian Ruiz, mantra de cierre y 11 acordeones nativos sincronizados con Schema.org `FAQPage` y `/llms.txt`.
+   - **Sincronización y Pruebas:** `npm run sync:partials` ejecutado y 20/20 tests automatizados pasando en verde.
+
+6. **Feature 014: Reordenamiento de Navegación (FAQ al Final), Claridad en Enlaces a Videollamadas y Alcance de Personalización en Paquete 01 (Completada):**
+   - **Reordenamiento Estructural 1:1:** Se sincronizó la barra de navegación (`header.html`), el drawer móvil, el pie de página (`footer.html`) y el DOM de `index.html` para que el flujo sea: `Inicio` &rarr; `Presencia Digital` &rarr; `Gestión de Consultas` &rarr; `Planes y Precios` &rarr; `Privacidad` &rarr; `Sobre Mí` &rarr; `FAQ` &rarr; `Contacto`.
+   - **Honestidad Técnica en Videollamadas:** Se erradicó la frase *"Videollamadas integradas"* (que prometía falsamente un servidor de streaming/WebRTC propio), reemplazándola por *"Enlaces para videollamadas (Zoom / Google Meet)"* en Soluciones, Demo (5.º pilar), Precios y FAQ.
+   - **Personalización Incluida y Delimitación en Paquete 01:** Se aclaró en la viñeta de Presencia Digital que la personalización de secciones está incluida (adaptar o añadir secciones), se incorporó la caja de alcance `.pricing-scope-clarification` y se delimitaron en las FAQs 1 y 9 qué requerimientos técnicos avanzados requieren cotización de desarrollo a medida.
+   - **Sincronización y Validación:** Sincronización de partials ejecutada y 20/20 tests pasando en verde.
+
 ## En qué quedó el proyecto
 
-- **Features 001 a 012 Completadas y Desplegadas en Producción:**
-  - Código en `origin/main` (commit `563bcb5`): `<title>` calibrado a 51 caracteres, `<meta name="description">` calibrada a 149 caracteres, suite nativa de tests de metadatos SEO agregada y pasando.
+- **Features 001 a 014 Completadas:**
+  - Landing page optimizada y probada localmente en `http://localhost:3000/`.
   - **Pruebas Automatizadas:** 20/20 tests pasando en verde con `npm test`.
-  - **Estado en Motores de Búsqueda:**
-    - Google Search Console: Sitemap enviado, indexación prioritaria solicitada.
-    - Bing Webmaster Tools: Dominio importado y verificado, sitemap enviado, URL inspeccionada e indexada exitosamente con 0 problemas técnicos.
-    - Generative Engine Optimization (GEO): `/llms.txt` activo, Schema `@graph` unificado (`FAQPage`, `ProfessionalService`, `Person`) y rastreadores de IA permitidos en `robots.txt`.
+  - **Git Governance:** Todos los cambios se mantienen en el working tree sin commit/push automático, a la espera de la autorización explícita del usuario.
 
 ## Próximo paso
 
-- Monitorear en 24-48 horas la aparición de la pestaña "Preguntas Frecuentes (FAQ)" en Google Search Console y la lectura de `/llms.txt` en ChatGPT y Perplexity.
-- Nuevas iteraciones de producto o requerimientos cuando el usuario lo solicite.
+- Esperar la revisión visual del usuario en `http://localhost:3000/?v=feat014` y proceder con `git commit` y `git push` una vez autorizado.
+
+
 

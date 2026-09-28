@@ -768,10 +768,10 @@
   text-align: center;
 }
 
-/* 3 Pillars Grid */
+/* 5 Pillars Grid */
 .demo-pillars-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   width: 100%;
 }
@@ -912,3 +912,179 @@
     width: 100%;
   }
 }
+
+/* --------------------------------------------------------------------------
+   Duality Grid: Tu Página Web vs Tu Plataforma de Gestión
+   -------------------------------------------------------------------------- */
+.duality-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.75rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.duality-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.duality-card:hover {
+  border-color: rgba(0, 119, 182, 0.35);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.duality-card-featured {
+  border-color: rgba(0, 119, 182, 0.3);
+  background-color: var(--bg-surface-elevated);
+}
+
+.duality-card-header {
+  margin-bottom: 1.5rem;
+}
+
+.duality-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-accent-subtle);
+  border: 1px solid rgba(0, 119, 182, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.15rem;
+  flex-shrink: 0;
+}
+
+.duality-card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  line-height: 1.25;
+}
+
+.duality-card-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.duality-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.duality-feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.92rem;
+  color: var(--text-primary);
+  line-height: 1.45;
+}
+
+.duality-feature-list .feature-bullet {
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 0.05rem;
+}
+
+.duality-anchor-box {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.85rem;
+  text-align: center;
+  box-shadow: var(--shadow-subtle);
+  max-width: 880px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.duality-anchor-text {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.duality-anchor-text strong {
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .duality-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+  }
+  .duality-card {
+    padding: 1.6rem 1.35rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Web Pillars Grid (Ejes de la Página Web)
+   -------------------------------------------------------------------------- */
+.web-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+
+.web-pillar-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.6rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal);
+  box-sizing: border-box;
+}
+
+.web-pillar-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 119, 182, 0.35);
+  box-shadow: var(--shadow-hover);
+}
+
+.web-pillar-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.web-pillar-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 860px) {
+  .web-pillars-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.15rem;
+  }
+}
+
+

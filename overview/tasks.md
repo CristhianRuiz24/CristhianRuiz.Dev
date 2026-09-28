@@ -208,6 +208,40 @@ Referencia: `specs/012-calibracion-longitud-seo-title-meta-bing/tasks.md`
 | **T3** | Suite de Pruebas Automatizadas de Metadatos SEO (`tests/seo-metadata.test.js`) | ✅ hecho | Nueva suite de tests con Node.js nativo (20/20 tests pasando). |
 | **T4** | Despliegue en Producción y Actualización de Documentación SDD | ✅ hecho | `overview/session.md`, `overview/tasks.md` |
 
+---
+
+# Feature 013: Reestructuración Comercial de Landing Page: Tríada de Oferta y Diferenciador de Aviso de Publicidad
+
+Referencia: `specs/013-reestructuracion-comercial-triada-y-aviso-publicidad/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Hero y Sub-Hero (Claridad de Posicionamiento) | ✅ hecho | `index.html`, `css/components/hero.css`: Nuevo titular, subtítulo, CTAs `#contact` y `#pricing`, barra de confianza. |
+| **T2** | Bloque de Claridad de Oferta (Dualidad: Web Personalizada vs Plataforma Estándar) | ✅ hecho | `index.html`, `css/components/terminal.css`: Sección `#solutions` con desglose dual y anclaje de alcance. |
+| **T3** | Elevación y Refinamiento del Demo Operativo (`#infrastructure`) a 5 Módulos | ✅ hecho | `index.html`, `css/components/terminal.css`: Invitación a probar antes de contratar y 5 tarjetas modulares. |
+| **T4** | Reencuadre de Presencia Digital y Caso PsicoLau (`#web-ui`) | ✅ hecho | `index.html`, `css/components/terminal.css`: 3 pilares de web representativa y etiqueta de Caso Personalizado. |
+| **T5** | Precios, Guía de Aviso de Publicidad y Bloque de Desarrollo a Medida (`#pricing`) | ✅ hecho | `index.html`, `css/components/pricing.css`: Paquetes $4,800 y $5,900, guía publicidad, tarjeta con deslinde y bloque a medida. |
+| **T6** | Perfil Sobre Mí (`#operator`), Contacto (`#contact`) y Preguntas Frecuentes (`#faq`) | ✅ hecho | `index.html`, `css/components/trust-operator.css`, `css/components/faq.css`: 11 FAQs nativas, trato 1 a 1 y mantra de cierre. |
+| **T7** | Sintonización de SEO, Schema.org JSON-LD, `llms.txt` y Metadatos | ✅ hecho | `index.html`, `llms.txt`: `@graph` alineado a 11 FAQs, catálogo de servicios sin 'a medida' estándar, `llms.txt` actualizado. |
+| **T8** | Sincronización de Partials, Validación Automatizada (`npm test`) y Verificación Visual en Navegador | ✅ hecho | `partials/`, `index.html`, `tests/`: Partials sincronizados, 20/20 tests en verde, 0 errores 404/consola. |
+
+Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
+
+---
+
+# Feature 014: Reordenamiento de Navegación (FAQ al Final), Claridad en Enlaces a Videollamadas y Alcance de Personalización en Paquete 01
+
+Referencia: `specs/014-reordenamiento-navegacion-alcance-personalizacion-videollamadas/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Reordenamiento de enlaces en cabecera y pie de página | ✅ hecho | `partials/header.html`, `partials/footer.html`: Secuencia 1:1 con FAQ al final después de Sobre Mí. |
+| **T2** | Reordenamiento secuencial de secciones en el DOM de `index.html` | ✅ hecho | `index.html`: `#pricing` reubicado antes de `#security` y `#operator`, `#faq` al final antes de `#contact`. |
+| **T3** | Reemplazo de "Videollamadas integradas" por "Enlaces para videollamadas" | ✅ hecho | `index.html`: Sustituido en Soluciones, 5.º Pilar de Demo, Paquete 02 de Precios y FAQ 8. |
+| **T4** | Alcance de personalización y delimitación de cambios grandes en Paquete 01 y FAQ | ✅ hecho | `index.html`: Viñeta reforzada en Paquete 01, caja de alcance `.pricing-scope-clarification` añadida y FAQs 1 y 9 ampliadas. |
+| **T5** | Sintonización de Schema.org JSON-LD y `llms.txt` | ✅ hecho | `index.html`, `llms.txt`: `@graph` y archivo `/llms.txt` alineados con los nuevos textos. |
+| **T6** | Sincronización de Partials, Validación Automatizada (`npm test`) y Verificación Visual | ✅ hecho | `partials/`, `index.html`, `aviso-de-privacidad.html`, `tests/`: 20/20 tests en verde y sincronización exitosa. |
+
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 
 ## Bloqueos / pendientes fuera de esta feature
