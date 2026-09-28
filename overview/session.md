@@ -111,17 +111,23 @@
    - **Página de Aterrizaje Multipágina Dedicada (`comparativa-doctoralia.html`):** Publicada con título calibrado a 55 caracteres, meta description a 151 caracteres, desglose de planes ($1,350 a $2,370 MXN/mes), impacto de las comisiones del 15%–20%, cálculo de ahorro a 3 años (> $40,000 MXN) y sincronización con partials.
    - **Sitemap y Tests:** Actualizado `sitemap.xml` con `<priority>0.8</priority>` y ampliadas las suites `tests/seo-metadata.test.js` y `tests/link-integrity.test.js`, alcanzando **23/23 tests pasando en verde** al 100%.
 
+9. **Feature 017: Enlace Contextual de Análisis Profundo a Comparativa Doctoralia en la Landing Principal (Completada):**
+   - **Punto de Entrada Natural:** Integrado el bloque `.comparison-deepdive-box` en el callout inferior de la tabla comparativa (`#comparison`) en `index.html`.
+   - **Enlace de Lectura Profunda:** Vincula directamente a `comparativa-doctoralia.html` con mensaje sutil (*"¿Deseas ver el desglose numérico de comisiones y la proyección de ahorro a 3 años? Leer análisis detallado &rarr;"*).
+   - **Estilos Modulares:** Clases `.comparison-callout-main`, `.comparison-deepdive-box` y `.comparison-deepdive-link` añadidas en `css/components/comparison.css` con micro-transición de hover y compatibilidad multi-tema.
+   - **Validación Automatizada:** Sincronización de partials ejecutada y 23/23 tests pasando en verde en 59ms (`npm test`).
+
 ## En qué quedó el proyecto
 
-- **Features 001 a 016 Completadas:**
-  - Landing page y página dedicada `/comparativa-doctoralia` operativas localmente en `http://localhost:3000/`.
-  - Suite de GEO e IndexNow implementada para indexación relámpago en motores de IA y buscadores.
+- **Features 001 a 017 Completadas:**
+  - Landing page con sección comparativa y enlace contextual a `/comparativa-doctoralia`.
+  - Página dedicada de análisis de costes y comisiones totalmente operativa.
   - **Pruebas Automatizadas:** 23/23 tests pasando en verde con `npm test`.
   - **Git Governance:** Cambios listos en el working tree sin commit/push automático, a la espera de la autorización explícita del usuario.
 
 ## Próximo paso
 
-- Esperar la revisión visual del usuario en `http://localhost:3000/comparativa-doctoralia` y proceder con `git commit` y `git push` cuando el usuario lo autorice.
+- Esperar la revisión visual del usuario en `http://localhost:3000/#comparison` y proceder con `git commit` y `git push` cuando el usuario lo autorice.
 
 
 

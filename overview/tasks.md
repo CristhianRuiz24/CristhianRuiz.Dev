@@ -276,6 +276,20 @@ Referencia: `specs/016-suite-optimizacion-geo-indexnow-y-comparativa-doctoralia/
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
 
+---
+
+# Feature 017: Enlace Contextual de Análisis Profundo a Comparativa Doctoralia en la Landing Principal
+
+Referencia: `specs/017-enlace-contextual-analisis-doctoralia-landing/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Estilos modulares para enlace profundo en `css/components/comparison.css` | ✅ hecho | `comparison.css`: Clases `.comparison-deepdive-box`, `.comparison-callout-main` y `.comparison-deepdive-link`. |
+| **T2** | Integrar bloque de enlace contextual en el callout de `#comparison` en `index.html` | ✅ hecho | `index.html`: Enlace semántico directo a `comparativa-doctoralia.html` con micro-transición en flecha. |
+| **T3** | Sincronización de partials, validación de suite de pruebas (`npm test`) y reporte documental | ✅ hecho | `sync-partials.js`, `link-integrity.test.js`: 23/23 tests en verde en 59ms. |
+
+Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
+
 ## Bloqueos / pendientes fuera de esta feature
 
 - Ninguno por el momento.
