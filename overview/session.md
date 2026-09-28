@@ -1,144 +1,55 @@
 # Sesión activa — CrisDev (`cristhianruiz.dev`)
 
 **Última actualización:** 2026-09-28
-**Fase SDD actual:** Feature 014: Reordenamiento de Navegación (FAQ al Final), Claridad en Enlaces a Videollamadas y Alcance de Personalización en Paquete 01 — Spec Aprobada (En ejecución T1)
+**Fase SDD actual:** Feature 020: Remediación de Credibilidad Numérica, Prueba Visual en Hero, Blindaje Legal y Pulido de Conversión — ✅ Completada y Validada al 100%
 
 ## Lo que se logró en esta sesión
 
-1. **Feature 009: Hiper-Especialización para Psicoterapeutas, Entornos Visuales y Sección FAQ (Completada):**
-   - **Entorno Visual de Escaparate en Caso PsicoLau (`#web-ui`):**
-     - Se integró la tarjeta de escaparate `.preview-showcase-card` con barra de estado superior estructurada (`psicolau.com · Plataforma en Producción`).
-     - El logo de PsicoLau cuenta ahora con un marco contenedor `.showcase-logo-frame` con margen de respiro en 360° evitando cortes abruptos.
-     - Se añadieron etiquetas sutiles de especialidad y botón armónico para visitar el sitio en vivo.
-   - **Entorno Visual, Dock de Acciones y Pilares en Gestión de Consultas (`#infrastructure`):**
-     - Se estructuraron las pastillas de encabezado con espacio y contraste claro.
-     - Se creó el dock elevado `.demo-actions-dock` para agrupar los dos botones de acción (`Explorar Sitio Web Demo` y `Probar Panel Clínico en 1 Clic`) junto a la nota de acceso sin registro.
-     - Cada uno de los 3 pilares se convirtió en una tarjeta modular individual (`.demo-pillar-card`) con iconos vectoriales en caja redondeada con contraste accesible.
-   - **Hiper-Especialización de Copy y Claridad de Dominio Anual en Precios (`#pricing`):**
-     - Se renombró el Paquete 01 a *"Paquete 01 · Presencia Terapéutica Multi-Página"* (titular: *"Presencia Digital para Terapeutas"*).
-     - Se purgaron todas las menciones genéricas de "médicos/servicios médicos" en titulares y descripciones, enfocando el mensaje en psicólogos y terapeutas independientes.
-     - Se detalló con total transparencia la inversión anual en dominio: en Paquete 01 se especificó hosting $0/mes de por vida y renovación de dominio estándar (~$195 a $800 MXN/año); en Paquete 02 se aclaró que la anualidad ($4,990 MXN/año) incluye el dominio .com gratis el 1er año y luego se renueva normalmente.
-   - **Componente CSS Modular de Acordeones (`css/components/faq.css`):**
-     - Se creó el archivo modular `css/components/faq.css` con estilos nativos para `<details>` y `<summary>`.
-     - Animación suave de apertura y rotación de chevron (180°), compatibilidad multi-tema (claro/oscuro) y salvaguarda móvil `minmax(0, 1fr)` y `word-break: break-word`.
-   - **Implementación de la Sección de Preguntas Frecuentes (`#faq`) y Sincronización:**
-     - Se implementó la sección `#faq` antes de `#contact` con 7 preguntas estratégicas de alta conversión para psicoterapeutas.
-     - Se añadieron los enlaces de navegación a `#faq` en `partials/header.html` (navbar desktop y drawer móvil) y `partials/footer.html`.
-     - Se ejecutó `npm run sync:partials` replicando con éxito los cambios en `index.html` y `aviso-de-privacidad.html`.
-   - **Validación Automatizada y Visual:**
-     - Suite completa de 16 tests automatizados pasando al 100% (`npm test`).
-     - Verificación visual exhaustiva en navegador con `browser_subagent` en desktop (1280px) y móvil (390px), confirmando despliegue de acordeones y 0 errores de JavaScript en consola.
-   - **Corrección de Solapamiento en Navbar Desktop:**
-     - Se reemplazó el grid rígido de 3 columnas por un contenedor Flexbox fluido (`justify-content: space-between`).
-     - Se ajustó el texto del enlace en la barra de escritorio a `FAQ` (conservando `Preguntas Frecuentes` en el drawer móvil).
-     - Se recalibró el breakpoint del menú móvil a `1080px` con gaps compactos, eliminando por completo cualquier colisión o encimamiento entre los enlaces y los botones de acción en pantallas medianas.
+1. **Feature 009 a Feature 018 (Completadas y Desplegadas en Producción):**
+   - Ecosistema sólido con diseño Clinical SaaS, modo oscuro Clinical Deep Navy, suite de pruebas nativas zero-dependency, integración de IndexNow, página dedicada de comparativa frente a Doctoralia, y optimización integral para buscadores tradicionales y motores de inteligencia artificial (GEO).
 
-2. **Feature 010: Remediación de CSP, SEO/Robots/Sitemap, Consola y Cache-Busting (Completada):**
-   - **Remediación de CSP (`_headers`):**
-     - Se añadió `https://static.cloudflareinsights.com` en `script-src` y `https://cloudflareinsights.com` en `connect-src`, eliminando la violación de CSP del beacon de Cloudflare Analytics.
-   - **Actualización de Branding en Consola (`js/terminal-effects.js`):**
-     - Se ajustó el banner de `printSystemBanner()` sustituyendo la mención a odontología/nutrición por *"Enfoque: Software & Plataformas Web para Psicoterapeutas y Consulta Privada"*.
-   - **Indexación y Sitemap (`sitemap.xml` & `robots.txt`):**
-     - Se incorporó la URL `/aviso-de-privacidad` y se actualizó `<lastmod>2026-09-24</lastmod>`.
-   - **Metadatos SEO y Schema.org (`index.html`):**
-     - Sintonizados `<title>`, `<meta name="description">`, Open Graph, Twitter y Schema.org JSON-LD para posicionamiento exclusivo en psicoterapia y salud mental.
-   - **Cache-Busting Masivo Unificado (`?v=6.0`):**
-     - Se versionaron todos los CSS y scripts JS en `index.html` y `aviso-de-privacidad.html` a `?v=6.0`, forzando la recarga limpia de `navbar.css` (con breakpoint a 1080px y Flexbox) y erradicando cualquier solapamiento residual por caché HTTP 304.
-   - **Validación Automatizada y Visual:**
-     - 16/16 tests pasando (`npm test`) y comprobación visual a 998x614 y 1280px con 0 errores en consola.
-
-3. **Feature 011: Alta en Google Search, Optimización para IAs (GEO / AI Search), Schema FAQPage y llms.txt (Completada):**
-   - **Schema.org `@graph` Unificado (`index.html`):**
-     - Integradas entidades interconectadas: `ProfessionalService` (paquetes $4,800 y $5,900 MXN), `Person` (Cristhian Ruiz con `knowsAbout`) y `FAQPage` con las 7 preguntas/respuestas para Rich Snippets en Google.
-   - **Estándar `llms.txt` para Inteligencias Artificiales:**
-     - Creado `/llms.txt` con la documentación estructurada de CrisDev para que ChatGPT, Claude, Perplexity y Gemini recomienden a Cristhian Ruiz al buscar soluciones para psicólogos.
-   - **Optimización de `robots.txt`:**
-     - Acceso abierto general y bienvenida explícita a bots de IA (`GPTBot`, `PerplexityBot`, `ClaudeBot`, `Google-Extended`, `Applebot-Extended`) y sitemap canónico.
-   - **Guía de Search Console & Bing (`docs/seo-alta-google-search-console.md`):**
-     - Procedimiento paso a paso para el envío del sitemap `sitemap.xml`, solicitud de indexación prioritaria y sincronización en 1 clic con Microsoft Bing.
-   - **Validación Automatizada:**
-     - 16/16 tests pasando y sintaxis JSON-LD validada al 100%.
-
-4. **Feature 012: Calibración de Longitud de Title y Meta Description para Bing y Google (Completada):**
-   - **`<title>` Calibrado en `index.html`:**
-     - Ajustado a `CrisDev | Cristhian Ruiz — Web para Psicoterapeutas` (51 caracteres), cumpliendo holgadamente el límite de Bing y Google (máximo 65 caracteres) y evitando truncamientos con `...`.
-   - **`<meta name="description">` Calibrada en `index.html`:**
-     - Sintetizada a `Desarrollo web y plataformas clínicas para psicólogos y terapeutas. Agenda automatizada, expedientes NOM-004 y captación de pacientes sin comisiones.` (149 caracteres), entrando con precisión en el rango recomendado de Bing (120 a 160 caracteres).
-   - **Suite de Pruebas de Metadatos (`tests/seo-metadata.test.js`):**
-     - Añadida suite automatizada nativa con 4 pruebas adicionales que verifican permanentemente que ni `index.html` ni `aviso-de-privacidad.html` excedan los 65 caracteres de título ni salgan del rango 120-160 de descripción.
-   - **Resultados de Pruebas:**
-     - 20/20 tests pasando exitosamente (`npm test`).
-
-5. **Feature 013: Reestructuración Comercial de Landing Page: Tríada de Oferta y Diferenciador de Aviso de Publicidad (Completada):**
-   - **Erradicación de Falsas Expectativas ("A Medida"):** Se eliminó la ambigüedad que hacía creer que el panel clínico base se programa desde cero por $5,900 MXN, delimitando la oferta estándar frente a encargos especiales.
-   - **Tríada de Valor Transparente:**
-     1. *Tu Página Web:* 100% personalizada con identidad, servicios y fotos del cliente.
-     2. *Tu Plataforma de Gestión (Consultorio Inteligente):* Sistema estándar de CrisDev, probado y optimizado para la consulta privada.
-     3. *Desarrollo a Medida:* Módulo satélite para clínicas, múltiples especialistas o flujos complejos (cotizado por separado).
-   - **Diferenciador Normativo (Guía para Aviso de Publicidad):** Integrado en ambos paquetes y con tarjeta explicativa destacada (`.pricing-compliance-card`), orientando sobre publicidad sanitaria en México con deslinde legal transparente.
-   - **Hero & Sub-Hero Renovados:** Titular *"Tu consultorio profesional, en un solo lugar"*, subtítulo dual, CTAs a `#contact` y `#pricing`, y barra de garantías.
-   - **Bloque de Dualidad (`#solutions`):** *"Una Presencia Profesional y una Gestión Más Sencilla"* con frase de anclaje de alcance.
-   - **Elevación de la Suite Demo (`#infrastructure`):** *"Conoce tu Plataforma Antes de Contratar"*, dock de acciones en 1 clic y 5 tarjetas de pilares modulares.
-   - **Reencuadre de PsicoLau (`#web-ui`):** Etiquetado explícito como *"Caso de Estudio: Desarrollo Personalizado"*.
-   - **Sobre Mí, Contacto y 11 FAQs:** Trato directo 1 a 1 con Cristhian Ruiz, mantra de cierre y 11 acordeones nativos sincronizados con Schema.org `FAQPage` y `/llms.txt`.
-   - **Sincronización y Pruebas:** `npm run sync:partials` ejecutado y 20/20 tests automatizados pasando en verde.
-
-6. **Feature 014: Reordenamiento de Navegación (FAQ al Final), Claridad en Enlaces a Videollamadas y Alcance de Personalización en Paquete 01 (Completada):**
-   - **Reordenamiento Estructural 1:1:** Se sincronizó la barra de navegación (`header.html`), el drawer móvil, el pie de página (`footer.html`) y el DOM de `index.html` para que el flujo sea: `Inicio` &rarr; `Presencia Digital` &rarr; `Gestión de Consultas` &rarr; `Planes y Precios` &rarr; `Privacidad` &rarr; `Sobre Mí` &rarr; `FAQ` &rarr; `Contacto`.
-   - **Honestidad Técnica en Videollamadas:** Se erradicó la frase *"Videollamadas integradas"* (que prometía falsamente un servidor de streaming/WebRTC propio), reemplazándola por *"Enlaces para videollamadas (Zoom / Google Meet)"* en Soluciones, Demo (5.º pilar), Precios y FAQ.
-   - **Sincronización y Validación:** Sincronización de partials ejecutada y 20/20 tests pasando en verde.
-
-7. **Feature 015: Sección Comparativa frente a Directorios Médicos (ej. Doctoralia) y Reindexación para IA / Buscadores (Completada):**
-   - **Matriz Comparativa de Alto Impacto (`#comparison`):** Implementada inmediatamente después de Precios (`#pricing`) con 6 contrastes clave:
-     1. Modelo de Propiedad: Alquiler perpetuo SaaS vs. Activo digital propio.
-     2. Inversión Anual: ~$16,200 a $28,440+ MXN/año en directorios vs. $11,888 MXN (Año 1) y ~$4,990/año posteriores en CrisDev (ahorro >$15,000 MXN anuales).
-     3. Comisiones: 15%–20% por cita online y 5% por cancelación vs. **0% de comisiones por paciente de por vida**.
-     4. Marca y Exclusividad: Perfil genérico compitiendo con colegas vs. Web multipágina con dominio propio y sin fuga de pacientes.
-     5. Custodia de Expedientes: Nube de terceros vs. Base de datos privada NOM-004-SSA3 con respaldos regulares y secreto profesional.
-     6. Canal de Contacto: Mensajería cerrada de plataforma vs. Directo a WhatsApp profesional.
-   - **Enlace Contextual de Salto en Precios:** Añadido botón sutil al pie de `#pricing` con desplazamiento suave hacia `#comparison`.
-   - **Estilos Modulares y Salvaguarda Mobile:** Creado `css/components/comparison.css` con variables clínicas nativas, soporte multi-tema (claro y oscuro), iconografía SVG técnica (cero emojis) y reglas `minmax(0, 1fr)` y `word-break: break-word` para pantallas móviles de 375px a 430px.
-   - **Actualización de Archivos de Rastreo, GEO y Modelos de IA:**
-     - `robots.txt`: Directivas explícitas `Allow: /` para `DeepSeekBot`, `CCBot`, `meta-externalagent`, `Bytespider` y enlace canónico a `https://cristhianruiz.dev/llms.txt`.
-     - `sitemap.xml`: Actualizado `<lastmod>` a `2026-09-28` para señalar frescura a los motores de búsqueda.
-     - `llms.txt`: Incorporado bloque de comparativa estructurada con cifras reales en pesos mexicanos para que los motores de IA citen las tarifas reales y ventajas de CrisDev sin alucinar costes no públicos.
-   - **Validación Automatizada y Servicio Local:** Sincronización de partials ejecutada y 20/20 tests pasando en 82ms (`npm test`). Servidor local activo en `http://localhost:3000/?v=feat015`.
-
-8. **Feature 016: Suite Avanzada de GEO (Generative Engine Optimization), IndexNow Instantáneo y Página Dedicada de Comparativa (Completada):**
-   - **Módulo IndexNow Automatizado:** Creado `e4d7a8809c954e7d8b584d41fa217c9b.txt` en la raíz pública, script Node.js nativo `scripts/ping-indexnow.js` y comando `"ping:indexnow"` en `package.json` para notificar en tiempo real a Bing, Copilot y Perplexity.
-   - **Descubrimiento Estándar para Agentes de IA:** Añadido `<link rel="llms-txt" type="text/plain" href="https://cristhianruiz.dev/llms.txt">` en el `<head>` de `index.html`, `aviso-de-privacidad.html` y `comparativa-doctoralia.html`.
-   - **Schema.org JSON-LD Enriquecido:** Incorporada la 12.ª pregunta en `FAQPage` de `index.html` sobre la comparativa de costes y modelo patrimonial frente a Doctoralia para capturar Rich Snippets en Google.
-   - **Página de Aterrizaje Multipágina Dedicada (`comparativa-doctoralia.html`):** Publicada con título calibrado a 55 caracteres, meta description a 151 caracteres, desglose de planes ($1,350 a $2,370 MXN/mes), impacto de las comisiones del 15%–20%, cálculo de ahorro a 3 años (> $40,000 MXN) y sincronización con partials.
-   - **Sitemap y Tests:** Actualizado `sitemap.xml` con `<priority>0.8</priority>` y ampliadas las suites `tests/seo-metadata.test.js` y `tests/link-integrity.test.js`, alcanzando **23/23 tests pasando en verde** al 100%.
-
-9. **Feature 017: Enlace Contextual de Análisis Profundo a Comparativa Doctoralia en la Landing Principal (Completada):**
-   - **Punto de Entrada Natural:** Integrado el bloque `.comparison-deepdive-box` en el callout inferior de la tabla comparativa (`#comparison`) en `index.html`.
-   - **Enlace de Lectura Profunda:** Vincula directamente a `comparativa-doctoralia.html` con mensaje sutil (*"¿Deseas ver el desglose numérico de comisiones y la proyección de ahorro a 3 años? Leer análisis detallado &rarr;"*).
-   - **Estilos Modulares:** Clases `.comparison-callout-main`, `.comparison-deepdive-box` y `.comparison-deepdive-link` añadidas en `css/components/comparison.css` con micro-transición de hover y compatibilidad multi-tema.
-   - **Validación Automatizada:** Sincronización de partials ejecutada y 23/23 tests pasando en verde en 59ms (`npm test`).
-
-10. **Feature 018: Remediación del Modo Oscuro y Scripts ES Module en Comparativa Doctoralia (Completada):**
-   - **Corrección de Declaración Modular (`comparativa-doctoralia.html`):**
-     - Se reemplazó la inclusión clásica de `<script src="js/theme-manager.js"></script>` por la declaración canónica ES module `<script type="module" src="js/theme-manager.js?v=6.0"></script>`.
-     - Se purgaron scripts superfluos (`js/config.js` y `js/terminal-effects.js`), eliminando la excepción de sintaxis `Uncaught SyntaxError: Unexpected token 'export'` que impedía el registro del escuchador de eventos en el botón de tema.
-   - **Prueba de Regresión Automatizada (`tests/link-integrity.test.js`):**
-     - Se añadieron tests automatizados que inspeccionan todos los archivos HTML y comprueban:
-       1. Que cualquier carga de `theme-manager.js` contenga explícitamente `type="module"`.
-       2. Que todos los scripts referenciados en `<script src="...">` existan físicamente en el repositorio.
-     - **25/25 tests pasando al 100% en verde** en 83ms.
-   - **Validación Visual y Funcional:**
-     - Comprobado en navegador local con `browser_subagent`: 0 errores o advertencias en consola, alternancia fluida de tema (`data-theme="dark"`), renderizado correcto de la paleta Clinical Deep Navy y conmutación automática al logotipo blanco (`logo-crisdev-white.svg`).
+2. **Feature 020: Remediación de Credibilidad Numérica, Prueba Visual en Hero, Blindaje Legal y Pulido de Conversión (Completada y Validada):**
+   - **T1: Recalibración Matemática del Ahorro y Fecha de Consulta de Tarifas:**
+     - Se auditó y corrigió minuciosamente toda la matemática de costes frente a Doctoralia en `index.html`, `comparativa-doctoralia.html`, metadatos Schema.org JSON-LD (`FAQPage`) y `/llms.txt`.
+     - En la tabla de `index.html`: Desglose transparente del Año 1 ($4,312 MXN frente a Starter y >$16,500 MXN frente a Plus con comisiones estimadas) y Año 2 en adelante ($11,210 a $23,450 MXN de ahorro recurrente anual).
+     - En `comparativa-doctoralia.html`: Corregido el acumulado a 3 años ($20,870 MXN en CrisDev vs $48,600 en Starter y $85,320 en Plus), explicitando el ahorro neto de $27,730 MXN (Starter) y de $64,450 MXN (Plus).
+     - Se añadió nota al pie transparente: *"Tarifas públicas consultadas en septiembre de 2026 para planes anuales en México"*.
+   - **T2: Blindaje Legal, Titulación Profesional y Actualización de Redes Sociales:**
+     - Se actualizó el título profesional de Cristhian Ruiz a *"Desarrollador de Software y Plataformas Web"* en metadatos, banner de consola y sección Sobre Mí.
+     - Se ajustó el tono normativo y de infraestructura a *"Diseñado conforme a los lineamientos de la NOM-004-SSA3 para expediente clínico"* y *"Alojamiento en Cloudflare sin mensualidades de servidor"*.
+     - Se actualizaron los canales sociales en `partials/footer.html`: Se eliminó el enlace a LinkedIn y se incorporaron los enlaces verificados a la página oficial de Facebook (`https://www.facebook.com/people/CrisDev/61594210641667/`) y al perfil de Instagram (`https://www.instagram.com/_cris_dev_/`).
+     - Sincronización masiva ejecutada con `npm run sync:partials` en `index.html`, `aviso-de-privacidad.html` y `comparativa-doctoralia.html`.
+   - **T3: Reparación del Bug CSS en Tabla Desktop y Desahogo de Tarjetas de Precios:**
+     - En `css/components/comparison.css`, se definió `.comparison-mobile-label { display: none; }` a nivel general y se restauró `display: block;` exclusivamente dentro de `@media (max-width: 767px)`, eliminando el molesto bug que duplicaba el nombre del atributo en cada celda de escritorio.
+     - En `#pricing`, se aligeraron las tarjetas de precios mostrando únicamente las 5 viñetas de mayor impacto comercial y encapsulando el resto de inclusiones dentro de un acordeón `<details class="pricing-details-accordion">` con el texto *"Ver todo lo que incluye"*, mejorando drásticamente el escaneo visual y eliminando la saturación.
+   - **T4: Rediseño Visual del Hero con Mockup de Interfaz Real:**
+     - Se transformó el Hero de una columna centralizada a un layout asimétrico de 2 columnas en pantallas de escritorio (>1024px) con salvaguardas responsivas `minmax(0, 1fr)`.
+     - Se implementó el componente `.hero-mockup-frame`: marco de ventana clínica interactiva con selector de pestañas:
+       1. *Agenda Semanal:* Vista viva de citas médicas reales (Mariana S., Carlos M., Sofía R.), badges de confirmación automática por WhatsApp y métrica de 94% de asistencia.
+       2. *Sitio Web PsicoLau:* Vista del escaparate en producción del caso de éxito con enlace de acceso directo.
+     - En `js/terminal-effects.js`, se añadió lógica modular en Vanilla JS para conmutar dinámicamente entre ambas vistas al interactuar con las pestañas, erradicando el "aspecto de plantilla" desde el primer pantallazo *above the fold*.
+   - **T5: Botón Flotante de WhatsApp para Dispositivos Móviles (`.fab-whatsapp`):**
+     - Se integró el botón flotante en `partials/footer.html` con posición fija en la esquina inferior derecha, icono oficial SVG y mensaje comercial precargado.
+     - Diseñado exclusivamente para celulares y tablets (`@media (max-width: 767px)`), permaneciendo oculto en pantallas de escritorio para evitar redundancias visuales.
+   - **T6: Pruebas Automatizadas de Integridad y Validación Visual en Navegador:**
+     - Se ampliaron las pruebas en `tests/link-integrity.test.js`, validando la presencia obligatoria de Instagram y Facebook y la ausencia total de enlaces a LinkedIn.
+     - **26/26 tests pasando en 75ms** al 100% en verde con `npm test`.
+     - Verificación visual exhaustiva con `browser_subagent` en desktop (1280px) y móvil (390px): alternancia de pestañas en Hero, celdas limpias sin duplicados en la tabla de comparación, acordeón interactivo de precios, visibilidad y posicionamiento del botón FAB en móvil, y 0 errores/warnings de JavaScript en la consola del navegador.
+   - **T7: Cierre Documental y Gobernanza Git:**
+     - Registro y sincronización de bitácora en `overview/tasks.md` y `overview/session.md`.
+     - Presentación de resumen consolidado al usuario esperando confirmación explícita para commit y push.
 
 ## En qué quedó el proyecto
 
-- **Features 001 a 018 Completadas:**
-  - El botón de cambio de tema (Sol/Luna) en `https://cristhianruiz.dev/comparativa-doctoralia` ahora conmuta fluidamente a Modo Oscuro sin errores de consola.
-  - **Pruebas Automatizadas:** 25/25 tests pasando en verde con `npm test`.
-  - **Git Governance:** Cambios listos en el working tree sin commit/push automático, a la espera de la autorización explícita del usuario.
+- **Features 001 a 018:** Completadas, probadas y desplegadas.
+- **Feature 019 (Suite de Conversión Comercial - Calculadora y Badges):** Especificada y en pausa técnica.
+- **Feature 020 (Remediación de Credibilidad, Mockup Hero, Blindaje Legal y Pulido):** Tareas T1 a T7 completadas al 100%. Código listo, 26/26 tests en verde y 0 errores en consola.
+- **Servidor local:** Activo en puerto 3000 con todas las páginas renderizando con total fidelidad.
 
 ## Próximo paso
 
-- Presentar el resumen de cambios al usuario y solicitar su autorización para realizar `git commit` y `git push`.
+1. Solicitar autorización explícita al usuario para ejecutar `git commit` y `git push origin main`.
+2. Una vez confirmado el despliegue, reanudar o planificar la **Feature 019** (Calculadora interactiva de ahorro y ROI) con los números ahora 100% auditados y estables.
 
 
 

@@ -303,11 +303,42 @@ Referencia: `specs/018-remediacion-modo-oscuro-comparativa-doctoralia/tasks.md`
 | **T3** | Validación funcional y visual en servidor local | ✅ hecho | Verificado cambio fluido a Clinical Deep Navy (`data-theme="dark"`), cambio dinámico a logo blanco y 0 errores en consola. |
 | **T4** | Actualización de bitácora y gobernanza Git | ✅ hecho | Documentación de cierre y push a origin/main autorizado por el usuario. |
 
-Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado
+---
 
-## Bloqueos / pendientes fuera de esta feature
+# Feature 019: Suite de Conversión Comercial: Calculadora Interactiva de Ahorro y ROI, Badges de Confianza Médica (NOM-004) y Demostración Consultiva en Vivo
 
-- Ninguno por el momento.
+**Estado:** ⏸️ En pausa temporal (A la espera de estabilizar base matemática y visual en Feature 020)  
+Referencia: `specs/019-calculadora-ahorro-badges-confianza-y-demo-en-vivo/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Badges de Confianza Médica en el Hero (NOM-004, DB privada, $0 rentas) | ⏸️ pospuesta | Se integrará tras Feature 020 |
+| **T2** | Estilos modulares de la Calculadora de Ahorro (`savings-calculator.css`) | ⏸️ pospuesta | Se integrará tras Feature 020 |
+| **T3** | Estructura HTML de la Sección `#savings-calculator` en `index.html` | ⏸️ pospuesta | Se integrará tras Feature 020 |
+| **T4** | Módulo JS de Cálculo Interactivo y Sincronización de WhatsApp | ⏸️ pospuesta | Se integrará tras Feature 020 |
+| **T5** | Integración del Selector de Demostración Consultiva de 15 Minutos en `#contact` | ⏸️ pospuesta | Se integrará tras Feature 020 |
+| **T6** | Pruebas Unitarias Automatizadas en Node.js (`tests/savings-calculator.test.js`) | ⏸️ pospuesta | Se integrará tras Feature 020 |
+| **T7** | Verificación Visual en Navegador (Desktop y Móvil) y Cierre Documental | ⏸️ pospuesta | Se integrará tras Feature 020 |
+
+---
+
+# Feature 020: Remediación de Credibilidad Numérica, Prueba Visual en Hero, Blindaje Legal y Pulido de Conversión
+
+**Estado:** ✅ Completada y Validada  
+Referencia: `specs/020-remediacion-credibilidad-prueba-visual-hero-y-pulido/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Recalibración Matemática del Ahorro y Fecha de Consulta de Tarifas | ✅ hecho | `index.html`, `comparativa-doctoralia.html`, `llms.txt`: Cifras sincronizadas sin discrepancias, nota de tarifas a septiembre de 2026. |
+| **T2** | Blindaje Legal, Titulación Profesional y Actualización de Redes Sociales | ✅ hecho | `partials/footer.html`, `index.html`, `aviso-de-privacidad.html`, `comparativa-doctoralia.html`, `js/terminal-effects.js`: Título a Desarrollador de Software, lineamientos NOM-004, hosting Cloudflare, Facebook e Instagram oficiales (LinkedIn retirado). |
+| **T3** | Reparación del Bug CSS en Tabla Desktop y Desahogo de Tarjetas de Precios | ✅ hecho | `css/components/comparison.css`, `css/components/pricing.css`, `index.html`: `.comparison-mobile-label { display: none; }` en desktop y acordeón nativo `<details>` en tarjetas de precios. |
+| **T4** | Rediseño Visual del Hero con Mockup de Interfaz Real | ✅ hecho | `index.html`, `css/components/hero.css`, `js/terminal-effects.js`: Hero en 2 columnas desktop con marco `.hero-mockup-frame` interactivo (Agenda Clínica semanal viva y conmutador a PsicoLau). |
+| **T5** | Implementación del Botón Flotante de WhatsApp para Móvil | ✅ hecho | `partials/footer.html`, `css/components/footer.css`: Botón flotante semántico `.fab-whatsapp` exclusivo para móviles (<768px) sincronizado en todas las páginas. |
+| **T6** | Pruebas Automatizadas de Integridad y Validación Visual en Navegador | ✅ hecho | `tests/link-integrity.test.js`: Suite ampliada a 26/26 tests en verde (75ms). Validación visual en navegador (desktop y móvil 390px, 0 errores en consola). |
+| **T7** | Cierre Documental y Gobernanza Git | ✅ hecho | `overview/tasks.md`, `overview/session.md`, `specs/020-.../tasks.md`: Bitácora sincronizada y solicitud formal de autorización para commit/push. |
+
+Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado · ⏸️ pospuesta
+
 
 
 

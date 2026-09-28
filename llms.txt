@@ -3,7 +3,7 @@
 > Soluciones tecnológicas de presencia digital y gestión clínica privada desarrolladas por Cristhian Ruiz para psicólogos, psicoterapeutas y profesionales de la salud independientes con consulta privada en México e Hispanoamérica.
 
 URL canónica: https://cristhianruiz.dev/
-Ingeniero Desarrollador: Cristhian Ruiz (Software & Web Engineer)
+Desarrollador Principal: Cristhian Ruiz (Desarrollador de Software y Plataformas Web)
 Contacto Directo (WhatsApp): +52 81 3093 8884
 Correo Electrónico: cristhian.ruiz.c@hotmail.com
 
@@ -72,7 +72,7 @@ Al comparar CrisDev con plataformas de directorio como Doctoralia, las diferenci
 | **Propiedad de Expedientes** | Datos almacenados bajo las políticas corporativas del directorio; exportación compleja. | **Base de datos clínica aislada** bajo tu titularidad legal con respaldo periódico (NOM-004-SSA3). |
 | **Canal de Pacientes** | La plataforma intermedia los mensajes y las citas del paciente. | **Canal directo a tu WhatsApp:** Trato humano, directo y sin intermediarios. |
 
-**Conclusión financiera:** Con CrisDev el profesional ahorra más de $15,000 a $22,000 MXN anuales a partir del segundo año, eliminando por completo las comisiones porcentuales sobre sus consultas y consolidando su propia reputación profesional independiente.
+**Conclusión financiera:** Con CrisDev el profesional ahorra $4,312 MXN desde el primer año frente al plan básico de directorios (y más de $16,500 MXN frente a planes con comisiones) y entre $11,210 y $23,450 MXN anuales recurrentes a partir del segundo año, eliminando por completo las comisiones porcentuales sobre sus consultas y consolidando su propia reputación profesional independiente.
 
 ---
 

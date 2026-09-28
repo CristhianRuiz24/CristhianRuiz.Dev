@@ -218,6 +218,57 @@
   margin-top: -1px;
 }
 
+/* Pricing Details Collapsible Accordion (<details>) */
+.pricing-details-accordion {
+  margin-top: 0.65rem;
+  border-top: 1px dashed var(--border-muted);
+  padding-top: 0.75rem;
+}
+
+.pricing-details-summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: color var(--transition-fast);
+}
+
+.pricing-details-summary::-webkit-details-marker {
+  display: none;
+}
+
+.pricing-details-summary:hover {
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] .pricing-details-summary:hover {
+  color: var(--color-primary-bright);
+}
+
+.pricing-details-icon {
+  width: 0.85rem;
+  height: 0.85rem;
+  stroke: currentColor;
+  transition: transform var(--transition-fast);
+}
+
+.pricing-details-accordion[open] .pricing-details-icon {
+  transform: rotate(180deg);
+}
+
+.pricing-details-content {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
 .pricing-action {
   margin-top: 0.5rem;
   width: 100%;

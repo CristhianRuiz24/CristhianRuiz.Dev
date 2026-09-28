@@ -97,8 +97,8 @@ function initClinicalSuiteTabs() {
 function printSystemBanner() {
   const banner = `
 %c=============================================================
-%c   CrisDev // Software & Web Engineering
-%c   Especialista: Cristhian Ruiz
+%c   CrisDev // Software & Web Development
+%c   Desarrollador: Cristhian Ruiz
 %c   Enfoque: Software & Plataformas Web para Psicoterapeutas y Consulta Privada
 %c   Sitio Web: https://cristhianruiz.dev
 %c=============================================================
@@ -176,11 +176,41 @@ function initMobileMenu() {
   });
 }
 
+/**
+ * Initializes interactive preview switcher tabs in Hero workstation mockup
+ */
+function initHeroMockupTabs() {
+  const tabs = document.querySelectorAll('.hero-mockup-tab');
+  const panels = document.querySelectorAll('.hero-view-panel');
+  if (!tabs.length || !panels.length) return;
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const targetId = tab.getAttribute('aria-controls');
+      tabs.forEach(t => {
+        t.classList.remove('is-active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      panels.forEach(p => {
+        p.classList.remove('is-active');
+      });
+
+      tab.classList.add('is-active');
+      tab.setAttribute('aria-selected', 'true');
+      const targetPanel = document.getElementById(targetId);
+      if (targetPanel) {
+        targetPanel.classList.add('is-active');
+      }
+    });
+  });
+}
+
 function initApp() {
   initWhatsAppButtons();
   initSmoothScroll();
   initClinicalSuiteTabs();
   initMobileMenu();
+  initHeroMockupTabs();
   printSystemBanner();
 }
 
@@ -190,6 +220,7 @@ if (document.readyState === 'loading') {
 } else {
   initApp();
 }
+
 
 
 

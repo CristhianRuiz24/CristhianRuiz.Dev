@@ -143,5 +143,29 @@ describe('Navigation & Link Integrity Suite', () => {
       }
     }
   });
+
+  test('Social links in footer must point to official Facebook and Instagram channels and exclude LinkedIn', () => {
+    const htmlFiles = [
+      { name: 'index.html', html: indexHtml },
+      { name: 'aviso-de-privacidad.html', html: privacyHtml },
+      { name: 'comparativa-doctoralia.html', html: compHtml }
+    ];
+
+    for (const { name, html } of htmlFiles) {
+      assert.ok(
+        !html.includes('linkedin.com'),
+        `Residual LinkedIn link found in ${name}. LinkedIn must be excluded per brand guidelines.`
+      );
+      assert.ok(
+        html.includes('https://www.facebook.com/people/CrisDev/61594210641667/'),
+        `Missing or outdated Facebook official link in ${name}.`
+      );
+      assert.ok(
+        html.includes('https://www.instagram.com/_cris_dev_/'),
+        `Missing official Instagram link in ${name}.`
+      );
+    }
+  });
 });
+
 
