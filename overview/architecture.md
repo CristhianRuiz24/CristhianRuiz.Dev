@@ -9,10 +9,12 @@ graph TD
     subgraph Pipeline de Desarrollo & Calidad Local
         Partials[partials/: header, header-privacy, footer] -->|scripts/sync-partials.js| StaticHost[Frontend Estático: index.html, aviso-de-privacidad.html & comparativa-doctoralia.html]
         ValidationUtils[js/validation-utils.js] -->|Funciones puras de validación| FormHandler[js/form-handler.js]
-        ValidationUtils -->|Unit Tests| NodeTest[node:test & node:assert Suite: 26 tests]
-        StaticHost -->|Link Integrity & Module Tests| NodeTest
+        SavingsModule[js/modules/savings-calculator.js] -->|Cálculo reactivo de ROI y ahorro| SavingsUI[Sección: #savings-calculator]
+        ValidationUtils -->|Unit Tests| NodeTest[node:test & node:assert Suite: 40 tests]
+        SavingsModule -->|Math & ROI Unit Tests| NodeTest
+        StaticHost -->|Link Integrity, Asset Ownership & Module Tests| NodeTest
         CSSFiles[css/: Design Tokens] -->|Token Consistency Tests| NodeTest
-        IndexNowPing[scripts/ping-indexnow.js] -->|IndexNow API Ping| SearchEngines[Bing & Copilot IndexNow]
+        IndexNowPing[scripts/ping-indexnow.js] -->|IndexNow API Ping| SearchEngines[Bing, Copilot & Perplexity IndexNow]
     end
 
     subgraph Cloudflare Pages en Producción
@@ -21,17 +23,18 @@ graph TD
     end
 
     subgraph Módulos Principales de UI
-        StaticHost --> Hero[Hero: Alta Conversión, 2 Col con Mockup Interactivo de Agenda y PsicoLau]
+        StaticHost --> Hero[Hero: Alta Conversión, 2 Col con Mockup Interactivo de Agenda y PsicoLau + Badges NOM-004]
         StaticHost --> CaseStudy[Sección 02: Caso PsicoLau & Ficha Clínica]
         StaticHost --> ClinicalSuite[Sección 03: Mockup Interactivo Suite Clínica]
         StaticHost --> PricingSec[Sección 05: Planes y Precios Transparentes con Acordeón]
-        StaticHost --> ComparisonSec[Sección 06: Matriz Comparativa vs Directorios]
+        StaticHost --> SavingsSec[Sección 05.1: Calculadora de Ahorro y ROI con Estado Consultivo]
+        StaticHost --> ComparisonSec[Sección 06: Matriz Comparativa Soberanía de Datos vs Directorios]
         StaticHost --> PrivacyPage[Aviso de Privacidad Dedicado: aviso-de-privacidad.html]
         StaticHost --> DoctoraliaPage[Landing Dedicada: comparativa-doctoralia.html]
     end
 
     subgraph Canales de Conversión
-        StaticHost -->|Click Directo con Payload & FAB Móvil| WhatsApp[WhatsApp API: wa.me/528130938884]
+        StaticHost -->|Click Directo con Payload Calculado & FAB Móvil| WhatsApp[WhatsApp API: wa.me/528130938884]
         EdgeFunction -->|REST API Payload| ResendAPI[Resend Transactional Email API]
     end
 
@@ -52,7 +55,7 @@ graph TD
 - **Módulo de Precios Transparentes (`css/components/pricing.css`):** Desglose claro de paquetes ($4,800 y $5,900 MXN), esquema 50/50, dominio al costo Cloudflare y tiempo de entrega de 48-72h a 3-5 días *(04-Sep-2026)*.
 - **Mockup Interactivo Suite SaaS Clínico:** Pestañas interactivas en JS Vanilla para demostración funcional (Agenda, Expedientes, Cobranza, Contable) con 100% iconografía vectorial SVG y cero emojis de sistema *(04-Sep-2026)*.
 - **Modularización DRY de Componentes Compartidos (`partials/` & `scripts/sync-partials.js`):** Header y Footer abstraídos como componentes individuales inyectados automáticamente mediante marcadores HTML delimitados, eliminando duplicación de código sin añadir dependencias ni bundlers *(08-Sep-2026)*.
-- **Zero-Dependency Testing con Node.js Nativo (`tests/`):** Suite de 26 pruebas automatizadas con `node:test` y `node:assert` para validación de formularios/XSS, integridad de hipervínculos/anclas, consistencia de variables CSS y metadatos SEO en <80ms, sin frameworks externos de 100MB *(28-Sep-2026)*.
+- **Zero-Dependency Testing con Node.js Nativo (`tests/`):** Suite de 40 pruebas automatizadas con `node:test` y `node:assert` para validación de formularios/XSS, integridad de hipervínculos/anclas, consistencia de tokens CSS, calculadora matemática/ROI, copy institucional y metadatos SEO en <100ms *(28-Sep-2026)*.
 - **Git Governance Estricto:** Políticas formales de control de versiones que impiden commits automáticos de IA sin aprobación explícita previa del usuario *(08-Sep-2026)*.
 - **Blindaje Serverless & Anti-Spam Zero-Dependency (`functions/api/contact.js`):** Restricción estricta de CORS a orígenes propios, trampa Honeypot invisible para descarte silencioso de bots sin requerir CAPTCHAs pesados, validación backend redundante y enmascaramiento de trazas de excepción interna *(23-Sep-2026)*.
 - **Modularización CSS de Privacidad y Purgado de Assets:** Extracción de estilos a `css/components/privacy.css`, eliminación de `@import` bloqueante de Google Fonts y purgado de 7 imágenes huérfanas (~580 KB) *(23-Sep-2026)*.
@@ -60,5 +63,8 @@ graph TD
 - **Schema.org `@graph` Unificado (`FAQPage` + `ProfessionalService` + `Person`):** Estructura JSON-LD interconectada para habilitar Rich Snippets (acordeones de FAQ) en Google Search y facilitar citas directas en motores de búsqueda de IA *(24-Sep-2026)*.
 - **Políticas de Indexación para Agentes de IA (`robots.txt`):** Bienvenida explícita a rastreadores de IA (`GPTBot`, `PerplexityBot`, `ClaudeBot`, `Google-Extended`) sin restricciones y vinculación de sitemap canónico *(24-Sep-2026)*.
 - **Hero Asimétrico de 2 Columnas con Mockup Clínico Interactivo y Botón FAB Móvil:** Hero con ventana de interfaz activa (Agenda semanal y caso PsicoLau) en desktop y botón flotante de WhatsApp (`.fab-whatsapp`) exclusivo en vista móvil *(28-Sep-2026)*.
+- **Suite de Conversión & Calculadora Interactiva de Ahorro y ROI (`js/modules/savings-calculator.js`):** Módulo de cálculo puro y amortización real a 3 años, estado consultivo protector para evitar promesas de ROI imposibles, y selector interactivo de intención en contacto (Preguntas Rápidas vs Demostración Consultiva en Pantalla Compartida) *(28-Sep-2026)*.
+- **Soberanía de Datos vs Software Clínico Gestionado:** Delimitación formal de propiedad de activos: el sitio web, dominio y expedientes clínicos (NOM-004-SSA3) son 100% propiedad del cliente y exportables, mientras que el panel opera como software gestionado en la nube con mantenimiento y seguridad continuos *(28-Sep-2026)*.
+- **Asset Cache-Busting a Nivel de Edge (`v=8.0`):** Inyección de versiones query string `?v=8.0` en todos los archivos CSS, JS e imágenes del Hero para forzar la invalidación inmediata de caché de navegador tras despliegues en Cloudflare Pages *(28-Sep-2026)*.
 
 
