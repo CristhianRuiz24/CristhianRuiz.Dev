@@ -305,20 +305,20 @@ Referencia: `specs/018-remediacion-modo-oscuro-comparativa-doctoralia/tasks.md`
 
 ---
 
-# Feature 019: Suite de Conversión Comercial: Calculadora Interactiva de Ahorro y ROI, Badges de Confianza Médica (NOM-004) y Demostración Consultiva en Vivo
+# Feature 019: Suite de Conversión Comercial: Calculadora Interactiva de Ahorro y ROI, Badges de Confianza Médica y Demostración Consultiva en Vivo
 
-**Estado:** ⏸️ En pausa temporal (A la espera de estabilizar base matemática y visual en Feature 020)  
+**Estado:** ✅ Completada y Validada al 100%  
 Referencia: `specs/019-calculadora-ahorro-badges-confianza-y-demo-en-vivo/tasks.md`
 
 | ID | Tarea | Estado | Nota |
 | :--- | :--- | :--- | :--- |
-| **T1** | Badges de Confianza Médica en el Hero (NOM-004, DB privada, $0 rentas) | ⏸️ pospuesta | Se integrará tras Feature 020 |
-| **T2** | Estilos modulares de la Calculadora de Ahorro (`savings-calculator.css`) | ⏸️ pospuesta | Se integrará tras Feature 020 |
-| **T3** | Estructura HTML de la Sección `#savings-calculator` en `index.html` | ⏸️ pospuesta | Se integrará tras Feature 020 |
-| **T4** | Módulo JS de Cálculo Interactivo y Sincronización de WhatsApp | ⏸️ pospuesta | Se integrará tras Feature 020 |
-| **T5** | Integración del Selector de Demostración Consultiva de 15 Minutos en `#contact` | ⏸️ pospuesta | Se integrará tras Feature 020 |
-| **T6** | Pruebas Unitarias Automatizadas en Node.js (`tests/savings-calculator.test.js`) | ⏸️ pospuesta | Se integrará tras Feature 020 |
-| **T7** | Verificación Visual en Navegador (Desktop y Móvil) y Cierre Documental | ⏸️ pospuesta | Se integrará tras Feature 020 |
+| **T1** | Badges de Confianza Médica en el Hero (Lineamientos NOM-004, DB privada, 0% comisiones) | ✅ hecho | `index.html`, `css/components/hero.css`: Integrados en la columna izquierda con iconos SVG vectoriales sin emojis. |
+| **T2** | Estilos modulares de la Calculadora de Ahorro (`savings-calculator.css`) | ✅ hecho | `css/components/savings-calculator.css`: Diseño clínico, range slider customizado, presets interactivos y grid elástico. |
+| **T3** | Estructura HTML de la Sección `#savings-calculator` en `index.html` | ✅ hecho | `index.html`: Ubicada estratégicamente entre `#pricing` y `#comparison` con desglose honesto a 3 años. |
+| **T4** | Módulo JS de Cálculo Interactivo y Sincronización de WhatsApp | ✅ hecho | `js/modules/savings-calculator.js`, `js/terminal-effects.js`: Cálculo reactivo en tiempo real con mensaje WhatsApp adaptativo. |
+| **T5** | Integración del Selector de Demostración Consultiva de 15 Minutos en `#contact` | ✅ hecho | `index.html`, `js/modules/savings-calculator.js`: Selector reactivo de intención (Dudas Rápidas vs Demo en Vivo 15 Min). |
+| **T6** | Pruebas Unitarias Automatizadas en Node.js (`tests/savings-calculator.test.js`) | ✅ hecho | `tests/savings-calculator.test.js`: Suite completa de ROI y matemática a 3 años. 35/35 tests en verde. |
+| **T7** | Verificación Visual en Navegador (Desktop y Móvil) y Cierre Documental | ✅ hecho | Validación visual en viewport de escritorio y móvil (390px), 0 errores en consola JS, bitácora sincronizada. |
 
 ---
 
@@ -337,8 +337,36 @@ Referencia: `specs/020-remediacion-credibilidad-prueba-visual-hero-y-pulido/task
 | **T6** | Pruebas Automatizadas de Integridad y Validación Visual en Navegador | ✅ hecho | `tests/link-integrity.test.js`: Suite ampliada a 26/26 tests en verde (75ms). Validación visual en navegador (desktop y móvil 390px, 0 errores en consola). |
 | **T7** | Cierre Documental y Gobernanza Git | ✅ hecho | `overview/tasks.md`, `overview/session.md`, `specs/020-.../tasks.md`: Bitácora sincronizada y solicitud formal de autorización para commit/push. |
 
+---
+
+# Feature 021: Remediación de Calculadora de Ahorro, ROI Real y Blindaje Comercial
+
+**Estado:** ✅ Completada y Validada al 100%  
+Referencia: `specs/021-remediacion-calculadora-ahorro-roi-y-blindaje-comercial/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Refactorización Matemática, Amortización Real y Formateo de Moneda Negativa | ✅ hecho | `js/modules/savings-calculator.js`: Formato `-$X,XXX MXN`, cálculo real de amortización en año 1 y flag `isConsultative`. |
+| **T2** | Asociación Inteligente de Presets del Mercado a Paquetes CrisDev | ✅ hecho | `index.html`, `js/modules/savings-calculator.js`: Wix ($400) activa Paquete 01 (ahorro +$9,600); agendas/directorios activan Paquete 02. |
+| **T3** | Estilos y Renderizado del Estado Consultivo (`.card-consultative`) y CTA Dinámico | ✅ hecho | `css/components/savings-calculator.css`, `index.html`, `js/modules/savings-calculator.js`: Tarjeta sobria sin números verdes cuando `netSavings <= 0`, botón de retorno a Paquete 01 y WhatsApp consultivo. |
+| **T4** | Adaptación Contextual del Banner de Retorno de Inversión | ✅ hecho | `index.html`, `js/modules/savings-calculator.js`: Copy dinámico para Paquete 01 (retorno por captación web) y Paquete 02 (recuperación de citas por WhatsApp). |
+| **T5** | Suite de Pruebas Automatizadas en Node.js | ✅ hecho | `tests/savings-calculator.test.js`: 39/39 tests en verde (73ms) con validación de estado consultivo y moneda negativa. |
+| **T6** | Verificación Visual en Navegador (Desktop y Móvil) y Cierre Documental | ✅ hecho | Validado con subagente en desktop y móvil (375px), 0 errores y 0 warnings en consola de JavaScript. |
+
+---
+
+# Feature 022: Clarificación de Propiedad de Activos y Software Clínico Gestionado
+
+**Estado:** ✅ Completada y Validada al 100%  
+Referencia: `specs/022-clarificacion-propiedad-activos-y-software-gestionado/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Actualización de Copy en Tabla Comparativa de `index.html` | ✅ hecho | `index.html`: Soberanía de datos y web propia + panel clínico gestionado en la nube. |
+| **T2** | Actualización de Copy en Matriz Comparativa de `comparativa-doctoralia.html` | ✅ hecho | `comparativa-doctoralia.html`: Sustitución de "el software clínico son tuyos". |
+| **T3** | Sincronización de la Matriz Comparativa en `/llms.txt` | ✅ hecho | `/llms.txt`: Fila modelo 1:1 con la landing. |
+| **T4** | Incorporación de Pregunta sobre Propiedad en FAQ y Schema.org de `index.html` | ✅ hecho | `index.html`: Pregunta dedicada en `#faq` y Schema.org JSON-LD `FAQPage`. |
+| **T5** | Sincronización de FAQ y Schema.org en `comparativa-doctoralia.html` | ✅ hecho | `comparativa-doctoralia.html`: FAQ y Schema.org JSON-LD sincronizados. |
+| **T6** | Pruebas Automatizadas de Integridad y Validación Visual | ✅ hecho | `tests/link-integrity.test.js`: Aserciones de ausencia de frases ambiguas y presencia de soberanía de datos (40/40 tests verdes). Validado con browser subagent. |
+
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado · ⏸️ pospuesta
-
-
-
-

@@ -166,6 +166,43 @@ describe('Navigation & Link Integrity Suite', () => {
       );
     }
   });
+
+  test('Asset ownership and managed clinical software copy integrity', () => {
+    const publicFiles = [
+      { name: 'index.html', content: indexHtml },
+      { name: 'comparativa-doctoralia.html', content: compHtml },
+      { name: 'llms.txt', content: fs.readFileSync(path.join(rootDir, 'llms.txt'), 'utf8') }
+    ];
+
+    for (const { name, content } of publicFiles) {
+      assert.ok(
+        !content.includes('tu panel te pertenecen'),
+        `Ambiguous ownership claim found in ${name}: "tu panel te pertenecen". Panel is managed cloud software.`
+      );
+      assert.ok(
+        !content.includes('software clínico son tuyos'),
+        `Ambiguous ownership claim found in ${name}: "software clínico son tuyos". Panel is managed cloud software.`
+      );
+    }
+
+    // Verify key ownership and data sovereignty messaging is present
+    assert.ok(
+      indexHtml.includes('Soberanía de datos y web propia:'),
+      'Missing "Soberanía de datos y web propia:" in index.html comparison section.'
+    );
+    assert.ok(
+      compHtml.includes('Soberanía de datos y web propia:'),
+      'Missing "Soberanía de datos y web propia:" in comparativa-doctoralia.html comparison section.'
+    );
+    assert.ok(
+      indexHtml.includes('¿De quién es la propiedad de mi página web y de los expedientes de mis pacientes?'),
+      'Missing ownership FAQ item in index.html.'
+    );
+    assert.ok(
+      compHtml.includes('¿De quién es la propiedad de mi página web y de los expedientes de mis pacientes?'),
+      'Missing ownership FAQ item in comparativa-doctoralia.html.'
+    );
+  });
 });
 
 

@@ -1,7 +1,7 @@
 # Sesión activa — CrisDev (`cristhianruiz.dev`)
 
 **Última actualización:** 2026-09-28
-**Fase SDD actual:** Feature 020: Remediación de Credibilidad Numérica, Prueba Visual en Hero, Blindaje Legal y Pulido de Conversión — ✅ Completada y Validada al 100%
+**Fase SDD actual:** Feature 021: Remediación de Calculadora de Ahorro, ROI Real y Blindaje Comercial — ✅ Completada y Validada al 100%
 
 ## Lo que se logró en esta sesión
 
@@ -39,17 +39,46 @@
      - Registro y sincronización de bitácora en `overview/tasks.md` y `overview/session.md`.
      - Presentación de resumen consolidado al usuario esperando confirmación explícita para commit y push.
 
+3. **Feature 019: Suite de Conversión Comercial: Calculadora Interactiva de Ahorro y ROI, Badges de Confianza Médica y Demostración Consultiva en Vivo (Completada y Validada):**
+   - **T1: Badges de Confianza Médica en el Hero:** Integrada la tríada de confianza médica en la columna izquierda del Hero (`Lineamientos NOM-004-SSA3`, `Base de Datos Privada (PostgreSQL)` y `0% Comisiones por Paciente`) con iconos vectoriales SVG limpios con glow técnico, sin emojis de sistema.
+   - **T2: Estilos Modulares de la Calculadora (`savings-calculator.css`):** Diseñada hoja modular con estética clínica, custom range slider, píldoras interactivas de presets, grid elástico `minmax(0, 1fr)` y acentos adaptados a modo claro y oscuro (`Clinical Deep Navy`).
+   - **T3: Estructura HTML de la Sección `#savings-calculator` en `index.html`:** Integrada la sección interactiva en `index.html` entre `#pricing` y `#comparison`, con selector de presets ($400, $990, $1,350, $2,370), desglose honesto de inversión a 3 años ($4,800 para Solo Web vs $15,880 para Consultorio Inteligente) y métrica de ausentismo.
+   - **T4: Módulo JS de Cálculo Reactivo y Sincronización de WhatsApp:** Implementado `js/modules/savings-calculator.js` con funciones puras `calculateSavings`, `formatCurrencyMXN`, `buildWhatsappUrl` e `initSavingsCalculator`, conectado en `js/terminal-effects.js`. Sincroniza dinámicamente el mensaje precargado de WhatsApp con el cálculo exacto en tiempo real.
+   - **T5: Integración del Selector de Demostración Consultiva de 15 Minutos en `#contact`:** Añadido selector de intención en el formulario de contacto ("Preguntas Rápidas" vs "Demo en Vivo de 15 Min en Pantalla Compartida"), alterando reactivamente el CTA y el mensaje de WhatsApp.
+   - **T6: Pruebas Unitarias Automatizadas en Node.js (`tests/savings-calculator.test.js`):** Creada la suite `tests/savings-calculator.test.js`. Toda la suite del proyecto pasó al 100%: **35/35 tests en verde en ~100ms**.
+   - **T7: Verificación Visual en Navegador (Desktop y Móvil) y Cierre Documental:** Inspección con subagente de navegador en resoluciones de escritorio (1280px) y móviles (390px), verificando cálculo reactivo, presets rápidos, conmutación de demo en contacto y 0 errores/warnings de JavaScript en consola.
+
+4. **Feature 021: Remediación de Calculadora de Ahorro, ROI Real y Blindaje Comercial (Completada y Validada):**
+   - **T1: Refactorización Matemática y Formato de Moneda Negativa:** Corrección en `formatCurrencyMXN` para anteponer el signo negativo antes del símbolo de moneda (`-$1,480 MXN`). Amortización real para `pkg2` en el primer año (`Math.ceil(5900 / expense)`) únicamente cuando `expense >= 492`. Activación del flag `isConsultative: true` y `roiMonths: 0` ante `netSavings <= 0`.
+   - **T2: Asociación Inteligente de Presets a Paquetes:** Cada preset activa automáticamente el paquete con el que realmente compite (Wix $400 → Paquete 01 con ahorro de `+$9,600 MXN`; Encuadrado $990 y Doctoralia → Paquete 02 con ahorro de `+$19,760` a `+$69,440 MXN`), permitiendo alternar manualmente.
+   - **T3: Estado Visual Consultivo (`.card-consultative`):** Al forzar Paquete 02 con mensualidad baja ($400/mes), la tarjeta destacada se transforma en un panel consultivo sobrio, elimina los números verdes y badges falsos de amortización, explica la diferencia de alcance entre una web simple y una suite clínica con base de datos NOM-004, provee un botón interactivo *"Cambiar a Paquete 01 (Ahorro de +$9,600 MXN)"*, y actualiza el botón de WhatsApp a *"Solicitar asesoría para mi consultorio"*.
+   - **T4: Banner de Retorno Dinámico y Contextual:** Adaptación del bloque inferior: beneficio por captación de nuevos pacientes en web propia sin comisiones (Paquete 01) vs. mitigación de ausentismo mediante recordatorios de WhatsApp (Paquete 02).
+   - **T5: Suite de Pruebas Automatizadas:** Ampliada la suite `tests/savings-calculator.test.js` a **39/39 pruebas pasando al 100% en 73ms** con cobertura de estados consultivos, amortizaciones y URLs de WhatsApp.
+   - **T6: Verificación en Navegador:** Validado el flujo interactivo completo con el subagente de navegador en escritorio (1280px) y móvil (375px), verificando conmutación de presets, estado consultivo, botón de retorno y 0 errores/warnings en consola.
+
+5. **Feature 022: Clarificación de Propiedad de Activos y Software Clínico Gestionado (Completada y Validada):**
+   - **T1: Actualización de Copy en Tabla Comparativa de `index.html`:** En `#comparison`, sustituida la frase ambigua por: *"Soberanía de datos y web propia: Tu sitio web, dominio y base de datos de pacientes te pertenecen al 100%. El panel clínico opera como software gestionado en la nube con mantenimiento y seguridad continuos."*
+   - **T2: Actualización de Copy en Matriz de `comparativa-doctoralia.html`:** En la fila de modelo económico, reemplazada la frase *"el software clínico son tuyos"* por la formulación de soberanía de datos (web, dominio y expedientes 100% del profesional y exportables) y panel clínico como software gestionado con seguridad y respaldos continuos.
+   - **T3: Sincronización de `/llms.txt`:** Actualizada la fila `Modelo` en la tabla comparativa de markdown para agentes de IA y rastreadores LLM.
+   - **T4: Nueva Pregunta Frecuente y Schema.org en `index.html`:** Incorporada la pregunta *"¿De quién es la propiedad de mi página web y de los expedientes de mis pacientes?"* en el acordeón `#faq` y en el bloque Schema.org JSON-LD `FAQPage`.
+   - **T5: Sincronización de FAQ y Schema.org en `comparativa-doctoralia.html`:** Agregada la misma pregunta en el acordeón de preguntas frecuentes y en el Schema.org JSON-LD de la página comparativa.
+   - **T6: Pruebas Automatizadas de Integridad y Validación Visual:**
+     - Añadido test en `tests/link-integrity.test.js` que verifica la ausencia total de las cadenas ambiguas (`"tu panel te pertenecen"`, `"el software clínico son tuyos"`) y la presencia de la soberanía de datos y la pregunta FAQ en todas las páginas.
+     - **40/40 tests pasando al 100% en verde en 113ms**.
+     - Verificación visual con `browser_subagent` en desktop y móvil con 0 errores de consola y WebP recording generado.
+
 ## En qué quedó el proyecto
 
-- **Features 001 a 018:** Completadas, probadas y desplegadas.
-- **Feature 019 (Suite de Conversión Comercial - Calculadora y Badges):** Especificada y en pausa técnica.
-- **Feature 020 (Remediación de Credibilidad, Mockup Hero, Blindaje Legal y Pulido):** Tareas T1 a T7 completadas al 100%. Código listo, 26/26 tests en verde y 0 errores en consola.
-- **Servidor local:** Activo en puerto 3000 con todas las páginas renderizando con total fidelidad.
+- **Features 001 a 022:** Todas especificadas, implementadas, probadas y validadas al 100%.
+- **Suite de Pruebas:** 40/40 tests unitarios e integrales en verde (`npm test`).
+- **Servidor local:** Activo en puerto 3000 con todas las funcionalidades estables.
+- **Git Status:** Cambios listos y consolidados para revisión del usuario (Features 019, 021 y 022).
 
 ## Próximo paso
 
-1. Solicitar autorización explícita al usuario para ejecutar `git commit` y `git push origin main`.
-2. Una vez confirmado el despliegue, reanudar o planificar la **Feature 019** (Calculadora interactiva de ahorro y ROI) con los números ahora 100% auditados y estables.
+1. Presentar el resumen consolidado de las Features 019 (Suite de Conversión y Calculadora), 021 (Remediación de Calculadora y ROI) y 022 (Clarificación de Propiedad de Activos y Software Gestionado).
+2. Solicitar autorización formal de **Git Governance** al usuario para ejecutar `git commit` y `git push origin main`.
+3. Ejecutar ping de IndexNow (`npm run ping:indexnow`) tras el despliegue para notificar a los buscadores.
 
 
 

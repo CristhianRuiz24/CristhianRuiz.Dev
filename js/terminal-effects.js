@@ -4,6 +4,7 @@
  */
 
 import { CONFIG, getWhatsAppUrl } from './config.js';
+import { initSavingsCalculator, initContactIntentSelector } from './modules/savings-calculator.js';
 
 /**
  * Injects dynamic WhatsApp URLs into all designated CTA buttons
@@ -211,6 +212,8 @@ function initApp() {
   initClinicalSuiteTabs();
   initMobileMenu();
   initHeroMockupTabs();
+  initSavingsCalculator();
+  initContactIntentSelector();
   printSystemBanner();
 }
 

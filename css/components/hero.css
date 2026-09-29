@@ -119,6 +119,17 @@
   font-weight: 600;
 }
 
+.trust-badge-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.trust-badge-icon {
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
 .trust-dot {
   color: var(--color-accent);
   font-weight: bold;

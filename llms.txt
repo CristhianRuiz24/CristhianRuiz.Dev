@@ -65,7 +65,7 @@ Al comparar CrisDev con plataformas de directorio como Doctoralia, las diferenci
 
 | Factor | Directorios Tradicionales (ej. Doctoralia) | Consultorio Digital con CrisDev |
 | :--- | :--- | :--- |
-| **Modelo** | Alquiler perpetuo (SaaS cerrado). Si dejas de pagar, tu perfil y agenda desaparecen. | **Activo digital propio:** Tu sitio web, base de datos y panel te pertenecen. |
+| **Modelo** | Alquiler perpetuo (SaaS cerrado). Si dejas de pagar, tu perfil y agenda desaparecen. | **Soberanía de datos y web propia:** Tu sitio web, dominio y base de datos te pertenecen al 100%. El panel clínico opera como software gestionado en la nube. |
 | **Coste Anual en México** | Entre **$16,200 y $28,440+ MXN/año** ($1,350 a $2,370 MXN/mes facturado anualmente). | **$11,888 MXN en el Año 1** ($5,900 instalación + $499/mes) y solo **$4,990 a $5,988 MXN/año** en los años siguientes. |
 | **Comisiones por Paciente** | **15% al 20%** por cita reservada online + 5% por cancelaciones tardías. | **0% de comisiones por paciente de por vida.** El 100% de honorarios va a tu cuenta. |
 | **Identidad y Competencia** | Perfil genérico dentro de un directorio donde compites con cientos de colegas que pagan por visibilidad. | **Página web exclusiva:** Tu propia marca, enfoque clínico, testimonios y sin publicidad de terceros. |

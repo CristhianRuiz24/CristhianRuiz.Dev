@@ -26,8 +26,8 @@ Esta especificación formaliza la implementación de una **Suite de Conversión 
 
 ## 2. Principios de Diseño y Objetivos de Marketing
 
-- **Tangibilización del Retorno de Inversión (ROI):** La calculadora no solo debe mostrar cuánto ahorra el psicólogo en rentas mensuales, sino demostrar cómo el sistema se paga solo al evitar ausencias de pacientes.
-- **Autoridad Técnica y Médica Inmediata:** Comunicar en los primeros 3 segundos (Hero) que la infraestructura cumple con la **NOM-004-SSA3-2012** y almacena los expedientes en bases de datos PostgreSQL privadas, no compartidas con terceros.
+- **Tangibilización del Retorno de Inversión (ROI) Transparente:** La calculadora debe mostrar con total honestidad el ahorro neto considerando tanto el pago inicial como las renovaciones anuales transparentes ($0/mes en Paquete 01 y $4,990/año desde el año 2 en Paquete 02), demostrando cómo el sistema se amortiza además al evitar ausencias de pacientes.
+- **Autoridad Técnica y Médica Inmediata:** Comunicar en el Hero que la arquitectura está diseñada conforme a los **lineamientos de la NOM-004-SSA3** para expediente clínico y almacena los datos en bases de datos PostgreSQL privadas, no compartidas con terceros.
 - **Contraste "Ingeniería Llave en Mano vs. Sufrimiento DIY":** Evidenciar el valor de ahorrar 40+ horas de frustración técnica frente a constructores tipo Wix o SiteW.
 - **Reducción Radical de Fricción Comercial:** Ofrecer un canal de contacto de bajo compromiso: una **demostración consultiva de 15 minutos en pantalla compartida** para despejar cualquier duda operativa antes de contratar.
 - **Rendimiento Puro y Cero Dependencias:** Desarrollar todos los componentes interactivos con Vanilla JavaScript modular, CSS nativo con variables de diseño, compatibilidad total en modo claro y modo oscuro (*Clinical Deep Navy*) y salvaguarda móvil `minmax(0, 1fr)`.
@@ -39,11 +39,11 @@ Esta especificación formaliza la implementación de una **Suite de Conversión 
 ### En Alcance (In Scope):
 
 #### Componente 1: Badges de Confianza Médica y Normativa en el Hero (`index.html`)
-- Franja horizontal estilizada ubicada estratégicamente bajo el subtítulo y CTAs del Hero.
+- Franja horizontal estilizada ubicada en la columna izquierda del Hero bajo los botones de acción (`.hero-actions`).
 - Tres sellos vectoriales con micro-iconos SVG técnicos (`stroke="currentColor"`, sin emojis de sistema):
-  1. **Cumplimiento NOM-004-SSA3-2012:** Garantía de confidencialidad y estructura de notas clínicas.
-  2. **Base de Datos Privada (PostgreSQL / Supabase):** Propiedad absoluta de los expedientes; los datos no pertenecen a ninguna plataforma externa.
-  3. **Cero Rentas · 0% Comisiones:** Inversión única de por vida sin cargos ocultos por cada paciente atendido.
+  1. **Lineamientos NOM-004-SSA3:** Confidencialidad y estructura formal de notas y expedientes clínicos.
+  2. **Base de Datos Privada (PostgreSQL):** Propiedad absoluta de los expedientes; los datos no pertenecen a ninguna plataforma externa.
+  3. **0% Comisiones por Paciente:** Retención del 100% de los honorarios de consulta sin cargos ocultos.
 - Adaptabilidad total a modo claro (`light`) y modo oscuro (`dark`).
 
 #### Componente 2: Calculadora Interactiva de Ahorro y ROI a 3 Años (`#savings-calculator`)
@@ -53,25 +53,27 @@ Esta especificación formaliza la implementación de una **Suite de Conversión 
   - *Presets rápidos de un clic* con dolores del mercado:
     - Botón `Constructores DIY (Wix / SiteW)` ($400 MXN/mes + 40 horas perdidas).
     - Botón `Agenda SaaS (Encuadrado / Kalyo)` ($990 MXN/mes).
-    - Botón `Directorio Médico (Doctoralia)` ($1,800 MXN/mes).
-- **Métricas calculadas en tiempo real (Live Output):**
+    - Botón `Directorio Médico (Doctoralia Starter)` ($1,350 MXN/mes).
+    - Botón `Directorio Plus (Doctoralia Plus)` ($2,370 MXN/mes).
+- **Métricas calculadas en tiempo real con matemática auditada:**
   - **Gasto acumulado en suscripciones a 3 años:** `Gasto_Mensual × 36`.
-  - **Inversión única en CrisDev:** Selección entre Paquete 01 ($4,800) y Paquete 02 ($5,900).
-  - **Ahorro Neto en Efectivo a 3 años:** `(Gasto_Mensual × 36) - Inversión_CrisDev`.
-  - **Insignia de Retorno de Inversión (ROI):** Cálculo de meses necesarios para amortizar la inversión.
+  - **Inversión acumulada en CrisDev a 3 años:**
+    - Paquete 01: $4,800 MXN (hosting $0/mes, solo renovación de dominio ~$300-$500/año).
+    - Paquete 02: $15,880 MXN ($5,900 primer año + $4,990/año en año 2 y año 3).
+  - **Ahorro Neto en Efectivo a 3 años:** `Gasto_Acumulado_SaaS - Inversión_CrisDev_3Años`.
   - **Métrica de Recuperación por Ausentismo:** Recordatorio visual: *"Al automatizar recordatorios por WhatsApp y recuperar 2 citas mensuales ($1,600 MXN), tu sistema se amortiza en menos de 90 días."*
 - **Llamada a la acción contextualizada:**
-  - Botón interactivo: *"Quiero ahorrar este monto con mi plataforma propia"*, que redirige al formulario o abre WhatsApp precargando el monto exacto de ahorro calculado.
+  - Botón interactivo: *"Quiero ahorrar este monto con mi plataforma propia"*, que abre WhatsApp precargando el monto exacto de ahorro calculado.
 
 #### Componente 3: Opción de "Demostración Consultiva de 15 Minutos" en Contacto
-- Selector interactivo en el formulario de contacto (`#contact`):
-  - Radio button o switch estilizado: *"Prefiero agendar una demo en vivo de 15 min en pantalla compartida"*.
-- Adaptación dinámica del botón de WhatsApp y del formulario para reflejar la solicitud de demostración sin compromiso.
+- Selector interactivo en la sección de contacto (`#contact`):
+  - Toggle / selector de intención: *"Consulta General"* vs. *"Agendar demo de 15 min en pantalla compartida"*.
+- Adaptación dinámica del botón de WhatsApp para reflejar la solicitud de demostración sin compromiso.
 
 #### Componente 4: Aseguramiento Técnico y Arquitectura
-- Archivo CSS estructurado: `css/components/savings-calculator.css` (importado en `css/main.css` o cargado semánticamente).
-- Módulo JavaScript Vanilla: `js/modules/savingsCalculator.js`.
-- Pruebas unitarias automatizadas en `tests/savingsCalculator.test.js` ejecutables mediante `npm test`.
+- Archivo CSS estructurado: `css/components/savings-calculator.css`.
+- Módulo JavaScript Vanilla: `js/modules/savings-calculator.js`.
+- Pruebas unitarias automatizadas en `tests/savings-calculator.test.js` ejecutables mediante `npm test`.
 
 ### Fuera de Alcance (Out of Scope):
 - Modificación de los precios base estipulados en los paquetes comerciales de `#pricing`.
