@@ -75,18 +75,36 @@
    - 40/40 pruebas pasando al 100% en verde con `npm test`.
    - Commit `4efd6a3` y push a `origin/main` en GitHub completados.
 
+7. **Feature 023: Objeciones de Confianza Operativa (Respaldos, Exportación de Datos y Continuidad en la Nube) (Completada y Validada):**
+   - **T1: Pregunta sobre Respaldos Periódicos y Exportación Estándar en `index.html`:** Incorporada la pregunta en `#faq` clarificando los respaldos periódicos en la nube y la entrega garantizada de expedientes y pacientes en formato estándar abierto (hoja de cálculo / CSV) a solicitud, sin bloqueos ni retenciones indebidas.
+   - **T2: Pregunta sobre Continuidad en la Nube y Soporte 1 a 1 en `index.html`:** Detallado el deslinde de infraestructura: la web pública opera sobre Cloudflare ($0/mes de servidor), mientras que el panel clínico corre sobre servidores dedicados en la nube gestionados activamente con actualizaciones y parches de seguridad, justificando transparentemente la cuota de $499/mes.
+   - **T3: Blindaje y Purga Preventiva de CFDI:** En base a la situación fiscal real del profesional (cuenta con RFC pero aún no domina el proceso de timbrado), se excluyeron menciones públicas de CFDI en la landing y comparativa, previniendo compromisos operativos prematuros.
+   - **T4: Sincronización en `comparativa-doctoralia.html`:** Integrada la pregunta de respaldos y exportación en el acordeón de FAQ de la página comparativa.
+   - **T5: Sincronización de Schema.org JSON-LD y `/llms.txt`:** Actualizadas las entidades `FAQPage` en ambas páginas y sincronizado `/llms.txt` con los nuevos puntos de confianza operativa.
+   - **T6: Pruebas Automatizadas de Integridad:** Añadido test a `tests/link-integrity.test.js` verificando la presencia de respaldos/exportación y la ausencia de CFDI y frases desmedidas. Suite total: **41/41 tests pasando en verde**.
+
+8. **Promoción de Reglas de Aprendizaje a `AGENTS.md`:**
+   - Promovidos formalmente los 11 ítems consolidados de `overview/learning.md` al archivo `AGENTS.md` como reglas permanentes del proyecto (guardarraíles de ROI, aclaración asimétrica de activos digitales, cache-busting declarativo, salvaguardas móviles, SEO estricto, anti-spam honeypot, etc.).
+
+9. **Actualización Forzada de Caché (Asset Cache-Busting a `v=9.0`):**
+   - Elevada la versión de cache-busting de `v=8.0` a `v=9.0` en todas las hojas de estilo modulares (`main.css`, `navbar.css`, `hero.css`, `terminal.css`, `trust-operator.css`, `pricing.css`, `savings-calculator.css`, `comparison.css`, `faq.css`, `form.css`, `footer.css`, `privacy.css`).
+   - Elevada la versión en scripts ES module (`theme-manager.js?v=9.0`, `terminal-effects.js?v=9.0`) y recursos de imagen en Hero (`agenda-clinica-real.webp?v=9.0`, `web-demo-actual.webp?v=9.0`).
+   - Sincronizados `index.html`, `comparativa-doctoralia.html` y `aviso-de-privacidad.html`.
+   - Versión de `package.json` incrementada a `5.3.0`.
+   - **41/41 pruebas pasando al 100% en verde con `npm test`**.
+
 ## En qué quedó el proyecto
 
-- **Features 001 a 022:** Todas especificadas, implementadas, probadas y validadas al 100%.
-- **Producción:** Desplegada en Cloudflare Pages con caché invalidada a nivel de assets (`v=8.0`).
-- **Suite de Pruebas:** 40/40 tests unitarios e integrales en verde (`npm test`).
-- **Servidor local:** Activo en puerto 3000 con todas las funcionalidades estables.
-- **Git Status:** Rama `main` limpia y sincronizada 1:1 con `origin/main`.
+- **Features 001 a 023:** Todas especificadas, implementadas, probadas y validadas al 100%.
+- **Caché de Producción:** Cache-busting actualizado a nivel de assets (`v=9.0`) listo para invalidar cachés agresivas en CDN/Cloudflare.
+- **Suite de Pruebas:** 41/41 tests unitarios e integrales en verde (`npm test`).
+- **Servidor local:** Activo y validado.
+- **Git Status:** Listo para autorización de commit y push por parte del usuario.
 
 ## Próximo paso
 
-1. Monitorear métricas de conversión en la landing page tras el despliegue del Hero con interfaz real, la calculadora de ahorro y la aclaración de software gestionado.
-2. Atender nuevas solicitudes o especificaciones funcionales que defina el usuario.
+1. Solicitar autorización explícita para commit y push a `origin/main`.
+2. Realizar despliegue y verificar que Cloudflare Pages propague la versión 5.3.0 (`?v=9.0`).
 
 
 

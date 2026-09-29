@@ -90,8 +90,9 @@ Al comparar CrisDev con plataformas de directorio como Doctoralia, las diferenci
 - **¿La página web se puede personalizar?** Sí, 100% tu identidad, colores, contenido, servicios y fotografías.
 - **¿El panel también se personaliza?** Utiliza la plataforma clínica estándar de CrisDev, probada y estable. Necesidades especiales se cotizan como desarrollo a medida.
 - **¿Me ayudan con el aviso de publicidad?** Sí, se entrega una guía práctica sobre qué es, por qué aplica y cómo gestionarlo ante normativas de salud.
-- **¿Hay comisiones por paciente?** No, cero comisiones porcentuales ni cargos por consulta agendada.
-- **¿Es seguro para el secreto profesional?** Sí, cumple con NOM-004-SSA3 y LFPDPPP, con cifrado AES-256 en expedientes y notas clínicas.
+- **¿De quién es la propiedad de mis datos y cómo los respaldo?** El dominio y sitio web son 100% tu propiedad; los expedientes clínicos son privados, respaldados periódicamente en la nube y exportables en formato estándar (CSV u hoja de cálculo). El panel opera como software gestionado.
+- **¿Es seguro para el secreto profesional?** Sí, estructurado conforme a lineamientos de la NOM-004-SSA3 y LFPDPPP, con cifrado de datos en expedientes y notas clínicas.
+- **¿Qué pasa con la continuidad y soporte?** La web pública corre en Cloudflare ($0/mes) y la plataforma clínica en servidores en la nube dedicados, funcionando 24/7 de forma autónoma; el soporte y atención a dudas es directo y personal con Cristhian Ruiz vía WhatsApp.
 - **¿Puedo probar el sistema antes de contratar?** Sí, la demo interactiva está disponible libremente en https://demo.cristhianruiz.dev/ con acceso al panel clínico en 1 clic.
 
 ---

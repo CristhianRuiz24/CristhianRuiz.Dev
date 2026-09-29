@@ -185,7 +185,15 @@
             "name": "¿Es seguro el panel para las notas de evolución y el secreto profesional?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Totalmente. El sistema está estructurado respetando los lineamientos de la norma mexicana NOM-004-SSA3 y la LFPDPPP. Los expedientes, datos de contacto y notas de evolución se resguardan con cifrado AES-256. Únicamente tú tienes acceso mediante tus credenciales privadas."
+              "text": "Totalmente. El sistema está estructurado respetando los lineamientos de la norma mexicana NOM-004-SSA3 y la LFPDPPP. Los expedientes, datos de contacto y notas de evolución se resguardan con cifrado de datos. Únicamente tú tienes acceso mediante tus credenciales privadas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo protegen mi información y cómo puedo exportar los expedientes de mis pacientes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tu base de datos clínica opera de forma privada e independiente. Realizamos respaldos periódicos de la información en servidores seguros en la nube para protegerla ante cualquier contingencia. Además, tu información nunca queda cautiva: si en algún momento decides cambiar de sistema o requieres una copia local, te entregamos la exportación completa de tu padrón de pacientes y registros en un formato estándar (como CSV u hoja de cálculo)."
             }
           },
           {
@@ -218,6 +226,14 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Sí. La puesta en marcha incluye una sesión de acompañamiento e inducción 1 a 1 directamente con Cristhian Ruiz para resolver cualquier duda y asegurarnos de que operes tu plataforma con total fluidez desde el primer día."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué sucede si un día no estás disponible de inmediato o hay un imprevisto?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tu sitio web público está alojado sobre la infraestructura global de Cloudflare y tu plataforma clínica opera en servidores en la nube dedicados, por lo que funcionan de forma completamente autónoma las 24 horas del día sin depender de una computadora personal. Si requieres mantenimiento, ajustes o resolución de dudas, el soporte es directo y personal conmigo vía WhatsApp, pero la operación continua de tu consultorio y la recepción de pacientes nunca se detienen."
             }
           },
           {
@@ -256,17 +272,17 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Modular CSS Architecture -->
-  <link rel="stylesheet" href="css/main.css?v=8.0">
-  <link rel="stylesheet" href="css/components/navbar.css?v=8.0">
-  <link rel="stylesheet" href="css/components/hero.css?v=8.0">
-  <link rel="stylesheet" href="css/components/terminal.css?v=8.0">
-  <link rel="stylesheet" href="css/components/trust-operator.css?v=8.0">
-  <link rel="stylesheet" href="css/components/pricing.css?v=8.0">
-  <link rel="stylesheet" href="css/components/savings-calculator.css?v=8.0">
-  <link rel="stylesheet" href="css/components/comparison.css?v=8.0">
-  <link rel="stylesheet" href="css/components/faq.css?v=8.0">
-  <link rel="stylesheet" href="css/components/form.css?v=8.0">
-  <link rel="stylesheet" href="css/components/footer.css?v=8.0">
+  <link rel="stylesheet" href="css/main.css?v=9.0">
+  <link rel="stylesheet" href="css/components/navbar.css?v=9.0">
+  <link rel="stylesheet" href="css/components/hero.css?v=9.0">
+  <link rel="stylesheet" href="css/components/terminal.css?v=9.0">
+  <link rel="stylesheet" href="css/components/trust-operator.css?v=9.0">
+  <link rel="stylesheet" href="css/components/pricing.css?v=9.0">
+  <link rel="stylesheet" href="css/components/savings-calculator.css?v=9.0">
+  <link rel="stylesheet" href="css/components/comparison.css?v=9.0">
+  <link rel="stylesheet" href="css/components/faq.css?v=9.0">
+  <link rel="stylesheet" href="css/components/form.css?v=9.0">
+  <link rel="stylesheet" href="css/components/footer.css?v=9.0">
 </head>
 <body>
 
@@ -489,7 +505,7 @@
             <!-- View 1: Clinical Agenda Real Screenshot -->
             <div class="hero-view-panel is-active" id="heroViewAgenda" role="tabpanel" aria-labelledby="heroTabAgenda">
               <div class="mockup-screenshot-wrapper">
-                <img src="assets/images/agenda-clinica-real.webp?v=8.0" 
+                <img src="assets/images/agenda-clinica-real.webp?v=9.0" 
                      alt="Agenda Clínica y Panel de Consultas de PsicoClínica — Software de Gestión Médica" 
                      class="mockup-screenshot-img" 
                      width="1408" 
@@ -510,7 +526,7 @@
             <!-- View 2: Actual Web Demo Real Screenshot -->
             <div class="hero-view-panel" id="heroViewWeb" role="tabpanel" aria-labelledby="heroTabWeb">
               <div class="mockup-screenshot-wrapper">
-                <img src="assets/images/web-demo-actual.webp?v=8.0" 
+                <img src="assets/images/web-demo-actual.webp?v=9.0" 
                      alt="Sitio Web Profesional de PsicoClínica — Demostración de Presencia Digital para Terapeutas" 
                      class="mockup-screenshot-img" 
                      width="1408" 
@@ -1805,6 +1821,22 @@
           </div>
         </details>
 
+        <!-- FAQ: Respaldos y Exportación de Datos -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-title">¿Cómo protegen mi información y cómo puedo exportar los expedientes de mis pacientes?</span>
+            <span class="faq-icon-box" aria-hidden="true">
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p>Tu base de datos clínica opera de forma privada e independiente. Realizamos respaldos periódicos de la información en servidores seguros en la nube para protegerla ante cualquier contingencia.</p>
+            <p>Además, tu información nunca queda cautiva: si en algún momento decides cambiar de sistema o requieres una copia local, te entregamos la exportación completa de tu padrón de pacientes y registros en un <strong>formato estándar (como CSV u hoja de cálculo)</strong>.</p>
+          </div>
+        </details>
+
         <!-- FAQ 8 -->
         <details class="faq-item">
           <summary class="faq-question">
@@ -1863,6 +1895,22 @@
           </summary>
           <div class="faq-answer">
             <p><strong>Sí.</strong> La puesta en marcha incluye una sesión de acompañamiento e inducción 1 a 1 directamente con Cristhian Ruiz para resolver cualquier duda y asegurarnos de que operes tu plataforma con total fluidez desde el primer día.</p>
+          </div>
+        </details>
+
+        <!-- FAQ: Continuidad Operativa y Soporte -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-title">¿Qué sucede si un día no estás disponible de inmediato o hay un imprevisto?</span>
+            <span class="faq-icon-box" aria-hidden="true">
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p>Tu sitio web público está alojado sobre la infraestructura global de Cloudflare y tu plataforma clínica opera en servidores en la nube dedicados, por lo que funcionan de forma completamente autónoma las 24 horas del día sin depender de una computadora personal.</p>
+            <p>Si requieres mantenimiento, ajustes o resolución de dudas, el soporte es directo y personal conmigo vía WhatsApp, pero la operación continua de tu consultorio y la recepción de pacientes nunca se detienen.</p>
           </div>
         </details>
       </div>
@@ -1991,8 +2039,8 @@
   <!-- END:FOOTER -->
 
   <!-- JavaScript Modules -->
-  <script type="module" src="js/theme-manager.js?v=8.0"></script>
-  <script type="module" src="js/terminal-effects.js?v=8.0"></script>
+  <script type="module" src="js/theme-manager.js?v=9.0"></script>
+  <script type="module" src="js/terminal-effects.js?v=9.0"></script>
 
   <!-- Floating WhatsApp CTA Button for Instant Access -->
   <a href="https://wa.me/528130938884?text=Hola%20Cristhian,%20vi%20tu%20sitio%20y%20me%20interesa%20una%20cotizaci%C3%B3n%20para%20mi%20consulta" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Consultar por WhatsApp">

@@ -369,4 +369,20 @@ Referencia: `specs/022-clarificacion-propiedad-activos-y-software-gestionado/tas
 | **T5** | Sincronización de FAQ y Schema.org en `comparativa-doctoralia.html` | ✅ hecho | `comparativa-doctoralia.html`: FAQ y Schema.org JSON-LD sincronizados. |
 | **T6** | Pruebas Automatizadas de Integridad y Validación Visual | ✅ hecho | `tests/link-integrity.test.js`: Aserciones de ausencia de frases ambiguas y presencia de soberanía de datos (40/40 tests verdes). Validado con browser subagent. |
 
+---
+
+# Feature 023: Objeciones de Confianza Operativa (Respaldos, Exportación de Datos y Continuidad en la Nube)
+
+**Estado:** ✅ Completada y Validada al 100%  
+Referencia: `specs/023-facturacion-cfdi-respaldos-y-continuidad-operativa/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Integración de la pregunta sobre Respaldos y Exportación en `index.html` | ✅ hecho | `index.html`: Respaldos periódicos en la nube y entrega en formato estándar (CSV). |
+| **T2** | Integración de la pregunta sobre Continuidad en la Nube y Soporte 1 a 1 en `index.html` | ✅ hecho | `index.html`: Web en Cloudflare ($0/mes) vs. panel en servidores dedicados ($499/mes). |
+| **T3** | Purga de Menciones a CFDI en el Ecosistema Público | ✅ hecho | `index.html`, `comparativa-doctoralia.html`, `llms.txt`: Blindaje contra compromisos fiscales prematuros. |
+| **T4** | Sincronización de Pregunta de Respaldos en `comparativa-doctoralia.html` | ✅ hecho | `comparativa-doctoralia.html`: FAQ de respaldos y exportación alineada 1:1. |
+| **T5** | Sincronización en Schema.org JSON-LD `FAQPage` y `/llms.txt` | ✅ hecho | `index.html`, `llms.txt`: Entidades Schema.org ampliadas y archivo de IA actualizado. |
+| **T6** | Pruebas Automatizadas de Integridad y Validación | ✅ hecho | `tests/link-integrity.test.js`: 41/41 tests pasando en verde, validación sintáctica de HTML y JSON-LD. |
+
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado · ⏸️ pospuesta

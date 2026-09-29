@@ -203,6 +203,47 @@ describe('Navigation & Link Integrity Suite', () => {
       'Missing ownership FAQ item in comparativa-doctoralia.html.'
     );
   });
+
+  test('Operational trust, backups, export and cloud continuity copy integrity', () => {
+    const publicFiles = [
+      { name: 'index.html', content: indexHtml },
+      { name: 'comparativa-doctoralia.html', content: compHtml }
+    ];
+
+    for (const { name, content } of publicFiles) {
+      assert.ok(
+        !content.includes('factura fiscal (CFDI)'),
+        `Premature public CFDI invoicing claim found in ${name}. CFDI must not be publicly advertised until automated.`
+      );
+      assert.ok(
+        content.includes('¿Cómo protegen mi información y cómo puedo exportar los expedientes de mis pacientes?'),
+        `Missing backups and data export FAQ item in ${name}.`
+      );
+      assert.ok(
+        !content.includes('99.9% de uptime'),
+        `Unsubstantiated corporate SLA claim "99.9% de uptime" found in ${name}.`
+      );
+      assert.ok(
+        !content.includes('secreto profesional garantizado'),
+        `Legally risky absolute guarantee "secreto profesional garantizado" found in ${name}.`
+      );
+    }
+
+    assert.ok(
+      indexHtml.includes('¿Qué sucede si un día no estás disponible de inmediato o hay un imprevisto?'),
+      'Missing continuity & support FAQ item in index.html.'
+    );
+
+    const llmsContent = fs.readFileSync(path.join(rootDir, 'llms.txt'), 'utf8');
+    assert.ok(
+      !llmsContent.includes('facturación fiscal formal con CFDI'),
+      'Premature public CFDI invoicing claim found in llms.txt.'
+    );
+    assert.ok(
+      llmsContent.includes('exportables en formato estándar (CSV u hoja de cálculo)'),
+      'Missing standard export info in llms.txt.'
+    );
+  });
 });
 
 
