@@ -67,18 +67,24 @@
      - **40/40 tests pasando al 100% en verde en 113ms**.
      - Verificación visual con `browser_subagent` en desktop y móvil con 0 errores de consola y WebP recording generado.
 
+6. **Actualización Forzada de Caché (Asset Cache-Busting a `v=8.0`):**
+   - Elevada la versión de cache-busting de `v=7.0` a `v=8.0` en todas las hojas de estilo modulares (`main.css`, `navbar.css`, `hero.css`, `terminal.css`, `trust-operator.css`, `pricing.css`, `savings-calculator.css`, `comparison.css`, `faq.css`, `form.css`, `footer.css`, `privacy.css`).
+   - Elevada la versión en scripts ES module (`theme-manager.js?v=8.0`, `terminal-effects.js?v=8.0`) y capturas del Hero (`agenda-clinica-real.webp?v=8.0`, `web-demo-actual.webp?v=8.0`).
+   - Sincronizados `index.html`, `comparativa-doctoralia.html` y `aviso-de-privacidad.html`.
+   - Versión de `package.json` incrementada a `5.2.0`.
+   - 40/40 pruebas pasando al 100% en verde con `npm test`.
+
 ## En qué quedó el proyecto
 
 - **Features 001 a 022:** Todas especificadas, implementadas, probadas y validadas al 100%.
 - **Suite de Pruebas:** 40/40 tests unitarios e integrales en verde (`npm test`).
 - **Servidor local:** Activo en puerto 3000 con todas las funcionalidades estables.
-- **Git Status:** Cambios listos y consolidados para revisión del usuario (Features 019, 021 y 022).
+- **Cache-busting:** Forzado a `v=8.0` para invalidación inmediata de caché en navegadores de escritorio y móviles.
 
 ## Próximo paso
 
-1. Presentar el resumen consolidado de las Features 019 (Suite de Conversión y Calculadora), 021 (Remediación de Calculadora y ROI) y 022 (Clarificación de Propiedad de Activos y Software Gestionado).
-2. Solicitar autorización formal de **Git Governance** al usuario para ejecutar `git commit` y `git push origin main`.
-3. Ejecutar ping de IndexNow (`npm run ping:indexnow`) tras el despliegue para notificar a los buscadores.
+1. Confirmar con el usuario para ejecutar `git commit` y `git push origin main` con la actualización de caché `v=8.0`.
+2. Ejecutar ping de IndexNow (`npm run ping:indexnow`) tras el despliegue.
 
 
 
