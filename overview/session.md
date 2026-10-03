@@ -92,19 +92,27 @@
    - Sincronizados `index.html`, `comparativa-doctoralia.html` y `aviso-de-privacidad.html`.
    - Versión de `package.json` incrementada a `5.3.0`.
    - **41/41 pruebas pasando al 100% en verde con `npm test`**.
+   - Commit `f7cb895` y push a `origin/main` en GitHub completados exitosamente.
+
+10. **Actualización de Capturas Reales del Hero Mockup (Web Demo y Agenda Clínica):**
+    - **Sitio Web Demo (`demo.cristhianruiz.dev`):** Se capturó en alta resolución (1408 × 771 px) la página de inicio actualizada reflejando la nueva identidad visual de PsicoClínica (paleta cálida arena/dorado, logotipo de silueta estilizada y nuevos botones de acción).
+    - **Agenda Clínica (`demo.cristhianruiz.dev/panel/`):** Se capturó la interfaz viva del panel clínico tras acceso rápido en 1 clic, incorporando el cintillo oficial del entorno demo interactivo, botón dorado *«+ Agendar»* y el panel lateral de consultas y bloc de notas.
+    - **Optimización WebP y Erradicación de CLS:** Ambas capturas convertidas a WebP progresivo (calidad 90), unificando las dimensiones en 1408 × 771 px y garantizando cero saltos de diseño (CLS) al alternar pestañas en el Hero.
+    - **Cache-Busting declarativo:** Incrementada la versión de las imágenes en [index.html](file:///home/cris/Documentos/Proyectos/Pagina%20web%20CrisDev%20-%20clientes/index.html) a `?v=9.1`.
+    - **Validación Automatizada y Visual:** **41/41 tests pasando al 100% en verde**, validado con subagente en desktop y mobile con 0 errores y 0 advertencias de consola.
+    - Versión de `package.json` incrementada a `5.3.1`.
 
 ## En qué quedó el proyecto
 
 - **Features 001 a 023:** Todas especificadas, implementadas, probadas y validadas al 100%.
-- **Caché de Producción:** Cache-busting actualizado a nivel de assets (`v=9.0`) listo para invalidar cachés agresivas en CDN/Cloudflare.
+- **Hero Mockup:** Capturas actualizadas de Web Demo y Agenda Clínica sincronizadas con la versión 5.3.1 (`?v=9.1`).
 - **Suite de Pruebas:** 41/41 tests unitarios e integrales en verde (`npm test`).
-- **Servidor local:** Activo y validado.
-- **Git Status:** Listo para autorización de commit y push por parte del usuario.
+- **Git Status:** Rama `main` lista para commit y push autorizados por el usuario.
 
 ## Próximo paso
 
-1. Solicitar autorización explícita para commit y push a `origin/main`.
-2. Realizar despliegue y verificar que Cloudflare Pages propague la versión 5.3.0 (`?v=9.0`).
+1. Ejecutar `git commit` y `git push` a `origin/main`.
+2. Verificar la propagación en Cloudflare Pages de la versión 5.3.1 (`?v=9.1`).
 
 
 

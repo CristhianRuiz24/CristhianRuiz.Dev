@@ -10,7 +10,7 @@ graph TD
         Partials[partials/: header, header-privacy, footer] -->|scripts/sync-partials.js| StaticHost[Frontend Estático: index.html, aviso-de-privacidad.html & comparativa-doctoralia.html]
         ValidationUtils[js/validation-utils.js] -->|Funciones puras de validación| FormHandler[js/form-handler.js]
         SavingsModule[js/modules/savings-calculator.js] -->|Cálculo reactivo de ROI y ahorro| SavingsUI[Sección: #savings-calculator]
-        ValidationUtils -->|Unit Tests| NodeTest[node:test & node:assert Suite: 40 tests]
+        ValidationUtils -->|Unit Tests| NodeTest[node:test & node:assert Suite: 41 tests]
         SavingsModule -->|Math & ROI Unit Tests| NodeTest
         StaticHost -->|Link Integrity, Asset Ownership & Module Tests| NodeTest
         CSSFiles[css/: Design Tokens] -->|Token Consistency Tests| NodeTest
@@ -55,7 +55,7 @@ graph TD
 - **Módulo de Precios Transparentes (`css/components/pricing.css`):** Desglose claro de paquetes ($4,800 y $5,900 MXN), esquema 50/50, dominio al costo Cloudflare y tiempo de entrega de 48-72h a 3-5 días *(04-Sep-2026)*.
 - **Mockup Interactivo Suite SaaS Clínico:** Pestañas interactivas en JS Vanilla para demostración funcional (Agenda, Expedientes, Cobranza, Contable) con 100% iconografía vectorial SVG y cero emojis de sistema *(04-Sep-2026)*.
 - **Modularización DRY de Componentes Compartidos (`partials/` & `scripts/sync-partials.js`):** Header y Footer abstraídos como componentes individuales inyectados automáticamente mediante marcadores HTML delimitados, eliminando duplicación de código sin añadir dependencias ni bundlers *(08-Sep-2026)*.
-- **Zero-Dependency Testing con Node.js Nativo (`tests/`):** Suite de 40 pruebas automatizadas con `node:test` y `node:assert` para validación de formularios/XSS, integridad de hipervínculos/anclas, consistencia de tokens CSS, calculadora matemática/ROI, copy institucional y metadatos SEO en <100ms *(28-Sep-2026)*.
+- **Zero-Dependency Testing con Node.js Nativo (`tests/`):** Suite de 41 pruebas automatizadas con `node:test` y `node:assert` para validación de formularios/XSS, integridad de hipervínculos/anclas, consistencia de tokens CSS, calculadora matemática/ROI, copy institucional y metadatos SEO en <100ms *(28-Sep-2026)*.
 - **Git Governance Estricto:** Políticas formales de control de versiones que impiden commits automáticos de IA sin aprobación explícita previa del usuario *(08-Sep-2026)*.
 - **Blindaje Serverless & Anti-Spam Zero-Dependency (`functions/api/contact.js`):** Restricción estricta de CORS a orígenes propios, trampa Honeypot invisible para descarte silencioso de bots sin requerir CAPTCHAs pesados, validación backend redundante y enmascaramiento de trazas de excepción interna *(23-Sep-2026)*.
 - **Modularización CSS de Privacidad y Purgado de Assets:** Extracción de estilos a `css/components/privacy.css`, eliminación de `@import` bloqueante de Google Fonts y purgado de 7 imágenes huérfanas (~580 KB) *(23-Sep-2026)*.
@@ -65,6 +65,8 @@ graph TD
 - **Hero Asimétrico de 2 Columnas con Mockup Clínico Interactivo y Botón FAB Móvil:** Hero con ventana de interfaz activa (Agenda semanal y caso PsicoLau) en desktop y botón flotante de WhatsApp (`.fab-whatsapp`) exclusivo en vista móvil *(28-Sep-2026)*.
 - **Suite de Conversión & Calculadora Interactiva de Ahorro y ROI (`js/modules/savings-calculator.js`):** Módulo de cálculo puro y amortización real a 3 años, estado consultivo protector para evitar promesas de ROI imposibles, y selector interactivo de intención en contacto (Preguntas Rápidas vs Demostración Consultiva en Pantalla Compartida) *(28-Sep-2026)*.
 - **Soberanía de Datos vs Software Clínico Gestionado:** Delimitación formal de propiedad de activos: el sitio web, dominio y expedientes clínicos (NOM-004-SSA3) son 100% propiedad del cliente y exportables, mientras que el panel opera como software gestionado en la nube con mantenimiento y seguridad continuos *(28-Sep-2026)*.
-- **Asset Cache-Busting a Nivel de Edge (`v=8.0`):** Inyección de versiones query string `?v=8.0` en todos los archivos CSS, JS e imágenes del Hero para forzar la invalidación inmediata de caché de navegador tras despliegues en Cloudflare Pages *(28-Sep-2026)*.
+- **Confianza Operativa y Deslinde de Infraestructura en la Nube (Feature 023):** Respaldos periódicos en la nube con entrega sin trabas de expedientes/pacientes en formato estándar (CSV / hoja de cálculo) a solicitud. Deslinde explícito entre la web pública en Cloudflare Pages ($0/mes) y el panel clínico en servidores dedicados en la nube con soporte 1 a 1 ($499/mes). Purga preventiva de compromisos fiscales prematuros (CFDI) *(28-Sep-2026)*.
+- **Asset Cache-Busting a Nivel de Edge (`v=9.0`):** Inyección de versiones query string `?v=9.0` en todos los archivos CSS, JS e imágenes del Hero para forzar la invalidación inmediata de caché de navegador y CDN tras despliegues en Cloudflare Pages *(28-Sep-2026)*.
+
 
 
