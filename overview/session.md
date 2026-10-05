@@ -117,12 +117,12 @@
 - **Catálogo Comercial:** Tríada completa en 3 columnas: Presencia Digital ($4,800 único), Plataforma Clínica ($1,900 setup + $499/mes) y Consultorio Inteligente ($5,900 setup + $499/mes).
 - **Suite de Pruebas:** 47/47 tests pasando al 100% en verde (`npm test`).
 - **Versión de Proyecto:** `5.4.0` en `package.json`.
-- **Git Status:** Cambios locales listos y verificados, esperando autorización explícita para commit y push.
+- **Git Status:** Commit `398fb0e` confirmado y subido exitosamente a `origin/main` en GitHub.
 
 ## Próximo paso
 
-1. Presentar resumen de cambios al usuario y solicitar confirmación para commit y push a `origin/main`.
-2. Opcional: Ejecutar `npm run ping:indexnow` si se requiere reindexación inmediata tras el despliegue.
+1. Proyecto en estado limpio en producción (v5.4.0) con tríada comercial completa y desplegada.
+2. Opcional: Ejecutar `npm run ping:indexnow` si se requiere reindexación inmediata en Bing/Copilot/Perplexity tras el despliegue en Cloudflare Pages.
 
 
 
