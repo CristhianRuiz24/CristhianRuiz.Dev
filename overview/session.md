@@ -1,7 +1,7 @@
 # Sesión activa — CrisDev (`cristhianruiz.dev`)
 
-**Última actualización:** 2026-09-28
-**Fase SDD actual:** Cierre de Sesión — Features 001 a 022 desplegadas en producción
+**Última actualización:** 2026-10-04
+**Fase SDD actual:** Cierre de Sesión — Feature 024 (Paquete 03: Plataforma Clínica y Tríada Comercial) completada y probada al 100% (v5.4.0)
 
 ## Lo que se logró en esta sesión
 
@@ -102,17 +102,27 @@
     - **Validación Automatizada y Visual:** **41/41 tests pasando al 100% en verde**, validado con subagente en desktop y mobile con 0 errores y 0 advertencias de consola.
     - Versión de `package.json` incrementada a `5.3.1`.
 
+11. **Feature 024: Paquete 03 - Plataforma Clínica Independiente (Solo Software/Agenda) y Tríada Comercial:**
+    - **T1: Diseño y Estilos del Grid de 3 Columnas (`pricing.css`):** Reconfigurado `.pricing-grid` con `repeat(3, minmax(0, 1fr))` en pantallas >=1024px, títulos equilibrados y alineación vertical de CTAs (`margin-top: auto`). Apilado limpio en tablets y celulares (<1024px) con `minmax(0, 1fr)`.
+    - **T2: Integración de la Tarjeta del Paquete 03 en `#pricing` (`index.html`):** Insertada la tarjeta intermedia entre Paquete 01 y Paquete 02: Setup de $1,900 MXN ($950/$950), $499/mes de servidor y BD (o $4,990/año), entrega en 24 a 48h, acordeón `<details>` con inclusiones y botón directo de WhatsApp. Badges armonizados a *Paquete 01 · Solo Página Web*, *Paquete 03 · Solo Software Clínico* y *Paquete 02 · Web + Plataforma*.
+    - **T3: Extensión Reactiva de la Calculadora de Ahorro y ROI:** Conmutador extendido a 3 opciones (`pkg1`, `pkg2`, `pkg3`). Inversión calculada a 3 años para el Paquete 03 ($19,864 MXN), proyectando ahorro neto real frente a Encuadrado ($990/mes -> +$15,776 MXN) y Doctoralia Starter ($1,350/mes -> +$28,736 MXN). Estado consultivo protegido ante cuotas <= $499/mes y URL dinámica de WhatsApp.
+    - **T4: Pregunta Frecuente sobre Contratación Exclusiva de Software en `#faq`:** Incorporada la duda en `index.html` explicando autonomía del panel, configuración en 24-48h, subdominio seguro y posibilidad de migración futura. Actualizado también el desglose de servidores en FAQ 6.
+    - **T5: Sincronización Global de Ecosistema:** Sincronizados `comparativa-doctoralia.html` (FAQs de entrega en 24-48h y contratación exclusiva), Schema.org JSON-LD (`hasOfferCatalog` y `FAQPage`) y `/llms.txt` con la oferta de 3 paquetes.
+    - **T6: Ampliación de la Suite de Pruebas Automatizadas:** 47/47 tests unitarios e integrales en verde en Node.js nativo (79-106ms).
+    - **T7: Verificación Visual en Navegador:** Validado en desktop (1280px) y móvil (390px) con el subagente de navegador. 0 errores y 0 warnings en consola de JavaScript.
+
 ## En qué quedó el proyecto
 
-- **Features 001 a 023:** Todas especificadas, implementadas, probadas y validadas al 100%.
-- **Hero Mockup:** Capturas actualizadas de Web Demo y Agenda Clínica sincronizadas con la versión 5.3.1 (`?v=9.1`).
-- **Suite de Pruebas:** 41/41 tests unitarios e integrales en verde (`npm test`).
-- **Git Status:** Rama `main` lista para commit y push autorizados por el usuario.
+- **Features 001 a 024:** Todas especificadas, implementadas, probadas y validadas al 100%.
+- **Catálogo Comercial:** Tríada completa en 3 columnas: Presencia Digital ($4,800 único), Plataforma Clínica ($1,900 setup + $499/mes) y Consultorio Inteligente ($5,900 setup + $499/mes).
+- **Suite de Pruebas:** 47/47 tests pasando al 100% en verde (`npm test`).
+- **Versión de Proyecto:** `5.4.0` en `package.json`.
+- **Git Status:** Cambios locales listos y verificados, esperando autorización explícita para commit y push.
 
 ## Próximo paso
 
-1. Ejecutar `git commit` y `git push` a `origin/main`.
-2. Verificar la propagación en Cloudflare Pages de la versión 5.3.1 (`?v=9.1`).
+1. Presentar resumen de cambios al usuario y solicitar confirmación para commit y push a `origin/main`.
+2. Opcional: Ejecutar `npm run ping:indexnow` si se requiere reindexación inmediata tras el despliegue.
 
 
 

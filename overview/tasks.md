@@ -1,5 +1,5 @@
 # Tareas — CrisDev (`cristhianruiz.dev`)
-Estado general: Features 001 a 023 completadas y desplegadas en producción.
+Estado general: Features 001 a 024 completadas y probadas al 100%.
 
 Referencia principal: `specs/001-landing-page-crisdev/tasks.md` a `specs/006-optimizacion-arquitectura-calidad-testing/tasks.md`
 
@@ -332,7 +332,7 @@ Referencia: `specs/020-remediacion-credibilidad-prueba-visual-hero-y-pulido/task
 | **T1** | Recalibración Matemática del Ahorro y Fecha de Consulta de Tarifas | ✅ hecho | `index.html`, `comparativa-doctoralia.html`, `llms.txt`: Cifras sincronizadas sin discrepancias, nota de tarifas a septiembre de 2026. |
 | **T2** | Blindaje Legal, Titulación Profesional y Actualización de Redes Sociales | ✅ hecho | `partials/footer.html`, `index.html`, `aviso-de-privacidad.html`, `comparativa-doctoralia.html`, `js/terminal-effects.js`: Título a Desarrollador de Software, lineamientos NOM-004, hosting Cloudflare, Facebook e Instagram oficiales (LinkedIn retirado). |
 | **T3** | Reparación del Bug CSS en Tabla Desktop y Desahogo de Tarjetas de Precios | ✅ hecho | `css/components/comparison.css`, `css/components/pricing.css`, `index.html`: `.comparison-mobile-label { display: none; }` en desktop y acordeón nativo `<details>` en tarjetas de precios. |
-| **T4** | Rediseño Visual del Hero con Mockup de Interfaz Real | ✅ hecho | `index.html`, `css/components/hero.css`, `js/terminal-effects.js`: Hero en 2 columnas desktop con marco `.hero-mockup-frame` interactivo (Agenda Clínica semanal viva y conmutador a PsicoLau). |
+| **T4** | Rediseño Visual del Hero con Mockup de Interfaz Real | ✅ hecho | `index.html`, `css/components/hero.css`, `js/terminal-effects.js`: Hero en 2 columnas desktop con marco `.hero-mockup-frame` interactivo (Agenda Clínica semanal viva y conmutador a Web Demo). Actualizadas capturas de demo en vivo a v5.3.1 (`?v=9.1`) con dimensiones 1408x771 px para erradicar CLS. |
 | **T5** | Implementación del Botón Flotante de WhatsApp para Móvil | ✅ hecho | `partials/footer.html`, `css/components/footer.css`: Botón flotante semántico `.fab-whatsapp` exclusivo para móviles (<768px) sincronizado en todas las páginas. |
 | **T6** | Pruebas Automatizadas de Integridad y Validación Visual en Navegador | ✅ hecho | `tests/link-integrity.test.js`: Suite ampliada a 26/26 tests en verde (75ms). Validación visual en navegador (desktop y móvil 390px, 0 errores en consola). |
 | **T7** | Cierre Documental y Gobernanza Git | ✅ hecho | `overview/tasks.md`, `overview/session.md`, `specs/020-.../tasks.md`: Bitácora sincronizada y solicitud formal de autorización para commit/push. |
@@ -384,5 +384,21 @@ Referencia: `specs/023-facturacion-cfdi-respaldos-y-continuidad-operativa/tasks.
 | **T4** | Sincronización de Pregunta de Respaldos en `comparativa-doctoralia.html` | ✅ hecho | `comparativa-doctoralia.html`: FAQ de respaldos y exportación alineada 1:1. |
 | **T5** | Sincronización en Schema.org JSON-LD `FAQPage` y `/llms.txt` | ✅ hecho | `index.html`, `llms.txt`: Entidades Schema.org ampliadas y archivo de IA actualizado. |
 | **T6** | Pruebas Automatizadas de Integridad y Validación | ✅ hecho | `tests/link-integrity.test.js`: 41/41 tests pasando en verde, validación sintáctica de HTML y JSON-LD. |
+---
+
+# Feature 024: Paquete 03 - Plataforma Clínica Independiente (Solo Software/Agenda) y Tríada Comercial
+
+**Estado:** ✅ Completada y Validada al 100%  
+Referencia: `specs/024-paquete-03-plataforma-clinica-independiente/tasks.md`
+
+| ID | Tarea | Estado | Nota |
+| :--- | :--- | :--- | :--- |
+| **T1** | Diseño y Estilos del Grid de 3 Columnas para la Tríada Comercial en `pricing.css` | ✅ hecho | `css/components/pricing.css`: Grid 3 columnas desktop, salvaguarda `minmax(0, 1fr)`. |
+| **T2** | Integración de la Tarjeta Comercial del Paquete 03 en `#pricing` de `index.html` | ✅ hecho | `index.html`: Tarjeta intermedia ($1,900 inicial, $499/mes, entrega 24-48h). |
+| **T3** | Extensión Reactiva de la Calculadora de Ahorro y ROI para Paquete 03 | ✅ hecho | `index.html`, `js/modules/savings-calculator.js`: 3 opciones, cálculo a 3 años y WhatsApp dinámico. |
+| **T4** | Pregunta Frecuente sobre Contratación Exclusiva de la Plataforma en `#faq` de `index.html` | ✅ hecho | `index.html`: FAQ dedicada para quien ya tiene web o redes sociales. |
+| **T5** | Sincronización en `comparativa-doctoralia.html`, Schema.org JSON-LD y `/llms.txt` | ✅ hecho | `comparativa-doctoralia.html`, `index.html`, `/llms.txt`: Catálogo y entidades sincronizadas. |
+| **T6** | Ampliación de la Suite de Pruebas Automatizadas en Node.js | ✅ hecho | `tests/savings-calculator.test.js`, `tests/link-integrity.test.js`: 47/47 pruebas en verde. |
+| **T7** | Verificación Visual en Navegador (Desktop y Móvil), Validación de Consola y Cierre Documental | ✅ hecho | Viewport desktop y móvil, 0 errores en consola, gobernanza Git. |
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado · ⏸️ pospuesta

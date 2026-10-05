@@ -244,6 +244,57 @@ describe('Navigation & Link Integrity Suite', () => {
       'Missing standard export info in llms.txt.'
     );
   });
+
+  test('Feature 024: Paquete 03 Plataforma Clínica & Triad Commercial Suite Integrity', () => {
+    // 1. Check index.html pricing card
+    assert.ok(
+      indexHtml.includes('Paquete 03 · Solo Software Clínico'),
+      'Missing Paquete 03 badge in index.html'
+    );
+    assert.ok(
+      indexHtml.includes('1,900'),
+      'Missing $1,900 MXN pricing for Paquete 03 in index.html'
+    );
+    assert.ok(
+      indexHtml.includes('$950 MXN anticipo'),
+      'Missing $950 MXN 50/50 breakdown in index.html'
+    );
+    assert.ok(
+      indexHtml.includes('¿Puedo contratar únicamente la plataforma clínica si ya tengo mi propia página web o uso redes sociales?'),
+      'Missing standalone platform FAQ in index.html'
+    );
+
+    // 2. Check calculator toggle button for pkg3
+    assert.ok(
+      indexHtml.includes('data-package="pkg3"'),
+      'Missing pkg3 button in savings calculator in index.html'
+    );
+    assert.ok(
+      indexHtml.includes('Paquete 03 (Solo Plataforma)'),
+      'Missing Paquete 03 label in savings calculator'
+    );
+
+    // 3. Check comparativa-doctoralia.html
+    assert.ok(
+      compHtml.includes('Plataforma Clínica ($1,900 MXN de puesta en marcha + $499 MXN/mes)'),
+      'Missing Paquete 03 reference in comparativa-doctoralia.html'
+    );
+    assert.ok(
+      compHtml.includes('¿Puedo contratar solo el software de agenda y expedientes sin crear una página web nueva?'),
+      'Missing standalone software FAQ in comparativa-doctoralia.html'
+    );
+
+    // 4. Check llms.txt
+    const llmsContent = fs.readFileSync(path.join(rootDir, 'llms.txt'), 'utf8');
+    assert.ok(
+      llmsContent.includes('### Paquete 03: Plataforma Clínica (Solo Software de Gestión)'),
+      'Missing Paquete 03 heading in llms.txt'
+    );
+    assert.ok(
+      llmsContent.includes('$1,900 MXN'),
+      'Missing $1,900 MXN setup in llms.txt'
+    );
+  });
 });
 
 

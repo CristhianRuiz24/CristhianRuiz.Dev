@@ -38,6 +38,22 @@ CrisDev resuelve integralmente las necesidades de presencia y organización de l
   - Aviso de Privacidad formal bajo normativas de protección de datos en salud.
   - *Nota de alcance:* La personalización de diseño, secciones y contenido está incluida. Requerimientos técnicos avanzados o integraciones especiales se cotizan por separado.
 
+### Paquete 03: Plataforma Clínica (Solo Software de Gestión)
+- **Inversión Setup:** $1,900 MXN (Pago Inicial de Puesta en Marcha).
+- **Esquema de Pago:** 50/50 ($950 MXN de anticipo · $950 MXN al entregar tu plataforma lista con credenciales).
+- **Servidor y Soporte Continuo:** $499 MXN / mes (O anualidad de $4,990 MXN / año con 2 meses bonificados).
+- **Alojamiento:** Subdominio seguro incluido (ej. clinica.cristhianruiz.dev o subdominio de tu dominio web actual).
+- **Tiempo de Puesta en Marcha:** 24 a 48 horas hábiles.
+- **Qué incluye:**
+  - Panel clínico privado con agenda semanal visual interactiva para control de citas.
+  - Gestión de expedientes clínicos y notas de evolución protegidas bajo lineamientos NOM-004-SSA3.
+  - Enlaces directos para videollamadas Zoom y Google Meet en cada consulta online.
+  - Base de datos privada en PostgreSQL con respaldos periódicos en la nube.
+  - Exportación garantizada de padrón de pacientes y notas en formato estándar (CSV).
+  - Inducción personalizada 1 a 1 para dejar el sistema operativo desde el primer día.
+  - Cero comisiones por consulta y total independencia de intermediarios.
+  - *Nota de alcance:* Exclusivo para gestión administrativa y clínica interna. No incluye diseño de sitio web público (puede integrarse en el futuro si se requiere).
+
 ### Paquete 02: Consultorio Inteligente (Web + Plataforma Clínica)
 - **Inversión Setup:** $5,900 MXN (Pago Inicial Único).
 - **Esquema de Pago:** 50/50 ($2,950 MXN de anticipo · $2,950 MXN al entregar la plataforma lista).
@@ -91,6 +107,7 @@ Al comparar CrisDev con plataformas de directorio como Doctoralia, las diferenci
 - **¿El panel también se personaliza?** Utiliza la plataforma clínica estándar de CrisDev, probada y estable. Necesidades especiales se cotizan como desarrollo a medida.
 - **¿Me ayudan con el aviso de publicidad?** Sí, se entrega una guía práctica sobre qué es, por qué aplica y cómo gestionarlo ante normativas de salud.
 - **¿De quién es la propiedad de mis datos y cómo los respaldo?** El dominio y sitio web son 100% tu propiedad; los expedientes clínicos son privados, respaldados periódicamente en la nube y exportables en formato estándar (CSV u hoja de cálculo). El panel opera como software gestionado.
+- **¿Puedo contratar solo la plataforma clínica si ya tengo página web o uso redes?** Sí, con el Paquete 03 ($1,900 setup + $499/mes) obtienes exclusivamente el software de gestión (agenda, expedientes NOM-004, videollamadas y BD privada), listo en 24 a 48 horas hábiles sin rediseñar tu web actual.
 - **¿Es seguro para el secreto profesional?** Sí, estructurado conforme a lineamientos de la NOM-004-SSA3 y LFPDPPP, con cifrado de datos en expedientes y notas clínicas.
 - **¿Qué pasa con la continuidad y soporte?** La web pública corre en Cloudflare ($0/mes) y la plataforma clínica en servidores en la nube dedicados, funcionando 24/7 de forma autónoma; el soporte y atención a dudas es directo y personal con Cristhian Ruiz vía WhatsApp.
 - **¿Puedo probar el sistema antes de contratar?** Sí, la demo interactiva está disponible libremente en https://demo.cristhianruiz.dev/ con acceso al panel clínico en 1 clic.
