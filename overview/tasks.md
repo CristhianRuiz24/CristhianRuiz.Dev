@@ -386,7 +386,7 @@ Referencia: `specs/023-facturacion-cfdi-respaldos-y-continuidad-operativa/tasks.
 | **T6** | Pruebas Automatizadas de Integridad y Validación | ✅ hecho | `tests/link-integrity.test.js`: 41/41 tests pasando en verde, validación sintáctica de HTML y JSON-LD. |
 ---
 
-# Feature 024: Paquete 03 - Plataforma Clínica Independiente (Solo Software/Agenda) y Tríada Comercial
+# Feature 024: Tríada Comercial Coherente y Plataforma Clínica Independiente (Paquetes 01, 02 y 03)
 
 **Estado:** ✅ Completada y Validada al 100%  
 Referencia: `specs/024-paquete-03-plataforma-clinica-independiente/tasks.md`
@@ -394,11 +394,12 @@ Referencia: `specs/024-paquete-03-plataforma-clinica-independiente/tasks.md`
 | ID | Tarea | Estado | Nota |
 | :--- | :--- | :--- | :--- |
 | **T1** | Diseño y Estilos del Grid de 3 Columnas para la Tríada Comercial en `pricing.css` | ✅ hecho | `css/components/pricing.css`: Grid 3 columnas desktop, salvaguarda `minmax(0, 1fr)`. |
-| **T2** | Integración de la Tarjeta Comercial del Paquete 03 en `#pricing` de `index.html` | ✅ hecho | `index.html`: Tarjeta intermedia ($1,900 inicial, $499/mes, entrega 24-48h). |
-| **T3** | Extensión Reactiva de la Calculadora de Ahorro y ROI para Paquete 03 | ✅ hecho | `index.html`, `js/modules/savings-calculator.js`: 3 opciones, cálculo a 3 años y WhatsApp dinámico. |
+| **T2** | Integración de la Tarjeta Comercial de Plataforma Clínica en `#pricing` de `index.html` | ✅ hecho | `index.html`: Tarjeta intermedia ($1,900 inicial, $499/mes, entrega 24-48h). |
+| **T3** | Extensión Reactiva de la Calculadora de Ahorro y ROI para Plataforma Clínica | ✅ hecho | `index.html`, `js/modules/savings-calculator.js`: 3 opciones, cálculo a 3 años y WhatsApp dinámico. |
 | **T4** | Pregunta Frecuente sobre Contratación Exclusiva de la Plataforma en `#faq` de `index.html` | ✅ hecho | `index.html`: FAQ dedicada para quien ya tiene web o redes sociales. |
 | **T5** | Sincronización en `comparativa-doctoralia.html`, Schema.org JSON-LD y `/llms.txt` | ✅ hecho | `comparativa-doctoralia.html`, `index.html`, `/llms.txt`: Catálogo y entidades sincronizadas. |
 | **T6** | Ampliación de la Suite de Pruebas Automatizadas en Node.js | ✅ hecho | `tests/savings-calculator.test.js`, `tests/link-integrity.test.js`: 47/47 pruebas en verde. |
 | **T7** | Verificación Visual en Navegador (Desktop y Móvil), Validación de Consola y Cierre Documental | ✅ hecho | Viewport desktop y móvil, 0 errores en consola, gobernanza Git. |
+| **T8** | Reordenamiento Numérico Coherente (01 Solo Web, 02 Solo Software, 03 Web + Plataforma) | ✅ hecho | Badges en precios, Schema.org, píldoras y presets de calculadora, comparativa, llms.txt y tests. 49/49 tests en verde. |
 
 Estados: ⬜ pendiente · 🔄 en curso · ✅ hecho · ⛔ bloqueado · ⏸️ pospuesta

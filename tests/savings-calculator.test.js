@@ -40,39 +40,10 @@ describe('Savings Calculator Logic & ROI Suite', () => {
     });
   });
 
-  describe('Mathematical Calculations (Package 02 - Web + Consultorio Inteligente)', () => {
-    it('should correctly calculate 3-year investment ($5,900 initial + $4,990/yr Y2 & Y3 = $15,880)', () => {
-      const result = calculateSavings(1350, 'pkg2');
-      assert.equal(result.crisdevTotal, 15880, 'Package 02 3-year total must be $15,880');
-      assert.equal(result.saasTotal, 48600);
-      assert.equal(result.netSavings, 32720, 'Net savings against Doctoralia Starter should be $32,720');
-      assert.equal(result.roiMonths, 5, 'Initial $5,900 pays off in 5 months at $1,350/mo');
-      assert.equal(result.isConsultative, false);
-    });
-
-    it('should correctly calculate savings against Doctoralia Plus ($2,370/mo)', () => {
-      const result = calculateSavings(2370, 'pkg2');
-      assert.equal(result.saasTotal, 85320, '36 months of $2,370 should equal $85,320');
-      assert.equal(result.crisdevTotal, 15880);
-      assert.equal(result.netSavings, 69440, 'Net savings should be $69,440');
-      assert.equal(result.roiMonths, 3, 'Initial $5,900 pays off in 3 months at $2,370/mo');
-      assert.equal(result.isConsultative, false);
-    });
-
-    it('should correctly calculate savings against Encuadrado ($990/mo)', () => {
-      const result = calculateSavings(990, 'pkg2');
-      assert.equal(result.saasTotal, 35640);
-      assert.equal(result.crisdevTotal, 15880);
-      assert.equal(result.netSavings, 19760);
-      assert.equal(result.roiMonths, 6, 'Initial $5,900 pays off in 6 months at $990/mo');
-      assert.equal(result.isConsultative, false);
-    });
-  });
-
-  describe('Mathematical Calculations (Package 03 - Solo Plataforma Clínica)', () => {
+  describe('Mathematical Calculations (Package 02 - Solo Plataforma Clínica)', () => {
     it('should correctly calculate 3-year investment ($1,900 initial + $499/mo * 36 = $19,864)', () => {
-      const result = calculateSavings(1350, 'pkg3');
-      assert.equal(result.crisdevTotal, 19864, 'Package 03 3-year total must be $19,864');
+      const result = calculateSavings(1350, 'pkg2');
+      assert.equal(result.crisdevTotal, 19864, 'Package 02 3-year total must be $19,864');
       assert.equal(result.saasTotal, 48600);
       assert.equal(result.netSavings, 28736, 'Net savings against Doctoralia Starter should be $28,736');
       assert.equal(result.roiMonths, 3, 'Initial $1,900 pays off in 3 months at $1,350/mo ($851/mo savings)');
@@ -80,7 +51,7 @@ describe('Savings Calculator Logic & ROI Suite', () => {
     });
 
     it('should correctly calculate savings against Doctoralia Plus ($2,370/mo)', () => {
-      const result = calculateSavings(2370, 'pkg3');
+      const result = calculateSavings(2370, 'pkg2');
       assert.equal(result.saasTotal, 85320);
       assert.equal(result.crisdevTotal, 19864);
       assert.equal(result.netSavings, 65456, 'Net savings should be $65,456');
@@ -89,7 +60,7 @@ describe('Savings Calculator Logic & ROI Suite', () => {
     });
 
     it('should correctly calculate savings against Encuadrado ($990/mo)', () => {
-      const result = calculateSavings(990, 'pkg3');
+      const result = calculateSavings(990, 'pkg2');
       assert.equal(result.saasTotal, 35640);
       assert.equal(result.crisdevTotal, 19864);
       assert.equal(result.netSavings, 15776, 'Net savings against Encuadrado should be $15,776');
@@ -97,30 +68,75 @@ describe('Savings Calculator Logic & ROI Suite', () => {
       assert.equal(result.isConsultative, false);
     });
 
-    it('should trigger consultative state and zero ROI when Package 03 has negative net savings against $400/mo', () => {
-      const result = calculateSavings(400, 'pkg3');
+    it('should trigger consultative state and zero ROI when Package 02 has negative net savings against $400/mo', () => {
+      const result = calculateSavings(400, 'pkg2');
       assert.equal(result.saasTotal, 14400);
       assert.equal(result.crisdevTotal, 19864);
       assert.equal(result.netSavings, -5464);
+      assert.equal(result.isConsultative, true, 'Must declare consultative state for negative savings in pkg2');
+      assert.equal(result.roiMonths, 0, 'Must NOT claim false amortization when net savings is negative');
+    });
+
+    it('should build a valid WhatsApp link for Package 02 with calculated savings', () => {
+      const url = buildWhatsappUrl(15776, 990, 'pkg2');
+      assert.ok(url.startsWith('https://wa.me/528130938884?text='), 'Must point to verified WhatsApp link');
+      assert.ok(url.includes(encodeURIComponent('+$15,776 MXN')), 'Must include savings in URL');
+      assert.ok(url.includes(encodeURIComponent('Paquete 02 (Plataforma Clínica)')), 'Must include Package 02 name');
+    });
+  });
+
+  describe('Mathematical Calculations (Package 03 - Web + Consultorio Inteligente)', () => {
+    it('should correctly calculate 3-year investment ($5,900 initial + $4,990/yr Y2 & Y3 = $15,880)', () => {
+      const result = calculateSavings(1350, 'pkg3');
+      assert.equal(result.crisdevTotal, 15880, 'Package 03 3-year total must be $15,880');
+      assert.equal(result.saasTotal, 48600);
+      assert.equal(result.netSavings, 32720, 'Net savings against Doctoralia Starter should be $32,720');
+      assert.equal(result.roiMonths, 5, 'Initial $5,900 pays off in 5 months at $1,350/mo');
+      assert.equal(result.isConsultative, false);
+    });
+
+    it('should correctly calculate savings against Doctoralia Plus ($2,370/mo)', () => {
+      const result = calculateSavings(2370, 'pkg3');
+      assert.equal(result.saasTotal, 85320, '36 months of $2,370 should equal $85,320');
+      assert.equal(result.crisdevTotal, 15880);
+      assert.equal(result.netSavings, 69440, 'Net savings should be $69,440');
+      assert.equal(result.roiMonths, 3, 'Initial $5,900 pays off in 3 months at $2,370/mo');
+      assert.equal(result.isConsultative, false);
+    });
+
+    it('should correctly calculate savings against Encuadrado ($990/mo)', () => {
+      const result = calculateSavings(990, 'pkg3');
+      assert.equal(result.saasTotal, 35640);
+      assert.equal(result.crisdevTotal, 15880);
+      assert.equal(result.netSavings, 19760);
+      assert.equal(result.roiMonths, 6, 'Initial $5,900 pays off in 6 months at $990/mo');
+      assert.equal(result.isConsultative, false);
+    });
+
+    it('should trigger consultative state and zero ROI when Package 03 has negative net savings against $400/mo', () => {
+      const result = calculateSavings(400, 'pkg3');
+      assert.equal(result.saasTotal, 14400);
+      assert.equal(result.crisdevTotal, 15880);
+      assert.equal(result.netSavings, -1480);
       assert.equal(result.isConsultative, true, 'Must declare consultative state for negative savings in pkg3');
       assert.equal(result.roiMonths, 0, 'Must NOT claim false amortization when net savings is negative');
     });
 
     it('should build a valid WhatsApp link for Package 03 with calculated savings', () => {
-      const url = buildWhatsappUrl(15776, 990, 'pkg3');
+      const url = buildWhatsappUrl(69440, 2370, 'pkg3');
       assert.ok(url.startsWith('https://wa.me/528130938884?text='), 'Must point to verified WhatsApp link');
-      assert.ok(url.includes(encodeURIComponent('+$15,776 MXN')), 'Must include savings in URL');
-      assert.ok(url.includes(encodeURIComponent('Paquete 03 (Plataforma Clínica)')), 'Must include Package 03 name');
+      assert.ok(url.includes(encodeURIComponent('+$69,440 MXN')), 'Must include savings in URL');
+      assert.ok(url.includes(encodeURIComponent('Paquete 03 (Web + Consultorio Inteligente)')), 'Must include Package 03 name');
     });
   });
 
   describe('Consultative State & Edge Cases (Commercial Guardrails)', () => {
-    it('should trigger consultative state and zero ROI when Package 02 has negative net savings against $400/mo', () => {
-      const result = calculateSavings(400, 'pkg2');
+    it('should trigger consultative state and zero ROI when Package 03 has negative net savings against $400/mo', () => {
+      const result = calculateSavings(400, 'pkg3');
       assert.equal(result.saasTotal, 14400);
       assert.equal(result.crisdevTotal, 15880);
       assert.equal(result.netSavings, -1480);
-      assert.equal(result.isConsultative, true, 'Must declare consultative state for negative savings');
+      assert.equal(result.isConsultative, true, 'Must declare consultative state for negative savings in pkg3');
       assert.equal(result.roiMonths, 0, 'Must NOT claim false amortization when net savings is negative');
     });
 

@@ -17,13 +17,13 @@ export function calculateSavings(monthlyExpense, packageType = 'pkg1') {
   const saasTotal = expense * 36;
   
   // Package 01: $4,800 single payment. Hosting $0/mo.
-  // Package 02: $5,900 Year 1 + $4,990/year for Years 2 and 3 = $15,880 total at 3 years.
-  // Package 03: $1,900 setup + ($499/mo * 36) = $19,864 total at 3 years.
+  // Package 02 (Plataforma Clínica): $1,900 setup + ($499/mo * 36) = $19,864 total at 3 years.
+  // Package 03 (Consultorio Inteligente): $5,900 Year 1 + $4,990/year for Years 2 and 3 = $15,880 total at 3 years.
   let crisdevTotal = 4800;
   if (packageType === 'pkg2') {
-    crisdevTotal = 15880;
-  } else if (packageType === 'pkg3') {
     crisdevTotal = 19864;
+  } else if (packageType === 'pkg3') {
+    crisdevTotal = 15880;
   }
 
   const netSavings = saasTotal - crisdevTotal;
@@ -36,7 +36,14 @@ export function calculateSavings(monthlyExpense, packageType = 'pkg1') {
       // Single upfront payment with $0/mo maintenance in Cloudflare
       roiMonths = Math.ceil(4800 / expense);
     } else if (packageType === 'pkg2') {
-      // Package 02: Year 1 upfront investment is $5,900 (hosting/panel included in Year 1).
+      // Package 02 (Plataforma Clínica): Initial setup is $1,900. Monthly maintenance is $499.
+      // Net monthly savings = expense - 499.
+      const monthlySavings = expense - 499;
+      if (monthlySavings > 0) {
+        roiMonths = Math.ceil(1900 / monthlySavings);
+      }
+    } else if (packageType === 'pkg3') {
+      // Package 03 (Consultorio Inteligente): Year 1 upfront investment is $5,900 (hosting/panel included in Year 1).
       // If expense >= 492 MXN/mo ($5,900 / 12), it pays off within the first year.
       if (expense >= 492) {
         roiMonths = Math.ceil(5900 / expense);
@@ -44,13 +51,6 @@ export function calculateSavings(monthlyExpense, packageType = 'pkg1') {
         // If expense < 492 but netSavings > 0 (between 442 and 491 MXN/mo),
         // Year 2 renewal is $4,990 ($10,890 total).
         roiMonths = Math.ceil(10890 / expense);
-      }
-    } else if (packageType === 'pkg3') {
-      // Package 03: Initial setup is $1,900. Monthly maintenance is $499.
-      // Net monthly savings = expense - 499.
-      const monthlySavings = expense - 499;
-      if (monthlySavings > 0) {
-        roiMonths = Math.ceil(1900 / monthlySavings);
       }
     }
   }
@@ -92,7 +92,7 @@ export function formatCurrencyMXN(amount, includeSign = false) {
  * 
  * @param {number} netSavings 
  * @param {number} monthlyExpense 
- * @param {'pkg1' | 'pkg2'} packageType 
+ * @param {'pkg1' | 'pkg2' | 'pkg3'} packageType 
  * @returns {string} Full WhatsApp URL
  */
 export function buildWhatsappUrl(netSavings, monthlyExpense, packageType = 'pkg1') {
@@ -105,9 +105,9 @@ export function buildWhatsappUrl(netSavings, monthlyExpense, packageType = 'pkg1
   const expenseStr = formatCurrencyMXN(monthlyExpense);
   let pkgStr = 'Paquete 01 (Presencia Web)';
   if (packageType === 'pkg2') {
-    pkgStr = 'Paquete 02 (Web + Consultorio Inteligente)';
+    pkgStr = 'Paquete 02 (Plataforma Clínica)';
   } else if (packageType === 'pkg3') {
-    pkgStr = 'Paquete 03 (Plataforma Clínica)';
+    pkgStr = 'Paquete 03 (Web + Consultorio Inteligente)';
   }
   
   const text = `Hola Cristhian, calculé en tu sitio un ahorro de ${savingsStr} a 3 años frente a pagar ${expenseStr}/mes en plataformas de renta. Me interesa cotizar mi ${pkgStr}.`;
@@ -161,9 +161,9 @@ export function initSavingsCalculator() {
 
     if (crisdevPeriod) {
       if (currentPackage === 'pkg2') {
-        crisdevPeriod.textContent = 'Incluye $5,900 de inicio + $4,990/año desde el año 2 para la plataforma clínica, base de datos y dominio.';
-      } else if (currentPackage === 'pkg3') {
         crisdevPeriod.textContent = 'Incluye $1,900 de puesta en marcha + $499/mes para servidor dedicado, base de datos privada y soporte.';
+      } else if (currentPackage === 'pkg3') {
+        crisdevPeriod.textContent = 'Incluye $5,900 de inicio + $4,990/año desde el año 2 para la plataforma clínica, base de datos y dominio.';
       } else {
         crisdevPeriod.textContent = 'Pago único. Hosting $0/mes en Cloudflare de por vida. Solo renuevas tu dominio anual (~$300-$500/año).';
       }
@@ -173,7 +173,7 @@ export function initSavingsCalculator() {
     if (recoveryBannerText) {
       if (currentPackage === 'pkg1') {
         recoveryBannerText.innerHTML = '<strong>El valor de tu web propia:</strong> Al captar solo 1 o 2 pacientes nuevos al año gracias a tu sitio web sin pagar comisiones por consulta, recuperas la inversión total de por vida.';
-      } else if (currentPackage === 'pkg3') {
+      } else if (currentPackage === 'pkg2') {
         recoveryBannerText.innerHTML = '<strong>El valor del orden y privacidad:</strong> Al centralizar expedientes NOM-004 y notas de evolución protegidas sin intermediarios, ahorras horas administrativas y proteges tus historiales sin pagar rentas abusivas.';
       } else {
         recoveryBannerText.innerHTML = '<strong>El valor oculto de no perder pacientes:</strong> Al enviar recordatorios automáticos por WhatsApp y recuperar solo 2 citas mensuales que antes se cancelaban por olvido (~$1,600 MXN), el software se amortiza solo en tus primeros 90 días.';

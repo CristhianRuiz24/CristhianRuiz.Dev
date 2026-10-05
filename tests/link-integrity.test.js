@@ -245,15 +245,23 @@ describe('Navigation & Link Integrity Suite', () => {
     );
   });
 
-  test('Feature 024: Paquete 03 Plataforma Clínica & Triad Commercial Suite Integrity', () => {
-    // 1. Check index.html pricing card
+  test('Feature 024: Triad Commercial Suite Integrity (Paquete 01, 02 y 03)', () => {
+    // 1. Check index.html pricing cards in sequential order
     assert.ok(
-      indexHtml.includes('Paquete 03 · Solo Software Clínico'),
+      indexHtml.includes('Paquete 01 · Solo Página Web'),
+      'Missing Paquete 01 badge in index.html'
+    );
+    assert.ok(
+      indexHtml.includes('Paquete 02 · Solo Software Clínico'),
+      'Missing Paquete 02 badge in index.html'
+    );
+    assert.ok(
+      indexHtml.includes('Paquete 03 · Web + Plataforma'),
       'Missing Paquete 03 badge in index.html'
     );
     assert.ok(
       indexHtml.includes('1,900'),
-      'Missing $1,900 MXN pricing for Paquete 03 in index.html'
+      'Missing $1,900 MXN pricing for Paquete 02 in index.html'
     );
     assert.ok(
       indexHtml.includes('$950 MXN anticipo'),
@@ -264,20 +272,32 @@ describe('Navigation & Link Integrity Suite', () => {
       'Missing standalone platform FAQ in index.html'
     );
 
-    // 2. Check calculator toggle button for pkg3
+    // 2. Check calculator toggle buttons for pkg1, pkg2, pkg3
+    assert.ok(
+      indexHtml.includes('data-package="pkg1"'),
+      'Missing pkg1 button in savings calculator in index.html'
+    );
+    assert.ok(
+      indexHtml.includes('data-package="pkg2"'),
+      'Missing pkg2 button in savings calculator in index.html'
+    );
+    assert.ok(
+      indexHtml.includes('Paquete 02 (Solo Plataforma)'),
+      'Missing Paquete 02 label in savings calculator'
+    );
     assert.ok(
       indexHtml.includes('data-package="pkg3"'),
       'Missing pkg3 button in savings calculator in index.html'
     );
     assert.ok(
-      indexHtml.includes('Paquete 03 (Solo Plataforma)'),
+      indexHtml.includes('Paquete 03 (Web + Plataforma)'),
       'Missing Paquete 03 label in savings calculator'
     );
 
     // 3. Check comparativa-doctoralia.html
     assert.ok(
-      compHtml.includes('Plataforma Clínica ($1,900 MXN de puesta en marcha + $499 MXN/mes)'),
-      'Missing Paquete 03 reference in comparativa-doctoralia.html'
+      compHtml.includes('Plataforma Clínica (Paquete 02) ($1,900 MXN de puesta en marcha + $499 MXN/mes)'),
+      'Missing Paquete 02 reference in comparativa-doctoralia.html'
     );
     assert.ok(
       compHtml.includes('¿Puedo contratar solo el software de agenda y expedientes sin crear una página web nueva?'),
@@ -287,7 +307,11 @@ describe('Navigation & Link Integrity Suite', () => {
     // 4. Check llms.txt
     const llmsContent = fs.readFileSync(path.join(rootDir, 'llms.txt'), 'utf8');
     assert.ok(
-      llmsContent.includes('### Paquete 03: Plataforma Clínica (Solo Software de Gestión)'),
+      llmsContent.includes('### Paquete 02: Plataforma Clínica (Solo Software de Gestión)'),
+      'Missing Paquete 02 heading in llms.txt'
+    );
+    assert.ok(
+      llmsContent.includes('### Paquete 03: Consultorio Inteligente (Web + Plataforma Clínica)'),
       'Missing Paquete 03 heading in llms.txt'
     );
     assert.ok(

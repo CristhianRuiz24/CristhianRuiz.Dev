@@ -110,19 +110,25 @@
     - **T5: Sincronización Global de Ecosistema:** Sincronizados `comparativa-doctoralia.html` (FAQs de entrega en 24-48h y contratación exclusiva), Schema.org JSON-LD (`hasOfferCatalog` y `FAQPage`) y `/llms.txt` con la oferta de 3 paquetes.
     - **T6: Ampliación de la Suite de Pruebas Automatizadas:** 47/47 tests unitarios e integrales en verde en Node.js nativo (79-106ms).
     - **T7: Verificación Visual en Navegador:** Validado en desktop (1280px) y móvil (390px) con el subagente de navegador. 0 errores y 0 warnings en consola de JavaScript.
+    - **T8: Reordenamiento Numérico Coherente (01, 02 y 03):**
+      - Se corrigió la secuencia de paquetes para una lectura progresiva y armónica:
+        - **Paquete 01 · Solo Página Web:** Presencia Digital ($4,800 MXN pago único).
+        - **Paquete 02 · Solo Software Clínico:** Plataforma Clínica ($1,900 MXN setup + $499 MXN/mes).
+        - **Paquete 03 · Web + Plataforma:** Consultorio Inteligente ($5,900 MXN setup + $499 MXN/mes).
+      - Sincronizados badges de precios, catálogo Schema.org JSON-LD, píldoras y presets de la calculadora (`pkg1`, `pkg2`, `pkg3`), `savings-calculator.js`, `comparativa-doctoralia.html`, `/llms.txt` y `sitemap.xml`.
+      - **49/49 pruebas pasando al 100% en verde** con `npm test`.
 
 ## En qué quedó el proyecto
 
 - **Features 001 a 024:** Todas especificadas, implementadas, probadas y validadas al 100%.
-- **Catálogo Comercial:** Tríada completa en 3 columnas: Presencia Digital ($4,800 único), Plataforma Clínica ($1,900 setup + $499/mes) y Consultorio Inteligente ($5,900 setup + $499/mes).
-- **Suite de Pruebas:** 47/47 tests pasando al 100% en verde (`npm test`).
-- **Versión de Proyecto:** `5.4.0` en `package.json`.
-- **Git Status:** Commit `398fb0e` confirmado y subido exitosamente a `origin/main` en GitHub.
+- **Catálogo Comercial Coherente:** Secuencia ordenada en 3 columnas: Paquete 01 (Solo Web), Paquete 02 (Solo Software) y Paquete 03 (Web + Software - Destacado).
+- **Suite de Pruebas:** 49/49 tests pasando al 100% en verde (`npm test`).
+- **Ping IndexNow:** Enviado y confirmado con HTTP 200 para Microsoft Bing y Copilot.
+- **Git Status:** Cambios listos en el árbol de trabajo, esperando autorización del usuario para commit y push.
 
 ## Próximo paso
 
-1. Proyecto en estado limpio en producción (v5.4.0) con tríada comercial completa y desplegada.
-2. Opcional: Ejecutar `npm run ping:indexnow` si se requiere reindexación inmediata en Bing/Copilot/Perplexity tras el despliegue en Cloudflare Pages.
+1. Presentar resumen de la corrección al usuario y solicitar confirmación para commit y push a `origin/main`.
 
 
 
