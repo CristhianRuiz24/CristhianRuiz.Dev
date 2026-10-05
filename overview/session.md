@@ -116,19 +116,20 @@
         - **Paquete 02 · Solo Software Clínico:** Plataforma Clínica ($1,900 MXN setup + $499 MXN/mes).
         - **Paquete 03 · Web + Plataforma:** Consultorio Inteligente ($5,900 MXN setup + $499 MXN/mes).
       - Sincronizados badges de precios, catálogo Schema.org JSON-LD, píldoras y presets de la calculadora (`pkg1`, `pkg2`, `pkg3`), `savings-calculator.js`, `comparativa-doctoralia.html`, `/llms.txt` y `sitemap.xml`.
+      - **Remediación de Caché CSS (`v=10.0`):** Al detectar que el navegador retenía en caché la versión antigua de `pricing.css?v=9.0` (la cual declaraba 2 columnas), se elevó de forma obligatoria el cache-busting declarativo a `?v=10.0` en todos los archivos HTML y se añadió `min-width: 0;` a `.pricing-card`. Verificado con Firefox headless en 1920x1080 y 1280x950 con renderizado perfecto de 3 columnas en una sola fila.
       - **49/49 pruebas pasando al 100% en verde** con `npm test`.
 
 ## En qué quedó el proyecto
 
 - **Features 001 a 024:** Todas especificadas, implementadas, probadas y validadas al 100%.
 - **Catálogo Comercial Coherente:** Secuencia ordenada en 3 columnas: Paquete 01 (Solo Web), Paquete 02 (Solo Software) y Paquete 03 (Web + Software - Destacado).
+- **Cache-Busting Actualizado:** `?v=10.0` forzado en todos los assets estáticos.
 - **Suite de Pruebas:** 49/49 tests pasando al 100% en verde (`npm test`).
-- **Ping IndexNow:** Enviado y confirmado con HTTP 200 para Microsoft Bing y Copilot.
 - **Git Status:** Cambios listos en el árbol de trabajo, esperando autorización del usuario para commit y push.
 
 ## Próximo paso
 
-1. Presentar resumen de la corrección al usuario y solicitar confirmación para commit y push a `origin/main`.
+1. Presentar solución al usuario y solicitar confirmación para commit y push a `origin/main`.
 
 
 
